@@ -1,0 +1,26 @@
+```mermaid
+mindmap
+  root(Reading)
+
+    (audio)
+      (play/pause)
+      (loop 100x)
+      (delay length)
+    (feature 2)
+      (Lorem Iposum)
+      (Lorem Iposum)
+    (feature 3)
+      (Lorem Iposum)
+      (Lorem Iposum)
+    (Chapter)
+      (Title)
+        (Translit)
+        (Arabic)
+        (English)
+      (Location)
+      (Verses)
+        (number)
+        (bookmark)
+      (Words)
+      (Bow)
+```
