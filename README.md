@@ -1,7 +1,7 @@
+vscode extension: markdown preview mermaid support
 ```mermaid
 mindmap
-  root(Reading)
-
+  root(READING)
     (audio)
       (play/pause)
       (loop 100x)
