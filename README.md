@@ -25,6 +25,7 @@ mindmap
       (Bow)
 ```
 
+## Blogging app service communication
 ```mermaid
 sequenceDiagram
     participant web as Web Browser
