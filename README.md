@@ -1,5 +1,6 @@
 major source 1 for data: https://github.com/qazasaz/quranwbw
 major source 2 for data: https://github.com/hablullah/data-quran
+major source 3 for data: https://github.com/gadingnst/quran-api
 
 vscode extension: markdown preview mermaid support
 ```mermaid
