@@ -10,6 +10,7 @@ function Sura() {
   );
   console.log('wordQty', wordQty)
 
+
   React.useEffect(() => {
     const fetchVerses = async () => {
       try {
@@ -64,7 +65,8 @@ function Sura() {
         </div>
       </header>
       <main className="main" style={{ fontSize: `${fontSize}px` }}>
-        <Test />
+      <Accordion verses={verse}/>
+        {/* <Test2 verses={sura} /> */}
         
         {verses.map((verse, index) => (
           <div key={index}>
