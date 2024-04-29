@@ -71,5 +71,4 @@ function getWords(wordQty, setWordQty) {
   }
   localStorage.setItem("wordQty", JSON.stringify(wordQty));
   setWordQty(JSON.parse(localStorage.getItem("wordQty")));
-  console.log("wordQty", wordQty);
 }

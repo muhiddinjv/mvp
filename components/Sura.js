@@ -1,5 +1,6 @@
 function Sura() {
   const [ sura, setSura ] = React.useState({})
+  const [ verses, setVerses ] = React.useState([]);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage("translation");
@@ -7,22 +8,26 @@ function Sura() {
   const [wordQty, setWordQty] = React.useState(
     JSON.parse(localStorage.getItem("wordQty"))
   );
-  const [verses, setVerses] = React.useState([]);
+  console.log('wordQty', wordQty)
 
   React.useEffect(() => {
     const fetchVerses = async () => {
-      const response = await fetch("../data/mvp.json");
-      const data = await response.json();
-      setSura(data);
-
-      const processedVerses = data.verses.map((verse) => {
-        const words = verse[language].split(" ");
-        for (let key in wordQty) {
-          if (wordQty[key]) return words.slice(0, key).join(" ");
-        }
-        return words.join(" ");
-      });
-      setVerses(processedVerses);
+      try {
+        const response = await fetch("../data/mvp.json");
+        const data = await response.json();
+        setSura(data);
+  
+        const processedVerses = data.verses.map((verse) => {
+          const words = verse[language].split(" ");
+          for (let key in wordQty) {
+            if (wordQty[key]) return words.slice(0, key).join(" ");
+          }
+          return words.join(" ");
+        });
+        setVerses(processedVerses);
+      } catch (error) {
+        console.log(error)
+      }
     };
 
     fetchVerses();
@@ -59,6 +64,8 @@ function Sura() {
         </div>
       </header>
       <main className="main" style={{ fontSize: `${fontSize}px` }}>
+        <Test />
+        
         {verses.map((verse, index) => (
           <div key={index}>
             <span>{index + 1} </span>
