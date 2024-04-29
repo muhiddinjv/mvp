@@ -1,4 +1,5 @@
 function Sura() {
+  const [ sura, setSura ] = React.useState({})
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage("translation");
@@ -12,6 +13,7 @@ function Sura() {
     const fetchVerses = async () => {
       const response = await fetch("../data/mvp.json");
       const data = await response.json();
+      setSura(data);
 
       const processedVerses = data.verses.map((verse) => {
         const words = verse[language].split(" ");
@@ -48,6 +50,12 @@ function Sura() {
             <div className="fontSizeDiv mx-2 text-lg">{fontSize}</div>
             <Button fn={() => enlargeFont(true)} text="+" />
           </div>
+        </div>
+        <div>
+          <span>Surah: {sura.id} | </span>
+          <span>Verses: {sura.total_verses} | </span>
+          <span>{sura.name} </span>
+          <span>{sura.translation}</span>
         </div>
       </header>
       <main className="main" style={{ fontSize: `${fontSize}px` }}>
