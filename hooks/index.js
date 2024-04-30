@@ -54,6 +54,29 @@ function useLanguage(defaultLanguage) {
   return { language, changeLanguage };
 }
 
+const useAyahs = () => {
+  const [ayahs, setAyahs] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const fetchAyahs = async () => {
+      try {
+        const response = await fetch("../data/1.json");
+        const data = await response.json();
+        setAyahs(data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching Ayahs:", error);
+        setLoading(false);
+      }
+    };
+
+    fetchAyahs();
+  }, []);
+
+  return { ayahs, loading };
+};
+
 function getWords(wordQty, setWordQty) {
   let i = 0;
   for (const key in wordQty) {

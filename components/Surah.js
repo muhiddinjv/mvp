@@ -8,16 +8,13 @@ function Sura() {
   const [wordQty, setWordQty] = React.useState(
     JSON.parse(localStorage.getItem("wordQty"))
   );
-  console.log('wordQty', wordQty)
-
-
+  
   React.useEffect(() => {
-    const fetchVerses = async () => {
+    const fetchData = async () => {
       try {
         const response = await fetch("../data/mvp.json");
         const data = await response.json();
-        setSura(data);
-  
+        
         const processedVerses = data.verses.map((verse) => {
           const words = verse[language].split(" ");
           for (let key in wordQty) {
@@ -25,18 +22,21 @@ function Sura() {
           }
           return words.join(" ");
         });
+        setSura(data);
         setVerses(processedVerses);
       } catch (error) {
-        console.log(error)
+        console.error(111,error)
       }
     };
 
-    fetchVerses();
+    fetchData();
   }, [language, wordQty]);
 
   React.useEffect(() => {
     localStorage.setItem("wordQty", JSON.stringify(wordQty));
   }, [wordQty]);
+
+  // console.log('wordQty', wordQty)
 
   return (
     <div
@@ -65,15 +65,15 @@ function Sura() {
         </div>
       </header>
       <main className="main" style={{ fontSize: `${fontSize}px` }}>
-      <Accordion verses={verse}/>
-        {/* <Test2 verses={sura} /> */}
-        
-        {verses.map((verse, index) => (
+      {/* <Accordion verses={verses}/> */}
+        {/* {sura != undefined && <Test2 verses={sura} />} */}
+        <Loader />
+        {/* {verses.map((verse, index) => (
           <div key={index}>
             <span>{index + 1} </span>
             <span className="mb-2">{verse}</span>
           </div>
-        ))}
+        ))} */}
       </main>
     </div>
   );
