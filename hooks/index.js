@@ -61,7 +61,7 @@ const useAyahs = () => {
   React.useEffect(() => {
     const fetchAyahs = async () => {
       try {
-        const response = await fetch("../data/1.json");
+        const response = await fetch("../data/36.json");
         const data = await response.json();
         setAyahs(data);
         setLoading(false);

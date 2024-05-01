@@ -1,42 +1,27 @@
 function Sura() {
-  const [ sura, setSura ] = React.useState({})
-  const [ verses, setVerses ] = React.useState([]);
+  const { ayahs, loading } = useAyahs();
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
-  const { language, changeLanguage } = useLanguage("translation");
-
+  const [ language, changeLanguage ] = React.useState("e");
   const [wordQty, setWordQty] = React.useState(
     JSON.parse(localStorage.getItem("wordQty"))
   );
   
-  React.useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("../data/mvp.json");
-        const data = await response.json();
-        
-        const processedVerses = data.verses.map((verse) => {
-          const words = verse[language].split(" ");
-          for (let key in wordQty) {
-            if (wordQty[key]) return words.slice(0, key).join(" ");
-          }
-          return words.join(" ");
-        });
-        setSura(data);
-        setVerses(processedVerses);
-      } catch (error) {
-        console.error(111,error)
-      }
-    };
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
-    fetchData();
-  }, [language, wordQty]);
-
-  React.useEffect(() => {
-    localStorage.setItem("wordQty", JSON.stringify(wordQty));
-  }, [wordQty]);
-
-  // console.log('wordQty', wordQty)
+  const groupedAyahs = [];
+  const ayahKeys = Object.keys(ayahs);
+  for (let i = 0; i < ayahKeys.length; i += 5) {
+    const group = ayahKeys.slice(i, i + 5).map(key => ayahs[key]);
+    groupedAyahs.push(group);
+  }
+  function handleLanguage(){
+    if (language == "e") changeLanguage("d");
+    if (language == "d") changeLanguage("c");
+    if (language == "c") changeLanguage("e");
+  }
 
   return (
     <div
@@ -50,7 +35,7 @@ function Sura() {
         <div className="tools w-full max-w-96 flex justify-between">
           <Button fn={() => getWords(wordQty, setWordQty)} text="words" />
           <Button fn={toggleTheme} text="theme" />
-          <Button fn={changeLanguage} text="language" />
+          <Button fn={handleLanguage} text="language" />
           <div className="font-size flex items-center">
             <Button fn={() => enlargeFont(false)} text="−" />
             <div className="fontSizeDiv mx-2 text-lg">{fontSize}</div>
@@ -58,22 +43,15 @@ function Sura() {
           </div>
         </div>
         <div>
-          <span>Surah: {sura.id} | </span>
-          <span>Verses: {sura.total_verses} | </span>
-          <span>{sura.name} </span>
-          <span>{sura.translation}</span>
+          <span>Surah: Yasin | </span>
+          <span>Verses: 84 | </span>
+          <span>Yaseen </span>
         </div>
       </header>
       <main className="main" style={{ fontSize: `${fontSize}px` }}>
-      {/* <Accordion verses={verses}/> */}
-        {/* {sura != undefined && <Test2 verses={sura} />} */}
-        <Loader />
-        {/* {verses.map((verse, index) => (
-          <div key={index}>
-            <span>{index + 1} </span>
-            <span className="mb-2">{verse}</span>
-          </div>
-        ))} */}
+        {groupedAyahs.map((group, index) => (
+          <Accordion key={index} titleAyah={group[0]} panelAyahs={group.slice(1)} lang={language} />
+        ))}
       </main>
     </div>
   );
