@@ -54,14 +54,14 @@ function useLanguage(defaultLanguage) {
   return { language, changeLanguage };
 }
 
-const useAyahs = () => {
+const useAyahs = (ayahNumber) => {
   const [ayahs, setAyahs] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     const fetchAyahs = async () => {
       try {
-        const response = await fetch("../data/36.json");
+        const response = await fetch(`../data/${ayahNumber}.json`);
         const data = await response.json();
         setAyahs(data);
         setLoading(false);
@@ -76,22 +76,3 @@ const useAyahs = () => {
 
   return { ayahs, loading };
 };
-
-function getWords(wordQty, setWordQty) {
-  let i = 0;
-  for (const key in wordQty) {
-    if (wordQty[key]) {
-      wordQty[key] = false;
-      i = Object.keys(wordQty).indexOf(key);
-    }
-  }
-  const nextKey = Object.keys(wordQty)[i + 1];
-
-  if (i === 3) {
-    wordQty[0] = true;
-  } else {
-    wordQty[nextKey] = true;
-  }
-  localStorage.setItem("wordQty", JSON.stringify(wordQty));
-  setWordQty(JSON.parse(localStorage.getItem("wordQty")));
-}
