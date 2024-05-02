@@ -4,6 +4,16 @@ const sajdaAyahs = [206, 15, 50, 109, 58, 18, 60, 26, 15, 24, 38, 62, 21, 19];
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
 
+    function playAudio(url) {
+        console.log(url)
+        const audio = new Audio('../data/aud/game.wav');
+        audio.play();
+        audio.onended = function () {
+            audio.pause();
+            audio.currentTime = 0;
+        };
+    }
+
     return (
         <div id={ayahKey} className="text-left">
             <span className="">{ayahKey}</span>
@@ -11,7 +21,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
                 <span className="arrow-up-icon">&#129033;</span>
             )}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
-                <span key={index} className="overflow-hidden  " data-ts-mishary={word.b} data-ts-husary={word.h}>
+                <span onClick={() => playAudio(word)} key={index} className="overflow-hidden  " data-ts-mishary={word.b} data-ts-husary={word.h}>
                     <span className="dark:text-white ml-1">{word[lang]}</span>
                 </span>
             ))}
