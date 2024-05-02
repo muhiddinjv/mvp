@@ -1,4 +1,3 @@
-// Define separate functions for each responsibility
 function useTheme(defaultTheme) {
   const [theme, setTheme] = React.useState(
     localStorage.getItem("theme") || defaultTheme
@@ -39,11 +38,9 @@ function useLanguage(defaultLanguage) {
 
   const changeLanguage = () => {
     const newLanguage =
-      language === "text"
-        ? "transliteration"
-        : language === "transliteration"
-        ? "translation"
-        : "text";
+    language === "e" ? "d" : 
+    language === "d" ? "c" : 
+    language === "c" ? "e" : "e";
     setLanguage(newLanguage);
   };
 
@@ -61,7 +58,7 @@ const useAyahs = (ayahNumber) => {
   React.useEffect(() => {
     const fetchAyahs = async () => {
       try {
-        const response = await fetch(`../data/${ayahNumber}.json`);
+        const response = await fetch(`../data/json/${ayahNumber}.json`);
         const data = await response.json();
         setAyahs(data);
         setLoading(false);

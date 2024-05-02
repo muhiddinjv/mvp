@@ -1,7 +1,7 @@
 const GlobalContext = React.createContext();
 
 const GlobalProvider = ({ children }) => {
-  const [wordLimit, setWordLimit] = React.useState(JSON.parse(localStorage.getItem("wordLimit"))||1000);
+  const [wordLimit, setWordLimit] = React.useState(JSON.parse(localStorage.getItem("wordLimit"))||100);
 
   return (
     <GlobalContext.Provider value={{ wordLimit, setWordLimit }}>
