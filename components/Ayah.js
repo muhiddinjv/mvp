@@ -1,18 +1,21 @@
 const sajdaSurahs = [7, 13, 16, 17, 19, 22, 25, 27, 32, 38, 41, 53, 84, 96];
 const sajdaAyahs = [206, 15, 50, 109, 58, 18, 60, 26, 15, 24, 38, 62, 21, 19];
 
+
+
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
 
     function playAudio(url) {
-        console.log(url)
-        const audio = new Audio('../data/aud/game.wav');
+        console.log('url.p', url.p)
+        const audio = new Audio(`../data/aud/${url.p}.wav`);
         audio.play();
         audio.onended = function () {
             audio.pause();
             audio.currentTime = 0;
         };
     }
+   
 
     return (
         <div id={ayahKey} className="text-left">
@@ -32,5 +35,6 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         </div>
     )
 };
+  
 
   

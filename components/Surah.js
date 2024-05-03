@@ -1,5 +1,39 @@
+function addPFieldToObject(obj) {
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const childObj = obj[key];
+      if (childObj.w && Array.isArray(childObj.w)) {
+        childObj.w.forEach((word, index) => {
+          const pageNumber = `036_${key.padStart(3, '0')}_${(index + 1).toString().padStart(3, '0')}`;
+          word.p = pageNumber;
+        });
+      }
+    }
+  }
+    // Convert the updated data to a JSON string
+  const jsonStr = JSON.stringify(obj, null, 2);
+
+  // Create a Blob with the JSON data
+  const blob = new Blob([jsonStr], { type: 'application/json' });
+
+  // Create a temporary URL for the Blob
+  const url = URL.createObjectURL(blob);
+
+  // Create a link element to trigger the download
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'updatedData.json';
+
+  // Append the link to the document and trigger the download
+  document.body.appendChild(link);
+  link.click();
+
+  // Clean up by revoking the URL object
+  URL.revokeObjectURL(url);
+}
+
 function Surah() {
-  const { ayahs, loading } = useAyahs(36);
+  const { ayahs, loading } = useAyahs(37);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage("e");
@@ -62,3 +96,4 @@ function Surah() {
     </div>
   );
 }
+
