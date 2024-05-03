@@ -7,13 +7,17 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
 
     function playAudio(url) {
-        console.log('url.p', url.p)
-        const audio = new Audio(`../data/aud/${url.p}.wav`);
-        audio.play();
-        audio.onended = function () {
-            audio.pause();
-            audio.currentTime = 0;
-        };
+        try {
+            console.log('url.p', url.p)
+            const audio = new Audio(`../data/aud/${url.p}.wav`);
+            audio.play();
+            audio.onended = function () {
+                audio.pause();
+                audio.currentTime = 0;
+            };
+        } catch (error) {
+            console.log('error', error)
+        }
     }
    
 

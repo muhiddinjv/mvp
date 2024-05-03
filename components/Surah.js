@@ -33,7 +33,7 @@ function addPFieldToObject(obj) {
 }
 
 function Surah() {
-  const { ayahs, loading } = useAyahs(37);
+  const { ayahs, loading } = useAyahs(36);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage("e");
