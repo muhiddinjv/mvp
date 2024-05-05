@@ -7,7 +7,7 @@ const Ayah = ({ ayahKey, ayah, lang, theme }) => {
     function playAudio(url) {
         try {
             console.log('url.p', url.p)
-            const audio = new Audio(`../data/aud/${url.p}.wav`);
+            const audio = new Audio(`../data/aud/${url.p}.mp3`);
             audio.play();
             audio.onended = function () {
                 audio.pause();
