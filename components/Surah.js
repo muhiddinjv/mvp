@@ -33,14 +33,14 @@ function Surah() {
     <div
       className={`${
         theme === "dark"
-          ? "bg-gray-800 text-white"
-          : "bg-gray-100 text-black"
+          ? "bg-gray-800 text-slate-300"
+          : "bg-gray-100 text-slate-800"
       } min-h-screen w-full pb-6`}
     >
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-56 flex justify-between">
           <Button theme={theme} fn={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
-          <Button theme={theme} fn={toggleTheme} text={theme=="light"?<span>&#9734;</span>:<span>&#9733;</span>} />
+          <Button theme={theme} fn={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} fn={changeLanguage} text={language} />
           <div className="font-size flex items-center">
             <Button theme={theme} fn={() => enlargeFont(false)} text="−" />
