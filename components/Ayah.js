@@ -4,6 +4,7 @@ const sajdaAyahs = [206, 15, 50, 109, 58, 18, 60, 26, 15, 24, 38, 62, 21, 19];
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
     const [audio, setAudio] = React.useState(null);
+    const [isPlaying, setIsPlaying] = React.useState(false);
 
     function playWord(url) {
         try {
@@ -22,6 +23,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     function playAyah(url) {
         if (audio && !audio.paused) {
             audio.pause();
+            setIsPlaying(false);
         } else {
             const middleDigits = url.p.split('_')[1];
             const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
@@ -32,8 +34,16 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             newAudio.onended = function () {
                 newAudio.pause();
                 newAudio.currentTime = 0;
+                setIsPlaying(false);
             };
+            setIsPlaying(true);
         }
+    }
+
+    function playButtons() {
+        return (
+            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`▷`}</span>
+        )
     }
 
     function highlightWord(id) {
@@ -50,7 +60,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}
-            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">▷</span>
+            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '||' : '▷'}`}</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-2 cursor-pointer">{word[lang]}</span>
             ))}
