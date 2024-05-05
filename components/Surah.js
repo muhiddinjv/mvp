@@ -68,18 +68,18 @@ function Surah() {
       className={`${
         theme === "dark"
           ? "bg-gray-800 text-white"
-          : "bg-gray-100 text-gray-900"
-      } h-full w-full relative`}
+          : "bg-gray-100 text-black"
+      } min-h-screen w-full`}
     >
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-56 flex justify-between">
-          <Button fn={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
-          <Button fn={toggleTheme} text={theme=="light"?<span>&#9734;</span>:<span>&#x263C;</span>} />
-          <Button fn={changeLanguage} text={language} />
+          <Button theme={theme} fn={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
+          <Button theme={theme} fn={toggleTheme} text={theme=="light"?<span>&#9734;</span>:<span>&#9728;</span>} />
+          <Button theme={theme} fn={changeLanguage} text={language} />
           <div className="font-size flex items-center">
-            <Button fn={() => enlargeFont(false)} text="−" />
+            <Button theme={theme} fn={() => enlargeFont(false)} text="−" />
             <div className="fontSizeDiv mx-2 text-lg">{fontSize}</div>
-            <Button fn={() => enlargeFont(true)} text="+" />
+            <Button theme={theme} fn={() => enlargeFont(true)} text="+" />
           </div>
         </div>
         <div className="hidden">
@@ -89,10 +89,9 @@ function Surah() {
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
         {groupedAyahs.map((group, index) => (
-          <Accordion key={index} titleAyah={group[0]} panelAyahs={group.slice(1)} lang={language} />
+          <Accordion key={index} titleAyah={group[0]} panelAyahs={group.slice(1)} lang={language} theme={theme}/>
         ))}
       </main>
-      {/* <div className="absolute z-0 top-0 left-0 bg-opacity-50 bg-slate-200 h-full w-full"></div> */}
     </div>
   );
 }

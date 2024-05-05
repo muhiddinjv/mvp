@@ -1,5 +1,6 @@
-function Button({fn, text}){
+function Button({theme, fn, text}){
   return (
-    <button onClick={fn} className="bg-gray-200 hover:bg-gray-300 text-black size-8 rounded">{text}</button>
+    <button onClick={fn} className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded`}>{text}</button>
   );
 }
+

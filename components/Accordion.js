@@ -1,4 +1,4 @@
-function Accordion({ titleAyah, panelAyahs, lang }) {
+function Accordion({ titleAyah, panelAyahs, lang, theme }) {
     const [expanded, setExpanded] = React.useState(false)
 
     return (
@@ -15,7 +15,7 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
             <div className={`grid transition-all duration-300 ease-in-out ${expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                 <p className="overflow-hidden ml-2">
                     {panelAyahs.map((ayah, index) => (
-                        <Ayah key={index} ayahKey={ayah.id} ayah={ayah} lang={lang}/>
+                        <Ayah key={index} ayahKey={ayah.id} ayah={ayah} lang={lang} theme={theme}/>
                     ))}
                 </p>
             </div>
