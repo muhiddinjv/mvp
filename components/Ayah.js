@@ -4,10 +4,24 @@ const sajdaAyahs = [206, 15, 50, 109, 58, 18, 60, 26, 15, 24, 38, 62, 21, 19];
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
 
-    function playAudio(url) {
+    function playWord(url) {
         try {
             highlightWord(url.p)
-            const audio = new Audio(`../data/aud/${url.p}.mp3`);
+            const audio = new Audio(`../data/aud/words/${url.p}.mp3`);
+            audio.play();
+            audio.onended = function () {
+                audio.pause();
+                audio.currentTime = 0;
+            };
+        } catch (error) {
+            console.log('error', error)
+        }
+    }
+
+    function playAyah(url) {
+        console.log(url);
+        try {
+            const audio = new Audio(`../data/aud/words/${url.p}.mp3`);
             audio.play();
             audio.onended = function () {
                 audio.pause();
@@ -27,13 +41,14 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     }
 
     return (
-        <div id={ayahKey} className="text-left">
+        <div id={ayahKey} className="text-left flex items-center">
             <span className="">{ayahKey}</span>
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}
+            <span onClick={() => playAyah(ayah.w[0])} className="cursor-pointer border">▷</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
-                <span data-id={word.p} onClick={() => playAudio(word)} key={index} className="overflow-hidden">
+                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="overflow-hidden">
                     <span className="ml-1 cursor-pointer">{word[lang]}</span>
                 </span>
             ))}
@@ -44,6 +59,11 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         </div>
     )
 };
+
+/*
+↺
+||
+*/
   
 
   

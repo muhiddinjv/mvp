@@ -57,9 +57,9 @@ $(".container").on("click", ".sw", function (a, c) {
 ```
 - https://quranwbw.com/36 the first word plays this audio https://words.audios.quranwbw.com/36/036_001_001.mp3
 
-major source 1 for data: https://github.com/qazasaz/quranwbw
-major source 2 for data: https://github.com/hablullah/data-quran
-major source 3 for data: https://github.com/gadingnst/quran-api
+- major source 1 for data: https://github.com/qazasaz/quranwbw
+- major source 2 for data: https://github.com/hablullah/data-quran
+- major source 3 for data: https://github.com/gadingnst/quran-api
 
 vscode extension: markdown preview mermaid support
 ```mermaid
