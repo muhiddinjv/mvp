@@ -1,37 +1,3 @@
-function addPFieldToObject(obj) {
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      const childObj = obj[key];
-      if (childObj.w && Array.isArray(childObj.w)) {
-        childObj.w.forEach((word, index) => {
-          const pageNumber = `036_${key.padStart(3, '0')}_${(index + 1).toString().padStart(3, '0')}`;
-          word.p = pageNumber;
-        });
-      }
-    }
-  }
-    // Convert the updated data to a JSON string
-  const jsonStr = JSON.stringify(obj, null, 2);
-
-  // Create a Blob with the JSON data
-  const blob = new Blob([jsonStr], { type: 'application/json' });
-
-  // Create a temporary URL for the Blob
-  const url = URL.createObjectURL(blob);
-
-  // Create a link element to trigger the download
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'updatedData.json';
-
-  // Append the link to the document and trigger the download
-  document.body.appendChild(link);
-  link.click();
-
-  // Clean up by revoking the URL object
-  URL.revokeObjectURL(url);
-}
-
 function Surah() {
   const { ayahs, loading } = useAyahs(36);
   const { theme, toggleTheme } = useTheme("dark");
@@ -57,7 +23,7 @@ function Surah() {
       else if (prevLimit === 7) newLimit = 5;
       else if (prevLimit === 5) newLimit = 3;
       else if (prevLimit === 3) newLimit = 1;
-      else newLimit = 100; // Reset to no limit
+      else newLimit = 100; // Reset to max limit
       localStorage.setItem('wordLimit', newLimit);
       return newLimit;
     });
@@ -89,7 +55,7 @@ function Surah() {
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
         {groupedAyahs.map((group, index) => (
-          <Accordion key={index} titleAyah={group[0]} panelAyahs={group.slice(1)} lang={language} theme={theme}/>
+          <Accordion key={index} titleAyah={group[0]} panelAyahs={group.slice(1)} lang={language}/>
         ))}
       </main>
     </div>

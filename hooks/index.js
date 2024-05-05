@@ -51,7 +51,7 @@ function useLanguage(defaultLanguage) {
   return { language, changeLanguage };
 }
 
-const useAyahs = (ayahNumber) => {
+function useAyahs(ayahNumber) {
   const [ayahs, setAyahs] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
@@ -73,3 +73,46 @@ const useAyahs = (ayahNumber) => {
 
   return { ayahs, loading };
 };
+
+function addPFieldToObject(obj) {
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const childObj = obj[key];
+      if (childObj.w && Array.isArray(childObj.w)) {
+        childObj.w.forEach((word, index) => {
+          const pageNumber = `036_${key.padStart(3, '0')}_${(index + 1).toString().padStart(3, '0')}`;
+          word.p = pageNumber;
+        });
+      }
+    }
+  }
+    // Convert the updated data to a JSON string
+  const jsonStr = JSON.stringify(obj, null, 2);
+
+  // Create a Blob with the JSON data
+  const blob = new Blob([jsonStr], { type: 'application/json' });
+
+  // Create a temporary URL for the Blob
+  const url = URL.createObjectURL(blob);
+
+  // Create a link element to trigger the download
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'updatedData.json';
+
+  // Append the link to the document and trigger the download
+  document.body.appendChild(link);
+  link.click();
+
+  // Clean up by revoking the URL object
+  URL.revokeObjectURL(url);
+}
+
+
+const uuid = () => {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r && 0x3 | 0x8);
+      setId(v.toString(16));
+      return v.toString(16);
+  });
+}
