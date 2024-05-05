@@ -12,8 +12,8 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
                     {[titleAyah].map((ayah, index) => <Ayah key={index} ayahKey={ayah.id} ayah={ayah} lang={lang}/>)}
                 </span>
             </div>
-            <div className={`grid transition-all duration-300 ease-in-out ${expanded ? 'grid-rows-[1fr] opacity-100 border-y' : 'grid-rows-[0fr] opacity-0'}`}>
-                <p className={`overflow-hidden ml-4 ${expanded && 'border-y'}`}>
+            <div className={`grid transition-all duration-300 ease-in-out ${expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                <p className={`overflow-hidden ml-4 ${expanded && 'border-b'}`}>
                     {panelAyahs.map((ayah, index) => (
                         <Ayah key={index} ayahKey={ayah.id} ayah={ayah} lang={lang}/>
                     ))}
