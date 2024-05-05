@@ -7,7 +7,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     function playWord(url) {
         try {
             highlightWord(url.p)
-            const audio = new Audio(`../data/aud/words/${url.p}.mp3`);
+            const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
             audio.play();
             audio.onended = function () {
                 audio.pause();
@@ -21,7 +21,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     function playAyah(url) {
         console.log(url);
         try {
-            const audio = new Audio(`../data/aud/words/${url.p}.mp3`);
+            const audio = new Audio(`../data/aud/ayah/${url.p}.mp3`);
             audio.play();
             audio.onended = function () {
                 audio.pause();
@@ -46,7 +46,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}
-            <span onClick={() => playAyah(ayah.w[0])} className="cursor-pointer border">▷</span>
+            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">▷</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onClick={() => playWord(word)} key={index} className="overflow-hidden">
                     <span className="ml-1 cursor-pointer">{word[lang]}</span>
