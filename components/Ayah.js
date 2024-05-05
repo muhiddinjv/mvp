@@ -3,6 +3,7 @@ const sajdaAyahs = [206, 15, 50, 109, 58, 18, 60, 26, 15, 24, 38, 62, 21, 19];
 
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
+    const [audio, setAudio] = React.useState(null);
 
     function playWord(url) {
         try {
@@ -18,26 +19,25 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         }
     }
 
-    let audio = null;
-
     function playAyah(url) {
         if (audio && !audio.paused) {
             audio.pause();
         } else {
             const middleDigits = url.p.split('_')[1];
             const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
-    
-            audio = new Audio(`../data/aud/ayah/${audioFileName}`);
-            audio.play();
-            audio.onended = function () {
-                audio.pause();
-                audio.currentTime = 0;
+
+            const newAudio = new Audio(`../data/aud/ayah/${audioFileName}`);
+            setAudio(newAudio);
+            newAudio.play();
+            newAudio.onended = function () {
+                newAudio.pause();
+                newAudio.currentTime = 0;
             };
         }
     }
 
-    function highlightWord(elId) {
-        const wordElement = document.querySelector(`[data-id="${elId}"]`);
+    function highlightWord(id) {
+        const wordElement = document.querySelector(`[data-id="${id}"]`);
         wordElement.classList.add('font-bold');
         setTimeout(() => {
             wordElement.classList.remove('font-bold');
@@ -46,15 +46,13 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
 
     return (
         <div id={ayahKey} className="text-left">
-            <span className="">{ayahKey}</span>
+            <span className="hidden">{ayahKey}</span>
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">▷</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
-                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="overflow-hidden">
-                    <span className="ml-2 cursor-pointer">{word[lang]}</span>
-                </span>
+                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-2 cursor-pointer">{word[lang]}</span>
             ))}
             {/* <div className="col-12 f-t">
                 <span className="a-n">{ayahKey} </span>
@@ -65,8 +63,8 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
 };
 
 /*
-↺
-||
+TODO: add these icons when needed
+↻ ◁ || ▷ ↺ 
 */
   
 
