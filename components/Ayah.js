@@ -20,9 +20,9 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
 
     function highlightWord(elId) {
         const wordElement = document.querySelector(`[data-id="${elId}"]`);
-        wordElement.classList.add('font-extrabold');
+        wordElement.classList.add('font-bold');
         setTimeout(() => {
-            wordElement.classList.remove('font-extrabold');
+            wordElement.classList.remove('font-bold');
         }, 1000);
     }
 
@@ -34,7 +34,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             )}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onClick={() => playAudio(word)} key={index} className="overflow-hidden">
-                    <span className="ml-1">{word[lang]}</span>
+                    <span className="ml-1 cursor-pointer">{word[lang]}</span>
                 </span>
             ))}
             {/* <div className="col-12 f-t">
