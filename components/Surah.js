@@ -40,7 +40,7 @@ function Surah() {
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-56 flex justify-between">
           <Button theme={theme} fn={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
-          <Button theme={theme} fn={toggleTheme} text={theme=="light"?<span>&#9734;</span>:<span>&#9728;</span>} />
+          <Button theme={theme} fn={toggleTheme} text={theme=="light"?<span>&#9734;</span>:<span>&#9733;</span>} />
           <Button theme={theme} fn={changeLanguage} text={language} />
           <div className="font-size flex items-center">
             <Button theme={theme} fn={() => enlargeFont(false)} text="−" />

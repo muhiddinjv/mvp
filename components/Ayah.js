@@ -18,17 +18,21 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         }
     }
 
+    let audio = null; // Declare audio object outside the function
+
     function playAyah(url) {
-        console.log(url);
-        try {
-            const audio = new Audio(`../data/aud/ayah/${url.p}.mp3`);
-            audio.play();
+        if (audio && !audio.paused) {
+            audio.pause(); // Pause if audio is currently playing
+        } else {
+            const middleDigits = url.p.split('_')[1]; // Extract the middle 3 digits
+            const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`; // Generate the audio file name
+    
+            audio = new Audio(`../data/aud/ayah/${audioFileName}`);
+            audio.play(); // Play if audio is paused or not playing
             audio.onended = function () {
                 audio.pause();
                 audio.currentTime = 0;
             };
-        } catch (error) {
-            console.log('error', error)
         }
     }
 
@@ -41,7 +45,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     }
 
     return (
-        <div id={ayahKey} className="text-left flex items-center">
+        <div id={ayahKey} className="text-left">
             <span className="">{ayahKey}</span>
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
@@ -49,7 +53,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">▷</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onClick={() => playWord(word)} key={index} className="overflow-hidden">
-                    <span className="ml-1 cursor-pointer">{word[lang]}</span>
+                    <span className="ml-2 cursor-pointer">{word[lang]}</span>
                 </span>
             ))}
             {/* <div className="col-12 f-t">
