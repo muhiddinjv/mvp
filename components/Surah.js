@@ -35,7 +35,7 @@ function Surah() {
         theme === "dark"
           ? "bg-gray-800 text-white"
           : "bg-gray-100 text-black"
-      } min-h-screen w-full`}
+      } min-h-screen w-full pb-6`}
     >
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-56 flex justify-between">
