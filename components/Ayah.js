@@ -18,17 +18,17 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         }
     }
 
-    let audio = null; // Declare audio object outside the function
+    let audio = null;
 
     function playAyah(url) {
         if (audio && !audio.paused) {
-            audio.pause(); // Pause if audio is currently playing
+            audio.pause();
         } else {
-            const middleDigits = url.p.split('_')[1]; // Extract the middle 3 digits
-            const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`; // Generate the audio file name
+            const middleDigits = url.p.split('_')[1];
+            const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
     
             audio = new Audio(`../data/aud/ayah/${audioFileName}`);
-            audio.play(); // Play if audio is paused or not playing
+            audio.play();
             audio.onended = function () {
                 audio.pause();
                 audio.currentTime = 0;
