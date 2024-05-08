@@ -5,8 +5,10 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
     const [audio, setAudio] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
+    const [isCycling, setIsCycling] = React.useState(false);
 
     function playWord(url) {
+        console.log('url', url)
         try {
             highlightWord(url.p)
             const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
@@ -40,10 +42,32 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         }
     }
 
-    function playButtons() {
-        return (
-            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`▷`}</span>
-        )
+    function cycleWords(urls) {
+        let currentIndex = 0;
+        let cycleCount = 1;
+        let playCount = 1;
+        let interval;
+    
+        function playNext() {
+            for (let i = 0; i < cycleCount; i++) {
+                for (let j = 0; j < currentIndex + 1; j++) {
+                    const url = urls[j % urls.length];
+                    playWord(url);
+                }
+            }
+    
+            currentIndex++;
+            if (currentIndex === urls.length) {
+                currentIndex = 0;
+                cycleCount++;
+                if (cycleCount > urls.length) {
+                    clearInterval(interval);
+                }
+            }
+        }
+    
+        playNext();
+        interval = setInterval(playNext, 2000); // Adjust the interval as needed
     }
 
     function highlightWord(id) {
@@ -60,7 +84,8 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}
-            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '||' : '▷'}`}</span>
+            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
+            <span onClick={() => cycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-2 cursor-pointer">{word[lang]}</span>
             ))}
