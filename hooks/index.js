@@ -116,3 +116,6 @@ function uuid(){
       return v.toString(16);
   });
 }
+
+const sajdaSurahs = [7, 13, 16, 17, 19, 22, 25, 27, 32, 38, 41, 53, 84, 96];
+const sajdaAyahs = [206, 15, 50, 109, 58, 18, 60, 26, 15, 24, 38, 62, 21, 19];
