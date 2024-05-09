@@ -1,5 +1,3 @@
-
-
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
     const [audioAyah, setAudioAyah] = React.useState(null);
@@ -24,16 +22,23 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         } else {
             const middleDigits = url.p.split('_')[1];
             const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
-
+    
             const audio = new Audio(`../data/aud/ayah/${audioFileName}`);
             setAudioAyah(audio);
             audio.play();
-            audio.onended = function () {
-                audio.pause();
-                audio.currentTime = 0;
-                setIsPlaying(false);
-            };
             setIsPlaying(true);
+    
+            let playCount = 1; 
+            audio.onended = function () {
+                if (playCount < 10) { 
+                    playCount++; 
+                    audio.play();
+                } else {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    setIsPlaying(false);
+                }
+            };
         }
     }
 
@@ -111,60 +116,6 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
 /*
 TODO: add these icons when needed
 ↻ ◁ || ▷ ↺ 
-
-function cycleWords(urls) {
-    let currentIndex = 0;
-    let interval;
-
-    function playNext() {
-        const url = urls[currentIndex % urls.length];
-        playWord(url);
-
-        currentIndex++;
-        if (currentIndex === urls.length) {
-            currentIndex = 0;
-        }
-    }
-
-    // playNext(); // Play the first audio immediately
-
-    interval = setInterval(playNext, 2000);
-}
-
-function cycleWords(urls) {
-    let currentIndex = 0;
-    let playCount = 0;
-    let reps = 1;
-    let interval;
-
-    function playNext() {
-        for (let i = 0; i < reps; i++) {
-            for (let j = 0; j <= currentIndex; j++) {
-                const url = urls[j % urls.length];
-                playWord(url);
-            }
-        }
-
-        playCount++;
-        if (playCount === currentIndex + 1) {
-            playCount = 0;
-            if (currentIndex === urls.length - 1) {
-                currentIndex = 0;
-                reps++;
-            } else {
-                currentIndex++;
-            }
-        }
-    }
-
-    playNext();
-    interval = setInterval(playNext, 2000);
-}
-
-- Cycle 1:  `u1`, end playing 
-- Cycle 2:  `u1`, end playing ,  `u2`, end playing ,  `u1`, end playing ,  `u2`, end playing 
-- Cycle 3:  `u1`, end playing ,  `u2`, end playing ,  `u3`, end playing ,  `u1`, end playing ,  `u2`, end playing ,  `u3`, end playing ,  `u1`, end playing ,  `u2`, end playing ,  `u3`, end playing 
-
 */
   
 
