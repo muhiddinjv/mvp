@@ -95,7 +95,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     }
 
     return (
-        <div id={ayahKey} className="text-left">
+        <div id={ayahKey} className="text-left break-all whitespace-normal">
             <span className="hidden">{ayahKey}</span>
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
