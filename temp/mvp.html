@@ -222,7 +222,7 @@
       }
 
       async function showSurah() {
-        const response = await fetch("../data/mvp.json");
+        const response = await fetch("./mvp.json");
         console.log('response', response)
         const data = await response.json();
         data.verses = data.verses.map((verse, index) => {
