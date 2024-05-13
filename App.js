@@ -1,6 +1,6 @@
 const GlobalContext = React.createContext();
 
-const GlobalProvider = ({ children }) => {
+function GlobalProvider({ children }){
   const [wordLimit, setWordLimit] = React.useState(
     JSON.parse(localStorage.getItem("wordLimit")) || 100
   );
@@ -15,7 +15,12 @@ const GlobalProvider = ({ children }) => {
 function App() {
   return (
     <GlobalProvider>
-      <Surah />
+      <Route path="/">
+        <Surahs />
+      </Route>
+      <Route path="/36">
+        <Surah />
+      </Route>
     </GlobalProvider>
   );
 }
