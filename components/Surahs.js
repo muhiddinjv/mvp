@@ -12,10 +12,10 @@ function Surahs() {
   }, [])  
 
   return (
-    <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} flex flex-col min-h-screen w-screen items-center justify-center p-2`}>
+    <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-3 gap-3 p-4 min-h-screen w-screen items-center justify-center`}>
         {chapters?.map(chapter => {
-          return (<span onClick={()=>setSurahNum(chapter.id)} className="mb-6">
-            <Link href={`/${chapter.id}`}  className="border px-4 py-2 rounded w-20">Start {chapter.id}</Link>
+          return (<span onClick={()=>setSurahNum(chapter.id)} className="px-4 py-2 border rounded">
+            <Link href={`/${chapter.id}`}>Start {chapter.id}</Link>
           </span>)
         })}
     </div>
