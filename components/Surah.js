@@ -1,9 +1,9 @@
 function Surah() {
-  const { ayahs, loading } = useAyahs(36);
+  const { wordLimit, setWordLimit, surahNum } = React.useContext(GlobalContext);
+  const { ayahs, loading } = useAyahs(surahNum);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage("e");
-  const { wordLimit, setWordLimit } = React.useContext(GlobalContext);
 
   let groupedAyahs = [];
   const ayahKeys = Object.keys(ayahs);
@@ -29,7 +29,7 @@ function Surah() {
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-64 flex justify-between">
-          <Link href="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
+          <Link href="/index.html" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
           <Button theme={theme} fn={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
           <Button theme={theme} fn={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} fn={changeLanguage} text={language} />

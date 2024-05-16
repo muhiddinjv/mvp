@@ -58,7 +58,7 @@ function useAyahs(ayahNumber) {
   React.useEffect(() => {
     const fetchAyahs = async () => {
       try {
-        const response = await fetch(`../data/json/${ayahNumber}.json`);
+        const response = await fetch(`../data/json/surah/${ayahNumber}.json`);
         const data = await response.json();
         setAyahs(data);
         setLoading(false);
