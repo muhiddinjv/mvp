@@ -58,7 +58,7 @@ function useAyahs(ayahNumber) {
   React.useEffect(() => {
     const fetchAyahs = async () => {
       try {
-        const response = await fetch(`../data/json/${ayahNumber}.json`);
+        const response = await fetch(`../data/json/surah/${ayahNumber}.json`);
         const data = await response.json();
         setAyahs(data);
         setLoading(false);
@@ -107,7 +107,6 @@ function addPFieldToObject(obj) {
   // Clean up by revoking the URL object
   URL.revokeObjectURL(url);
 }
-
 
 function uuid(){
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
