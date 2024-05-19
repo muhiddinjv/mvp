@@ -4,10 +4,7 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
     return (
         <div className="mx-4">
             <div className="flex items-center ">
-                <svg onClick={() => setExpanded(!expanded)} className="fill-indigo-500 shrink-0 cursor-pointer" width="10" height="10">
-                    <rect y="4" width="10" height="2" rx="1" className="transform origin-center transition duration-200 ease-out" />
-                    <rect y="4" width="10" height="2" rx="1" className={`transform origin-center ${!expanded && 'rotate-90'} transition duration-200 ease-out`}  />
-                </svg>
+                <span className="text-indigo-500 cursor-pointer text-bold shrink-0" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</span>
                 <span className="flex py-1 items-center ml-2" >
                     {[titleAyah].map((ayah, index) => <Ayah key={index} ayahKey={ayah.id} ayah={ayah} lang={lang}/>)}
                 </span>
@@ -22,3 +19,6 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
         </div>
     );
 }
+
+//Muhiddin, [5/19/24 3:02 PM]
+//➕➖

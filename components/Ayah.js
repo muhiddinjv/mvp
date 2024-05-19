@@ -43,12 +43,12 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     }
 
     function toggleCycleWords(urls) {
-        setIsCycling(!isCycling); // Toggle cycling state
+        setIsCycling(!isCycling);
         if (!isCycling) {
-            cycleWords(urls); // Start cycling if not currently cycling
+            cycleWords(urls); 
         } else {
             if (audioCycle) {
-                audioCycle.pause(); // Pause the current playing audio
+                audioCycle.pause(); 
             }
         }
     }
@@ -88,22 +88,22 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
 
     function highlightWord(id) {
         const wordElement = document.querySelector(`[data-id="${id}"]`);
-        wordElement.classList.add('font-bold');
+        wordElement.classList.add('text-indigo-500', 'font-bold');
         setTimeout(() => {
-            wordElement.classList.remove('font-bold');
+            wordElement.classList.remove('text-indigo-500', 'font-bold');
         }, 1000);
     }
 
     return (
         <div id={ayahKey} className="text-left break-all whitespace-normal">
-            <span className="hidden">{ayahKey}</span>
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
-            )}
+                )}
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
             <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
+            <span className=""> {ayahKey})</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
-                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-2 cursor-pointer">{word[lang]}</span>
+                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-1 cursor-pointer">{word[lang]}</span>
             ))}
             {/* <div className="col-12 f-t">
                 <span className="a-n">{ayahKey} </span>

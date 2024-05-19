@@ -8,9 +8,9 @@ function Surah() {
   let groupedAyahs = [];
   const ayahKeys = Object.keys(ayahs);
   for (let i = 0; i < ayahKeys.length; i += 5) {
-    const group = ayahKeys.slice(i, i + 5).map(key => ayahs[key]);
+    const group = ayahKeys.slice(i, i + 5).map(key => ({ ...ayahs[key], id: key }));
     groupedAyahs.push(group);
-  }
+}
 
   const cycleWordLimit = () => {
     setWordLimit((prevLimit) => {
