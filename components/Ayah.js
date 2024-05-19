@@ -101,14 +101,10 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
                 )}
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
             <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
-            <span className=""> {ayahKey}</span>
+            <span className="ml-1">{ayahKey}</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
-                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-1 cursor-pointer">{word[lang]}</span>
+                <span data-id={word.p} onClick={() => playWord(word)} key={index} className="ml-1 cursor-pointer rtl">{word[lang]}</span>
             ))}
-            {/* <div className="col-12 f-t">
-                <span className="a-n">{ayahKey} </span>
-                <span>{ayah.a.g}</span>
-            </div> */}
         </div>
     )
 };
