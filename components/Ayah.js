@@ -1,45 +1,12 @@
 
-const ClickDetector = () => {
-    const timer = React.useRef(null);
-    const clickCount = React.useRef(0);
-  
-  
-    const handleClick = () => {
-      clickCount.current += 1;
-  
-      // Clear the previous timer if it exists
-      if (timer.current) {
-        clearTimeout(timer.current);
-      }
-  
-      // Set a new timer to handle the single click event
-      timer.current = setTimeout(() => {
-        if (clickCount.current === 1) {
-          console.log("once clicked");
-        }
-        clickCount.current = 0;
-      }, 200); // 200ms is a common threshold for distinguishing between click and double click
-    };
-  
-    const handleDoubleClick = () => {
-      clearTimeout(timer.current);
-      clickCount.current = 0;
-      console.log("twice clicked");
-    };
-    return (
-        <button onClick={handleClick} onDoubleClick={handleDoubleClick}>Two Events call</button>
-    );
-  };
-
 const Ayah = ({ ayahKey, ayah, lang }) => {
     const { wordLimit } = React.useContext(GlobalContext);
     const [audioAyah, setAudioAyah] = React.useState(null);
-    const [audioWord, setAudioWord] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
     const [isCycling, setIsCycling] = React.useState(false);
     const [audioCycle, setAudioCycle] = React.useState(null);
     const [cycleFrom, setCycleFrom] = React.useState(null); 
-    
+     
     const timer = React.useRef(null);
     const clickCount = React.useRef(0);   
 
@@ -60,7 +27,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         }, 200);
     };
 
-    function startCycleFrom(index,id){
+    function startCycleFrom(index){
         clearTimeout(timer.current);
         clickCount.current = 0;
         setCycleFrom(index)
@@ -145,8 +112,6 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         }, 1000);
     }
 
-
-
     return (
         <div id={ayahKey} className="text-left break-all whitespace-normal">
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
@@ -163,7 +128,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
 };
 
 /*
-TODO: add these icons when needed
+TODO: add when needed
 ↻ ◁ || ▷ ↺ 
 */
   

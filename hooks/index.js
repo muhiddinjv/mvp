@@ -74,6 +74,19 @@ function useAyahs(ayahNumber) {
   return { ayahs, loading };
 };
 
+function addNewline(array, lang){
+  let newResult = '';
+  for (let i = 0; i < array.length; i++) {
+    newResult += array[i][lang];
+    if ((i + 1) % 3 === 0) {
+      newResult += '\n';
+    } else {
+      newResult += ' ';
+    }
+  }
+  return newResult;
+};
+
 function addPFieldToObject(obj) {
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {

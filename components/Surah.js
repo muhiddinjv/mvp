@@ -10,7 +10,7 @@ function Surah() {
   for (let i = 0; i < ayahKeys.length; i += 5) {
     const group = ayahKeys.slice(i, i + 5).map(key => ({ ...ayahs[key], id: key }));
     groupedAyahs.push(group);
-}
+  }
 
   const cycleWordLimit = () => {
     setWordLimit((prevLimit) => {
@@ -28,15 +28,15 @@ function Surah() {
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
       <header className="header flex flex-col items-center p-4">
-        <div className="tools w-full max-w-64 flex justify-between">
+        <div className="tools w-full max-w-72 flex justify-between">
           <Link href="/index.html" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
-          <Button theme={theme} fn={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
-          <Button theme={theme} fn={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
-          <Button theme={theme} fn={changeLanguage} text={language} />
+          <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
+          <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
+          <Button theme={theme} onClick={changeLanguage} text={language} />
           <div className="font-size flex items-center">
-            <Button theme={theme} fn={() => enlargeFont(false)} text="−" />
+            <Button theme={theme} onClick={() => enlargeFont(false)} text="−" />
             <div className="fontSizeDiv mx-2 text-lg">{fontSize}</div>
-            <Button theme={theme} fn={() => enlargeFont(true)} text="+" />
+            <Button theme={theme} onClick={() => enlargeFont(true)} text="+" />
           </div>
         </div>
         <div className="hidden">
