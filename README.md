@@ -12,6 +12,8 @@ This code is a jQuery function that handles a click event on elements with the c
 8. It pauses any currently playing audio, sets the source of the audio element to the constructed URL, loads the audio file, and plays it. 
 9. It sets an event handler for when the audio playback ends, which pauses the audio, resets the playback time, and removes the classes "ayah-hover", "wa-hover", and "f-t-hover" from elements.
 
+write a js function that takes all the json files number 1 to 114 in a folder titled "input" and convers them into csv files and puts them into a folder title "output". These 2 folders already exists in the root directory where the function is run. The json files follow the json pattern above. The function must extract the verses array and turn that into a csv file with 4 columns; id, text, translation and transliteration and each row must contain the values from each object in the verses array. Use pure js to get this job done. 
+
 ```js
 $(".container").on("click", ".sw", function (a, c) {
   c = a || window.event;
