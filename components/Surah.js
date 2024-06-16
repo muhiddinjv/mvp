@@ -3,7 +3,7 @@ function Surah() {
   const { ayahs, loading } = useAyahs(surahNum);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
-  const { language, changeLanguage } = useLanguage("en");
+  const { language, changeLanguage } = useLanguage();
 
   let groupedAyahs = [];
   const ayahKeys = Object.keys(ayahs);

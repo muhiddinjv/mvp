@@ -31,9 +31,9 @@ function useFontSize(defaultSize) {
   return { fontSize, enlargeFont };
 }
 
-function useLanguage(defaultLanguage) {
+function useLanguage() {
   const [language, setLanguage] = React.useState(
-    localStorage.getItem("language") || defaultLanguage
+    localStorage.getItem("language") || 'en'
   );
 
   const changeLanguage = () => {

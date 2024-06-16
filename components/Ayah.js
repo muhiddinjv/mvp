@@ -1,6 +1,6 @@
 
 const Ayah = ({ ayahKey, ayah, lang }) => {
-    const { wordLimit } = React.useContext(GlobalContext);
+    const { wordLimit, surahNum } = React.useContext(GlobalContext);
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
     const [isCycling, setIsCycling] = React.useState(false);
@@ -8,7 +8,13 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     const [cycleFrom, setCycleFrom] = React.useState(null); 
      
     const timer = React.useRef(null);
-    const clickCount = React.useRef(0);   
+    const clickCount = React.useRef(0); 
+    
+    const localUrlWord = '../data/aud/word';
+    const localUrlAyah = '../data/aud/ayah';
+    const remoteUrlWord = `https://words.audios.quranwbw.com/${surahNum}`;
+    const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
+    console.log('surahnum',surahNum);
 
     function playWord(url){
         clickCount.current += 1;
@@ -20,8 +26,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
         timer.current = setTimeout(() => {
           if (clickCount.current === 1) {
             highlightWord(url.p);
-            const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
-            // const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
+            const audio = new Audio(`${remoteUrlWord}/${url.p}.mp3`);
             audio.play();
           }
           clickCount.current = 0;
@@ -42,8 +47,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             const middleDigits = url.p.split('_')[1];
             const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
     
-            const audio = new Audio(`../data/aud/ayah/${audioFileName}`);
-            // const audio = new Audio(`../data/aud/ayah/${audioFileName}`);
+            const audio = new Audio(`${remoteUrlAyah}/${audioFileName}`);
             setAudioAyah(audio);
             audio.play();
             setIsPlaying(true);
@@ -94,8 +98,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     
             const url = urls[urlIndex];
             highlightWord(url.p);
-            const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
-            // const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
+            const audio = new Audio(`${remoteUrlWord}/${url.p}.mp3`);
             setAudioCycle(audio);
             audio.play();
             audio.onended = function() {
