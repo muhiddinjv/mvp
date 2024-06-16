@@ -14,7 +14,6 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
     const localUrlAyah = '../data/aud/ayah';
     const remoteUrlWord = `https://words.audios.quranwbw.com/${surahNum}`;
     const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
-    console.log('surahnum',surahNum);
 
     function playWord(url){
         clickCount.current += 1;

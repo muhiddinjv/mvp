@@ -36,6 +36,12 @@ function useLanguage() {
     localStorage.getItem("language") || 'en'
   );
 
+  React.useEffect(() => {
+    if (language === undefined) {
+      setLanguage('en');
+    }
+  }, []);
+
   const changeLanguage = () => {
     const newLanguage =
     language === "en" ? "tr" : 
