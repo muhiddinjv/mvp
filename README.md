@@ -1,6 +1,6 @@
 # mvp
 
-- https://quranwbw.com/36 the first word plays the word below 
+- https://quranwbw.com/36 the first word plays the word below: 
 - words: https://words.audios.quranwbw.com/36/036_001_001.mp3
 - ayahs: https://everyayah.com/data/Alafasy_128kbps/036002.mp3
 - MEGA SOURCE: https://github.com/risan/quran-json/tree/main
