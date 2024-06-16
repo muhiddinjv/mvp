@@ -4,30 +4,34 @@
       {
         "b": "0.06",
         "h": "0.05",
-        "c": "بِسْمِ",
-        "d": "bis'mi",
-        "e": "In (the) name"
+        "ar": "بِسْمِ",
+        "tr": "bis'mi",
+        "en": "In (the) name",
+        "p": "001_001_001"
       },
       {
         "b": "0.62",
         "h": "0.52",
-        "c": "اللَّهِ",
-        "d": "l-lahi",
-        "e": "(of) Allah"
+        "ar": "اللَّهِ",
+        "tr": "l-lahi",
+        "en": "(of) Allah",
+        "p": "001_001_002"
       },
       {
         "b": "1.3",
         "h": "1.19",
-        "c": "الرَّحْمَنِ",
-        "d": "l-raḥmāni",
-        "e": "the Most Gracious"
+        "ar": "الرَّحْمَنِ",
+        "tr": "l-raḥmāni",
+        "en": "the Most Gracious",
+        "p": "001_001_003"
       },
       {
         "b": "2.4",
         "h": "2.35",
-        "c": "الرَّحِيمِ",
-        "d": "l-raḥīmi",
-        "e": "the Most Merciful"
+        "ar": "الرَّحِيمِ",
+        "tr": "l-raḥīmi",
+        "en": "the Most Merciful",
+        "p": "001_001_004"
       }
     ],
     "a": {
@@ -39,190 +43,237 @@
       {
         "b": "0.08",
         "h": "0.7",
-        "c": "الْحَمْدُ",
-        "d": "al-ḥamdu",
-        "e": "All praises and thanks"
+        "ar": "الْحَمْدُ",
+        "tr": "al-ḥamdu",
+        "en": "All praises and thanks",
+        "p": "001_002_001"
       },
       {
         "b": "0.97",
         "h": "1.42",
-        "c": "لِلَّهِ",
-        "d": "lillahi",
-        "e": "(be) to Allah"
+        "ar": "لِلَّهِ",
+        "tr": "lillahi",
+        "en": "(be) to Allah",
+        "p": "001_002_002"
       },
       {
         "b": "1.8",
         "h": "2.21",
-        "c": "رَبِّ",
-        "d": "rabbi",
-        "e": "(the) Lord"
+        "ar": "رَبِّ",
+        "tr": "rabbi",
+        "en": "(the) Lord",
+        "p": "001_002_003"
       },
       {
         "b": "2.4",
         "h": "2.89",
-        "c": "الْعَالَمِينَ",
-        "d": "l-ʿālamīna",
-        "e": "(of all) the worlds"
+        "ar": "الْعَالَمِينَ",
+        "tr": "l-ʿālamīna",
+        "en": "(of all) the worlds",
+        "p": "001_002_004"
       }
     ],
-    "a": { "g": "[All] praise is [due] to Allah, Lord of the worlds -" }
+    "a": {
+      "g": "[All] praise is [due] to Allah, Lord of the worlds -"
+    }
   },
   "3": {
     "w": [
       {
         "b": "0.04",
         "h": "0.15",
-        "c": "الرَّحْمَنِ",
-        "d": "al-raḥmāni",
-        "e": "The Most Gracious"
+        "ar": "الرَّحْمَنِ",
+        "tr": "al-raḥmāni",
+        "en": "The Most Gracious",
+        "p": "001_003_001"
       },
       {
         "b": "1.2",
         "h": "1.41",
-        "c": "الرَّحِيمِ",
-        "d": "l-raḥīmi",
-        "e": "the Most Merciful"
+        "ar": "الرَّحِيمِ",
+        "tr": "l-raḥīmi",
+        "en": "the Most Merciful",
+        "p": "001_003_002"
       }
     ],
-    "a": { "g": "The Entirely Merciful, the Especially Merciful," }
+    "a": {
+      "g": "The Entirely Merciful, the Especially Merciful,"
+    }
   },
   "4": {
     "w": [
-      { "b": "0.06", "h": "0", "c": "مَالِكِ", "d": "māliki", "e": "Master" },
+      {
+        "b": "0.06",
+        "h": "0",
+        "ar": "مَالِكِ",
+        "tr": "māliki",
+        "en": "Master",
+        "p": "001_004_001"
+      },
       {
         "b": "0.85",
         "h": "1.05",
-        "c": "يَوْمِ",
-        "d": "yawmi",
-        "e": "(of the) Day"
+        "ar": "يَوْمِ",
+        "tr": "yawmi",
+        "en": "(of the) Day",
+        "p": "001_004_002"
       },
       {
         "b": "1.4",
         "h": "1.67",
-        "c": "الدِّينِ",
-        "d": "l-dīni",
-        "e": "(of) [the] Judgment"
+        "ar": "الدِّينِ",
+        "tr": "l-dīni",
+        "en": "(of) [the] Judgment",
+        "p": "001_004_003"
       }
     ],
-    "a": { "g": "Sovereign of the Day of Recompense." }
+    "a": {
+      "g": "Sovereign of the Day of Recompense."
+    }
   },
   "5": {
     "w": [
       {
         "b": "0.03",
         "h": "0.35",
-        "c": "إِيَّاكَ",
-        "d": "iyyāka",
-        "e": "You Alone"
+        "ar": "إِيَّاكَ",
+        "tr": "iyyāka",
+        "en": "You Alone",
+        "p": "001_005_001"
       },
       {
         "b": "0.98",
         "h": "1.32",
-        "c": "نَعْبُدُ",
-        "d": "naʿbudu",
-        "e": "we worship"
+        "ar": "نَعْبُدُ",
+        "tr": "naʿbudu",
+        "en": "we worship",
+        "p": "001_005_002"
       },
       {
         "b": "1.7",
         "h": "2.22",
-        "c": "وَإِيَّاكَ",
-        "d": "wa-iyyāka",
-        "e": "and You Alone"
+        "ar": "وَإِيَّاكَ",
+        "tr": "wa-iyyāka",
+        "en": "and You Alone",
+        "p": "001_005_003"
       },
       {
         "b": "2.8",
         "h": "3.52",
-        "c": "نَسْتَعِينُ",
-        "d": "nastaʿīnu",
-        "e": "we ask for help"
+        "ar": "نَسْتَعِينُ",
+        "tr": "nastaʿīnu",
+        "en": "we ask for help",
+        "p": "001_005_004"
       }
     ],
-    "a": { "g": "It is You we worship and You we ask for help." }
+    "a": {
+      "g": "It is You we worship and You we ask for help."
+    }
   },
   "6": {
     "w": [
       {
         "b": "0.03",
         "h": "0.3",
-        "c": "اهْدِنَا",
-        "d": "ih'dinā",
-        "e": "Guide us"
+        "ar": "اهْدِنَا",
+        "tr": "ih'dinā",
+        "en": "Guide us",
+        "p": "001_006_001"
       },
       {
         "b": "0.68",
         "h": "0.88",
-        "c": "الصِّرَاطَ",
-        "d": "l-ṣirāṭa",
-        "e": "(to) the path"
+        "ar": "الصِّرَاطَ",
+        "tr": "l-ṣirāṭa",
+        "en": "(to) the path",
+        "p": "001_006_002"
       },
       {
         "b": "1.6",
         "h": "1.8",
-        "c": "الْمُسْتَقِيمَ",
-        "d": "l-mus'taqīma",
-        "e": "the straight"
+        "ar": "الْمُسْتَقِيمَ",
+        "tr": "l-mus'taqīma",
+        "en": "the straight",
+        "p": "001_006_003"
       }
     ],
-    "a": { "g": "Guide us to the straight path -" }
+    "a": {
+      "g": "Guide us to the straight path -"
+    }
   },
   "7": {
     "w": [
       {
         "b": "0.03",
         "h": "0.45",
-        "c": "صِرَاطَ",
-        "d": "ṣirāṭa",
-        "e": "(The) path"
+        "ar": "صِرَاطَ",
+        "tr": "ṣirāṭa",
+        "en": "(The) path",
+        "p": "001_007_001"
       },
       {
         "b": "0.75",
         "h": "1.21",
-        "c": "الَّذِينَ",
-        "d": "alladhīna",
-        "e": "(of) those"
+        "ar": "الَّذِينَ",
+        "tr": "alladhīna",
+        "en": "(of) those",
+        "p": "001_007_002"
       },
       {
         "b": "1.7",
         "h": "2.12",
-        "c": "أَنْعَمْتَ",
-        "d": "anʿamta",
-        "e": "You have bestowed (Your) Favors"
+        "ar": "أَنْعَمْتَ",
+        "tr": "anʿamta",
+        "en": "You have bestowed (Your) Favors",
+        "p": "001_007_003"
       },
       {
         "b": "2.6",
         "h": "3.08",
-        "c": "عَلَيْهِمْ",
-        "d": "ʿalayhim",
-        "e": "on them"
+        "ar": "عَلَيْهِمْ",
+        "tr": "ʿalayhim",
+        "en": "on them",
+        "p": "001_007_004"
       },
       {
         "b": "3.6",
         "h": "4.23",
-        "c": "غَيْرِ",
-        "d": "ghayri",
-        "e": "not (of)"
+        "ar": "غَيْرِ",
+        "tr": "ghayri",
+        "en": "not (of)",
+        "p": "001_007_005"
       },
       {
         "b": "4.2",
         "h": "4.95",
-        "c": "الْمَغْضُوبِ",
-        "d": "l-maghḍūbi",
-        "e": "those who earned (Your) wrath"
+        "ar": "الْمَغْضُوبِ",
+        "tr": "l-maghḍūbi",
+        "en": "those who earned (Your) wrath",
+        "p": "001_007_006"
       },
       {
         "b": "5.3",
         "h": "6.21",
-        "c": "عَلَيْهِمْ",
-        "d": "ʿalayhim",
-        "e": "on themselves"
+        "ar": "عَلَيْهِمْ",
+        "tr": "ʿalayhim",
+        "en": "on themselves",
+        "p": "001_007_007"
       },
-      { "b": "6.3", "h": "7.38", "c": "وَلَا", "d": "walā", "e": "and not" },
+      {
+        "b": "6.3",
+        "h": "7.38",
+        "ar": "وَلَا",
+        "tr": "walā",
+        "en": "and not",
+        "p": "001_007_008"
+      },
       {
         "b": "6.6",
         "h": "7.7",
-        "c": "الضَّالِّينَ",
-        "d": "l-ḍālīna",
-        "e": "(of) those who go astray"
+        "ar": "الضَّالِّينَ",
+        "tr": "l-ḍālīna",
+        "en": "(of) those who go astray",
+        "p": "001_007_009"
       }
     ],
     "a": {

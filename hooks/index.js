@@ -38,9 +38,9 @@ function useLanguage(defaultLanguage) {
 
   const changeLanguage = () => {
     const newLanguage =
-    language === "e" ? "d" : 
-    language === "d" ? "c" : 
-    language === "c" ? "e" : "e";
+    language === "en" ? "tr" : 
+    language === "tr" ? "ar" : 
+    language === "ar" ? "en" : "en";
     setLanguage(newLanguage);
   };
 

@@ -284,17 +284,19 @@ function romanizeArabic2(text, arabLetters) {
   return result;
 }
 
+const story = 'هناك ولد. اسمه إيلون ماسك. يومًا ما، يذهب إلى المتجر لأنه يريد شراء صاروخ. يشتري صاروخ لعبة. هو سعيد.'
+
 document.querySelector(".table").innerHTML = generateTable(
   lettersColors,
   aralphabet
 );
 
 document.querySelector(".output").innerHTML = colorizeText(
-  alImran154arab,
+  story,
   lettersColors
 );
 
 document.querySelector(".two").innerHTML = romanizeArabic(
-  alImran154arab,
+  story,
   arabLetters
 );

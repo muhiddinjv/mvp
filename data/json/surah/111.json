@@ -1,1 +1,221 @@
-{"1":{"w":[{"b":"0.03","h":"1.1","c":"تَبَّتْ","d":"tabbat","e":"Perish"},{"b":"0.8","h":"2.21","c":"يَدَا","d":"yadā","e":"(the) hands"},{"b":"1.3","h":"3.03","c":"أَبِي","d":"abī","e":"(of) Abu"},{"b":"3.8","h":"5.28","c":"لَهَبٍ","d":"lahabin","e":"Lahab"},{"b":"5.4","h":"7.27","c":"وَتَبَّ","d":"watabba","e":"and perish he"}],"a":{"g":"May the hands of Abu Lahab be ruined, and ruined is he."}},"2":{"w":[{"b":"0.05","h":"0.5","c":"مَا","d":"mā","e":"Not"},{"b":"2.2","h":"2.22","c":"أَغْنَى","d":"aghnā","e":"(will) avail"},{"b":"3.0","h":"3.69","c":"عَنْهُ","d":"ʿanhu","e":"him"},{"b":"3.8","h":"5.07","c":"مَالُهُ","d":"māluhu","e":"his wealth"},{"b":"4.9","h":"7.05","c":"وَمَا","d":"wamā","e":"and what"},{"b":"5.5","h":"8.13","c":"كَسَبَ","d":"kasaba","e":"he earned"}],"a":{"g":"His wealth will not avail him or that which he gained."}},"3":{"w":[{"b":"0.03","h":"0.7","c":"سَيَصْلَى","d":"sayaṣlā","e":"He will be burnt"},{"b":"1.1","h":"2.42","c":"نَارًا","d":"nāran","e":"(in) a Fire"},{"b":"2.9","h":"4.4","c":"ذَاتَ","d":"dhāta","e":"of"},{"b":"3.6","h":"5.73","c":"لَهَبٍ","d":"lahabin","e":"Blazing Flames"}],"a":{"g":"He will [enter to] burn in a Fire of [blazing] flame"}},"4":{"w":[{"b":"0.04","h":"0.35","c":"وَامْرَأَتُهُ","d":"wa-im'ra-atuhu","e":"And his wife"},{"b":"1.4","h":"2.78","c":"حَمَّالَةَ","d":"ḥammālata","e":"(the) carrier"},{"b":"3.8","h":"5.44","c":"الْحَطَبِ","d":"l-ḥaṭabi","e":"(of) firewood"}],"a":{"g":"And his wife [as well] - the carrier of firewood."}},"5":{"w":[{"b":"0.03","h":"0.55","c":"فِي","d":"fī","e":"Around"},{"b":"0.4","h":"1.2","c":"جِيدِهَا","d":"jīdihā","e":"her neck"},{"b":"1.4","h":"3.11","c":"حَبْلٌ","d":"ḥablun","e":"(will be) a rope"},{"b":"3.4","h":"5.09","c":"مِنْ","d":"min","e":"of"},{"b":"4.6","h":"5.99","c":"مَسَدٍ","d":"masadin","e":"palm-fiber"}],"a":{"g":"Around her neck is a rope of [twisted] fiber."}}}
+{
+  "1": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "1.1",
+        "ar": "تَبَّتْ",
+        "tr": "tabbat",
+        "en": "Perish",
+        "p": "111_001_001"
+      },
+      {
+        "b": "0.8",
+        "h": "2.21",
+        "ar": "يَدَا",
+        "tr": "yadā",
+        "en": "(the) hands",
+        "p": "111_001_002"
+      },
+      {
+        "b": "1.3",
+        "h": "3.03",
+        "ar": "أَبِي",
+        "tr": "abī",
+        "en": "(of) Abu",
+        "p": "111_001_003"
+      },
+      {
+        "b": "3.8",
+        "h": "5.28",
+        "ar": "لَهَبٍ",
+        "tr": "lahabin",
+        "en": "Lahab",
+        "p": "111_001_004"
+      },
+      {
+        "b": "5.4",
+        "h": "7.27",
+        "ar": "وَتَبَّ",
+        "tr": "watabba",
+        "en": "and perish he",
+        "p": "111_001_005"
+      }
+    ],
+    "a": {
+      "g": "May the hands of Abu Lahab be ruined, and ruined is he."
+    }
+  },
+  "2": {
+    "w": [
+      {
+        "b": "0.05",
+        "h": "0.5",
+        "ar": "مَا",
+        "tr": "mā",
+        "en": "Not",
+        "p": "111_002_001"
+      },
+      {
+        "b": "2.2",
+        "h": "2.22",
+        "ar": "أَغْنَى",
+        "tr": "aghnā",
+        "en": "(will) avail",
+        "p": "111_002_002"
+      },
+      {
+        "b": "3.0",
+        "h": "3.69",
+        "ar": "عَنْهُ",
+        "tr": "ʿanhu",
+        "en": "him",
+        "p": "111_002_003"
+      },
+      {
+        "b": "3.8",
+        "h": "5.07",
+        "ar": "مَالُهُ",
+        "tr": "māluhu",
+        "en": "his wealth",
+        "p": "111_002_004"
+      },
+      {
+        "b": "4.9",
+        "h": "7.05",
+        "ar": "وَمَا",
+        "tr": "wamā",
+        "en": "and what",
+        "p": "111_002_005"
+      },
+      {
+        "b": "5.5",
+        "h": "8.13",
+        "ar": "كَسَبَ",
+        "tr": "kasaba",
+        "en": "he earned",
+        "p": "111_002_006"
+      }
+    ],
+    "a": {
+      "g": "His wealth will not avail him or that which he gained."
+    }
+  },
+  "3": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.7",
+        "ar": "سَيَصْلَى",
+        "tr": "sayaṣlā",
+        "en": "He will be burnt",
+        "p": "111_003_001"
+      },
+      {
+        "b": "1.1",
+        "h": "2.42",
+        "ar": "نَارًا",
+        "tr": "nāran",
+        "en": "(in) a Fire",
+        "p": "111_003_002"
+      },
+      {
+        "b": "2.9",
+        "h": "4.4",
+        "ar": "ذَاتَ",
+        "tr": "dhāta",
+        "en": "of",
+        "p": "111_003_003"
+      },
+      {
+        "b": "3.6",
+        "h": "5.73",
+        "ar": "لَهَبٍ",
+        "tr": "lahabin",
+        "en": "Blazing Flames",
+        "p": "111_003_004"
+      }
+    ],
+    "a": {
+      "g": "He will [enter to] burn in a Fire of [blazing] flame"
+    }
+  },
+  "4": {
+    "w": [
+      {
+        "b": "0.04",
+        "h": "0.35",
+        "ar": "وَامْرَأَتُهُ",
+        "tr": "wa-im'ra-atuhu",
+        "en": "And his wife",
+        "p": "111_004_001"
+      },
+      {
+        "b": "1.4",
+        "h": "2.78",
+        "ar": "حَمَّالَةَ",
+        "tr": "ḥammālata",
+        "en": "(the) carrier",
+        "p": "111_004_002"
+      },
+      {
+        "b": "3.8",
+        "h": "5.44",
+        "ar": "الْحَطَبِ",
+        "tr": "l-ḥaṭabi",
+        "en": "(of) firewood",
+        "p": "111_004_003"
+      }
+    ],
+    "a": {
+      "g": "And his wife [as well] - the carrier of firewood."
+    }
+  },
+  "5": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.55",
+        "ar": "فِي",
+        "tr": "fī",
+        "en": "Around",
+        "p": "111_005_001"
+      },
+      {
+        "b": "0.4",
+        "h": "1.2",
+        "ar": "جِيدِهَا",
+        "tr": "jīdihā",
+        "en": "her neck",
+        "p": "111_005_002"
+      },
+      {
+        "b": "1.4",
+        "h": "3.11",
+        "ar": "حَبْلٌ",
+        "tr": "ḥablun",
+        "en": "(will be) a rope",
+        "p": "111_005_003"
+      },
+      {
+        "b": "3.4",
+        "h": "5.09",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "of",
+        "p": "111_005_004"
+      },
+      {
+        "b": "4.6",
+        "h": "5.99",
+        "ar": "مَسَدٍ",
+        "tr": "masadin",
+        "en": "palm-fiber",
+        "p": "111_005_005"
+      }
+    ],
+    "a": {
+      "g": "Around her neck is a rope of [twisted] fiber."
+    }
+  }
+}

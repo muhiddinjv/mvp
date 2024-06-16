@@ -1,1 +1,274 @@
-{"1":{"w":[{"b":"0.15","h":"0.4","c":"أَلَمْ","d":"alam","e":"Have not"},{"b":"0.61","h":"1.12","c":"نَشْرَحْ","d":"nashraḥ","e":"We expanded"},{"b":"1.4","h":"2.37","c":"لَكَ","d":"laka","e":"for you"},{"b":"1.8","h":"3.25","c":"صَدْرَكَ","d":"ṣadraka","e":"your breast"}],"a":{"g":"Did We not expand for you, [O Muhammad], your breast?"}},"2":{"w":[{"b":"0.03","h":"0.3","c":"وَوَضَعْنَا","d":"wawaḍaʿnā","e":"And We removed"},{"b":"1.2","h":"2.25","c":"عَنْكَ","d":"ʿanka","e":"from you"},{"b":"2.8","h":"3.96","c":"وِزْرَكَ","d":"wiz'raka","e":"your burden"}],"a":{"g":"And We removed from you your burden"}},"3":{"w":[{"b":"0.03","h":"0.4","c":"الَّذِي","d":"alladhī","e":"Which"},{"b":"2.6","h":"3.08","c":"أَنْقَضَ","d":"anqaḍa","e":"weighed upon"},{"b":"4.1","h":"4.85","c":"ظَهْرَكَ","d":"ẓahraka","e":"your back"}],"a":{"g":"Which had weighed upon your back"}},"4":{"w":[{"b":"0.04","h":"0.2","c":"وَرَفَعْنَا","d":"warafaʿnā","e":"And We raised high"},{"b":"1.3","h":"2.25","c":"لَكَ","d":"laka","e":"for you"},{"b":"1.7","h":"2.92","c":"ذِكْرَكَ","d":"dhik'raka","e":"your esteem"}],"a":{"g":"And raised high for you your repute."}},"5":{"w":[{"b":"0.03","h":"0.5","c":"فَإِنَّ","d":"fa-inna","e":"So indeed"},{"b":"1.5","h":"2.04","c":"مَعَ","d":"maʿa","e":"with"},{"b":"2.0","h":"2.73","c":"الْعُسْرِ","d":"l-ʿus'ri","e":"the hardship"},{"b":"2.8","h":"4.21","c":"يُسْرًا","d":"yus'ran","e":"(is) ease"}],"a":{"g":"For indeed, with hardship [will be] ease."}},"6":{"w":[{"b":"0.03","h":"0.2","c":"إِنَّ","d":"inna","e":"Indeed"},{"b":"1.3","h":"1.53","c":"مَعَ","d":"maʿa","e":"with"},{"b":"1.7","h":"2.21","c":"الْعُسْرِ","d":"l-ʿus'ri","e":"the hardship"},{"b":"2.6","h":"3.75","c":"يُسْرًا","d":"yus'ran","e":"(is) ease"}],"a":{"g":"Indeed, with hardship [will be] ease."}},"7":{"w":[{"b":"0.03","h":"0.35","c":"فَإِذَا","d":"fa-idhā","e":"So when"},{"b":"0.8","h":"1.53","c":"فَرَغْتَ","d":"faraghta","e":"you are free"},{"b":"1.6","h":"2.95","c":"فَانْصَبْ","d":"fa-inṣab","e":"then stand up"}],"a":{"g":"So when you have finished [your duties], then stand up [for worship]."}},"8":{"w":[{"b":"0.03","h":"0.25","c":"وَإِلَى","d":"wa-ilā","e":"And to"},{"b":"0.84","h":"1.53","c":"رَبِّكَ","d":"rabbika","e":"your Lord"},{"b":"1.7","h":"3.03","c":"فَارْغَبْ","d":"fa-ir'ghab","e":"turn your attention"}],"a":{"g":"And to your Lord direct [your] longing."}}}
+{
+  "1": {
+    "w": [
+      {
+        "b": "0.15",
+        "h": "0.4",
+        "ar": "أَلَمْ",
+        "tr": "alam",
+        "en": "Have not",
+        "p": "094_001_001"
+      },
+      {
+        "b": "0.61",
+        "h": "1.12",
+        "ar": "نَشْرَحْ",
+        "tr": "nashraḥ",
+        "en": "We expanded",
+        "p": "094_001_002"
+      },
+      {
+        "b": "1.4",
+        "h": "2.37",
+        "ar": "لَكَ",
+        "tr": "laka",
+        "en": "for you",
+        "p": "094_001_003"
+      },
+      {
+        "b": "1.8",
+        "h": "3.25",
+        "ar": "صَدْرَكَ",
+        "tr": "ṣadraka",
+        "en": "your breast",
+        "p": "094_001_004"
+      }
+    ],
+    "a": {
+      "g": "Did We not expand for you, [O Muhammad], your breast?"
+    }
+  },
+  "2": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.3",
+        "ar": "وَوَضَعْنَا",
+        "tr": "wawaḍaʿnā",
+        "en": "And We removed",
+        "p": "094_002_001"
+      },
+      {
+        "b": "1.2",
+        "h": "2.25",
+        "ar": "عَنْكَ",
+        "tr": "ʿanka",
+        "en": "from you",
+        "p": "094_002_002"
+      },
+      {
+        "b": "2.8",
+        "h": "3.96",
+        "ar": "وِزْرَكَ",
+        "tr": "wiz'raka",
+        "en": "your burden",
+        "p": "094_002_003"
+      }
+    ],
+    "a": {
+      "g": "And We removed from you your burden"
+    }
+  },
+  "3": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.4",
+        "ar": "الَّذِي",
+        "tr": "alladhī",
+        "en": "Which",
+        "p": "094_003_001"
+      },
+      {
+        "b": "2.6",
+        "h": "3.08",
+        "ar": "أَنْقَضَ",
+        "tr": "anqaḍa",
+        "en": "weighed upon",
+        "p": "094_003_002"
+      },
+      {
+        "b": "4.1",
+        "h": "4.85",
+        "ar": "ظَهْرَكَ",
+        "tr": "ẓahraka",
+        "en": "your back",
+        "p": "094_003_003"
+      }
+    ],
+    "a": {
+      "g": "Which had weighed upon your back"
+    }
+  },
+  "4": {
+    "w": [
+      {
+        "b": "0.04",
+        "h": "0.2",
+        "ar": "وَرَفَعْنَا",
+        "tr": "warafaʿnā",
+        "en": "And We raised high",
+        "p": "094_004_001"
+      },
+      {
+        "b": "1.3",
+        "h": "2.25",
+        "ar": "لَكَ",
+        "tr": "laka",
+        "en": "for you",
+        "p": "094_004_002"
+      },
+      {
+        "b": "1.7",
+        "h": "2.92",
+        "ar": "ذِكْرَكَ",
+        "tr": "dhik'raka",
+        "en": "your esteem",
+        "p": "094_004_003"
+      }
+    ],
+    "a": {
+      "g": "And raised high for you your repute."
+    }
+  },
+  "5": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.5",
+        "ar": "فَإِنَّ",
+        "tr": "fa-inna",
+        "en": "So indeed",
+        "p": "094_005_001"
+      },
+      {
+        "b": "1.5",
+        "h": "2.04",
+        "ar": "مَعَ",
+        "tr": "maʿa",
+        "en": "with",
+        "p": "094_005_002"
+      },
+      {
+        "b": "2.0",
+        "h": "2.73",
+        "ar": "الْعُسْرِ",
+        "tr": "l-ʿus'ri",
+        "en": "the hardship",
+        "p": "094_005_003"
+      },
+      {
+        "b": "2.8",
+        "h": "4.21",
+        "ar": "يُسْرًا",
+        "tr": "yus'ran",
+        "en": "(is) ease",
+        "p": "094_005_004"
+      }
+    ],
+    "a": {
+      "g": "For indeed, with hardship [will be] ease."
+    }
+  },
+  "6": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.2",
+        "ar": "إِنَّ",
+        "tr": "inna",
+        "en": "Indeed",
+        "p": "094_006_001"
+      },
+      {
+        "b": "1.3",
+        "h": "1.53",
+        "ar": "مَعَ",
+        "tr": "maʿa",
+        "en": "with",
+        "p": "094_006_002"
+      },
+      {
+        "b": "1.7",
+        "h": "2.21",
+        "ar": "الْعُسْرِ",
+        "tr": "l-ʿus'ri",
+        "en": "the hardship",
+        "p": "094_006_003"
+      },
+      {
+        "b": "2.6",
+        "h": "3.75",
+        "ar": "يُسْرًا",
+        "tr": "yus'ran",
+        "en": "(is) ease",
+        "p": "094_006_004"
+      }
+    ],
+    "a": {
+      "g": "Indeed, with hardship [will be] ease."
+    }
+  },
+  "7": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.35",
+        "ar": "فَإِذَا",
+        "tr": "fa-idhā",
+        "en": "So when",
+        "p": "094_007_001"
+      },
+      {
+        "b": "0.8",
+        "h": "1.53",
+        "ar": "فَرَغْتَ",
+        "tr": "faraghta",
+        "en": "you are free",
+        "p": "094_007_002"
+      },
+      {
+        "b": "1.6",
+        "h": "2.95",
+        "ar": "فَانْصَبْ",
+        "tr": "fa-inṣab",
+        "en": "then stand up",
+        "p": "094_007_003"
+      }
+    ],
+    "a": {
+      "g": "So when you have finished [your duties], then stand up [for worship]."
+    }
+  },
+  "8": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.25",
+        "ar": "وَإِلَى",
+        "tr": "wa-ilā",
+        "en": "And to",
+        "p": "094_008_001"
+      },
+      {
+        "b": "0.84",
+        "h": "1.53",
+        "ar": "رَبِّكَ",
+        "tr": "rabbika",
+        "en": "your Lord",
+        "p": "094_008_002"
+      },
+      {
+        "b": "1.7",
+        "h": "3.03",
+        "ar": "فَارْغَبْ",
+        "tr": "fa-ir'ghab",
+        "en": "turn your attention",
+        "p": "094_008_003"
+      }
+    ],
+    "a": {
+      "g": "And to your Lord direct [your] longing."
+    }
+  }
+}

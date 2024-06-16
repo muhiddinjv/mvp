@@ -21,6 +21,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
           if (clickCount.current === 1) {
             highlightWord(url.p);
             const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
+            // const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
             audio.play();
           }
           clickCount.current = 0;
@@ -42,6 +43,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
     
             const audio = new Audio(`../data/aud/ayah/${audioFileName}`);
+            // const audio = new Audio(`../data/aud/ayah/${audioFileName}`);
             setAudioAyah(audio);
             audio.play();
             setIsPlaying(true);
@@ -93,6 +95,7 @@ const Ayah = ({ ayahKey, ayah, lang }) => {
             const url = urls[urlIndex];
             highlightWord(url.p);
             const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
+            // const audio = new Audio(`../data/aud/word/${url.p}.mp3`);
             setAudioCycle(audio);
             audio.play();
             audio.onended = function() {
