@@ -1,0 +1,2382 @@
+{
+  "1": {
+    "w": [
+      {
+        "b": "0.05",
+        "h": "0.85",
+        "ar": "يَاأَيُّهَا",
+        "tr": "yāayyuhā",
+        "en": "O",
+        "p": "065_001_001"
+      },
+      {
+        "b": "2.6",
+        "h": "3.25",
+        "ar": "النَّبِيُّ",
+        "tr": "l-nabiyu",
+        "en": "Prophet",
+        "p": "065_001_002"
+      },
+      {
+        "b": "4.1",
+        "h": "4.65",
+        "ar": "إِذَا",
+        "tr": "idhā",
+        "en": "When",
+        "p": "065_001_003"
+      },
+      {
+        "b": "4.5",
+        "h": "5.2",
+        "ar": "طَلَّقْتُمُ",
+        "tr": "ṭallaqtumu",
+        "en": "you divorce",
+        "p": "065_001_004"
+      },
+      {
+        "b": "5.7",
+        "h": "6.59",
+        "ar": "النِّسَاءَ",
+        "tr": "l-nisāa",
+        "en": "[the] women",
+        "p": "065_001_005"
+      },
+      {
+        "b": "8.5",
+        "h": "9.08",
+        "ar": "فَطَلِّقُوهُنَّ",
+        "tr": "faṭalliqūhunna",
+        "en": "then divorce them",
+        "p": "065_001_006"
+      },
+      {
+        "b": "10.7",
+        "h": "11.5",
+        "ar": "لِعِدَّتِهِنَّ",
+        "tr": "liʿiddatihinna",
+        "en": "for their waiting period",
+        "p": "065_001_007"
+      },
+      {
+        "b": "13.0",
+        "h": "13.72",
+        "ar": "وَأَحْصُوا",
+        "tr": "wa-aḥṣū",
+        "en": "and keep count",
+        "p": "065_001_008"
+      },
+      {
+        "b": "13.8",
+        "h": "14.59",
+        "ar": "الْعِدَّةَ",
+        "tr": "l-ʿidata",
+        "en": "(of) the waiting period",
+        "p": "065_001_009"
+      },
+      {
+        "b": "15.3",
+        "h": "18.5",
+        "ar": "وَاتَّقُوا",
+        "tr": "wa-ittaqū",
+        "en": "and fear",
+        "p": "065_001_010"
+      },
+      {
+        "b": "16.0",
+        "h": "19.33",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_001_011"
+      },
+      {
+        "b": "16.6",
+        "h": "20.11",
+        "ar": "رَبَّكُمْ",
+        "tr": "rabbakum",
+        "en": "your Lord",
+        "p": "065_001_012"
+      },
+      {
+        "b": "18.1",
+        "h": "22.7",
+        "ar": "لَا",
+        "tr": "lā",
+        "en": "(Do) not",
+        "p": "065_001_013"
+      },
+      {
+        "b": "18.4",
+        "h": "23.07",
+        "ar": "تُخْرِجُوهُنَّ",
+        "tr": "tukh'rijūhunna",
+        "en": "expel them",
+        "p": "065_001_014"
+      },
+      {
+        "b": "20.6",
+        "h": "25.47",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "from",
+        "p": "065_001_015"
+      },
+      {
+        "b": "21.6",
+        "h": "26.44",
+        "ar": "بُيُوتِهِنَّ",
+        "tr": "buyūtihinna",
+        "en": "their houses",
+        "p": "065_001_016"
+      },
+      {
+        "b": "23.6",
+        "h": "28.5",
+        "ar": "وَلَا",
+        "tr": "walā",
+        "en": "and not",
+        "p": "065_001_017"
+      },
+      {
+        "b": "24.1",
+        "h": "29.18",
+        "ar": "يَخْرُجْنَ",
+        "tr": "yakhruj'na",
+        "en": "they should leave",
+        "p": "065_001_018"
+      },
+      {
+        "b": "25.1",
+        "h": "30.31",
+        "ar": "إِلَّا",
+        "tr": "illā",
+        "en": "except",
+        "p": "065_001_019"
+      },
+      {
+        "b": "28.9",
+        "h": "32.26",
+        "ar": "أَنْ",
+        "tr": "an",
+        "en": "that",
+        "p": "065_001_020"
+      },
+      {
+        "b": "30.9",
+        "h": "33.48",
+        "ar": "يَأْتِينَ",
+        "tr": "yatīna",
+        "en": "they commit",
+        "p": "065_001_021"
+      },
+      {
+        "b": "31.7",
+        "h": "34.62",
+        "ar": "بِفَاحِشَةٍ",
+        "tr": "bifāḥishatin",
+        "en": "an immorality",
+        "p": "065_001_022"
+      },
+      {
+        "b": "34.0",
+        "h": "37.03",
+        "ar": "مُبَيِّنَةٍ",
+        "tr": "mubayyinatin",
+        "en": "clear",
+        "p": "065_001_023"
+      },
+      {
+        "b": "35.5",
+        "h": "41.19",
+        "ar": "وَتِلْكَ",
+        "tr": "watil'ka",
+        "en": "And these",
+        "p": "065_001_024"
+      },
+      {
+        "b": "36.2",
+        "h": "42.02",
+        "ar": "حُدُودُ",
+        "tr": "ḥudūdu",
+        "en": "(are the) limits",
+        "p": "065_001_025"
+      },
+      {
+        "b": "37.1",
+        "h": "43.22",
+        "ar": "اللَّهِ",
+        "tr": "l-lahi",
+        "en": "(of) Allah",
+        "p": "065_001_026"
+      },
+      {
+        "b": "39.9",
+        "h": "46.6",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "And whoever",
+        "p": "065_001_027"
+      },
+      {
+        "b": "40.9",
+        "h": "47.57",
+        "ar": "يَتَعَدَّ",
+        "tr": "yataʿadda",
+        "en": "transgresses",
+        "p": "065_001_028"
+      },
+      {
+        "b": "41.7",
+        "h": "48.74",
+        "ar": "حُدُودَ",
+        "tr": "ḥudūda",
+        "en": "(the) limits",
+        "p": "065_001_029"
+      },
+      {
+        "b": "42.5",
+        "h": "49.79",
+        "ar": "اللَّهِ",
+        "tr": "l-lahi",
+        "en": "(of) Allah",
+        "p": "065_001_030"
+      },
+      {
+        "b": "43.",
+        "h": "50.78",
+        "ar": "فَقَدْ",
+        "tr": "faqad",
+        "en": "then certainly",
+        "p": "065_001_031"
+      },
+      {
+        "b": "43.8",
+        "h": "51.43",
+        "ar": "ظَلَمَ",
+        "tr": "ẓalama",
+        "en": "he has wronged",
+        "p": "065_001_032"
+      },
+      {
+        "b": "44.",
+        "h": "52.37",
+        "ar": "نَفْسَهُ",
+        "tr": "nafsahu",
+        "en": "himself",
+        "p": "065_001_033"
+      },
+      {
+        "b": "45.7",
+        "h": "54.95",
+        "ar": "لَا",
+        "tr": "lā",
+        "en": "Not",
+        "p": "065_001_034"
+      },
+      {
+        "b": "46.",
+        "h": "55.33",
+        "ar": "تَدْرِي",
+        "tr": "tadrī",
+        "en": "you know",
+        "p": "065_001_035"
+      },
+      {
+        "b": "46.9",
+        "h": "56.4",
+        "ar": "لَعَلَّ",
+        "tr": "laʿalla",
+        "en": "Perhaps",
+        "p": "065_001_036"
+      },
+      {
+        "b": "47.6",
+        "h": "57.36",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_001_037"
+      },
+      {
+        "b": "48.3",
+        "h": "58.46",
+        "ar": "يُحْدِثُ",
+        "tr": "yuḥ'dithu",
+        "en": "will bring about",
+        "p": "065_001_038"
+      },
+      {
+        "b": "49.1",
+        "h": "59.48",
+        "ar": "بَعْدَ",
+        "tr": "baʿda",
+        "en": "after",
+        "p": "065_001_039"
+      },
+      {
+        "b": "49.",
+        "h": "60.21",
+        "ar": "ذَلِكَ",
+        "tr": "dhālika",
+        "en": "that",
+        "p": "065_001_040"
+      },
+      {
+        "b": "50.2",
+        "h": "61.43",
+        "ar": "أَمْرًا",
+        "tr": "amran",
+        "en": "a matter",
+        "p": "065_001_041"
+      }
+    ],
+    "a": {
+      "g": "O Prophet, when you [Muslims] divorce women, divorce them for [the commencement of] their waiting period and keep count of the waiting period, and fear Allah, your Lord. Do not turn them out of their [husbands'] houses, nor should they [themselves] leave [during that period] unless they are committing a clear immorality. And those are the limits [set by] Allah. And whoever transgresses the limits of Allah has certainly wronged himself. You know not; perhaps Allah will bring about after that a [different] matter."
+    }
+  },
+  "2": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.2",
+        "ar": "فَإِذَا",
+        "tr": "fa-idhā",
+        "en": "Then when",
+        "p": "065_002_001"
+      },
+      {
+        "b": "0.69",
+        "h": "1.13",
+        "ar": "بَلَغْنَ",
+        "tr": "balaghna",
+        "en": "they have reached",
+        "p": "065_002_002"
+      },
+      {
+        "b": "1.4",
+        "h": "2.13",
+        "ar": "أَجَلَهُنَّ",
+        "tr": "ajalahunna",
+        "en": "their term",
+        "p": "065_002_003"
+      },
+      {
+        "b": "2.9",
+        "h": "4.16",
+        "ar": "فَأَمْسِكُوهُنَّ",
+        "tr": "fa-amsikūhunna",
+        "en": "then retain them",
+        "p": "065_002_004"
+      },
+      {
+        "b": "5.1",
+        "h": "7.22",
+        "ar": "بِمَعْرُوفٍ",
+        "tr": "bimaʿrūfin",
+        "en": "with kindness",
+        "p": "065_002_005"
+      },
+      {
+        "b": "6.4",
+        "h": "9.18",
+        "ar": "أَوْ",
+        "tr": "aw",
+        "en": "or",
+        "p": "065_002_006"
+      },
+      {
+        "b": "6.7",
+        "h": "9.7",
+        "ar": "فَارِقُوهُنَّ",
+        "tr": "fāriqūhunna",
+        "en": "part with them",
+        "p": "065_002_007"
+      },
+      {
+        "b": "8.8",
+        "h": "12.56",
+        "ar": "بِمَعْرُوفٍ",
+        "tr": "bimaʿrūfin",
+        "en": "with kindness",
+        "p": "065_002_008"
+      },
+      {
+        "b": "10.",
+        "h": "15.1",
+        "ar": "وَأَشْهِدُوا",
+        "tr": "wa-ashhidū",
+        "en": "And take witness",
+        "p": "065_002_009"
+      },
+      {
+        "b": "11.9",
+        "h": "16.71",
+        "ar": "ذَوَيْ",
+        "tr": "dhaway",
+        "en": "two men",
+        "p": "065_002_010"
+      },
+      {
+        "b": "12.4",
+        "h": "17.48",
+        "ar": "عَدْلٍ",
+        "tr": "ʿadlin",
+        "en": "just",
+        "p": "065_002_011"
+      },
+      {
+        "b": "13.8",
+        "h": "19.2",
+        "ar": "مِنْكُمْ",
+        "tr": "minkum",
+        "en": "among you",
+        "p": "065_002_012"
+      },
+      {
+        "b": "15.2",
+        "h": "21.12",
+        "ar": "وَأَقِيمُوا",
+        "tr": "wa-aqīmū",
+        "en": "and establish",
+        "p": "065_002_013"
+      },
+      {
+        "b": "16.1",
+        "h": "22.61",
+        "ar": "الشَّهَادَةَ",
+        "tr": "l-shahādata",
+        "en": "the testimony",
+        "p": "065_002_014"
+      },
+      {
+        "b": "18",
+        "h": "24.48",
+        "ar": "لِلَّهِ",
+        "tr": "lillahi",
+        "en": "for Allah",
+        "p": "065_002_015"
+      },
+      {
+        "b": "20.0",
+        "h": "29.65",
+        "ar": "ذَلِكُمْ",
+        "tr": "dhālikum",
+        "en": "That",
+        "p": "065_002_016"
+      },
+      {
+        "b": "21.0",
+        "h": "31.01",
+        "ar": "يُوعَظُ",
+        "tr": "yūʿaẓu",
+        "en": "is instructed",
+        "p": "065_002_017"
+      },
+      {
+        "b": "21.",
+        "h": "32.31",
+        "ar": "بِهِ",
+        "tr": "bihi",
+        "en": "with it",
+        "p": "065_002_018"
+      },
+      {
+        "b": "22.3",
+        "h": "33.21",
+        "ar": "مَنْ",
+        "tr": "man",
+        "en": "whoever",
+        "p": "065_002_019"
+      },
+      {
+        "b": "23.3",
+        "h": "34.27",
+        "ar": "كَانَ",
+        "tr": "kāna",
+        "en": "[is]",
+        "p": "065_002_020"
+      },
+      {
+        "b": "23.9",
+        "h": "35.18",
+        "ar": "يُؤْمِنُ",
+        "tr": "yu'minu",
+        "en": "believes",
+        "p": "065_002_021"
+      },
+      {
+        "b": "24.7",
+        "h": "36.27",
+        "ar": "بِاللَّهِ",
+        "tr": "bil-lahi",
+        "en": "in Allah",
+        "p": "065_002_022"
+      },
+      {
+        "b": "25.7",
+        "h": "37.68",
+        "ar": "وَالْيَوْمِ",
+        "tr": "wal-yawmi",
+        "en": "and the Day",
+        "p": "065_002_023"
+      },
+      {
+        "b": "26.6",
+        "h": "39.1",
+        "ar": "الْءَاخِرِ",
+        "tr": "l-ākhiri",
+        "en": "the Last",
+        "p": "065_002_024"
+      },
+      {
+        "b": "28.1",
+        "h": "42.02",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "And whoever",
+        "p": "065_002_025"
+      },
+      {
+        "b": "29.5",
+        "h": "43.36",
+        "ar": "يَتَّقِ",
+        "tr": "yattaqi",
+        "en": "fears",
+        "p": "065_002_026"
+      },
+      {
+        "b": "30.1",
+        "h": "44.64",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_002_027"
+      },
+      {
+        "b": "30.",
+        "h": "45.78",
+        "ar": "يَجْعَلْ",
+        "tr": "yajʿal",
+        "en": "He will make",
+        "p": "065_002_028"
+      },
+      {
+        "b": "31.8",
+        "h": "46.64",
+        "ar": "لَهُ",
+        "tr": "lahu",
+        "en": "for him",
+        "p": "065_002_029"
+      },
+      {
+        "b": "32.3",
+        "h": "47.91",
+        "ar": "مَخْرَجًا",
+        "tr": "makhrajan",
+        "en": "a way out",
+        "p": "065_002_030"
+      }
+    ],
+    "a": {
+      "g": "And when they have [nearly] fulfilled their term, either retain them according to acceptable terms or part with them according to acceptable terms. And bring to witness two just men from among you and establish the testimony for [the acceptance of] Allah. That is instructed to whoever should believe in Allah and the Last day. And whoever fears Allah - He will make for him a way out"
+    }
+  },
+  "3": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.15",
+        "ar": "وَيَرْزُقْهُ",
+        "tr": "wayarzuq'hu",
+        "en": "And He will provide for him",
+        "p": "065_003_001"
+      },
+      {
+        "b": "1.1",
+        "h": "1.89",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "from",
+        "p": "065_003_002"
+      },
+      {
+        "b": "1.4",
+        "h": "2.37",
+        "ar": "حَيْثُ",
+        "tr": "ḥaythu",
+        "en": "where",
+        "p": "065_003_003"
+      },
+      {
+        "b": "2.1",
+        "h": "3.41",
+        "ar": "لَا",
+        "tr": "lā",
+        "en": "not",
+        "p": "065_003_004"
+      },
+      {
+        "b": "2.5",
+        "h": "4.07",
+        "ar": "يَحْتَسِبُ",
+        "tr": "yaḥtasibu",
+        "en": "he thinks",
+        "p": "065_003_005"
+      },
+      {
+        "b": "3.8",
+        "h": "7.2",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "And whoever",
+        "p": "065_003_006"
+      },
+      {
+        "b": "5.1",
+        "h": "8.59",
+        "ar": "يَتَوَكَّلْ",
+        "tr": "yatawakkal",
+        "en": "puts his trust",
+        "p": "065_003_007"
+      },
+      {
+        "b": "6.0",
+        "h": "10.14",
+        "ar": "عَلَى",
+        "tr": "ʿalā",
+        "en": "upon",
+        "p": "065_003_008"
+      },
+      {
+        "b": "6.6",
+        "h": "10.82",
+        "ar": "اللَّهِ",
+        "tr": "l-lahi",
+        "en": "Allah",
+        "p": "065_003_009"
+      },
+      {
+        "b": "7.3",
+        "h": "12.13",
+        "ar": "فَهُوَ",
+        "tr": "fahuwa",
+        "en": "then He",
+        "p": "065_003_010"
+      },
+      {
+        "b": "7.9",
+        "h": "13.06",
+        "ar": "حَسْبُهُ",
+        "tr": "ḥasbuhu",
+        "en": "(is) sufficient for him",
+        "p": "065_003_011"
+      },
+      {
+        "b": "9.1",
+        "h": "15.7",
+        "ar": "إِنَّ",
+        "tr": "inna",
+        "en": "Indeed",
+        "p": "065_003_012"
+      },
+      {
+        "b": "10.4",
+        "h": "17.08",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_003_013"
+      },
+      {
+        "b": "11.2",
+        "h": "18.42",
+        "ar": "بَالِغُ",
+        "tr": "bālighu",
+        "en": "(will) accomplish",
+        "p": "065_003_014"
+      },
+      {
+        "b": "12.1",
+        "h": "19.63",
+        "ar": "أَمْرِهِ",
+        "tr": "amrihi",
+        "en": "His purpose",
+        "p": "065_003_015"
+      },
+      {
+        "b": "13.1",
+        "h": "22.1",
+        "ar": "قَدْ",
+        "tr": "qad",
+        "en": "Indeed",
+        "p": "065_003_016"
+      },
+      {
+        "b": "13.4",
+        "h": "22.49",
+        "ar": "جَعَلَ",
+        "tr": "jaʿala",
+        "en": "has set",
+        "p": "065_003_017"
+      },
+      {
+        "b": "14.0",
+        "h": "23.38",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "Allah",
+        "p": "065_003_018"
+      },
+      {
+        "b": "14.8",
+        "h": "24.77",
+        "ar": "لِكُلِّ",
+        "tr": "likulli",
+        "en": "for every",
+        "p": "065_003_019"
+      },
+      {
+        "b": "15.6",
+        "h": "25.93",
+        "ar": "شَيْءٍ",
+        "tr": "shayin",
+        "en": "thing",
+        "p": "065_003_020"
+      },
+      {
+        "b": "17.3",
+        "h": "27.93",
+        "ar": "قَدْرًا",
+        "tr": "qadran",
+        "en": "a measure",
+        "p": "065_003_021"
+      }
+    ],
+    "a": {
+      "g": "And will provide for him from where he does not expect. And whoever relies upon Allah - then He is sufficient for him. Indeed, Allah will accomplish His purpose. Allah has already set for everything a [decreed] extent."
+    }
+  },
+  "4": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.2",
+        "ar": "وَاللَّائِي",
+        "tr": "wa-allāī",
+        "en": "And those who",
+        "p": "065_004_001"
+      },
+      {
+        "b": "2.4",
+        "h": "3.2",
+        "ar": "يَئِسْنَ",
+        "tr": "ya-is'na",
+        "en": "have despaired",
+        "p": "065_004_002"
+      },
+      {
+        "b": "3.1",
+        "h": "4.37",
+        "ar": "مِنَ",
+        "tr": "mina",
+        "en": "of",
+        "p": "065_004_003"
+      },
+      {
+        "b": "3.4",
+        "h": "4.94",
+        "ar": "الْمَحِيضِ",
+        "tr": "l-maḥīḍi",
+        "en": "the menstruation",
+        "p": "065_004_004"
+      },
+      {
+        "b": "4.5",
+        "h": "6.61",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "among",
+        "p": "065_004_005"
+      },
+      {
+        "b": "5.5",
+        "h": "7.69",
+        "ar": "نِسَائِكُمْ",
+        "tr": "nisāikum",
+        "en": "your women",
+        "p": "065_004_006"
+      },
+      {
+        "b": "7.9",
+        "h": "10.16",
+        "ar": "إِنِ",
+        "tr": "ini",
+        "en": "if",
+        "p": "065_004_007"
+      },
+      {
+        "b": "8.3",
+        "h": "10.63",
+        "ar": "ارْتَبْتُمْ",
+        "tr": "ir'tabtum",
+        "en": "you doubt",
+        "p": "065_004_008"
+      },
+      {
+        "b": "9.3",
+        "h": "12.27",
+        "ar": "فَعِدَّتُهُنَّ",
+        "tr": "faʿiddatuhunna",
+        "en": "then their waiting period",
+        "p": "065_004_009"
+      },
+      {
+        "b": "11.5",
+        "h": "15.12",
+        "ar": "ثَلَاثَةُ",
+        "tr": "thalāthatu",
+        "en": "(is) three",
+        "p": "065_004_010"
+      },
+      {
+        "b": "12.5",
+        "h": "16.86",
+        "ar": "أَشْهُرٍ",
+        "tr": "ashhurin",
+        "en": "months",
+        "p": "065_004_011"
+      },
+      {
+        "b": "13.",
+        "h": "18.88",
+        "ar": "وَاللَّائِي",
+        "tr": "wa-allāī",
+        "en": "and the ones who",
+        "p": "065_004_012"
+      },
+      {
+        "b": "16.7",
+        "h": "21.84",
+        "ar": "لَمْ",
+        "tr": "lam",
+        "en": "not",
+        "p": "065_004_013"
+      },
+      {
+        "b": "17.0",
+        "h": "22.37",
+        "ar": "يَحِضْنَ",
+        "tr": "yaḥiḍ'na",
+        "en": "[they] menstruated",
+        "p": "065_004_014"
+      },
+      {
+        "b": "18.2",
+        "h": "27.66",
+        "ar": "وَأُولَاتُ",
+        "tr": "wa-ulātu",
+        "en": "And those who (are)",
+        "p": "065_004_015"
+      },
+      {
+        "b": "19.2",
+        "h": "29.08",
+        "ar": "الْأَحْمَالِ",
+        "tr": "l-aḥmāli",
+        "en": "pregnant",
+        "p": "065_004_016"
+      },
+      {
+        "b": "20.3",
+        "h": "31.09",
+        "ar": "أَجَلُهُنَّ",
+        "tr": "ajaluhunna",
+        "en": "their term (is)",
+        "p": "065_004_017"
+      },
+      {
+        "b": "22.0",
+        "h": "33.42",
+        "ar": "أَنْ",
+        "tr": "an",
+        "en": "until",
+        "p": "065_004_018"
+      },
+      {
+        "b": "23.2",
+        "h": "34.56",
+        "ar": "يَضَعْنَ",
+        "tr": "yaḍaʿna",
+        "en": "they deliver",
+        "p": "065_004_019"
+      },
+      {
+        "b": "23.8",
+        "h": "35.72",
+        "ar": "حَمْلَهُنَّ",
+        "tr": "ḥamlahunna",
+        "en": "their burdens",
+        "p": "065_004_020"
+      },
+      {
+        "b": "25.9",
+        "h": "39.45",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "And whoever",
+        "p": "065_004_021"
+      },
+      {
+        "b": "27.2",
+        "h": "40.95",
+        "ar": "يَتَّقِ",
+        "tr": "yattaqi",
+        "en": "fears",
+        "p": "065_004_022"
+      },
+      {
+        "b": "27.8",
+        "h": "42.15",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_004_023"
+      },
+      {
+        "b": "28.6",
+        "h": "43.39",
+        "ar": "يَجْعَلْ",
+        "tr": "yajʿal",
+        "en": "He will make",
+        "p": "065_004_024"
+      },
+      {
+        "b": "29.2",
+        "h": "44.74",
+        "ar": "لَهُ",
+        "tr": "lahu",
+        "en": "for him",
+        "p": "065_004_025"
+      },
+      {
+        "b": "30.0",
+        "h": "45.73",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "of",
+        "p": "065_004_026"
+      },
+      {
+        "b": "30.4",
+        "h": "46.32",
+        "ar": "أَمْرِهِ",
+        "tr": "amrihi",
+        "en": "his affair",
+        "p": "065_004_027"
+      },
+      {
+        "b": "31.",
+        "h": "48",
+        "ar": "يُسْرًا",
+        "tr": "yus'ran",
+        "en": "ease",
+        "p": "065_004_028"
+      }
+    ],
+    "a": {
+      "g": "And those who no longer expect menstruation among your women - if you doubt, then their period is three months, and [also for] those who have not menstruated. And for those who are pregnant, their term is until they give birth. And whoever fears Allah - He will make for him of his matter ease."
+    }
+  },
+  "5": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.35",
+        "ar": "ذَلِكَ",
+        "tr": "dhālika",
+        "en": "That",
+        "p": "065_005_001"
+      },
+      {
+        "b": "0.73",
+        "h": "1.53",
+        "ar": "أَمْرُ",
+        "tr": "amru",
+        "en": "(is the) Command",
+        "p": "065_005_002"
+      },
+      {
+        "b": "1.2",
+        "h": "2.55",
+        "ar": "اللَّهِ",
+        "tr": "l-lahi",
+        "en": "(of) Allah",
+        "p": "065_005_003"
+      },
+      {
+        "b": "2.0",
+        "h": "3.81",
+        "ar": "أَنْزَلَهُ",
+        "tr": "anzalahu",
+        "en": "which He has sent down",
+        "p": "065_005_004"
+      },
+      {
+        "b": "5.0",
+        "h": "7.02",
+        "ar": "إِلَيْكُمْ",
+        "tr": "ilaykum",
+        "en": "to you",
+        "p": "065_005_005"
+      },
+      {
+        "b": "6.5",
+        "h": "9.95",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "and whoever",
+        "p": "065_005_006"
+      },
+      {
+        "b": "7.9",
+        "h": "11.13",
+        "ar": "يَتَّقِ",
+        "tr": "yattaqi",
+        "en": "fears",
+        "p": "065_005_007"
+      },
+      {
+        "b": "8.5",
+        "h": "12.39",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_005_008"
+      },
+      {
+        "b": "9.3",
+        "h": "13.59",
+        "ar": "يُكَفِّرْ",
+        "tr": "yukaffir",
+        "en": "He will remove",
+        "p": "065_005_009"
+      },
+      {
+        "b": "10.1",
+        "h": "14.97",
+        "ar": "عَنْهُ",
+        "tr": "ʿanhu",
+        "en": "from him",
+        "p": "065_005_010"
+      },
+      {
+        "b": "10.8",
+        "h": "15.98",
+        "ar": "سَيِّئَاتِهِ",
+        "tr": "sayyiātihi",
+        "en": "his misdeeds",
+        "p": "065_005_011"
+      },
+      {
+        "b": "12.4",
+        "h": "18.61",
+        "ar": "وَيُعْظِمْ",
+        "tr": "wayuʿ'ẓim",
+        "en": "and make great",
+        "p": "065_005_012"
+      },
+      {
+        "b": "13.4",
+        "h": "20.15",
+        "ar": "لَهُ",
+        "tr": "lahu",
+        "en": "for him",
+        "p": "065_005_013"
+      },
+      {
+        "b": "15.3",
+        "h": "22.05",
+        "ar": "أَجْرًا",
+        "tr": "ajran",
+        "en": "(his) reward",
+        "p": "065_005_014"
+      }
+    ],
+    "a": {
+      "g": "That is the command of Allah, which He has sent down to you; and whoever fears Allah - He will remove for him his misdeeds and make great for him his reward."
+    }
+  },
+  "6": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.2",
+        "ar": "أَسْكِنُوهُنَّ",
+        "tr": "askinūhunna",
+        "en": "Lodge them",
+        "p": "065_006_001"
+      },
+      {
+        "b": "2.2",
+        "h": "3.09",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "from",
+        "p": "065_006_002"
+      },
+      {
+        "b": "2.5",
+        "h": "3.56",
+        "ar": "حَيْثُ",
+        "tr": "ḥaythu",
+        "en": "where",
+        "p": "065_006_003"
+      },
+      {
+        "b": "3.1",
+        "h": "4.51",
+        "ar": "سَكَنْتُمْ",
+        "tr": "sakantum",
+        "en": "you dwell",
+        "p": "065_006_004"
+      },
+      {
+        "b": "5.5",
+        "h": "7.37",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "(out) of",
+        "p": "065_006_005"
+      },
+      {
+        "b": "6.6",
+        "h": "7.61",
+        "ar": "وُجْدِكُمْ",
+        "tr": "wuj'dikum",
+        "en": "your means",
+        "p": "065_006_006"
+      },
+      {
+        "b": "7.5",
+        "h": "11.8",
+        "ar": "وَلَا",
+        "tr": "walā",
+        "en": "and (do) not",
+        "p": "065_006_007"
+      },
+      {
+        "b": "7.9",
+        "h": "12.71",
+        "ar": "تُضَارُّوهُنَّ",
+        "tr": "tuḍārrūhunna",
+        "en": "harm them",
+        "p": "065_006_008"
+      },
+      {
+        "b": "12.7",
+        "h": "18.16",
+        "ar": "لِتُضَيِّقُوا",
+        "tr": "lituḍayyiqū",
+        "en": "to distress",
+        "p": "065_006_009"
+      },
+      {
+        "b": "14.1",
+        "h": "20.39",
+        "ar": "عَلَيْهِنَّ",
+        "tr": "ʿalayhinna",
+        "en": "[on] them",
+        "p": "065_006_010"
+      },
+      {
+        "b": "16.5",
+        "h": "25.42",
+        "ar": "وَإِنْ",
+        "tr": "wa-in",
+        "en": "And if",
+        "p": "065_006_011"
+      },
+      {
+        "b": "17.8",
+        "h": "26.74",
+        "ar": "كُنَّ",
+        "tr": "kunna",
+        "en": "they are",
+        "p": "065_006_012"
+      },
+      {
+        "b": "19.0",
+        "h": "28.35",
+        "ar": "أُولَاتِ",
+        "tr": "ulāti",
+        "en": "those (who are)",
+        "p": "065_006_013"
+      },
+      {
+        "b": "19.7",
+        "h": "29.56",
+        "ar": "حَمْلٍ",
+        "tr": "ḥamlin",
+        "en": "pregnant",
+        "p": "065_006_014"
+      },
+      {
+        "b": "20.9",
+        "h": "31.19",
+        "ar": "فَأَنْفِقُوا",
+        "tr": "fa-anfiqū",
+        "en": "then spend",
+        "p": "065_006_015"
+      },
+      {
+        "b": "22.6",
+        "h": "33.57",
+        "ar": "عَلَيْهِنَّ",
+        "tr": "ʿalayhinna",
+        "en": "on them",
+        "p": "065_006_016"
+      },
+      {
+        "b": "24.3",
+        "h": "35.76",
+        "ar": "حَتَّى",
+        "tr": "ḥattā",
+        "en": "until",
+        "p": "065_006_017"
+      },
+      {
+        "b": "25.1",
+        "h": "37.2",
+        "ar": "يَضَعْنَ",
+        "tr": "yaḍaʿna",
+        "en": "they deliver",
+        "p": "065_006_018"
+      },
+      {
+        "b": "25.9",
+        "h": "38.48",
+        "ar": "حَمْلَهُنَّ",
+        "tr": "ḥamlahunna",
+        "en": "their burden",
+        "p": "065_006_019"
+      },
+      {
+        "b": "28.1",
+        "h": "43",
+        "ar": "فَإِنْ",
+        "tr": "fa-in",
+        "en": "Then if",
+        "p": "065_006_020"
+      },
+      {
+        "b": "28.8",
+        "h": "43.59",
+        "ar": "أَرْضَعْنَ",
+        "tr": "arḍaʿna",
+        "en": "they suckle",
+        "p": "065_006_021"
+      },
+      {
+        "b": "29.7",
+        "h": "45.21",
+        "ar": "لَكُمْ",
+        "tr": "lakum",
+        "en": "for you",
+        "p": "065_006_022"
+      },
+      {
+        "b": "30.3",
+        "h": "46.1",
+        "ar": "فَءَاتُوهُنَّ",
+        "tr": "faātūhunna",
+        "en": "then give them",
+        "p": "065_006_023"
+      },
+      {
+        "b": "32.4",
+        "h": "49.48",
+        "ar": "أُجُورَهُنَّ",
+        "tr": "ujūrahunna",
+        "en": "their payment",
+        "p": "065_006_024"
+      },
+      {
+        "b": "34.",
+        "h": "53.5",
+        "ar": "وَأْتَمِرُوا",
+        "tr": "watamirū",
+        "en": "and consult",
+        "p": "065_006_025"
+      },
+      {
+        "b": "35.4",
+        "h": "55.55",
+        "ar": "بَيْنَكُمْ",
+        "tr": "baynakum",
+        "en": "among yourselves",
+        "p": "065_006_026"
+      },
+      {
+        "b": "37.0",
+        "h": "57.55",
+        "ar": "بِمَعْرُوفٍ",
+        "tr": "bimaʿrūfin",
+        "en": "with kindness",
+        "p": "065_006_027"
+      },
+      {
+        "b": "39.8",
+        "h": "62.47",
+        "ar": "وَإِنْ",
+        "tr": "wa-in",
+        "en": "but if",
+        "p": "065_006_028"
+      },
+      {
+        "b": "41.0",
+        "h": "63.67",
+        "ar": "تَعَاسَرْتُمْ",
+        "tr": "taʿāsartum",
+        "en": "you disagree",
+        "p": "065_006_029"
+      },
+      {
+        "b": "42.4",
+        "h": "66.12",
+        "ar": "فَسَتُرْضِعُ",
+        "tr": "fasatur'ḍiʿu",
+        "en": "then may suckle",
+        "p": "065_006_030"
+      },
+      {
+        "b": "43.6",
+        "h": "68.25",
+        "ar": "لَهُ",
+        "tr": "lahu",
+        "en": "for him",
+        "p": "065_006_031"
+      },
+      {
+        "b": "45.4",
+        "h": "70",
+        "ar": "أُخْرَى",
+        "tr": "ukh'rā",
+        "en": "another (women)",
+        "p": "065_006_032"
+      }
+    ],
+    "a": {
+      "g": "Lodge them [in a section] of where you dwell out of your means and do not harm them in order to oppress them. And if they should be pregnant, then spend on them until they give birth. And if they breastfeed for you, then give them their payment and confer among yourselves in the acceptable way; but if you are in discord, then there may breastfeed for the father another woman."
+    }
+  },
+  "7": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.35",
+        "ar": "لِيُنْفِقْ",
+        "tr": "liyunfiq",
+        "en": "Let spend",
+        "p": "065_007_001"
+      },
+      {
+        "b": "1.8",
+        "h": "2.18",
+        "ar": "ذُو",
+        "tr": "dhū",
+        "en": "owner",
+        "p": "065_007_002"
+      },
+      {
+        "b": "2.1",
+        "h": "2.86",
+        "ar": "سَعَةٍ",
+        "tr": "saʿatin",
+        "en": "(of) ample means",
+        "p": "065_007_003"
+      },
+      {
+        "b": "3.8",
+        "h": "5.03",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "from",
+        "p": "065_007_004"
+      },
+      {
+        "b": "4.7",
+        "h": "6",
+        "ar": "سَعَتِهِ",
+        "tr": "saʿatihi",
+        "en": "his ample means",
+        "p": "065_007_005"
+      },
+      {
+        "b": "6.1",
+        "h": "8.95",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "and (he) who",
+        "p": "065_007_006"
+      },
+      {
+        "b": "7.2",
+        "h": "10",
+        "ar": "قُدِرَ",
+        "tr": "qudira",
+        "en": "is restricted",
+        "p": "065_007_007"
+      },
+      {
+        "b": "7.7",
+        "h": "11.01",
+        "ar": "عَلَيْهِ",
+        "tr": "ʿalayhi",
+        "en": "on him",
+        "p": "065_007_008"
+      },
+      {
+        "b": "8.6",
+        "h": "12.56",
+        "ar": "رِزْقُهُ",
+        "tr": "riz'quhu",
+        "en": "his provision",
+        "p": "065_007_009"
+      },
+      {
+        "b": "9.5",
+        "h": "14.15",
+        "ar": "فَلْيُنْفِقْ",
+        "tr": "falyunfiq",
+        "en": "let him spend",
+        "p": "065_007_010"
+      },
+      {
+        "b": "11.4",
+        "h": "16.64",
+        "ar": "مِمَّا",
+        "tr": "mimmā",
+        "en": "from what",
+        "p": "065_007_011"
+      },
+      {
+        "b": "14.4",
+        "h": "17.99",
+        "ar": "ءَاتَاهُ",
+        "tr": "ātāhu",
+        "en": "he has been given",
+        "p": "065_007_012"
+      },
+      {
+        "b": "15.6",
+        "h": "21.62",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "(by) Allah",
+        "p": "065_007_013"
+      },
+      {
+        "b": "18.0",
+        "h": "25.85",
+        "ar": "لَا",
+        "tr": "lā",
+        "en": "Does not",
+        "p": "065_007_014"
+      },
+      {
+        "b": "18.3",
+        "h": "26.56",
+        "ar": "يُكَلِّفُ",
+        "tr": "yukallifu",
+        "en": "burden",
+        "p": "065_007_015"
+      },
+      {
+        "b": "19.6",
+        "h": "28.33",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "Allah",
+        "p": "065_007_016"
+      },
+      {
+        "b": "20.2",
+        "h": "29.59",
+        "ar": "نَفْسًا",
+        "tr": "nafsan",
+        "en": "any soul",
+        "p": "065_007_017"
+      },
+      {
+        "b": "20.9",
+        "h": "30.89",
+        "ar": "إِلَّا",
+        "tr": "illā",
+        "en": "except",
+        "p": "065_007_018"
+      },
+      {
+        "b": "21.7",
+        "h": "32.48",
+        "ar": "مَا",
+        "tr": "mā",
+        "en": "(with) what",
+        "p": "065_007_019"
+      },
+      {
+        "b": "23.0",
+        "h": "32.49",
+        "ar": "ءَاتَاهَا",
+        "tr": "ātāhā",
+        "en": "He has given it",
+        "p": "065_007_020"
+      },
+      {
+        "b": "25.2",
+        "h": "37.85",
+        "ar": "سَيَجْعَلُ",
+        "tr": "sayajʿalu",
+        "en": "Will bring about",
+        "p": "065_007_021"
+      },
+      {
+        "b": "26.2",
+        "h": "39.23",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "Allah",
+        "p": "065_007_022"
+      },
+      {
+        "b": "27.1",
+        "h": "40.57",
+        "ar": "بَعْدَ",
+        "tr": "baʿda",
+        "en": "after",
+        "p": "065_007_023"
+      },
+      {
+        "b": "27.6",
+        "h": "41.46",
+        "ar": "عُسْرٍ",
+        "tr": "ʿus'rin",
+        "en": "hardship",
+        "p": "065_007_024"
+      },
+      {
+        "b": "29.5",
+        "h": "43.58",
+        "ar": "يُسْرًا",
+        "tr": "yus'ran",
+        "en": "ease",
+        "p": "065_007_025"
+      }
+    ],
+    "a": {
+      "g": "Let a man of wealth spend from his wealth, and he whose provision is restricted - let him spend from what Allah has given him. Allah does not charge a soul except [according to] what He has given it. Allah will bring about, after hardship, ease."
+    }
+  },
+  "8": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.5",
+        "ar": "وَكَأَيِّنْ",
+        "tr": "waka-ayyin",
+        "en": "And how many",
+        "p": "065_008_001"
+      },
+      {
+        "b": "1.0",
+        "h": "2.98",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "of",
+        "p": "065_008_002"
+      },
+      {
+        "b": "2.5",
+        "h": "3.8",
+        "ar": "قَرْيَةٍ",
+        "tr": "qaryatin",
+        "en": "a town",
+        "p": "065_008_003"
+      },
+      {
+        "b": "3.4",
+        "h": "5.42",
+        "ar": "عَتَتْ",
+        "tr": "ʿatat",
+        "en": "rebelled",
+        "p": "065_008_004"
+      },
+      {
+        "b": "4.0",
+        "h": "6.45",
+        "ar": "عَنْ",
+        "tr": "ʿan",
+        "en": "against",
+        "p": "065_008_005"
+      },
+      {
+        "b": "4.4",
+        "h": "7.13",
+        "ar": "أَمْرِ",
+        "tr": "amri",
+        "en": "(the) Command",
+        "p": "065_008_006"
+      },
+      {
+        "b": "5.0",
+        "h": "8.07",
+        "ar": "رَبِّهَا",
+        "tr": "rabbihā",
+        "en": "(of) its Lord",
+        "p": "065_008_007"
+      },
+      {
+        "b": "6.0",
+        "h": "9.83",
+        "ar": "وَرُسُلِهِ",
+        "tr": "warusulihi",
+        "en": "and His Messengers",
+        "p": "065_008_008"
+      },
+      {
+        "b": "7.1",
+        "h": "11.68",
+        "ar": "فَحَاسَبْنَاهَا",
+        "tr": "faḥāsabnāhā",
+        "en": "so We took it to account",
+        "p": "065_008_009"
+      },
+      {
+        "b": "8.8",
+        "h": "14.89",
+        "ar": "حِسَابًا",
+        "tr": "ḥisāban",
+        "en": "an account",
+        "p": "065_008_010"
+      },
+      {
+        "b": "10.3",
+        "h": "17.01",
+        "ar": "شَدِيدًا",
+        "tr": "shadīdan",
+        "en": "severe;",
+        "p": "065_008_011"
+      },
+      {
+        "b": "16.0",
+        "h": "19.05",
+        "ar": "وَعَذَّبْنَاهَا",
+        "tr": "waʿadhabnāhā",
+        "en": "and We punished it",
+        "p": "065_008_012"
+      },
+      {
+        "b": "18.5",
+        "h": "21.95",
+        "ar": "عَذَابًا",
+        "tr": "ʿadhāban",
+        "en": "a punishment",
+        "p": "065_008_013"
+      },
+      {
+        "b": "19.3",
+        "h": "23.44",
+        "ar": "نُكْرًا",
+        "tr": "nuk'ran",
+        "en": "terrible",
+        "p": "065_008_014"
+      }
+    ],
+    "a": {
+      "g": "And how many a city was insolent toward the command of its Lord and His messengers, so We took it to severe account and punished it with a terrible punishment."
+    }
+  },
+  "9": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "0.5",
+        "ar": "فَذَاقَتْ",
+        "tr": "fadhāqat",
+        "en": "So it tasted",
+        "p": "065_009_001"
+      },
+      {
+        "b": "0.98",
+        "h": "2.04",
+        "ar": "وَبَالَ",
+        "tr": "wabāla",
+        "en": "(the) bad consequence",
+        "p": "065_009_002"
+      },
+      {
+        "b": "1.7",
+        "h": "3.35",
+        "ar": "أَمْرِهَا",
+        "tr": "amrihā",
+        "en": "(of) its affair",
+        "p": "065_009_003"
+      },
+      {
+        "b": "2.7",
+        "h": "5.18",
+        "ar": "وَكَانَ",
+        "tr": "wakāna",
+        "en": "and was",
+        "p": "065_009_004"
+      },
+      {
+        "b": "3.5",
+        "h": "6.64",
+        "ar": "عَاقِبَةُ",
+        "tr": "ʿāqibatu",
+        "en": "(the) end",
+        "p": "065_009_005"
+      },
+      {
+        "b": "4.5",
+        "h": "8.53",
+        "ar": "أَمْرِهَا",
+        "tr": "amrihā",
+        "en": "(of) its affair",
+        "p": "065_009_006"
+      },
+      {
+        "b": "5.4",
+        "h": "10.38",
+        "ar": "خُسْرًا",
+        "tr": "khus'ran",
+        "en": "loss",
+        "p": "065_009_007"
+      }
+    ],
+    "a": {
+      "g": "And it tasted the bad consequence of its affair, and the outcome of its affair was loss."
+    }
+  },
+  "10": {
+    "w": [
+      {
+        "b": "0.03",
+        "h": "1",
+        "ar": "أَعَدَّ",
+        "tr": "aʿadda",
+        "en": "Has prepared",
+        "p": "065_010_001"
+      },
+      {
+        "b": "0.83",
+        "h": "2.11",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "Allah",
+        "p": "065_010_002"
+      },
+      {
+        "b": "1.6",
+        "h": "3.52",
+        "ar": "لَهُمْ",
+        "tr": "lahum",
+        "en": "for them",
+        "p": "065_010_003"
+      },
+      {
+        "b": "2.1",
+        "h": "4.37",
+        "ar": "عَذَابًا",
+        "tr": "ʿadhāban",
+        "en": "a punishment",
+        "p": "065_010_004"
+      },
+      {
+        "b": "4.0",
+        "h": "6.6",
+        "ar": "شَدِيدًا",
+        "tr": "shadīdan",
+        "en": "severe",
+        "p": "065_010_005"
+      },
+      {
+        "b": "5.5",
+        "h": "10.8",
+        "ar": "فَاتَّقُوا",
+        "tr": "fa-ittaqū",
+        "en": "So fear",
+        "p": "065_010_006"
+      },
+      {
+        "b": "6.3",
+        "h": "12.23",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_010_007"
+      },
+      {
+        "b": "7.0",
+        "h": "13.43",
+        "ar": "يَاأُولِي",
+        "tr": "yāulī",
+        "en": "O men",
+        "p": "065_010_008"
+      },
+      {
+        "b": "9.1",
+        "h": "15.72",
+        "ar": "الْأَلْبَابِ",
+        "tr": "l-albābi",
+        "en": "(of) understanding",
+        "p": "065_010_009"
+      },
+      {
+        "b": "10.3",
+        "h": "17.7",
+        "ar": "الَّذِينَ",
+        "tr": "alladhīna",
+        "en": "those who",
+        "p": "065_010_010"
+      },
+      {
+        "b": "11.3",
+        "h": "19.31",
+        "ar": "ءَامَنُوا",
+        "tr": "āmanū",
+        "en": "have believed",
+        "p": "065_010_011"
+      },
+      {
+        "b": "12.8",
+        "h": "22.4",
+        "ar": "قَدْ",
+        "tr": "qad",
+        "en": "Indeed",
+        "p": "065_010_012"
+      },
+      {
+        "b": "13.1",
+        "h": "22.85",
+        "ar": "أَنْزَلَ",
+        "tr": "anzala",
+        "en": "Has sent down",
+        "p": "065_010_013"
+      },
+      {
+        "b": "14.8",
+        "h": "24.58",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "Allah",
+        "p": "065_010_014"
+      },
+      {
+        "b": "15.",
+        "h": "25.94",
+        "ar": "إِلَيْكُمْ",
+        "tr": "ilaykum",
+        "en": "to you",
+        "p": "065_010_015"
+      },
+      {
+        "b": "16.6",
+        "h": "27.49",
+        "ar": "ذِكْرًا",
+        "tr": "dhik'ran",
+        "en": "a Message",
+        "p": "065_010_016"
+      }
+    ],
+    "a": {
+      "g": "Allah has prepared for them a severe punishment; so fear Allah, O you of understanding who have believed. Allah has sent down to you the Qur'an."
+    }
+  },
+  "11": {
+    "w": [
+      {
+        "b": "0.01",
+        "h": "0.5",
+        "ar": "رَسُولًا",
+        "tr": "rasūlan",
+        "en": "A Messenger",
+        "p": "065_011_001"
+      },
+      {
+        "b": "1.6",
+        "h": "1.76",
+        "ar": "يَتْلُوا",
+        "tr": "yatlū",
+        "en": "reciting",
+        "p": "065_011_002"
+      },
+      {
+        "b": "2.4",
+        "h": "3.81",
+        "ar": "عَلَيْكُمْ",
+        "tr": "ʿalaykum",
+        "en": "to you",
+        "p": "065_011_003"
+      },
+      {
+        "b": "3.3",
+        "h": "5.53",
+        "ar": "ءَايَاتِ",
+        "tr": "āyāti",
+        "en": "(the) Verses",
+        "p": "065_011_004"
+      },
+      {
+        "b": "4.2",
+        "h": "7.31",
+        "ar": "اللَّهِ",
+        "tr": "l-lahi",
+        "en": "(of) Allah",
+        "p": "065_011_005"
+      },
+      {
+        "b": "5.1",
+        "h": "8.63",
+        "ar": "مُبَيِّنَاتٍ",
+        "tr": "mubayyinātin",
+        "en": "clear",
+        "p": "065_011_006"
+      },
+      {
+        "b": "6.4",
+        "h": "11.26",
+        "ar": "لِيُخْرِجَ",
+        "tr": "liyukh'rija",
+        "en": "that he may bring out",
+        "p": "065_011_007"
+      },
+      {
+        "b": "7.8",
+        "h": "12.5",
+        "ar": "الَّذِينَ",
+        "tr": "alladhīna",
+        "en": "those who",
+        "p": "065_011_008"
+      },
+      {
+        "b": "8.5",
+        "h": "14.11",
+        "ar": "ءَامَنُوا",
+        "tr": "āmanū",
+        "en": "believe",
+        "p": "065_011_009"
+      },
+      {
+        "b": "13.3",
+        "h": "15.67",
+        "ar": "وَعَمِلُوا",
+        "tr": "waʿamilū",
+        "en": "and do",
+        "p": "065_011_010"
+      },
+      {
+        "b": "13.9",
+        "h": "17.02",
+        "ar": "الصَّالِحَاتِ",
+        "tr": "l-ṣāliḥāti",
+        "en": "righteous deeds",
+        "p": "065_011_011"
+      },
+      {
+        "b": "15.1",
+        "h": "19.4",
+        "ar": "مِنَ",
+        "tr": "mina",
+        "en": "from",
+        "p": "065_011_012"
+      },
+      {
+        "b": "15.7",
+        "h": "20.01",
+        "ar": "الظُّلُمَاتِ",
+        "tr": "l-ẓulumāti",
+        "en": "the darkness[es]",
+        "p": "065_011_013"
+      },
+      {
+        "b": "16.6",
+        "h": "22.23",
+        "ar": "إِلَى",
+        "tr": "ilā",
+        "en": "towards",
+        "p": "065_011_014"
+      },
+      {
+        "b": "18.0",
+        "h": "22.91",
+        "ar": "النُّورِ",
+        "tr": "l-nūri",
+        "en": "the light",
+        "p": "065_011_015"
+      },
+      {
+        "b": "20.2",
+        "h": "29.11",
+        "ar": "وَمَنْ",
+        "tr": "waman",
+        "en": "And whoever",
+        "p": "065_011_016"
+      },
+      {
+        "b": "21.4",
+        "h": "30.41",
+        "ar": "يُؤْمِنْ",
+        "tr": "yu'min",
+        "en": "believes",
+        "p": "065_011_017"
+      },
+      {
+        "b": "22.7",
+        "h": "32.22",
+        "ar": "بِاللَّهِ",
+        "tr": "bil-lahi",
+        "en": "in Allah",
+        "p": "065_011_018"
+      },
+      {
+        "b": "23.7",
+        "h": "33.82",
+        "ar": "وَيَعْمَلْ",
+        "tr": "wayaʿmal",
+        "en": "and does",
+        "p": "065_011_019"
+      },
+      {
+        "b": "24.6",
+        "h": "35.42",
+        "ar": "صَالِحًا",
+        "tr": "ṣāliḥan",
+        "en": "righteousness",
+        "p": "065_011_020"
+      },
+      {
+        "b": "26.3",
+        "h": "37.54",
+        "ar": "يُدْخِلْهُ",
+        "tr": "yud'khil'hu",
+        "en": "He will admit him",
+        "p": "065_011_021"
+      },
+      {
+        "b": "27.2",
+        "h": "39.09",
+        "ar": "جَنَّاتٍ",
+        "tr": "jannātin",
+        "en": "(into) Gardens",
+        "p": "065_011_022"
+      },
+      {
+        "b": "34.3",
+        "h": "41.75",
+        "ar": "تَجْرِي",
+        "tr": "tajrī",
+        "en": "flow",
+        "p": "065_011_023"
+      },
+      {
+        "b": "35.2",
+        "h": "43.14",
+        "ar": "مِنْ",
+        "tr": "min",
+        "en": "from",
+        "p": "065_011_024"
+      },
+      {
+        "b": "36.1",
+        "h": "44.25",
+        "ar": "تَحْتِهَا",
+        "tr": "taḥtihā",
+        "en": "underneath it",
+        "p": "065_011_025"
+      },
+      {
+        "b": "36.8",
+        "h": "45.66",
+        "ar": "الْأَنْهَارُ",
+        "tr": "l-anhāru",
+        "en": "the rivers",
+        "p": "065_011_026"
+      },
+      {
+        "b": "37.9",
+        "h": "47.64",
+        "ar": "خَالِدِينَ",
+        "tr": "khālidīna",
+        "en": "abiding",
+        "p": "065_011_027"
+      },
+      {
+        "b": "39.1",
+        "h": "49.79",
+        "ar": "فِيهَا",
+        "tr": "fīhā",
+        "en": "therein",
+        "p": "065_011_028"
+      },
+      {
+        "b": "41.3",
+        "h": "50.74",
+        "ar": "أَبَدًا",
+        "tr": "abadan",
+        "en": "forever",
+        "p": "065_011_029"
+      },
+      {
+        "b": "42.7",
+        "h": "55.75",
+        "ar": "قَدْ",
+        "tr": "qad",
+        "en": "Indeed",
+        "p": "065_011_030"
+      },
+      {
+        "b": "43.2",
+        "h": "56.15",
+        "ar": "أَحْسَنَ",
+        "tr": "aḥsana",
+        "en": "Has been (granted) good",
+        "p": "065_011_031"
+      },
+      {
+        "b": "43.9",
+        "h": "57.51",
+        "ar": "اللَّهُ",
+        "tr": "l-lahu",
+        "en": "(by) Allah",
+        "p": "065_011_032"
+      },
+      {
+        "b": "44.6",
+        "h": "59.07",
+        "ar": "لَهُ",
+        "tr": "lahu",
+        "en": "for him",
+        "p": "065_011_033"
+      },
+      {
+        "b": "45.3",
+        "h": "60.13",
+        "ar": "رِزْقًا",
+        "tr": "riz'qan",
+        "en": "provision",
+        "p": "065_011_034"
+      }
+    ],
+    "a": {
+      "g": "[He sent] a Messenger [Muhammad] reciting to you the distinct verses of Allah that He may bring out those who believe and do righteous deeds from darknesses into the light. And whoever believes in Allah and does righteousness - He will admit him into gardens beneath which rivers flow to abide therein forever. Allah will have perfected for him a provision."
+    }
+  },
+  "12": {
+    "w": [
+      {
+        "b": "0.1",
+        "h": "0.65",
+        "ar": "اللَّهُ",
+        "tr": "al-lahu",
+        "en": "Allah",
+        "p": "065_012_001"
+      },
+      {
+        "b": "0.97",
+        "h": "2.16",
+        "ar": "الَّذِي",
+        "tr": "alladhī",
+        "en": "(is) He Who",
+        "p": "065_012_002"
+      },
+      {
+        "b": "1.6",
+        "h": "3.37",
+        "ar": "خَلَقَ",
+        "tr": "khalaqa",
+        "en": "created",
+        "p": "065_012_003"
+      },
+      {
+        "b": "2.2",
+        "h": "4.43",
+        "ar": "سَبْعَ",
+        "tr": "sabʿa",
+        "en": "seven",
+        "p": "065_012_004"
+      },
+      {
+        "b": "2.8",
+        "h": "5.43",
+        "ar": "سَمَاوَاتٍ",
+        "tr": "samāwātin",
+        "en": "heavens",
+        "p": "065_012_005"
+      },
+      {
+        "b": "4.7",
+        "h": "8.3",
+        "ar": "وَمِنَ",
+        "tr": "wamina",
+        "en": "and of",
+        "p": "065_012_006"
+      },
+      {
+        "b": "5.2",
+        "h": "9.3",
+        "ar": "الْأَرْضِ",
+        "tr": "l-arḍi",
+        "en": "the earth",
+        "p": "065_012_007"
+      },
+      {
+        "b": "6.0",
+        "h": "10.69",
+        "ar": "مِثْلَهُنَّ",
+        "tr": "mith'lahunna",
+        "en": "(the) like of them",
+        "p": "065_012_008"
+      },
+      {
+        "b": "7.7",
+        "h": "13.03",
+        "ar": "يَتَنَزَّلُ",
+        "tr": "yatanazzalu",
+        "en": "Descends",
+        "p": "065_012_009"
+      },
+      {
+        "b": "8.8",
+        "h": "15.19",
+        "ar": "الْأَمْرُ",
+        "tr": "l-amru",
+        "en": "the command",
+        "p": "065_012_010"
+      },
+      {
+        "b": "9.6",
+        "h": "16.67",
+        "ar": "بَيْنَهُنَّ",
+        "tr": "baynahunna",
+        "en": "between them",
+        "p": "065_012_011"
+      },
+      {
+        "b": "11.3",
+        "h": "27.61",
+        "ar": "لِتَعْلَمُوا",
+        "tr": "litaʿlamū",
+        "en": "that you may know",
+        "p": "065_012_012"
+      },
+      {
+        "b": "15.3",
+        "h": "30.67",
+        "ar": "أَنَّ",
+        "tr": "anna",
+        "en": "that",
+        "p": "065_012_013"
+      },
+      {
+        "b": "16.3",
+        "h": "32.12",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_012_014"
+      },
+      {
+        "b": "17.1",
+        "h": "33.33",
+        "ar": "عَلَى",
+        "tr": "ʿalā",
+        "en": "(is) on",
+        "p": "065_012_015"
+      },
+      {
+        "b": "17.7",
+        "h": "34.42",
+        "ar": "كُلِّ",
+        "tr": "kulli",
+        "en": "every",
+        "p": "065_012_016"
+      },
+      {
+        "b": "18.2",
+        "h": "35.42",
+        "ar": "شَيْءٍ",
+        "tr": "shayin",
+        "en": "thing",
+        "p": "065_012_017"
+      },
+      {
+        "b": "19.6",
+        "h": "37.24",
+        "ar": "قَدِيرٌ",
+        "tr": "qadīrun",
+        "en": "All-Powerful",
+        "p": "065_012_018"
+      },
+      {
+        "b": "20.9",
+        "h": "39.53",
+        "ar": "وَأَنَّ",
+        "tr": "wa-anna",
+        "en": "And that",
+        "p": "065_012_019"
+      },
+      {
+        "b": "22.3",
+        "h": "41.22",
+        "ar": "اللَّهَ",
+        "tr": "l-laha",
+        "en": "Allah",
+        "p": "065_012_020"
+      },
+      {
+        "b": "23.1",
+        "h": "42.56",
+        "ar": "قَدْ",
+        "tr": "qad",
+        "en": "indeed",
+        "p": "065_012_021"
+      },
+      {
+        "b": "23.5",
+        "h": "43.18",
+        "ar": "أَحَاطَ",
+        "tr": "aḥāṭa",
+        "en": "encompasses",
+        "p": "065_012_022"
+      },
+      {
+        "b": "24.4",
+        "h": "44.67",
+        "ar": "بِكُلِّ",
+        "tr": "bikulli",
+        "en": "all",
+        "p": "065_012_023"
+      },
+      {
+        "b": "25.3",
+        "h": "46.04",
+        "ar": "شَيْءٍ",
+        "tr": "shayin",
+        "en": "things",
+        "p": "065_012_024"
+      },
+      {
+        "b": "26.4",
+        "h": "47.54",
+        "ar": "عِلْمًا",
+        "tr": "ʿil'man",
+        "en": "(in) knowledge",
+        "p": "065_012_025"
+      }
+    ],
+    "a": {
+      "g": "It is Allah who has created seven heavens and of the earth, the like of them. [His] command descends among them so you may know that Allah is over all things competent and that Allah has encompassed all things in knowledge."
+    }
+  }
+}
