@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import Loading from './components/Loading.jsx';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export const GlobalContext = React.createContext();
 
@@ -18,6 +19,7 @@ function GlobalProvider({ children }){
   return (
     <GlobalContext.Provider value={{ wordLimit, setWordLimit, surahNum, setSurahNum }}>
       {children}
+      <SpeedInsights />
     </GlobalContext.Provider>
   );
 };
