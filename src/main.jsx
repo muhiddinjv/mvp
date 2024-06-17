@@ -1,7 +1,7 @@
 import React from 'react'
+import './index.css'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import Loading from './components/Loading.jsx';
 
@@ -12,7 +12,7 @@ function GlobalProvider({ children }){
     JSON.parse(localStorage.getItem("wordLimit")) || 100
   );
   const [surahNum, setSurahNum] = React.useState(
-    JSON.parse(localStorage.getItem("surah")) || 36
+    JSON.parse(localStorage.getItem("surah")) || 1
   );
 
   return (
@@ -22,15 +22,15 @@ function GlobalProvider({ children }){
   );
 };
 
-let rootContainer = document.getElementById('root');
+const rootContainer = document.getElementById('root')
 const root = ReactDOM.createRoot(rootContainer);
 
 root.render(
   <React.StrictMode>
-    <GlobalProvider>
-      <ErrorBoundary fallback={<Loading/>}>
+    <ErrorBoundary fallback={<Loading/>}>
+      <GlobalProvider>
         <App/>
-      </ErrorBoundary>
-    </GlobalProvider>
-  </React.StrictMode>,
+      </GlobalProvider>
+    </ErrorBoundary>
+  </React.StrictMode>
 )

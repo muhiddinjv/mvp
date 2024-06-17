@@ -13,9 +13,7 @@ function Surahs() {
   React.useEffect(() => {
     fetch('/json/chapters.json')
       .then(res => res.json())
-      .then(data => {
-        setChapters(data);
-      })
+      .then(data => setChapters(data))
       .catch(err => console.log(err));
   }, []);
 
@@ -36,7 +34,7 @@ function Surahs() {
           <span onClick={()=>handleSortBy('words')} className='border rounded-r w-full py-2'>Word {sortType === 'words' && sortOrder ? '⇩' : '⇧'}</span>
         </div>
         {chapters?.map(chapter => {
-          return (<span key={chapter.id} onClick={()=>setSurahNum(chapter.id)} className="px-4 py-2 text-center border rounded">
+          return (<span key={chapter.id} onClick={()=>{setSurahNum(chapter.id);localStorage.setItem("surah", chapter.id)}} className="px-4 py-2 text-center border rounded">
             <Link to={`/${chapter.id}`}>{chapter.id} {chapter.transliteration} [{chapter.words} words]</Link>
           </span>)
         })}

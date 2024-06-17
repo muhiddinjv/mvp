@@ -124,7 +124,7 @@ function Ayah({ ayahKey, ayah, lang }) {
         <div id={ayahKey} className="text-left break-all whitespace-normal">
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
-                )}
+            )}
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
             <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
             <span className="ml-1">{ayahKey}</span>

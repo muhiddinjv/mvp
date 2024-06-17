@@ -13,7 +13,6 @@ function Surah() {
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
 
-
   const cycleWordLimit = () => {
     setWordLimit((prevLimit) => {
       let newLimit;

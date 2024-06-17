@@ -1,5 +1,4 @@
 import React from "react";
-import {useParams} from "react-router-dom";
 
 export function useTheme(defaultTheme) {
   const [theme, setTheme] = React.useState(
@@ -61,7 +60,6 @@ export function useLanguage() {
 }
 
 export function useAyahs(ayahNumber) {
-  const { id } = useParams();
   const [ayahs, setAyahs] = React.useState({});
   const [loading, setLoading] = React.useState(true);
 
