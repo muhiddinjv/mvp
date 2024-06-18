@@ -57,3 +57,5 @@ function updateJsons(inputDir, outputDir) {
 // Assuming the input and output directories are named 'input' and 'output' and are in the current working directory
 updateJsons('./input', './output');
 console.log('...jsons updated!');
+
+//To run this, open terminal and type: node updateJsons.js ...and hit enter

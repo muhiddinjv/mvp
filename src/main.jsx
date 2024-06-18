@@ -1,9 +1,8 @@
 import React from 'react'
 import './index.css'
-import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import ErrorBoundary from './components/ErrorBoundary.jsx';
-import Loading from './components/Loading.jsx';
+import {createRoot} from 'react-dom/client'
+import {ErrorBoundary, Loading} from './components';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export const GlobalContext = React.createContext();
@@ -14,7 +13,7 @@ function GlobalProvider({ children }){
   );
   const [surahNum, setSurahNum] = React.useState(
     JSON.parse(localStorage.getItem("surah")) || 1
-  );
+  )
 
   return (
     <GlobalContext.Provider value={{ wordLimit, setWordLimit, surahNum, setSurahNum }}>
@@ -24,9 +23,7 @@ function GlobalProvider({ children }){
   );
 };
 
-const rootContainer = document.getElementById('root')
-const root = ReactDOM.createRoot(rootContainer);
-
+const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ErrorBoundary fallback={<Loading/>}>

@@ -1,17 +1,15 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import Surahs from './components/Surahs';
-import Surah from './components/Surah';
-import NotFound from './components/NotFound';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Surahs from './pages/Surahs';
+import Surah from './pages/Surah';
+import NoPage from "./pages/NoPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <Outlet />}>
-          <Route index element={<Surahs />} />
-          <Route path="/:id" element={<Surah />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
+        <Route index element={<Surahs />} />
+        <Route path="/:id" element={<Surah />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   )

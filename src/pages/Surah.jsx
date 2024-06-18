@@ -1,7 +1,5 @@
-import React, { useEffect } from'react';
-import Button from './Button';
-import Accordion from './Accordion';
-import Loading from './Loading';
+import React from'react';
+import { Loading, Accordion, Button } from '../components';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../main';
 import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
@@ -12,6 +10,7 @@ function Surah() {
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
+  console.log('groupedAyahs :>> ', groupedAyahs);
 
   const cycleWordLimit = () => {
     setWordLimit((prevLimit) => {
