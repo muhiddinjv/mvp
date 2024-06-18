@@ -26,10 +26,10 @@ function GlobalProvider({ children }){
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ErrorBoundary fallback={<Loading/>}>
+    {/* <ErrorBoundary fallback={<Loading/>}> */}
       <GlobalProvider>
         <App/>
       </GlobalProvider>
-    </ErrorBoundary>
+    {/* </ErrorBoundary> */}
   </React.StrictMode>
 )
