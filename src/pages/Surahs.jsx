@@ -8,8 +8,9 @@ function Surahs() {
   const [ sortType, setSortType ] = React.useState('id');
   const [ sortOrder, setSortOrder ] = React.useState(false);
   const { setSurahNum, chapters, setChapters } = React.useContext(GlobalContext);
+  const [,,getParsedBookmarks] = useBookmarks();
+
   const bookmarks = localStorage.getItem('bookmarks') || '';
-  const [,,parseBookmarks] = useBookmarks();
   const navigate = useNavigate();
 
   const handleNavigate = (chapterId, verseId) => {
@@ -33,8 +34,8 @@ function Surahs() {
         <span onClick={()=>handleSortBy('sajda')} className='border rounded-r w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : '⇧'}</span>
         <span onClick={()=>handleSortBy('words')} className='border rounded-r w-full py-2'>Word {sortType === 'words' && sortOrder ? '⇩' : '⇧'}</span>
       </div>
-      <div className={`${bookmarks.length === 0 ? 'hidden' : ''} border rounded p-1 flex justify-center`}>
-        {parseBookmarks()
+      <div className={`${bookmarks.length == 0 && 'hidden'} border rounded p-1 flex justify-center`}>
+        {getParsedBookmarks()
           .filter(bookmark => chapters.some(chapter => chapter.id === bookmark.chapterId))
           .map(bookmark => (
             <ul key={`${bookmark.chapterId}:${bookmark.verseId}`} className='flex'>

@@ -107,7 +107,7 @@ export function useBookmarks(chapterId, verseId){
         setBookmarked(bookmarksString.includes(targetBookmark));
     }, [chapterId, verseId]);
 
-    const parseBookmarks = () => {
+    const getParsedBookmarks = () => {
       const bookmarksString = localStorage.getItem('bookmarks') || '';
       if (!bookmarksString) return [];
       return bookmarksString.split('|').map(bookmark => {
@@ -146,7 +146,7 @@ export function useBookmarks(chapterId, verseId){
         }
     };
 
-    return [bookmarked, toggleBookmark, parseBookmarks];
+    return [bookmarked, toggleBookmark, getParsedBookmarks];
 };
 
 // Helper functions ----------------------

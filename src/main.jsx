@@ -14,7 +14,6 @@ function GlobalProvider({ children }){
     JSON.parse(localStorage.getItem("surah")) || 1
   )
   const [ chapters, setChapters ] = React.useState([]);
-  const [ verseId, setVerseId ] = React.useState(1);
 
   React.useEffect(() => {
     fetch('/json/chapters.json')
