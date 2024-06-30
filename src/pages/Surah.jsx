@@ -10,7 +10,6 @@ function Surah() {
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
-  console.log('groupedAyahs :>> ', groupedAyahs);
 
   const cycleWordLimit = () => {
     setWordLimit((prevLimit) => {

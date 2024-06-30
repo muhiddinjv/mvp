@@ -13,9 +13,18 @@ function GlobalProvider({ children }){
   const [surahNum, setSurahNum] = React.useState(
     JSON.parse(localStorage.getItem("surah")) || 1
   )
+  const [ chapters, setChapters ] = React.useState([]);
+  const [ verseId, setVerseId ] = React.useState(1);
+
+  React.useEffect(() => {
+    fetch('/json/chapters.json')
+      .then(res => res.json())
+      .then(data => setChapters(data))
+      .catch(err => console.log(err));
+  }, []);
 
   return (
-    <GlobalContext.Provider value={{ wordLimit, setWordLimit, surahNum, setSurahNum }}>
+    <GlobalContext.Provider value={{ wordLimit, setWordLimit, surahNum, setSurahNum, chapters, setChapters }}>
       {children}
       <SpeedInsights />
     </GlobalContext.Provider>

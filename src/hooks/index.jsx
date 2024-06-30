@@ -1,5 +1,6 @@
 import React from "react";
 
+// Hooks ---------------------------------
 export function useTheme(defaultTheme) {
   const [theme, setTheme] = React.useState(
     localStorage.getItem("theme") || defaultTheme
@@ -97,6 +98,58 @@ export function useAyahs(ayahNumber) {
   return { ayahs, groupedAyahs, loading };
 };
 
+export function useBookmarks(chapterId, verseId){
+    const [bookmarked, setBookmarked] = React.useState(false);
+
+    React.useEffect(() => {
+        const bookmarksString = localStorage.getItem('bookmarks') || '';
+        const targetBookmark = `${chapterId}:${verseId}`;
+        setBookmarked(bookmarksString.includes(targetBookmark));
+    }, [chapterId, verseId]);
+
+    const parseBookmarks = () => {
+      const bookmarksString = localStorage.getItem('bookmarks') || '';
+      if (!bookmarksString) return [];
+      return bookmarksString.split('|').map(bookmark => {
+          const [chapterId, verseId] = bookmark.split(':');
+          return { chapterId: parseInt(chapterId, 10), verseId: parseInt(verseId, 10) };
+      });
+    }
+
+    const createBookmark = (chapterId, verseId) => {
+        let bookmarksString = localStorage.getItem('bookmarks') || '';
+        const newBookmarkEntry = `${chapterId}:${verseId}`;
+        if (!bookmarksString.includes(newBookmarkEntry)) {
+            bookmarksString += bookmarksString? '|' + newBookmarkEntry : newBookmarkEntry;
+            localStorage.setItem('bookmarks', bookmarksString);
+            setBookmarked(true);
+        }
+    };
+
+    const removeBookmark = (chapterId, verseId) => {
+        let bookmarksString = localStorage.getItem('bookmarks');
+        if (bookmarksString) {
+            const bookmarksEntries = bookmarksString.split('|');
+            bookmarksString = bookmarksEntries.filter(entry => entry!== `${chapterId}:${verseId}`).join('|');
+            localStorage.setItem('bookmarks', bookmarksString);
+            setBookmarked(false);
+        }
+    };
+
+    const toggleBookmark = () => {
+        const bookmarksString = localStorage.getItem('bookmarks') || '';
+        const targetBookmark = `${chapterId}:${verseId}`;
+        if (bookmarksString.includes(targetBookmark)) {
+            removeBookmark(chapterId, verseId);
+        } else {
+            createBookmark(chapterId, verseId);
+        }
+    };
+
+    return [bookmarked, toggleBookmark, parseBookmarks];
+};
+
+// Helper functions ----------------------
 export function addNewline(array, lang){
   let newResult = '';
   for (let i = 0; i < array.length; i++) {
