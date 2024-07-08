@@ -149,6 +149,22 @@ export function useBookmarks(chapterId, verseId){
     return [bookmarked, toggleBookmark, getParsedBookmarks];
 };
 
+export function useScrollToVerse(verseId, ayahId) {
+    const [expanded, setExpanded] = React.useState(false);
+    const divRef = React.useRef();
+
+    const scrollToVerse = () => {
+        const { current } = divRef;
+        if (current !== null) {
+            if (ayahId == verseId) {
+                setExpanded(true);
+                current.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+        }
+    };
+    return { scrollToVerse, divRef, expanded, setExpanded };
+};
+
 // Helper functions ----------------------
 export function addNewline(array, lang){
   let newResult = '';

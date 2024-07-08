@@ -1,8 +1,10 @@
 import React from 'react';
 import Ayah from './Ayah';
+import { GlobalContext } from '../main';
+import { useScrollToVerse } from '../hooks';
 
 function Accordion({ titleAyah, panelAyahs, lang }) {
-    const [expanded, setExpanded] = React.useState(false)
+    const { expanded, setExpanded } = useScrollToVerse(titleAyah, panelAyahs);
 
     return (
         <div className={`mx-4 flex ${expanded && 'border-y border-indigo-500 pb-1'}`}>

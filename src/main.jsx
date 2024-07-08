@@ -14,6 +14,11 @@ function GlobalProvider({ children }){
     JSON.parse(localStorage.getItem("surah")) || 1
   )
   const [ chapters, setChapters ] = React.useState([]);
+  const [ verseId, setVerseId ] = React.useState();
+
+  function parentFunc(arg){
+    console.log('hi there from someFunc')
+  }
 
   React.useEffect(() => {
     fetch('/json/chapters.json')
@@ -23,18 +28,29 @@ function GlobalProvider({ children }){
   }, []);
 
   return (
-    <GlobalContext.Provider value={{ wordLimit, setWordLimit, surahNum, setSurahNum, chapters, setChapters }}>
+    <GlobalContext.Provider value={{ 
+      wordLimit, setWordLimit, 
+      surahNum, setSurahNum, 
+      chapters, setChapters, 
+      verseId, setVerseId,
+      parentFunc
+    }}>
       {children}
       <SpeedInsights />
     </GlobalContext.Provider>
   );
 };
 
-const root = createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <GlobalProvider>
-      <App/>
-    </GlobalProvider>
-  </React.StrictMode>
-)
+let container = null;
+document.addEventListener('DOMContentLoaded', function() {
+  if (!container) {
+    container = document.getElementById('root');
+    const root = createRoot(container);
+    root.render(
+      <React.StrictMode>
+        <GlobalProvider>
+          <App/>
+        </GlobalProvider>
+      </React.StrictMode>
+    )}
+});

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { GlobalContext } from "../main";
-import { sajdaSurahs, useBookmarks } from '../hooks';
+import { sajdaSurahs, useBookmarks, useScrollToVerse } from '../hooks';
 
 function Ayah({ ayahKey, ayah, lang }) {
-    const { wordLimit, surahNum } = React.useContext(GlobalContext);
-    const [bookmarked, toggleBookmark] = useBookmarks(surahNum, ayah.id);
+    const { wordLimit, surahNum, verseId } = React.useContext(GlobalContext);
+    const [ bookmarked, toggleBookmark ] = useBookmarks(surahNum, ayah.id);
+    const { divRef } = useScrollToVerse(verseId, ayah.id);
+    
 
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
