@@ -6,7 +6,7 @@ function Ayah({ ayahKey, ayah, lang }) {
     const { wordLimit, surahNum, verseId } = React.useContext(GlobalContext);
     const [ bookmarked, toggleBookmark ] = useBookmarks(surahNum, ayah.id);
     const { divRef } = useScrollToVerse(verseId, ayah.id);  
-    console.log({ayahKey, verseId, ayahId: ayah.id})  
+    // console.log({ayahKey, verseId, ayahId: ayah.id})  
 
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);

@@ -155,7 +155,6 @@ export function useScrollToVerse(verseId, ayahId) {
 
     const scrollToVerse = () => {
         const { current } = divRef;
-        console.log({current})
         if (current !== null) {
             if (ayahId == verseId) {
                 setExpanded(true);
