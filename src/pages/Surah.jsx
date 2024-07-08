@@ -30,7 +30,7 @@ function Surah() {
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-72 flex justify-between">
           <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
-          {/* <Button theme={theme} text="h" onClick={scrollToVerse} /> */}
+          <Button theme={theme} text="h" onClick={scrollToVerse} />
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
           <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} onClick={changeLanguage} text={language} />

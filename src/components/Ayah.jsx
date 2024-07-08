@@ -5,8 +5,8 @@ import { sajdaSurahs, useBookmarks, useScrollToVerse } from '../hooks';
 function Ayah({ ayahKey, ayah, lang }) {
     const { wordLimit, surahNum, verseId } = React.useContext(GlobalContext);
     const [ bookmarked, toggleBookmark ] = useBookmarks(surahNum, ayah.id);
-    const { divRef } = useScrollToVerse(verseId, ayah.id);
-    
+    const { divRef } = useScrollToVerse(verseId, ayah.id);  
+    console.log({ayahKey, verseId, ayahId: ayah.id})  
 
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
@@ -21,6 +21,7 @@ function Ayah({ ayahKey, ayah, lang }) {
     const localUrlAyah = '../data/aud/ayah';
     const remoteUrlWord = `https://words.audios.quranwbw.com/${surahNum}`;
     const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
+    const ayahKeyNumber = Number(ayahKey)
 
     function playWord(url){
         clickCount.current += 1;
@@ -125,7 +126,7 @@ function Ayah({ ayahKey, ayah, lang }) {
     }
 
     return (
-        <div id={ayahKey} className="text-left break-all whitespace-normal">
+        <div ref={divRef} id={ayahKey} className="text-left break-all whitespace-normal">
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}

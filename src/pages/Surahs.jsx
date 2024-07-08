@@ -7,7 +7,7 @@ function Surahs() {
   const { theme } = useTheme("dark");
   const [ sortType, setSortType ] = React.useState('id');
   const [ sortOrder, setSortOrder ] = React.useState(false);
-  const { setSurahNum, chapters, setChapters, setVerseId, someFunc } = React.useContext(GlobalContext);
+  const { setSurahNum, chapters, setChapters, setVerseId, parentFunc } = React.useContext(GlobalContext);
   const [,,getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
   const ref = useRef(null);
@@ -29,7 +29,7 @@ function Surahs() {
   };
   
   const childFunc = () => {
-    someFunc();
+    parentFunc();
   }
 
   
@@ -43,7 +43,7 @@ function Surahs() {
         <span onClick={()=>handleSortBy('id')} className='border rounded-l w-full py-2'>Surah {sortType === 'id' && sortOrder ? '⇩' : '⇧'}</span>
         <span onClick={()=>handleSortBy('sajda')} className='border rounded-r w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : '⇧'}</span>
         <span onClick={()=>handleSortBy('words')} className='border rounded-r w-full py-2'>Word {sortType === 'words' && sortOrder ? '⇩' : '⇧'}</span>
-        <button selector="#114" className="border rounded-r w-full py-2">
+        <button onClick={childFunc} selector="#114" className="border rounded-r w-full py-2">
           Jump
         </button>
       </div>

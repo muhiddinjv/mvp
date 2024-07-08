@@ -151,10 +151,11 @@ export function useBookmarks(chapterId, verseId){
 
 export function useScrollToVerse(verseId, ayahId) {
     const [expanded, setExpanded] = React.useState(false);
-    const divRef = React.useRef();
+    const divRef = React.useRef(null);
 
     const scrollToVerse = () => {
         const { current } = divRef;
+        console.log({current})
         if (current !== null) {
             if (ayahId == verseId) {
                 setExpanded(true);
