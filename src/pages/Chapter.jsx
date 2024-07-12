@@ -2,12 +2,11 @@ import React from'react';
 import { Loading, Accordion, Button } from '../components';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../main';
-import { useAyahs, useFontSize, useLanguage, useScrollToVerse, useTheme } from '../hooks';
+import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
 
-function Surah() {
-  const { wordLimit, setWordLimit, surahNum } = React.useContext(GlobalContext);
-  const { groupedAyahs, loading } = useAyahs(surahNum);
-  const { scrollToVerse } = useScrollToVerse();
+function Chapter() {
+  const { wordLimit, setWordLimit, chapterId, verseId } = React.useContext(GlobalContext);
+  const { groupedAyahs, loading } = useAyahs(chapterId);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
@@ -25,12 +24,25 @@ function Surah() {
     });
   };
 
+  function scrollit(){
+    console.log(verseId)
+    let element = document.getElementById(verseId);
+    element?.setAttribute("expanded", true);
+    element?.scrollIntoView({behavior: 'smooth'});
+    // element.expanded = true
+    // setExpanded(true);
+    console.log(element?.getAttribute("expanded"))
+  }
+
+  if(chapterId && verseId){
+    scrollit();
+  }
+
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
       <header className="header flex flex-col items-center p-4">
         <div className="tools w-full max-w-72 flex justify-between">
           <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
-          <Button theme={theme} text="h" onClick={scrollToVerse} />
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
           <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} onClick={changeLanguage} text={language} />
@@ -54,4 +66,4 @@ function Surah() {
   );
 }
 
-export default Surah;
+export default Chapter;

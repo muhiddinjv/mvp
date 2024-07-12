@@ -100,6 +100,9 @@ export function useAyahs(ayahNumber) {
 
 export function useBookmarks(chapterId, verseId){
     const [bookmarked, setBookmarked] = React.useState(false);
+    const [bookmark, setBookmark] = React.useState(
+      JSON.parse(localStorage.getItem("bookmark")) || ''
+    );
 
     React.useEffect(() => {
         const bookmarksString = localStorage.getItem('bookmarks') || '';
@@ -119,9 +122,12 @@ export function useBookmarks(chapterId, verseId){
     const createBookmark = (chapterId, verseId) => {
         let bookmarksString = localStorage.getItem('bookmarks') || '';
         const newBookmarkEntry = `${chapterId}:${verseId}`;
+        
         if (!bookmarksString.includes(newBookmarkEntry)) {
             bookmarksString += bookmarksString? '|' + newBookmarkEntry : newBookmarkEntry;
             localStorage.setItem('bookmarks', bookmarksString);
+            localStorage.setItem('bookmark', newBookmarkEntry);
+            setBookmark(newBookmarkEntry);
             setBookmarked(true);
         }
     };
@@ -132,7 +138,9 @@ export function useBookmarks(chapterId, verseId){
             const bookmarksEntries = bookmarksString.split('|');
             bookmarksString = bookmarksEntries.filter(entry => entry!== `${chapterId}:${verseId}`).join('|');
             localStorage.setItem('bookmarks', bookmarksString);
+            localStorage.setItem('bookmark', '');
             setBookmarked(false);
+            setBookmark('');
         }
     };
 
@@ -146,21 +154,20 @@ export function useBookmarks(chapterId, verseId){
         }
     };
 
-    return [bookmarked, toggleBookmark, getParsedBookmarks];
+    return [bookmarked, toggleBookmark, getParsedBookmarks, bookmark];
 };
 
 export function useScrollToVerse(verseId, ayahId) {
     const [expanded, setExpanded] = React.useState(false);
+    const [index, setIndex] = React.useState(0);
+    
     const divRef = React.useRef(null);
 
     const scrollToVerse = () => {
-        const { current } = divRef;
-        if (current !== null) {
-            if (ayahId == verseId) {
-                setExpanded(true);
-                current.scrollIntoView({ behavior: "smooth", block: "center" });
-            }
-        }
+      if (ayahId == verseId) {
+        document.getElementById(verseId)?.scrollIntoView({ behavior: "smooth", block: "center" });
+        setExpanded(true);
+      }
     };
     return { scrollToVerse, divRef, expanded, setExpanded };
 };

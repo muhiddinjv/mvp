@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaSurahs, useBookmarks, useScrollToVerse } from '../hooks';
 
-function Ayah({ ayahKey, ayah, lang }) {
-    const { wordLimit, surahNum, verseId } = React.useContext(GlobalContext);
-    const [ bookmarked, toggleBookmark ] = useBookmarks(surahNum, ayah.id);
+function Ayah({ ayahIndex, ayahKey, ayah, lang }) {
+    const { wordLimit, chapterId, verseId } = React.useContext(GlobalContext);
+    const [ bookmarked, toggleBookmark ] = useBookmarks(chapterId, ayah.id);
     const { divRef } = useScrollToVerse(verseId, ayah.id);  
     // console.log({ayahKey, verseId, ayahId: ayah.id})  
 
@@ -19,7 +19,7 @@ function Ayah({ ayahKey, ayah, lang }) {
     
     const localUrlWord = '../data/aud/word';
     const localUrlAyah = '../data/aud/ayah';
-    const remoteUrlWord = `https://words.audios.quranwbw.com/${surahNum}`;
+    const remoteUrlWord = `https://words.audios.quranwbw.com/${chapterId}`;
     const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
     const ayahKeyNumber = Number(ayahKey)
 
@@ -124,7 +124,7 @@ function Ayah({ ayahKey, ayah, lang }) {
             wordElement.classList.remove('text-indigo-500', 'font-bold');
         }, 1000);
     }
-
+    
     return (
         <div ref={divRef} id={ayahKey} className="text-left break-all whitespace-normal">
             {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
