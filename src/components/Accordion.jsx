@@ -10,12 +10,12 @@ function Accordion({ titleAyah, panelAyahs, lang, index }) {
             <span className="text-indigo-500 cursor-pointer font-bold" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</span>
             <div>
                 <span className="flex items-center ml-2" >
-                    {[titleAyah].map((ayah, index) => <Verse ayahIndex={index} key={index} ayahKey={ayah.id} ayah={ayah} lang={lang}/>)}
+                    {[titleAyah].map((ayah, index) => <Verse key={index} ayah={ayah} lang={lang}/>)}
                 </span>
                 <div className={`grid transition-all duration-300 ease-in-out ${expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                     <div className="overflow-hidden ml-2">
                         {panelAyahs.map((ayah, index) => (
-                            <Verse ayahIndex={index} key={index} ayahKey={ayah.id} ayah={ayah} lang={lang}/>
+                            <Verse key={index} ayah={ayah} lang={lang}/>
                         ))}
                     </div>
                 </div>

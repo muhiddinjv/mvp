@@ -2,11 +2,11 @@ import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaSurahs, useBookmarks, useScrollToVerse } from '../hooks';
 
-function Ayah({ ayahIndex, ayahKey, ayah, lang }) {
+function Ayah({ ayah, lang }) {
     const { wordLimit, chapterId, verseId } = React.useContext(GlobalContext);
     const [ bookmarked, toggleBookmark ] = useBookmarks(chapterId, ayah.id);
     const { divRef } = useScrollToVerse(verseId, ayah.id);  
-    // console.log({ayahKey, verseId, ayahId: ayah.id})  
+    console.log({verseId, ayahId: ayah.id}) 
 
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
@@ -21,7 +21,6 @@ function Ayah({ ayahIndex, ayahKey, ayah, lang }) {
     const localUrlAyah = '../data/aud/ayah';
     const remoteUrlWord = `https://words.audios.quranwbw.com/${chapterId}`;
     const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
-    const ayahKeyNumber = Number(ayahKey)
 
     function playWord(url){
         clickCount.current += 1;
@@ -126,14 +125,14 @@ function Ayah({ ayahIndex, ayahKey, ayah, lang }) {
     }
     
     return (
-        <div ref={divRef} id={ayahKey} className="text-left break-all whitespace-normal">
-            {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayahKey)) && (
+        <div ref={divRef} id={ayah.id} className="text-left break-all whitespace-normal">
+            {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayah.id)) && (
                 <span className="arrow-up-icon">&#129033;</span>
             )}
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
             <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
             <span onClick={toggleBookmark} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${bookmarked ? 'B' : 'X'}`}</span>
-            <span className="ml-1">{ayahKey}</span>
+            <span className="ml-1">{ayah.id.replace(/^\d{1,3}_/, "")}</span>
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onDoubleClick={()=>startCycleFrom(index,word.p)} onClick={()=>playWord(word)} key={index} className={`ml-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}>{word[lang]}</span>
             ))}
