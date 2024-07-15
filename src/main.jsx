@@ -15,12 +15,12 @@ function GlobalProvider({ children }){
   )
   const [ chapters, setChapters ] = React.useState([]);
   const [ verseId, setVerseId ] = React.useState();
-  const [ bookmark, setBookmark ] = React.useState(
-    JSON.parse(localStorage.getItem("bookmark")) || ''
-  );
+  // const [ bookmark, setBookmark ] = React.useState(
+  //   JSON.parse(localStorage.getItem("bookmark")) || ''
+  // );
 
   function parentFunc(arg){
-    console.log('hi there from someFunc')
+    console.log('hi there from parentFunc')
   }
 
   React.useEffect(() => {
@@ -36,7 +36,7 @@ function GlobalProvider({ children }){
       chapterId, setChapterId, 
       chapters, setChapters, 
       verseId, setVerseId,
-      bookmark, setBookmark,
+      // bookmark, setBookmark,
       parentFunc
     }}>
       {children}

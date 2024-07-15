@@ -100,9 +100,9 @@ export function useAyahs(ayahNumber) {
 
 export function useBookmarks(chapterId, verseId){
     const [bookmarked, setBookmarked] = React.useState(false);
-    const [bookmark, setBookmark] = React.useState(
-      JSON.parse(localStorage.getItem("bookmark")) || ''
-    );
+    // const [bookmark, setBookmark] = React.useState(
+    //   JSON.parse(localStorage.getItem("bookmark")) || ''
+    // );
 
     React.useEffect(() => {
         const bookmarksString = localStorage.getItem('bookmarks') || '';
@@ -127,7 +127,7 @@ export function useBookmarks(chapterId, verseId){
             bookmarksString += bookmarksString? '|' + newBookmarkEntry : newBookmarkEntry;
             localStorage.setItem('bookmarks', bookmarksString);
             localStorage.setItem('bookmark', newBookmarkEntry);
-            setBookmark(newBookmarkEntry);
+            // setBookmark(newBookmarkEntry);
             setBookmarked(true);
         }
     };
@@ -140,7 +140,7 @@ export function useBookmarks(chapterId, verseId){
             localStorage.setItem('bookmarks', bookmarksString);
             localStorage.setItem('bookmark', '');
             setBookmarked(false);
-            setBookmark('');
+            // setBookmark('');
         }
     };
 
@@ -154,7 +154,7 @@ export function useBookmarks(chapterId, verseId){
         }
     };
 
-    return [bookmarked, toggleBookmark, getParsedBookmarks, bookmark];
+    return [bookmarked, toggleBookmark, getParsedBookmarks];
 };
 
 export function useScrollToVerse(verseId, ayahId) {

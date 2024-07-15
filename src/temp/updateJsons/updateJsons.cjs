@@ -54,8 +54,39 @@ function updateJsons(inputDir, outputDir) {
     }});
 }
 
+function updateJsonFormat(inputDir, outputDir) {
+  const files = fs.readdirSync(inputDir);
+
+  files.forEach(file => {
+    const inputFile = path.join(inputDir, file);
+    const outputFile = path.join(outputDir, file);
+
+    // Read and parse the JSON file
+    const jsonData = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
+
+    const fileName = file.split('.')[0];
+
+    const updatedJsonData = {};
+
+    for (let key in jsonData) {
+        if (jsonData.hasOwnProperty(key)) {
+            const obj = jsonData[key];
+            const newKey = `${fileName}_${key}`;
+            updatedJsonData[newKey] = obj;
+        }
+    }
+
+    const jsonStr = JSON.stringify(updatedJsonData, null, 2);
+
+    // Write the updated JSON to the output directory
+    fs.writeFileSync(outputFile, jsonStr, 'utf8');
+  });
+}
+
+updateJsonFormat('./input', './output');
+
 // Assuming the input and output directories are named 'input' and 'output' and are in the current working directory
-updateJsons('./input', './output');
+// updateJsons('./input', './output');
 console.log('...jsons updated!');
 
 //To run this, open terminal and type: node updateJsons.js ...and hit enter

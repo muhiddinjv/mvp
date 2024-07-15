@@ -36,6 +36,7 @@ function Chapter() {
 
   if(chapterId && verseId){
     scrollit();
+    console.log(111,localStorage.getItem('bookmark'));
   }
 
   return (
