@@ -1,6 +1,6 @@
 import React from 'react';
 import { GlobalContext } from "../main";
-import { sajdaSurahs, useBookmarks, useScrollToVerse } from '../hooks';
+import { sajdaVerses, useBookmarks, useScrollToVerse } from '../hooks';
 
 function Ayah({ ayah, lang }) {
     const { wordLimit, chapterId, verseId } = React.useContext(GlobalContext);
@@ -123,16 +123,16 @@ function Ayah({ ayah, lang }) {
             wordElement.classList.remove('text-indigo-500', 'font-bold');
         }, 1000);
     }
-    
+
     return (
         <div ref={divRef} id={ayah.id} className="text-left break-all whitespace-normal">
-            {sajdaSurahs.includes(ayah.surah) && sajdaAyahs.includes(parseInt(ayah.id)) && (
-                <span className="arrow-up-icon">&#129033;</span>
-            )}
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
             <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
             <span onClick={toggleBookmark} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${bookmarked ? 'B' : 'X'}`}</span>
             <span className="ml-1">{ayah.id.replace(/^\d{1,3}_/, "")}</span>
+            {sajdaVerses.includes(ayah.id) && (
+                <span className="arrow-up-icon"> ۩</span>
+            )}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onDoubleClick={()=>startCycleFrom(index,word.p)} onClick={()=>playWord(word)} key={index} className={`ml-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}>{word[lang]}</span>
             ))}
