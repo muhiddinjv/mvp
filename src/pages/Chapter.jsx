@@ -24,19 +24,16 @@ function Chapter() {
     });
   };
 
-  function scrollit(){
-    console.log(verseId)
-    let element = document.getElementById(verseId);
-    element?.setAttribute("expanded", true);
-    element?.scrollIntoView({behavior: 'smooth'});
-    // element.expanded = true
-    // setExpanded(true);
-    console.log(element?.getAttribute("expanded"))
+  function scrollToVerse(){
+    let element = document.getElementById(localStorage.getItem('verseId'));
+    element?.scrollIntoView({
+      behavior: 'smooth', 
+      // block: "center"
+    });
   }
 
-  if(chapterId && verseId){
-    scrollit();
-    console.log(111,localStorage.getItem('bookmark'));
+  if(verseId){
+    scrollToVerse();
   }
 
   return (
