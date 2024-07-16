@@ -2,8 +2,8 @@ import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaVerses, useBookmarks } from '../hooks';
 
-function Ayah({ ayah, lang, setExpanded }) {
-    const { wordLimit, chapterId, verseId } = React.useContext(GlobalContext);
+function Verse({ ayah, lang, setExpanded }) {
+    const { wordLimit, chapterId } = React.useContext(GlobalContext);
     const [ bookmarked, toggleBookmark ] = useBookmarks(ayah.id);
 
     const [audioAyah, setAudioAyah] = React.useState(null);
@@ -20,14 +20,12 @@ function Ayah({ ayah, lang, setExpanded }) {
     const remoteUrlWord = `https://words.audios.quranwbw.com/${chapterId}`;
     const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
 
-    const vid = localStorage.getItem('verseId')
-    
+    const verseId = localStorage.getItem('verseId')
     React.useEffect(() => {
-        console.log({vid, aya: ayah.id})
-        if (vid === ayah.id) {
+        if (verseId === ayah.id) {
             setExpanded(true);
         }
-    }, [vid]);
+    }, [verseId]);
 
     function playWord(url){
         clickCount.current += 1;
@@ -144,7 +142,7 @@ function Ayah({ ayah, lang, setExpanded }) {
         </div>
     )
 };
-export default Ayah;
+export default Verse;
 
 /*
 TODO: add when needed

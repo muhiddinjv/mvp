@@ -7,7 +7,7 @@ function Chapters() {
   const { theme } = useTheme("dark");
   const [ sortType, setSortType ] = React.useState('id');
   const [ sortOrder, setSortOrder ] = React.useState(false);
-  const { setChapterId, chapters, setChapters, verseId, setVerseId, parentFunc } = React.useContext(GlobalContext);
+  const { setChapterId, chapters, setChapters } = React.useContext(GlobalContext);
   const [,,getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
 
@@ -22,13 +22,18 @@ function Chapters() {
   };
 
   const handleBookmark = (bookmark) => {
-    setVerseId(bookmark.verseId);
     setChapterId(bookmark.chapterId);
-    localStorage.setItem("surah", bookmark.chapterId);
+    localStorage.setItem("chapterId", bookmark.chapterId);
+    localStorage.setItem("verseId", `${bookmark.chapterId}_${bookmark.verseId}`);
   };
 
+  const handleChapter = (chapter) => {
+    setChapterId(chapter.id);
+    localStorage.setItem("chapterId", chapter.id);
+  }
+
   return (
-    <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-3 p-4 min-h-screen w-screen items-center justify-center`}>
+    <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-3 p-3 min-h-screen items-center justify-center`}>
       <div className='flex text-center cursor-pointer'>
         <span onClick={()=>handleSortBy('id')} className='border rounded-l w-full py-2'>Surah {sortType === 'id' && sortOrder ? '⇩' : '⇧'}</span>
         <span onClick={()=>handleSortBy('sajda')} className='border rounded-r w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : '⇧'}</span>
@@ -38,15 +43,15 @@ function Chapters() {
         {getParsedBookmarks()
           .filter(bookmark => chapters.some(chapter => chapter.id === bookmark.chapterId))
           .map(bookmark => (
-            <li key={bookmark.verseId} className='border rounded mx-1 p-1 cursor-pointer hover:bg-slate-600 transition duration-200 ease-in hover:scale-110'>
-                <Link to={`/${bookmark.chapterId}`} onClick={() => handleBookmark(bookmark)}>
+            <li key={`${bookmark.verseId}${bookmark.chapterId}`} className='border rounded mx-1 p-1 cursor-pointer hover:bg-slate-600 transition duration-200 ease-in hover:scale-110'>
+                <Link to={`/${bookmark.chapterId}`} onClick={() => handleBookmark(bookmark)} state={{ fromBookmark: true }}>
                     {`${bookmark.chapterId}:${bookmark.verseId}`}
                 </Link>
             </li>
         ))}
       </ul>
       {chapters?.map(chapter => {
-        return (<span id={chapter.id} key={chapter.id} onClick={()=>{setChapterId(chapter.id);localStorage.setItem("surah", chapter.id)}} className="px-4 py-2 text-center border rounded">
+        return (<span id={chapter.id} key={chapter.id} onClick={()=> handleChapter(chapter)} className="px-4 py-2 text-center border rounded">
           <Link to={`/${chapter.id}`}>
             {chapter.id} {chapter.transliteration} [{chapter.words} words] {chapter.sajda !== null && '۩'}
           </Link>

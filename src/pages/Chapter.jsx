@@ -1,16 +1,27 @@
 import React from'react';
 import { Loading, Accordion, Button } from '../components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { GlobalContext } from '../main';
 import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
 
 function Chapter() {
-  const { wordLimit, setWordLimit, chapterId, verseId } = React.useContext(GlobalContext);
+  const { wordLimit, setWordLimit, chapterId } = React.useContext(GlobalContext);
   const { groupedAyahs, loading } = useAyahs(chapterId);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
+  const vid = localStorage.getItem('verseId')
 
+  const location = useLocation();
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      if (location.state?.fromBookmark) {
+        scrollToVerse();
+      }
+    }, 500);
+  }, [location.state]);
+  
   const cycleWordLimit = () => {
     setWordLimit((prevLimit) => {
       let newLimit;
@@ -23,17 +34,13 @@ function Chapter() {
       return newLimit;
     });
   };
-
+  
   function scrollToVerse(){
-    let element = document.getElementById(localStorage.getItem('verseId'));
+    let element = document.getElementById(vid);
     element?.scrollIntoView({
       behavior: 'smooth', 
       // block: "center"
     });
-  }
-
-  if(verseId){
-    scrollToVerse();
   }
 
   return (

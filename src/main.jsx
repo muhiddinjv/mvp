@@ -11,17 +11,11 @@ function GlobalProvider({ children }){
     JSON.parse(localStorage.getItem("wordLimit")) || 100
   );
   const [chapterId, setChapterId] = React.useState(
-    JSON.parse(localStorage.getItem("surah")) || 1
+    JSON.parse(localStorage.getItem("chapterId")) || 1
   )
   const [ chapters, setChapters ] = React.useState([]);
+  
   const [ verseId, setVerseId ] = React.useState();
-  // const [ bookmark, setBookmark ] = React.useState(
-  //   JSON.parse(localStorage.getItem("bookmark")) || ''
-  // );
-
-  function parentFunc(arg){
-    console.log('hi there from parentFunc')
-  }
 
   React.useEffect(() => {
     fetch('/json/chapters.json')
@@ -36,8 +30,6 @@ function GlobalProvider({ children }){
       chapterId, setChapterId, 
       chapters, setChapters, 
       verseId, setVerseId,
-      // bookmark, setBookmark,
-      parentFunc
     }}>
       {children}
       <SpeedInsights />
