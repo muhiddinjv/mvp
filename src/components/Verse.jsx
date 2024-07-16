@@ -21,6 +21,7 @@ function Verse({ ayah, lang, setExpanded }) {
     const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
 
     const verseId = localStorage.getItem('verseId')
+    
     React.useEffect(() => {
         if (verseId === ayah.id) {
             setExpanded(true);
