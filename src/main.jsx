@@ -14,7 +14,6 @@ function GlobalProvider({ children }){
     JSON.parse(localStorage.getItem("chapterId")) || 1
   )
   const [ chapters, setChapters ] = React.useState([]);
-  
   const [ verseId, setVerseId ] = React.useState();
 
   React.useEffect(() => {
