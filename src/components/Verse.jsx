@@ -134,7 +134,7 @@ function Verse({ ayah, lang, setExpanded }) {
         <div id={ayah.id} className="text-left break-all whitespace-normal">
             <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
             <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
-            <span onClick={toggleBookmark} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${bookmarked ? 'B' : 'X'}`}</span>
+            <span onClick={toggleBookmark} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
             <span className="ml-1">{ayah.id.replace(/^\d{1,3}_/, "")}</span>
             {sajdaVerses.includes(ayah.id) && <span> ۩</span>}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
