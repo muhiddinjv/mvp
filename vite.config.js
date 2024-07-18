@@ -9,30 +9,26 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "prompt",
-      injectRegister: "auto",
-      devOptions: {
-        enabled: true,
-      },
-      includeAssets: ["/public/*"],
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest,json}"],
       },
+      // install your native app on users device directly from the app store
+      // related_applications: [{
+      //   platform: "play",
+      //   id: "com.google.samples.apps.iosched"
+      // }],
+      includeAssets: ["/public/*"],
+      prefer_related_applications: false,
       manifest: {
         name: "Book Word By Word",
         short_name: "bwbw",
         description: "I am a simple pwa vite app",
         scope: "/",
-        start_url: "index.html",
+        start_url: "/",
         background_color: "#f0e7db",
         theme_color: "#171717",
         display: "standalone",
         orientation: "any",
-        prefer_related_applications: false,
-        // install your native app on users device directly from the app store
-        // related_applications: [{
-        //   platform: "play",
-        //   id: "com.google.samples.apps.iosched"
-        // }],
         icons: [
           {
             src: faviconURL,
