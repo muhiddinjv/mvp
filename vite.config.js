@@ -24,7 +24,7 @@ export default defineConfig({
         short_name: "bwbw",
         description: "I am a simple pwa vite app",
         scope: "/",
-        start_url: "/",
+        start_url: "/index.html",
         background_color: "#f0e7db",
         theme_color: "#171717",
         display: "standalone",
