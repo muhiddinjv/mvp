@@ -38,7 +38,7 @@ function Verse({ ayah, lang, setExpanded }) {
         timer.current = setTimeout(() => {
           if (clickCount.current === 1) {
             highlightWord(url.p);
-            const audio = new Audio(`${localUrlWord}/${url.p}.mp3`);
+            const audio = new Audio(`${remoteUrlWord}/${url.p}.mp3`);
             audio.play();
           }
           clickCount.current = 0;
@@ -59,7 +59,7 @@ function Verse({ ayah, lang, setExpanded }) {
             const middleDigits = url.p.split('_')[1];
             const audioFileName = `${url.p.split('_')[0]}${middleDigits}.mp3`;
     
-            const audio = new Audio(`${localUrlAyah}/${audioFileName}`);
+            const audio = new Audio(`${remoteUrlAyah}/${audioFileName}`);
             setAudioAyah(audio);
             audio.play();
             setIsPlaying(true);
@@ -110,7 +110,7 @@ function Verse({ ayah, lang, setExpanded }) {
     
             const url = urls[urlIndex];
             highlightWord(url.p);
-            const audio = new Audio(`${localUrlWord}/${url.p}.mp3`);
+            const audio = new Audio(`${remoteUrlWord}/${url.p}.mp3`);
             setAudioCycle(audio);
             audio.play();
             audio.onended = function() {
