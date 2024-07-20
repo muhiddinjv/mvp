@@ -64,7 +64,7 @@ function Chapters() {
             </div>
           </Link>
           <span onClick={() => alert(`download ${chapter.id}-${chapter.transliteration}'s audio`)} className='border-indigo-500 border-l p-2 flex cursor-pointer'>
-            <img src={theme === "dark" ? downloadIconSlate : downloadIconDark} className='w-6'/>
+            <img src={theme === "dark" ? downloadIconSlate : downloadIconDark} className='w-6' alt='download icon'/>
           </span>
         </span>)
       })}

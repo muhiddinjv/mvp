@@ -20,8 +20,8 @@ export default defineConfig({
       includeAssets: ["/public/*"],
       prefer_related_applications: false,
       manifest: {
-        name: "Book Word By Word",
-        short_name: "bwbw",
+        name: "Quran Word By Word",
+        short_name: "qwbw",
         description: "I am a simple pwa vite app",
         scope: "/",
         start_url: "/index.html",
