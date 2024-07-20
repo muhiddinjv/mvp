@@ -47,7 +47,7 @@ function Chapters() {
           {getParsedBookmarks()
             .filter(bookmark => chapters.some(chapter => chapter.id === bookmark.chapterId))
             .map(bookmark => (
-              <li key={`${bookmark.verseId}${bookmark.chapterId}`} className='border border-indigo-500 rounded m-1 p-1 cursor-pointer transition duration-200 ease-in hover:scale-110'>
+              <li key={`${bookmark.verseId}${bookmark.chapterId}`} className='border border-indigo-500 rounded m-1 px-2 py-1 cursor-pointer transition duration-200 ease-in hover:scale-110'>
                   <Link to={`/${bookmark.chapterId}`} onClick={() => handleBookmark(bookmark)} state={{ fromBookmark: true }}>
                       {`${bookmark.chapterId}:${bookmark.verseId}`}
                   </Link>
