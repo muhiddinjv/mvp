@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "الفاتحة",
-    "transliteration": "Al-Fatihah",
-    "translation": {
+    "text": {
+      "ar": "الفاتحة",
+      "tr": "Al-Fatihah",
       "en": "The Opener",
       "ru": "Открывающая Коран"
     },
@@ -15,9 +15,9 @@
   },
   {
     "id": 2,
-    "name": "البقرة",
-    "transliteration": "Al-Baqarah",
-    "translation": {
+    "text": {
+      "ar": "البقرة",
+      "tr": "Al-Baqarah",
       "en": "The Cow",
       "ru": "Корова"
     },
@@ -29,9 +29,9 @@
   },
   {
     "id": 3,
-    "name": "آل عمران",
-    "transliteration": "Ali 'Imran",
-    "translation": {
+    "text": {
+      "ar": "آل عمران",
+      "tr": "Ali 'Imran",
       "en": "Family of Imran",
       "ru": "Семейство Имрана"
     },
@@ -43,9 +43,9 @@
   },
   {
     "id": 4,
-    "name": "النساء",
-    "transliteration": "An-Nisa",
-    "translation": {
+    "text": {
+      "ar": "النساء",
+      "tr": "An-Nisa",
       "en": "The Women",
       "ru": "Женщины"
     },
@@ -57,9 +57,9 @@
   },
   {
     "id": 5,
-    "name": "المائدة",
-    "transliteration": "Al-Ma'idah",
-    "translation": {
+    "text": {
+      "ar": "المائدة",
+      "tr": "Al-Ma'idah",
       "en": "The Table Spread",
       "ru": "Трапеза"
     },
@@ -71,9 +71,9 @@
   },
   {
     "id": 6,
-    "name": "الأنعام",
-    "transliteration": "Al-An'am",
-    "translation": {
+    "text": {
+      "ar": "الأنعام",
+      "tr": "Al-An'am",
       "en": "The Cattle",
       "ru": "Скот"
     },
@@ -85,9 +85,9 @@
   },
   {
     "id": 7,
-    "name": "الأعراف",
-    "transliteration": "Al-A'raf",
-    "translation": {
+    "text": {
+      "ar": "الأعراف",
+      "tr": "Al-A'raf",
       "en": "The Heights",
       "ru": "Ограды"
     },
@@ -95,15 +95,13 @@
     "verses": 206,
     "words": 3341,
     "chars": 14435,
-    "sajda": [
-      206
-    ]
+    "sajda": [206]
   },
   {
     "id": 8,
-    "name": "الأنفال",
-    "transliteration": "Al-Anfal",
-    "translation": {
+    "text": {
+      "ar": "الأنفال",
+      "tr": "Al-Anfal",
       "en": "The Spoils of War",
       "ru": "Трофеи"
     },
@@ -115,9 +113,9 @@
   },
   {
     "id": 9,
-    "name": "التوبة",
-    "transliteration": "At-Tawbah",
-    "translation": {
+    "text": {
+      "ar": "التوبة",
+      "tr": "At-Tawbah",
       "en": "The Repentance",
       "ru": "Покаяние"
     },
@@ -129,9 +127,9 @@
   },
   {
     "id": 10,
-    "name": "يونس",
-    "transliteration": "Yunus",
-    "translation": {
+    "text": {
+      "ar": "يونس",
+      "tr": "Yunus",
       "en": "Jonah",
       "ru": "Йунус"
     },
@@ -143,9 +141,9 @@
   },
   {
     "id": 11,
-    "name": "هود",
-    "transliteration": "Hud",
-    "translation": {
+    "text": {
+      "ar": "هود",
+      "tr": "Hud",
       "en": "Hud",
       "ru": "Худ"
     },
@@ -157,9 +155,9 @@
   },
   {
     "id": 12,
-    "name": "يوسف",
-    "transliteration": "Yusuf",
-    "translation": {
+    "text": {
+      "ar": "يوسف",
+      "tr": "Yusuf",
       "en": "Joseph",
       "ru": "Йусуф"
     },
@@ -171,9 +169,9 @@
   },
   {
     "id": 13,
-    "name": "الرعد",
-    "transliteration": "Ar-Ra'd",
-    "translation": {
+    "text": {
+      "ar": "الرعد",
+      "tr": "Ar-Ra'd",
       "en": "The Thunder",
       "ru": "Гром"
     },
@@ -181,15 +179,13 @@
     "verses": 43,
     "words": 853,
     "chars": 3545,
-    "sajda": [
-      15
-    ]
+    "sajda": [15]
   },
   {
     "id": 14,
-    "name": "ابراهيم",
-    "transliteration": "Ibrahim",
-    "translation": {
+    "text": {
+      "ar": "ابراهيم",
+      "tr": "Ibrahim",
       "en": "Abraham",
       "ru": "Ибрахим"
     },
@@ -201,9 +197,9 @@
   },
   {
     "id": 15,
-    "name": "الحجر",
-    "transliteration": "Al-Hijr",
-    "translation": {
+    "text": {
+      "ar": "الحجر",
+      "tr": "Al-Hijr",
       "en": "The Rocky Tract",
       "ru": "Хиджр "
     },
@@ -215,9 +211,9 @@
   },
   {
     "id": 16,
-    "name": "النحل",
-    "transliteration": "An-Nahl",
-    "translation": {
+    "text": {
+      "ar": "النحل",
+      "tr": "An-Nahl",
       "en": "The Bee",
       "ru": "Пчелы"
     },
@@ -225,15 +221,13 @@
     "verses": 128,
     "words": 1844,
     "chars": 7832,
-    "sajda": [
-      50
-    ]
+    "sajda": [50]
   },
   {
     "id": 17,
-    "name": "الإسراء",
-    "transliteration": "Al-Isra",
-    "translation": {
+    "text": {
+      "ar": "الإسراء",
+      "tr": "Al-Isra",
       "en": "The Night Journey",
       "ru": "Ночной перенос"
     },
@@ -241,15 +235,13 @@
     "verses": 111,
     "words": 1558,
     "chars": 6643,
-    "sajda": [
-      109
-    ]
+    "sajda": [109]
   },
   {
     "id": 18,
-    "name": "الكهف",
-    "transliteration": "Al-Kahf",
-    "translation": {
+    "text": {
+      "ar": "الكهف",
+      "tr": "Al-Kahf",
       "en": "The Cave",
       "ru": "Пещера"
     },
@@ -261,9 +253,9 @@
   },
   {
     "id": 19,
-    "name": "مريم",
-    "transliteration": "Maryam",
-    "translation": {
+    "text": {
+      "ar": "مريم",
+      "tr": "Maryam",
       "en": "Mary",
       "ru": "Марьям"
     },
@@ -271,15 +263,13 @@
     "verses": 98,
     "words": 971,
     "chars": 3935,
-    "sajda": [
-      58
-    ]
+    "sajda": [58]
   },
   {
     "id": 20,
-    "name": "طه",
-    "transliteration": "Taha",
-    "translation": {
+    "text": {
+      "ar": "طه",
+      "tr": "Taha",
       "en": "Ta-Ha",
       "ru": "Та Ха "
     },
@@ -291,9 +281,9 @@
   },
   {
     "id": 21,
-    "name": "الأنبياء",
-    "transliteration": "Al-Anbya",
-    "translation": {
+    "text": {
+      "ar": "الأنبياء",
+      "tr": "Al-Anbya",
       "en": "The Prophets",
       "ru": "Пророки"
     },
@@ -305,9 +295,9 @@
   },
   {
     "id": 22,
-    "name": "الحج",
-    "transliteration": "Al-Hajj",
-    "translation": {
+    "text": {
+      "ar": "الحج",
+      "tr": "Al-Hajj",
       "en": "The Pilgrimage",
       "ru": "Паломничество"
     },
@@ -315,15 +305,13 @@
     "verses": 78,
     "words": 1279,
     "chars": 5314,
-    "sajda": [
-      18,77
-    ]
+    "sajda": [18, 77]
   },
   {
     "id": 23,
-    "name": "المؤمنون",
-    "transliteration": "Al-Mu'minun",
-    "translation": {
+    "text": {
+      "ar": "المؤمنون",
+      "tr": "Al-Mu'minun",
       "en": "The Believers",
       "ru": "Верующие"
     },
@@ -335,9 +323,9 @@
   },
   {
     "id": 24,
-    "name": "النور",
-    "transliteration": "An-Nur",
-    "translation": {
+    "text": {
+      "ar": "النور",
+      "tr": "An-Nur",
       "en": "The Light",
       "ru": "Свет"
     },
@@ -349,9 +337,9 @@
   },
   {
     "id": 25,
-    "name": "الفرقان",
-    "transliteration": "Al-Furqan",
-    "translation": {
+    "text": {
+      "ar": "الفرقان",
+      "tr": "Al-Furqan",
       "en": "The Criterion",
       "ru": "аль-Фуркан"
     },
@@ -359,15 +347,13 @@
     "verses": 77,
     "words": 896,
     "chars": 3878,
-    "sajda": [
-      60
-    ]
+    "sajda": [60]
   },
   {
     "id": 26,
-    "name": "الشعراء",
-    "transliteration": "Ash-Shu'ara",
-    "translation": {
+    "text": {
+      "ar": "الشعراء",
+      "tr": "Ash-Shu'ara",
       "en": "The Poets",
       "ru": "Поэты"
     },
@@ -379,9 +365,9 @@
   },
   {
     "id": 27,
-    "name": "النمل",
-    "transliteration": "An-Naml",
-    "translation": {
+    "text": {
+      "ar": "النمل",
+      "tr": "An-Naml",
       "en": "The Ant",
       "ru": "Муравьи"
     },
@@ -389,15 +375,13 @@
     "verses": 93,
     "words": 1159,
     "chars": 4790,
-    "sajda": [
-      26
-    ]
+    "sajda": [26]
   },
   {
     "id": 28,
-    "name": "القصص",
-    "transliteration": "Al-Qasas",
-    "translation": {
+    "text": {
+      "ar": "القصص",
+      "tr": "Al-Qasas",
       "en": "The Stories",
       "ru": "Рассказ"
     },
@@ -409,9 +393,9 @@
   },
   {
     "id": 29,
-    "name": "العنكبوت",
-    "transliteration": "Al-'Ankabut",
-    "translation": {
+    "text": {
+      "ar": "العنكبوت",
+      "tr": "Al-'Ankabut",
       "en": "The Spider",
       "ru": "Паук"
     },
@@ -423,9 +407,9 @@
   },
   {
     "id": 30,
-    "name": "الروم",
-    "transliteration": "Ar-Rum",
-    "translation": {
+    "text": {
+      "ar": "الروم",
+      "tr": "Ar-Rum",
       "en": "The Romans",
       "ru": "Римляне"
     },
@@ -437,9 +421,9 @@
   },
   {
     "id": 31,
-    "name": "لقمان",
-    "transliteration": "Luqman",
-    "translation": {
+    "text": {
+      "ar": "لقمان",
+      "tr": "Luqman",
       "en": "Luqman",
       "ru": "Лукман"
     },
@@ -451,9 +435,9 @@
   },
   {
     "id": 32,
-    "name": "السجدة",
-    "transliteration": "As-Sajdah",
-    "translation": {
+    "text": {
+      "ar": "السجدة",
+      "tr": "As-Sajdah",
       "en": "The Prostration",
       "ru": "Земной поклон"
     },
@@ -461,15 +445,13 @@
     "verses": 30,
     "words": 372,
     "chars": 1563,
-    "sajda": [
-      15
-    ]
+    "sajda": [15]
   },
   {
     "id": 33,
-    "name": "الأحزاب",
-    "transliteration": "Al-Ahzab",
-    "translation": {
+    "text": {
+      "ar": "الأحزاب",
+      "tr": "Al-Ahzab",
       "en": "The Combined Forces",
       "ru": "Союзники"
     },
@@ -481,9 +463,9 @@
   },
   {
     "id": 34,
-    "name": "سبإ",
-    "transliteration": "Saba",
-    "translation": {
+    "text": {
+      "ar": "سبإ",
+      "tr": "Saba",
       "en": "Sheba",
       "ru": "Сава"
     },
@@ -495,9 +477,9 @@
   },
   {
     "id": 35,
-    "name": "فاطر",
-    "transliteration": "Fatir",
-    "translation": {
+    "text": {
+      "ar": "فاطر",
+      "tr": "Fatir",
       "en": "Originator",
       "ru": "Творец"
     },
@@ -509,9 +491,9 @@
   },
   {
     "id": 36,
-    "name": "يس",
-    "transliteration": "Ya-Sin",
-    "translation": {
+    "text": {
+      "ar": "يس",
+      "tr": "Ya-Sin",
       "en": "Ya Sin",
       "ru": "Йа Син"
     },
@@ -523,9 +505,9 @@
   },
   {
     "id": 37,
-    "name": "الصافات",
-    "transliteration": "As-Saffat",
-    "translation": {
+    "text": {
+      "ar": "الصافات",
+      "tr": "As-Saffat",
       "en": "Those who set the Ranks",
       "ru": "Выстроившиеся в ряды"
     },
@@ -537,9 +519,9 @@
   },
   {
     "id": 38,
-    "name": "ص",
-    "transliteration": "Sad",
-    "translation": {
+    "text": {
+      "ar": "ص",
+      "tr": "Sad",
       "en": "The Letter \"Saad\"",
       "ru": "Сод"
     },
@@ -547,15 +529,13 @@
     "verses": 88,
     "words": 735,
     "chars": 3065,
-    "sajda": [
-      24
-    ]
+    "sajda": [24]
   },
   {
     "id": 39,
-    "name": "الزمر",
-    "transliteration": "Az-Zumar",
-    "translation": {
+    "text": {
+      "ar": "الزمر",
+      "tr": "Az-Zumar",
       "en": "The Troops",
       "ru": "Толпы"
     },
@@ -567,9 +547,9 @@
   },
   {
     "id": 40,
-    "name": "غافر",
-    "transliteration": "Ghafir",
-    "translation": {
+    "text": {
+      "ar": "غافر",
+      "tr": "Ghafir",
       "en": "The Forgiver",
       "ru": "Прощающий"
     },
@@ -581,9 +561,9 @@
   },
   {
     "id": 41,
-    "name": "فصلت",
-    "transliteration": "Fussilat",
-    "translation": {
+    "text": {
+      "ar": "فصلت",
+      "tr": "Fussilat",
       "en": "Explained in Detail",
       "ru": "Разъяснены"
     },
@@ -591,15 +571,13 @@
     "verses": 54,
     "words": 794,
     "chars": 3365,
-    "sajda": [
-      38
-    ]
+    "sajda": [38]
   },
   {
     "id": 42,
-    "name": "الشورى",
-    "transliteration": "Ash-Shuraa",
-    "translation": {
+    "text": {
+      "ar": "الشورى",
+      "tr": "Ash-Shuraa",
       "en": "The Consultation",
       "ru": "Совет"
     },
@@ -611,10 +589,9 @@
   },
   {
     "id": 43,
-    "name": "الزخرف",
-    "transliteration": "Az-Zukhruf",
-    "translation": {
-      "en": "The Ornaments of Gold",
+    "text": {
+      "ar": "الزخرف",
+      "tr": "Az-Zukhruf",
       "ru": "Украшения"
     },
     "type": "meccan",
@@ -625,9 +602,9 @@
   },
   {
     "id": 44,
-    "name": "الدخان",
-    "transliteration": "Ad-Dukhan",
-    "translation": {
+    "text": {
+      "ar": "الدخان",
+      "tr": "Ad-Dukhan",
       "en": "The Smoke",
       "ru": "Дым"
     },
@@ -639,9 +616,9 @@
   },
   {
     "id": 45,
-    "name": "الجاثية",
-    "transliteration": "Al-Jathiyah",
-    "translation": {
+    "text": {
+      "ar": "الجاثية",
+      "tr": "Al-Jathiyah",
       "en": "The Crouching",
       "ru": "Коленопреклоненные"
     },
@@ -653,9 +630,9 @@
   },
   {
     "id": 46,
-    "name": "الأحقاف",
-    "transliteration": "Al-Ahqaf",
-    "translation": {
+    "text": {
+      "ar": "الأحقاف",
+      "tr": "Al-Ahqaf",
       "en": "The Wind-Curved Sandhills",
       "ru": "Барханы"
     },
@@ -667,9 +644,9 @@
   },
   {
     "id": 47,
-    "name": "محمد",
-    "transliteration": "Muhammad",
-    "translation": {
+    "text": {
+      "ar": "محمد",
+      "tr": "Muhammad",
       "en": "Muhammad",
       "ru": "Мухаммад"
     },
@@ -681,9 +658,9 @@
   },
   {
     "id": 48,
-    "name": "الفتح",
-    "transliteration": "Al-Fath",
-    "translation": {
+    "text": {
+      "ar": "الفتح",
+      "tr": "Al-Fath",
       "en": "The Victory",
       "ru": "Победа"
     },
@@ -695,9 +672,9 @@
   },
   {
     "id": 49,
-    "name": "الحجرات",
-    "transliteration": "Al-Hujurat",
-    "translation": {
+    "text": {
+      "ar": "الحجرات",
+      "tr": "Al-Hujurat",
       "en": "The Rooms",
       "ru": "Комнаты"
     },
@@ -709,9 +686,9 @@
   },
   {
     "id": 50,
-    "name": "ق",
-    "transliteration": "Qaf",
-    "translation": {
+    "text": {
+      "ar": "ق",
+      "tr": "Qaf",
       "en": "The Letter \"Qaf\"",
       "ru": "Каф"
     },
@@ -723,9 +700,9 @@
   },
   {
     "id": 51,
-    "name": "الذاريات",
-    "transliteration": "Adh-Dhariyat",
-    "translation": {
+    "text": {
+      "ar": "الذاريات",
+      "tr": "Adh-Dhariyat",
       "en": "The Winnowing Winds",
       "ru": "Рассеивающие прах"
     },
@@ -737,9 +714,9 @@
   },
   {
     "id": 52,
-    "name": "الطور",
-    "transliteration": "At-Tur",
-    "translation": {
+    "text": {
+      "ar": "الطور",
+      "tr": "At-Tur",
       "en": "The Mount",
       "ru": "Гора"
     },
@@ -751,9 +728,9 @@
   },
   {
     "id": 53,
-    "name": "النجم",
-    "transliteration": "An-Najm",
-    "translation": {
+    "text": {
+      "ar": "النجم",
+      "tr": "An-Najm",
       "en": "The Star",
       "ru": "Звезда"
     },
@@ -761,15 +738,13 @@
     "verses": 62,
     "words": 360,
     "chars": 1433,
-    "sajda": [
-      62
-    ]
+    "sajda": [62]
   },
   {
     "id": 54,
-    "name": "القمر",
-    "transliteration": "Al-Qamar",
-    "translation": {
+    "text": {
+      "ar": "القمر",
+      "tr": "Al-Qamar",
       "en": "The Moon",
       "ru": "Месяц"
     },
@@ -781,9 +756,9 @@
   },
   {
     "id": 55,
-    "name": "الرحمن",
-    "transliteration": "Ar-Rahman",
-    "translation": {
+    "text": {
+      "ar": "الرحمن",
+      "tr": "Ar-Rahman",
       "en": "The Beneficent",
       "ru": "Милостивый"
     },
@@ -795,9 +770,9 @@
   },
   {
     "id": 56,
-    "name": "الواقعة",
-    "transliteration": "Al-Waqi'ah",
-    "translation": {
+    "text": {
+      "ar": "الواقعة",
+      "tr": "Al-Waqi'ah",
       "en": "The Inevitable",
       "ru": "Событие"
     },
@@ -809,9 +784,9 @@
   },
   {
     "id": 57,
-    "name": "الحديد",
-    "transliteration": "Al-Hadid",
-    "translation": {
+    "text": {
+      "ar": "الحديد",
+      "tr": "Al-Hadid",
       "en": "The Iron",
       "ru": "Железо"
     },
@@ -823,9 +798,9 @@
   },
   {
     "id": 58,
-    "name": "المجادلة",
-    "transliteration": "Al-Mujadila",
-    "translation": {
+    "text": {
+      "ar": "المجادلة",
+      "tr": "Al-Mujadila",
       "en": "The Pleading Woman",
       "ru": "Препирающаяся"
     },
@@ -837,9 +812,9 @@
   },
   {
     "id": 59,
-    "name": "الحشر",
-    "transliteration": "Al-Hashr",
-    "translation": {
+    "text": {
+      "ar": "الحشر",
+      "tr": "Al-Hashr",
       "en": "The Exile",
       "ru": "Сбор"
     },
@@ -851,9 +826,9 @@
   },
   {
     "id": 60,
-    "name": "الممتحنة",
-    "transliteration": "Al-Mumtahanah",
-    "translation": {
+    "text": {
+      "ar": "الممتحنة",
+      "tr": "Al-Mumtahanah",
       "en": "She that is to be examined",
       "ru": "Испытуемая"
     },
@@ -865,9 +840,9 @@
   },
   {
     "id": 61,
-    "name": "الصف",
-    "transliteration": "As-Saf",
-    "translation": {
+    "text": {
+      "ar": "الصف",
+      "tr": "As-Saf",
       "en": "The Ranks",
       "ru": "Ряды"
     },
@@ -879,9 +854,9 @@
   },
   {
     "id": 62,
-    "name": "الجمعة",
-    "transliteration": "Al-Jumu'ah",
-    "translation": {
+    "text": {
+      "ar": "الجمعة",
+      "tr": "Al-Jumu'ah",
       "en": "The Congregation, Friday",
       "ru": "Собрание"
     },
@@ -893,9 +868,9 @@
   },
   {
     "id": 63,
-    "name": "المنافقون",
-    "transliteration": "Al-Munafiqun",
-    "translation": {
+    "text": {
+      "ar": "المنافقون",
+      "tr": "Al-Munafiqun",
       "en": "The Hypocrites",
       "ru": "Лицемеры"
     },
@@ -907,9 +882,9 @@
   },
   {
     "id": 64,
-    "name": "التغابن",
-    "transliteration": "At-Taghabun",
-    "translation": {
+    "text": {
+      "ar": "التغابن",
+      "tr": "At-Taghabun",
       "en": "The Mutual Disillusion",
       "ru": "Взаимное обделение"
     },
@@ -921,9 +896,9 @@
   },
   {
     "id": 65,
-    "name": "الطلاق",
-    "transliteration": "At-Talaq",
-    "translation": {
+    "text": {
+      "ar": "الطلاق",
+      "tr": "At-Talaq",
       "en": "The Divorce",
       "ru": "Развод"
     },
@@ -935,9 +910,9 @@
   },
   {
     "id": 66,
-    "name": "التحريم",
-    "transliteration": "At-Tahrim",
-    "translation": {
+    "text": {
+      "ar": "التحريم",
+      "tr": "At-Tahrim",
       "en": "The Prohibition",
       "ru": "Запрещение"
     },
@@ -949,9 +924,9 @@
   },
   {
     "id": 67,
-    "name": "الملك",
-    "transliteration": "Al-Mulk",
-    "translation": {
+    "text": {
+      "ar": "الملك",
+      "tr": "Al-Mulk",
       "en": "The Sovereignty",
       "ru": "Власть"
     },
@@ -963,9 +938,9 @@
   },
   {
     "id": 68,
-    "name": "القلم",
-    "transliteration": "Al-Qalam",
-    "translation": {
+    "text": {
+      "ar": "القلم",
+      "tr": "Al-Qalam",
       "en": "The Pen",
       "ru": "Письменная трость"
     },
@@ -977,9 +952,9 @@
   },
   {
     "id": 69,
-    "name": "الحاقة",
-    "transliteration": "Al-Haqqah",
-    "translation": {
+    "text": {
+      "ar": "الحاقة",
+      "tr": "Al-Haqqah",
       "en": "The Reality",
       "ru": "Неминуемое"
     },
@@ -991,9 +966,9 @@
   },
   {
     "id": 70,
-    "name": "المعارج",
-    "transliteration": "Al-Ma'arij",
-    "translation": {
+    "text": {
+      "ar": "المعارج",
+      "tr": "Al-Ma'arij",
       "en": "The Ascending Stairways",
       "ru": "Ступени"
     },
@@ -1005,9 +980,9 @@
   },
   {
     "id": 71,
-    "name": "نوح",
-    "transliteration": "Nuh",
-    "translation": {
+    "text": {
+      "ar": "نوح",
+      "tr": "Nuh",
       "en": "Noah",
       "ru": "Нух"
     },
@@ -1019,9 +994,9 @@
   },
   {
     "id": 72,
-    "name": "الجن",
-    "transliteration": "Al-Jinn",
-    "translation": {
+    "text": {
+      "ar": "الجن",
+      "tr": "Al-Jinn",
       "en": "The Jinn",
       "ru": "Джинны"
     },
@@ -1033,9 +1008,9 @@
   },
   {
     "id": 73,
-    "name": "المزمل",
-    "transliteration": "Al-Muzzammil",
-    "translation": {
+    "text": {
+      "ar": "المزمل",
+      "tr": "Al-Muzzammil",
       "en": "The Enshrouded One",
       "ru": "Закутавшийся"
     },
@@ -1047,9 +1022,9 @@
   },
   {
     "id": 74,
-    "name": "المدثر",
-    "transliteration": "Al-Muddaththir",
-    "translation": {
+    "text": {
+      "ar": "المدثر",
+      "tr": "Al-Muddaththir",
       "en": "The Cloaked One",
       "ru": "Завернувшийся"
     },
@@ -1061,9 +1036,9 @@
   },
   {
     "id": 75,
-    "name": "القيامة",
-    "transliteration": "Al-Qiyamah",
-    "translation": {
+    "text": {
+      "ar": "القيامة",
+      "tr": "Al-Qiyamah",
       "en": "The Resurrection",
       "ru": "Воскресение"
     },
@@ -1075,9 +1050,9 @@
   },
   {
     "id": 76,
-    "name": "الانسان",
-    "transliteration": "Al-Insan",
-    "translation": {
+    "text": {
+      "ar": "الانسان",
+      "tr": "Al-Insan",
       "en": "The Man",
       "ru": "Человек"
     },
@@ -1089,9 +1064,9 @@
   },
   {
     "id": 77,
-    "name": "المرسلات",
-    "transliteration": "Al-Mursalat",
-    "translation": {
+    "text": {
+      "ar": "المرسلات",
+      "tr": "Al-Mursalat",
       "en": "The Emissaries",
       "ru": "Посылаемые"
     },
@@ -1103,9 +1078,9 @@
   },
   {
     "id": 78,
-    "name": "النبإ",
-    "transliteration": "An-Naba",
-    "translation": {
+    "text": {
+      "ar": "النبإ",
+      "tr": "An-Naba",
       "en": "The Tidings",
       "ru": "Весть"
     },
@@ -1117,9 +1092,9 @@
   },
   {
     "id": 79,
-    "name": "النازعات",
-    "transliteration": "An-Nazi'at",
-    "translation": {
+    "text": {
+      "ar": "النازعات",
+      "tr": "An-Nazi'at",
       "en": "Those who drag forth",
       "ru": "Исторгающие"
     },
@@ -1131,9 +1106,9 @@
   },
   {
     "id": 80,
-    "name": "عبس",
-    "transliteration": "'Abasa",
-    "translation": {
+    "text": {
+      "ar": "عبس",
+      "tr": "'Abasa",
       "en": "He Frowned",
       "ru": "Нахмурился"
     },
@@ -1145,9 +1120,9 @@
   },
   {
     "id": 81,
-    "name": "التكوير",
-    "transliteration": "At-Takwir",
-    "translation": {
+    "text": {
+      "ar": "التكوير",
+      "tr": "At-Takwir",
       "en": "The Overthrowing",
       "ru": "Скручивание"
     },
@@ -1159,9 +1134,9 @@
   },
   {
     "id": 82,
-    "name": "الإنفطار",
-    "transliteration": "Al-Infitar",
-    "translation": {
+    "text": {
+      "ar": "الإنفطار",
+      "tr": "Al-Infitar",
       "en": "The Cleaving",
       "ru": "Раскалывание"
     },
@@ -1173,9 +1148,9 @@
   },
   {
     "id": 83,
-    "name": "المطففين",
-    "transliteration": "Al-Mutaffifin",
-    "translation": {
+    "text": {
+      "ar": "المطففين",
+      "tr": "Al-Mutaffifin",
       "en": "The Defrauding",
       "ru": "Обвешивающие"
     },
@@ -1187,9 +1162,9 @@
   },
   {
     "id": 84,
-    "name": "الإنشقاق",
-    "transliteration": "Al-Inshiqaq",
-    "translation": {
+    "text": {
+      "ar": "الإنشقاق",
+      "tr": "Al-Inshiqaq",
       "en": "The Sundering",
       "ru": "Разверзнется"
     },
@@ -1197,15 +1172,13 @@
     "verses": 25,
     "words": 108,
     "chars": 445,
-    "sajda": [
-      21
-    ]
+    "sajda": [21]
   },
   {
     "id": 85,
-    "name": "البروج",
-    "transliteration": "Al-Buruj",
-    "translation": {
+    "text": {
+      "ar": "البروج",
+      "tr": "Al-Buruj",
       "en": "The Mansions of the Stars",
       "ru": "Созвездия Зодиака"
     },
@@ -1217,9 +1190,9 @@
   },
   {
     "id": 86,
-    "name": "الطارق",
-    "transliteration": "At-Tariq",
-    "translation": {
+    "text": {
+      "ar": "الطارق",
+      "tr": "At-Tariq",
       "en": "The Nightcommer",
       "ru": "Ночной путник"
     },
@@ -1231,9 +1204,9 @@
   },
   {
     "id": 87,
-    "name": "الأعلى",
-    "transliteration": "Al-A'la",
-    "translation": {
+    "text": {
+      "ar": "الأعلى",
+      "tr": "Al-A'la",
       "en": "The Most High",
       "ru": "Всевышний"
     },
@@ -1245,9 +1218,9 @@
   },
   {
     "id": 88,
-    "name": "الغاشية",
-    "transliteration": "Al-Ghashiyah",
-    "translation": {
+    "text": {
+      "ar": "الغاشية",
+      "tr": "Al-Ghashiyah",
       "en": "The Overwhelming",
       "ru": "Покрывающее"
     },
@@ -1259,9 +1232,9 @@
   },
   {
     "id": 89,
-    "name": "الفجر",
-    "transliteration": "Al-Fajr",
-    "translation": {
+    "text": {
+      "ar": "الفجر",
+      "tr": "Al-Fajr",
       "en": "The Dawn",
       "ru": "Заря"
     },
@@ -1273,9 +1246,9 @@
   },
   {
     "id": 90,
-    "name": "البلد",
-    "transliteration": "Al-Balad",
-    "translation": {
+    "text": {
+      "ar": "البلد",
+      "tr": "Al-Balad",
       "en": "The City",
       "ru": "Город"
     },
@@ -1287,9 +1260,9 @@
   },
   {
     "id": 91,
-    "name": "الشمس",
-    "transliteration": "Ash-Shams",
-    "translation": {
+    "text": {
+      "ar": "الشمس",
+      "tr": "Ash-Shams",
       "en": "The Sun",
       "ru": "Солнце"
     },
@@ -1301,9 +1274,9 @@
   },
   {
     "id": 92,
-    "name": "الليل",
-    "transliteration": "Al-Layl",
-    "translation": {
+    "text": {
+      "ar": "الليل",
+      "tr": "Al-Layl",
       "en": "The Night",
       "ru": "Ночь"
     },
@@ -1315,9 +1288,9 @@
   },
   {
     "id": 93,
-    "name": "الضحى",
-    "transliteration": "Ad-Duhaa",
-    "translation": {
+    "text": {
+      "ar": "الضحى",
+      "tr": "Ad-Duhaa",
       "en": "The Morning Hours",
       "ru": "Утро"
     },
@@ -1329,9 +1302,9 @@
   },
   {
     "id": 94,
-    "name": "الشرح",
-    "transliteration": "Ash-Sharh",
-    "translation": {
+    "text": {
+      "ar": "الشرح",
+      "tr": "Ash-Sharh",
       "en": "The Relief",
       "ru": "Раскрытие"
     },
@@ -1343,9 +1316,9 @@
   },
   {
     "id": 95,
-    "name": "التين",
-    "transliteration": "At-Tin",
-    "translation": {
+    "text": {
+      "ar": "التين",
+      "tr": "At-Tin",
       "en": "The Fig",
       "ru": "Смоковница"
     },
@@ -1357,9 +1330,9 @@
   },
   {
     "id": 96,
-    "name": "العلق",
-    "transliteration": "Al-'Alaq",
-    "translation": {
+    "text": {
+      "ar": "العلق",
+      "tr": "Al-'Alaq",
       "en": "The Clot",
       "ru": "Сгусток крови"
     },
@@ -1367,15 +1340,13 @@
     "verses": 19,
     "words": 72,
     "chars": 288,
-    "sajda": [
-      19
-    ]
+    "sajda": [19]
   },
   {
     "id": 97,
-    "name": "القدر",
-    "transliteration": "Al-Qadr",
-    "translation": {
+    "text": {
+      "ar": "القدر",
+      "tr": "Al-Qadr",
       "en": "The Power",
       "ru": "Предопределение"
     },
@@ -1387,9 +1358,9 @@
   },
   {
     "id": 98,
-    "name": "البينة",
-    "transliteration": "Al-Bayyinah",
-    "translation": {
+    "text": {
+      "ar": "البينة",
+      "tr": "Al-Bayyinah",
       "en": "The Clear Proof",
       "ru": "Ясное знамение"
     },
@@ -1401,9 +1372,9 @@
   },
   {
     "id": 99,
-    "name": "الزلزلة",
-    "transliteration": "Az-Zalzalah",
-    "translation": {
+    "text": {
+      "ar": "الزلزلة",
+      "tr": "Az-Zalzalah",
       "en": "The Earthquake",
       "ru": "Сотрясение"
     },
@@ -1415,9 +1386,9 @@
   },
   {
     "id": 100,
-    "name": "العاديات",
-    "transliteration": "Al-'Adiyat",
-    "translation": {
+    "text": {
+      "ar": "العاديات",
+      "tr": "Al-'Adiyat",
       "en": "The Courser",
       "ru": "Скачущие"
     },
@@ -1429,9 +1400,9 @@
   },
   {
     "id": 101,
-    "name": "القارعة",
-    "transliteration": "Al-Qari'ah",
-    "translation": {
+    "text": {
+      "ar": "القارعة",
+      "tr": "Al-Qari'ah",
       "en": "The Calamity",
       "ru": "Великое бедствие"
     },
@@ -1443,9 +1414,9 @@
   },
   {
     "id": 102,
-    "name": "التكاثر",
-    "transliteration": "At-Takathur",
-    "translation": {
+    "text": {
+      "ar": "التكاثر",
+      "tr": "At-Takathur",
       "en": "The Rivalry in world increase",
       "ru": "Страсть к приумножению"
     },
@@ -1457,9 +1428,9 @@
   },
   {
     "id": 103,
-    "name": "العصر",
-    "transliteration": "Al-'Asr",
-    "translation": {
+    "text": {
+      "ar": "العصر",
+      "tr": "Al-'Asr",
       "en": "The Declining Day",
       "ru": "Предвечернее время"
     },
@@ -1471,9 +1442,9 @@
   },
   {
     "id": 104,
-    "name": "الهمزة",
-    "transliteration": "Al-Humazah",
-    "translation": {
+    "text": {
+      "ar": "الهمزة",
+      "tr": "Al-Humazah",
       "en": "The Traducer",
       "ru": "Хулитель"
     },
@@ -1485,9 +1456,9 @@
   },
   {
     "id": 105,
-    "name": "الفيل",
-    "transliteration": "Al-Fil",
-    "translation": {
+    "text": {
+      "ar": "الفيل",
+      "tr": "Al-Fil",
       "en": "The Elephant",
       "ru": "Слон"
     },
@@ -1499,9 +1470,9 @@
   },
   {
     "id": 106,
-    "name": "قريش",
-    "transliteration": "Quraysh",
-    "translation": {
+    "text": {
+      "ar": "قريش",
+      "tr": "Quraysh",
       "en": "Quraysh",
       "ru": "Курейшиты"
     },
@@ -1513,9 +1484,9 @@
   },
   {
     "id": 107,
-    "name": "الماعون",
-    "transliteration": "Al-Ma'un",
-    "translation": {
+    "text": {
+      "ar": "الماعون",
+      "tr": "Al-Ma'un",
       "en": "The Small kindnesses",
       "ru": "Мелочь"
     },
@@ -1527,9 +1498,9 @@
   },
   {
     "id": 108,
-    "name": "الكوثر",
-    "transliteration": "Al-Kawthar",
-    "translation": {
+    "text": {
+      "ar": "الكوثر",
+      "tr": "Al-Kawthar",
       "en": "The Abundance",
       "ru": "Изобилие"
     },
@@ -1541,9 +1512,9 @@
   },
   {
     "id": 109,
-    "name": "الكافرون",
-    "transliteration": "Al-Kafirun",
-    "translation": {
+    "text": {
+      "ar": "الكافرون",
+      "tr": "Al-Kafirun",
       "en": "The Disbelievers",
       "ru": "Неверующие"
     },
@@ -1555,9 +1526,9 @@
   },
   {
     "id": 110,
-    "name": "النصر",
-    "transliteration": "An-Nasr",
-    "translation": {
+    "text": {
+      "ar": "النصر",
+      "tr": "An-Nasr",
       "en": "The Divine Support",
       "ru": "Помощь"
     },
@@ -1569,9 +1540,9 @@
   },
   {
     "id": 111,
-    "name": "المسد",
-    "transliteration": "Al-Masad",
-    "translation": {
+    "text": {
+      "ar": "المسد",
+      "tr": "Al-Masad",
       "en": "The Palm Fiber",
       "ru": "Пальмовые волокна"
     },
@@ -1583,9 +1554,9 @@
   },
   {
     "id": 112,
-    "name": "الإخلاص",
-    "transliteration": "Al-Ikhlas",
-    "translation": {
+    "text": {
+      "ar": "الإخلاص",
+      "tr": "Al-Ikhlas",
       "en": "The Sincerity",
       "ru": "Очищение веры"
     },
@@ -1597,9 +1568,9 @@
   },
   {
     "id": 113,
-    "name": "الفلق",
-    "transliteration": "Al-Falaq",
-    "translation": {
+    "text": {
+      "ar": "الفلق",
+      "tr": "Al-Falaq",
       "en": "The Daybreak",
       "ru": "Рассвет"
     },
@@ -1611,9 +1582,9 @@
   },
   {
     "id": 114,
-    "name": "الناس",
-    "transliteration": "An-Nas",
-    "translation": {
+    "text": {
+      "ar": "الناس",
+      "tr": "An-Nas",
       "en": "Mankind",
       "ru": "Люди"
     },

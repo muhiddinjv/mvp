@@ -59,7 +59,7 @@ function Chapter() {
         </div>
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
-        <div className="text-center text-lg mb-2">{chapters[chapterId-1]?.transliteration} {chapters[chapterId-1]?.words} words</div>
+        <div className="text-center text-xl mb-2">{chapters[chapterId-1]?.text[language]} {chapters[chapterId-1]?.words} words</div>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}

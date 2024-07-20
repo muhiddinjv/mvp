@@ -1,5 +1,5 @@
 import React from'react';
-import { useTheme, useBookmarks } from '../hooks';
+import { useTheme, useBookmarks, useLanguage } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import downloadIconSlate from '../assets/dld-min-slate.svg';
@@ -9,6 +9,7 @@ function Chapters() {
   const { theme } = useTheme("dark");
   const [ sortType, setSortType ] = React.useState('id');
   const [ sortOrder, setSortOrder ] = React.useState(false);
+  const { language } = useLanguage();
   const { setChapterId, chapters, setChapters } = React.useContext(GlobalContext);
   const [,,getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
@@ -58,7 +59,7 @@ function Chapters() {
         return (<span id={chapter.id} key={chapter.id} onClick={()=> handleChapter(chapter)} className="flex border border-indigo-500 rounded">
           <span className='flex items-center justify-center border-r border-indigo-500 text-lg w-full max-w-12'>{chapter.id}</span>
           <Link to={`/${chapter.id}`} className='flex-grow p-1 ml-2'>
-            <div className='font-bold'>{chapter.transliteration}</div>
+            <div className='font-bold'>{chapter.text[language]}</div>
             <div className='text-sm'>
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
