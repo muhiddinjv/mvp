@@ -6,7 +6,9 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
 
     return (
         <div className={`mx-4 flex ${expanded && 'border-y border-indigo-500 pb-1'}`}>
-            <span className="text-indigo-500 cursor-pointer font-bold" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</span>
+            <span>
+                <div className="text-indigo-500 text-xl cursor-pointer mt-2 border border-indigo-500 rounded-xl px-1" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</div>
+            </span>
             <div>
                 <span className="flex items-center ml-2" >
                     {[titleAyah].map((ayah, index) => <Verse key={index} ayah={ayah} lang={lang} setExpanded={setExpanded}/>)}

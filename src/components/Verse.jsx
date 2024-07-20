@@ -132,11 +132,13 @@ function Verse({ ayah, lang, setExpanded }) {
 
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal">
-            <span onClick={() => playAyah(ayah.w[0])} className="text-indigo-500 font-extrabold cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
-            <span onClick={() => toggleCycleWords(ayah.w)} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${isCycling ? '□' : '○'}`}</span>
-            <span onClick={toggleBookmark} className="ml-1 text-indigo-500 font-extrabold cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
-            <span className="ml-1">{ayah.id.replace(/^\d{1,3}_/, "")}</span>
-            {sajdaVerses.includes(ayah.id) && <span> ۩</span>}
+            <div className='flex justify-between text-lg my-2 w-full max-w-44'>
+                <span className="ml-1 border border-indigo-500 cursor-pointer rounded-xl px-2 text-indigo-500">{ayah.id.replace(/^\d{1,3}_/, "")} </span>
+                <span onClick={() => playAyah(ayah.w[0])} className="border border-indigo-500 cursor-pointer rounded-xl px-2 text-indigo-500 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-indigo-500 cursor-pointer rounded-xl px-2 ml-1 text-indigo-500 cursor-pointer">{`${isCycling ? '□' : 'O'}`}</span>
+                <span onClick={toggleBookmark} className="border border-indigo-500 cursor-pointer rounded-xl px-2 ml-1 text-indigo-500 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
+            </div>
+            {sajdaVerses.includes(ayah.id) && <span className='border border-indigo-500 rounded-xl px-2'> ۩</span>}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onDoubleClick={()=>startCycleFrom(index,word.p)} onClick={()=>playWord(word)} key={index} className={`ml-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}>{word[lang]}</span>
             ))}
