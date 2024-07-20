@@ -2,7 +2,6 @@ import React from 'react'
 import './index.css'
 import App from './App.jsx'
 import {createRoot} from 'react-dom/client'
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export const GlobalContext = React.createContext();
 
@@ -31,7 +30,6 @@ function GlobalProvider({ children }){
       verseId, setVerseId,
     }}>
       {children}
-      <SpeedInsights />
     </GlobalContext.Provider>
   );
 };

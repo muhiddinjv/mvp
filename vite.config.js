@@ -10,7 +10,7 @@ export default defineConfig({
     VitePWA({
       registerType: "prompt",
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest,json}"],
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest,json,mp3}"],
       },
       // install your native app on users device directly from the app store
       // related_applications: [{
@@ -40,6 +40,7 @@ export default defineConfig({
             src: faviconURL,
             sizes: "512x512",
             type: "image/png",
+            purpose: "favicon mask",
           },
         ],
       },
