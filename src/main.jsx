@@ -12,13 +12,16 @@ function GlobalProvider({ children }){
   const [chapterId, setChapterId] = React.useState(
     JSON.parse(localStorage.getItem("chapterId")) || 1
   )
-  const [ chapters, setChapters ] = React.useState([]);
+  const [ chapters, setChapters ] = React.useState(JSON.parse(localStorage.getItem('chapters')) || []);
   const [ verseId, setVerseId ] = React.useState();
 
   React.useEffect(() => {
     fetch('/json/chapters.json')
       .then(res => res.json())
-      .then(data => setChapters(data))
+      .then(data => {
+        setChapters(data); 
+        localStorage.setItem('chapters', JSON.stringify(data))
+      })
       .catch(err => console.log(err));
   }, []);
 

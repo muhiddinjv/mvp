@@ -8,11 +8,11 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: "prompt",
+      registerType: "autoUpdate",
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest,json,mp3}"],
       },
-      // install your native app on users device directly from the app store
+      // install your native app on users device from the app store
       // related_applications: [{
       //   platform: "play",
       //   id: "com.google.samples.apps.iosched"
@@ -27,7 +27,7 @@ export default defineConfig({
         start_url: "/index.html",
         background_color: "#f0e7db",
         theme_color: "#171717",
-        display: "standalone",
+        display: "fullscreen",// or standalone
         orientation: "portrait",
         icons: [
           {
