@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
-let faviconURL = "/img/android-chrome-512x512.svg";
+let faviconURL = "/img/book2.svg";
 
 export default defineConfig({
   plugins: [
