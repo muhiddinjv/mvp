@@ -64,7 +64,7 @@ function Chapters() {
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
           </Link>
-          <span onClick={() => alert(`download ${chapter.id}-${chapter.transliteration}'s audio`)} className='border-indigo-500 border-l p-2 flex cursor-pointer'>
+          <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='border-indigo-500 border-l p-2 flex cursor-pointer'>
             <img src={theme === "dark" ? downloadIconSlate : downloadIconDark} className='w-6' alt='download icon'/>
           </span>
         </span>)
