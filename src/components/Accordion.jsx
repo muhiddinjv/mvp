@@ -5,9 +5,9 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
     const [expanded, setExpanded] = React.useState(false);
 
     return (
-        <div className={`mx-4 flex ${expanded && 'border-y border-indigo-500 pb-1'}`}>
+        <div className={`mx-4 flex ${expanded && 'border-y pb-1'}`}>
             <span>
-                <div className="text-indigo-500 text-xl cursor-pointer mt-2 border border-indigo-500 rounded px-1" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</div>
+                <div className="text-xl cursor-pointer mt-2 border rounded px-1" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</div>
             </span>
             <div>
                 <span className="flex items-center ml-2" >

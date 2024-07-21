@@ -45,8 +45,8 @@ function Chapter() {
   }
 
   return (
-    <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
-      <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } header flex flex-col items-center p-4 sticky top-0 z-20`}>
+    <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "text-slate-800" } min-h-screen w-full pb-6`}>
+      <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "text-slate-800" } header flex flex-col items-center p-4 sticky top-0 z-20`}>
         <div className="tools w-full max-w-72 flex justify-between">
           <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
@@ -61,8 +61,7 @@ function Chapter() {
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
         <div className="text-center text-xl mb-2">{chapters[chapterId-1]?.id} {chapters[chapterId-1]?.text[language]} {chapters[chapterId-1]?.words} words</div>
-        <img src={mustSayThis} className='mx-auto max-w-52 z-10' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
-
+        <img src={mustSayThis} className='mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}

@@ -36,18 +36,18 @@ function Chapters() {
   }
 
   return (
-    <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-2 p-3 min-h-screen items-center justify-center`}>
+    <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "text-slate-800"} grid grid-cols-1 gap-2 p-3 min-h-screen items-center justify-center`}>
       <div>
-        <div className='flex text-center cursor-pointer border-x border border-indigo-500 rounded-t'>
-          <span onClick={()=>handleSortBy('id')} className='border-indigo-500 border-r w-full py-2'>Surah {sortType === 'id' && sortOrder ? '⇩' : '⇧'}</span>
+        <div className='flex text-center cursor-pointer border-x border rounded-t'>
+          <span onClick={()=>handleSortBy('id')} className='border-r w-full py-2'>Surah {sortType === 'id' && sortOrder ? '⇩' : '⇧'}</span>
           <span onClick={()=>handleSortBy('sajda')} className='w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : '⇧'}</span>
-          <span onClick={()=>handleSortBy('words')} className='border-indigo-500 border-l w-full py-2'>Word {sortType === 'words' && sortOrder ? '⇩' : '⇧'}</span>
+          <span onClick={()=>handleSortBy('words')} className='border-l w-full py-2'>Word {sortType === 'words' && sortOrder ? '⇩' : '⇧'}</span>
         </div>
-        <ul className={`${bookmarks.length == 0 && 'hidden'} border-x border-b border-indigo-500 rounded-b p-1 flex justify-center flex-wrap`}>
+        <ul className={`${bookmarks.length == 0 && 'hidden'} border-x border-b rounded-b p-1 flex justify-center flex-wrap`}>
           {getParsedBookmarks()
             .filter(bookmark => chapters.some(chapter => chapter.id === bookmark.chapterId))
             .map(bookmark => (
-              <li key={`${bookmark.chapterId}${bookmark.verseId}`} className='border border-indigo-500 rounded m-1 px-2 py-1 cursor-pointer transition duration-200 ease-in hover:scale-110'>
+              <li key={`${bookmark.chapterId}${bookmark.verseId}`} className='border rounded m-1 px-2 py-1 cursor-pointer transition duration-200 ease-in hover:scale-110'>
                   <Link to={`/${bookmark.chapterId}`} onClick={() => handleBookmark(bookmark)} state={{ fromBookmark: true }}>
                       {`${bookmark.chapterId}:${bookmark.verseId}`}
                   </Link>
@@ -56,15 +56,15 @@ function Chapters() {
         </ul>
       </div>
       {chapters?.map(chapter => {
-        return (<span id={chapter.id} key={chapter.id} onClick={()=> handleChapter(chapter)} className="flex border border-indigo-500 rounded">
-          <span className='flex items-center justify-center border-r border-indigo-500 text-lg w-full max-w-12'>{chapter.id}</span>
+        return (<span id={chapter.id} key={chapter.id} onClick={()=> handleChapter(chapter)} className="flex border rounded">
+          <span className='flex items-center justify-center border-r text-lg w-full max-w-12'>{chapter.id}</span>
           <Link to={`/${chapter.id}`} className='flex-grow p-1 ml-2'>
             <div className='font-bold'>{chapter.text[language]}</div>
             <div className='text-sm'>
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
           </Link>
-          <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='w-full max-w-12 border-indigo-500 border-l p-2 flex justify-center items-center cursor-pointer'>
+          <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='w-full max-w-12 border-l p-2 flex justify-center items-center cursor-pointer'>
             <img src={theme === "dark" ? downloadIconSlate : downloadIconDark} className='w-6' alt='download icon'/>
           </span>
         </span>)

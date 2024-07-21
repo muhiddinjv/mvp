@@ -153,12 +153,12 @@ function Verse({ ayah, lang, setExpanded }) {
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
             <div className='flex justify-between text-lg my-2 max-w-28'>
-                <span onClick={() => playAyah(ayah.w[0])} className="border border-indigo-500 cursor-pointer rounded px-2 text-indigo-500 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-indigo-500 cursor-pointer rounded px-2 ml-1 text-indigo-500 cursor-pointer">{`${isCycling ? '□' : 'O'}`}</span>
-                <span onClick={toggleBookmark} className="border border-indigo-500 cursor-pointer rounded px-2 ml-1 text-indigo-500 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
+                <span onClick={() => playAyah(ayah.w[0])} className="border cursor-pointer rounded px-2 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="border cursor-pointer rounded px-2 ml-1 cursor-pointer">{`${isCycling ? '□' : 'O'}`}</span>
+                <span onClick={toggleBookmark} className="border cursor-pointer rounded px-2 ml-1 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
             </div>
             <span>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>
-            {sajdaVerses.includes(ayah.id) && <span className='border border-indigo-500 rounded px-2'> ۩</span>}
+            {sajdaVerses.includes(ayah.id) && <span className='border rounded px-2'> ۩</span>}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onDoubleClick={()=>startCycleFrom(index,word.p)} onClick={()=>playWord(word)} key={index} className={`ml-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}>{word[lang]}</span>
             ))}
