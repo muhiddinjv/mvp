@@ -7,7 +7,7 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
     return (
         <div className={`mx-4 flex ${expanded && 'border-y pb-1'}`}>
             <span>
-                <div className="text-xl cursor-pointer mt-2 border rounded px-1" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</div>
+                <div className="text-xl cursor-pointer mt-2 border border-gray-500 rounded px-1" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</div>
             </span>
             <div>
                 <span className="flex items-center ml-2" >
