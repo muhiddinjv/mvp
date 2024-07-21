@@ -47,7 +47,7 @@ function Chapters() {
           {getParsedBookmarks()
             .filter(bookmark => chapters.some(chapter => chapter.id === bookmark.chapterId))
             .map(bookmark => (
-              <li key={`${bookmark.verseId}${bookmark.chapterId}`} className='border border-indigo-500 rounded m-1 px-2 py-1 cursor-pointer transition duration-200 ease-in hover:scale-110'>
+              <li key={`${bookmark.chapterId}${bookmark.verseId}`} className='border border-indigo-500 rounded m-1 px-2 py-1 cursor-pointer transition duration-200 ease-in hover:scale-110'>
                   <Link to={`/${bookmark.chapterId}`} onClick={() => handleBookmark(bookmark)} state={{ fromBookmark: true }}>
                       {`${bookmark.chapterId}:${bookmark.verseId}`}
                   </Link>
@@ -64,8 +64,8 @@ function Chapters() {
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
           </Link>
-          <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='border-indigo-500 border-l p-2 flex cursor-pointer'>
-            <img src={theme === "dark" ? downloadIconSlate : downloadIconDark} className='w-6' alt='download icon'/>
+          <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='w-full max-w-12 text-2xl border-indigo-500 border-l p-2 flex justify-center items-center cursor-pointer'>
+            &#129095;
           </span>
         </span>)
       })}

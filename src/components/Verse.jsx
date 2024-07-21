@@ -23,6 +23,10 @@ function Verse({ ayah, lang, setExpanded }) {
     const verseId = localStorage.getItem('verseId')
     
     React.useEffect(() => {
+        // if (!navigator.onLine) {
+        //   alert('No internet connection');
+        //   return;
+        // }
         if (verseId === ayah.id) {
             setExpanded(true);
         }
@@ -30,15 +34,19 @@ function Verse({ ayah, lang, setExpanded }) {
 
     function playWord(url){
         clickCount.current += 1;
-    
         if (timer.current) {
           clearTimeout(timer.current);
         }
-    
         timer.current = setTimeout(() => {
           if (clickCount.current === 1) {
             highlightWord(url.p);
             const audio = new Audio(`${remoteUrlWord}/${url.p}.mp3`);
+            audio.onerror = function () {
+                alert('Failed to load audio file');
+                audio.pause();
+                audio.currentTime = 0;
+                setIsPlaying(false);
+            };
             audio.play();
           }
           clickCount.current = 0;
@@ -65,6 +73,12 @@ function Verse({ ayah, lang, setExpanded }) {
             setIsPlaying(true);
     
             let playCount = 1; 
+            audio.onerror = function () {
+                alert('Failed to load audio file');
+                audio.pause();
+                audio.currentTime = 0;
+                setIsPlaying(false);
+            };
             audio.onended = function () {
                 if (playCount < 10) { 
                     playCount++; 
@@ -113,6 +127,12 @@ function Verse({ ayah, lang, setExpanded }) {
             const audio = new Audio(`${remoteUrlWord}/${url.p}.mp3`);
             setAudioCycle(audio);
             audio.play();
+            audio.onerror = function () {
+                alert('Failed to load audio file');
+                audio.pause();
+                audio.currentTime = 0;
+                setIsCycling(false);
+            };
             audio.onended = function() {
                 urlIndex++;
                 playNext(); // Play the next URL after the current one finishes 
@@ -132,13 +152,13 @@ function Verse({ ayah, lang, setExpanded }) {
 
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal">
-            <div className='flex justify-between text-lg my-2 w-full max-w-44'>
-                <span className="ml-1 border border-indigo-500 cursor-pointer rounded-xl px-2 text-indigo-500">{ayah.id.replace(/^\d{1,3}_/, "")} </span>
-                <span onClick={() => playAyah(ayah.w[0])} className="border border-indigo-500 cursor-pointer rounded-xl px-2 text-indigo-500 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-indigo-500 cursor-pointer rounded-xl px-2 ml-1 text-indigo-500 cursor-pointer">{`${isCycling ? '□' : 'O'}`}</span>
-                <span onClick={toggleBookmark} className="border border-indigo-500 cursor-pointer rounded-xl px-2 ml-1 text-indigo-500 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
+            <div className='flex justify-between text-lg my-2 w-full max-w-28'>
+                <span onClick={() => playAyah(ayah.w[0])} className="border border-indigo-500 cursor-pointer rounded px-2 text-indigo-500 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-indigo-500 cursor-pointer rounded px-2 ml-1 text-indigo-500 cursor-pointer">{`${isCycling ? '□' : 'O'}`}</span>
+                <span onClick={toggleBookmark} className="border border-indigo-500 cursor-pointer rounded px-2 ml-1 text-indigo-500 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
             </div>
-            {sajdaVerses.includes(ayah.id) && <span className='border border-indigo-500 rounded-xl px-2'> ۩</span>}
+            <span>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>
+            {sajdaVerses.includes(ayah.id) && <span className='border border-indigo-500 rounded px-2'> ۩</span>}
             {ayah.w.slice(0, wordLimit).map((word, index) => (
                 <span data-id={word.p} onDoubleClick={()=>startCycleFrom(index,word.p)} onClick={()=>playWord(word)} key={index} className={`ml-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}>{word[lang]}</span>
             ))}
