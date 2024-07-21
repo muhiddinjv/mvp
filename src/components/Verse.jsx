@@ -151,8 +151,8 @@ function Verse({ ayah, lang, setExpanded }) {
     }
 
     return (
-        <div id={ayah.id} className="text-left break-all whitespace-normal">
-            <div className='flex justify-between text-lg my-2 w-full max-w-28'>
+        <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
+            <div className='flex justify-between text-lg my-2 max-w-28'>
                 <span onClick={() => playAyah(ayah.w[0])} className="border border-indigo-500 cursor-pointer rounded px-2 text-indigo-500 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
                 <span onClick={() => toggleCycleWords(ayah.w)} className="border border-indigo-500 cursor-pointer rounded px-2 ml-1 text-indigo-500 cursor-pointer">{`${isCycling ? '□' : 'O'}`}</span>
                 <span onClick={toggleBookmark} className="border border-indigo-500 cursor-pointer rounded px-2 ml-1 text-indigo-500 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
