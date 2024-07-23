@@ -2,13 +2,13 @@ import React from'react';
 import { Loading, Accordion, Button } from '../components';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { GlobalContext } from '../main';
-import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
+import { useAyahs, useFontSize, useLanguage, useTheme, useSwipe } from '../hooks';
 import mustSayThis from '../assets/bismillah.png';
 
 function Chapter() {
-  const { chid } = useParams();
+  const { chapterId } = useParams();
   const { wordLimit, setWordLimit, chapters } = React.useContext(GlobalContext);
-  const { groupedAyahs, loading } = useAyahs(chid);
+  const { groupedAyahs, loading } = useAyahs(chapterId);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
@@ -47,12 +47,14 @@ function Chapter() {
   }
 
   function getPrevChapter(){
-    if(chid > 1) navigate(`/${parseInt(chid) - 1}`)
+    if(chapterId > 1) navigate(`/${parseInt(chapterId) - 1}`)
   }
 
   function getNextChapter(){
-    if(chid < 114) navigate(`/${parseInt(chid) + 1}`)
+    if(chapterId < 114) navigate(`/${parseInt(chapterId) + 1}`)
   }
+
+  const swipeHandlers = useSwipe({ onSwipedLeft: () => getNextChapter(), onSwipedRight: () => getPrevChapter() });
 
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
@@ -71,9 +73,9 @@ function Chapter() {
           <Button theme={theme} fontSize="2xl" onClick={getNextChapter} text={<>&#8680;</>} />
         </div>
       </header>
-      <main style={{ fontSize: `${fontSize}px` }}>
-        <div className="text-center text-xl mb-2">{chapters[chid-1]?.id} {chapters[chid-1]?.text[language]} {chapters[chid-1]?.words} words</div>
-        <img src={mustSayThis} className='hidden mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
+      <main {...swipeHandlers} style={{ fontSize: `${fontSize}px` }}>
+        <div className="text-center text-xl mb-2">{chapters[chapterId-1]?.id} {chapters[chapterId-1]?.text[language]} {chapters[chapterId-1]?.words} words</div>
+        <img src={mustSayThis} className='mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}
