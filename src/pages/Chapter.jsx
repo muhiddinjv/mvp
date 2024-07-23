@@ -4,8 +4,6 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { GlobalContext } from '../main';
 import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
 import mustSayThis from '../assets/bismillah.png';
-import 'swiper/css/pagination';
-import 'swiper/css';
 
 function Chapter() {
   const { chid } = useParams();
