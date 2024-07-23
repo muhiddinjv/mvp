@@ -1,19 +1,23 @@
 import React from'react';
 import { Loading, Accordion, Button } from '../components';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { GlobalContext } from '../main';
 import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
 import mustSayThis from '../assets/bismillah.png';
+import 'swiper/css/pagination';
+import 'swiper/css';
 
 function Chapter() {
-  const { wordLimit, setWordLimit, chapters, chapterId } = React.useContext(GlobalContext);
-  const { groupedAyahs, loading } = useAyahs(chapterId);
+  const { chid } = useParams();
+  const { wordLimit, setWordLimit, chapters } = React.useContext(GlobalContext);
+  const { groupedAyahs, loading } = useAyahs(chid);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
   const vid = localStorage.getItem('verseId')
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -44,11 +48,20 @@ function Chapter() {
     });
   }
 
+  function getPrevChapter(){
+    if(chid > 1) navigate(`/${parseInt(chid) - 1}`)
+  }
+
+  function getNextChapter(){
+    if(chid < 114) navigate(`/${parseInt(chid) + 1}`)
+  }
+
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
       <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } header flex flex-col items-center p-4 sticky top-0 z-20`}>
-        <div className="tools w-full max-w-72 flex justify-between">
-          <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>{`<`}</Link>
+        <div className="tools w-full max-w-96 flex justify-between">
+          <Button theme={theme} onClick={getPrevChapter} text={<>&#8678;</>} />
+          <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>⏎</Link>
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
           <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} onClick={changeLanguage} text={language} />
@@ -57,11 +70,12 @@ function Chapter() {
             <div className="fontSizeDiv mx-2 text-lg">{fontSize}</div>
             <Button theme={theme} onClick={() => enlargeFont(true)} text="+" />
           </div>
+          <Button theme={theme} onClick={getNextChapter} text={<>&#8680;</>} />
         </div>
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
-        <div className="text-center text-xl mb-2">{chapters[chapterId-1]?.id} {chapters[chapterId-1]?.text[language]} {chapters[chapterId-1]?.words} words</div>
-        <img src={mustSayThis} className='mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
+        <div className="text-center text-xl mb-2">{chapters[chid-1]?.id} {chapters[chid-1]?.text[language]} {chapters[chid-1]?.words} words</div>
+        <img src={mustSayThis} className='hidden mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}

@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Chapters />} />
-        <Route path="/:id" element={<Chapter />} />
+        <Route path="/:chid" element={<Chapter />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
