@@ -59,8 +59,7 @@ function Chapter() {
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
       <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } header flex flex-col items-center p-4 sticky top-0 z-20`}>
-        <div className="tools w-full max-w-96 flex justify-between">
-          <Button theme={theme} fontSize="2xl" onClick={getPrevChapter} text={<>&#8678;</>} />
+        <div className="tools w-full max-w-72 flex justify-between">
           <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>⏎</Link>
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>∞</> : wordLimit }/>
           <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
@@ -70,7 +69,6 @@ function Chapter() {
             <div className="fontSizeDiv mx-2 text-lg">{fontSize}</div>
             <Button theme={theme} onClick={() => enlargeFont(true)} text="+" />
           </div>
-          <Button theme={theme} fontSize="2xl" onClick={getNextChapter} text={<>&#8680;</>} />
         </div>
       </header>
       <main {...swipeHandlers} style={{ fontSize: `${fontSize}px` }}>
