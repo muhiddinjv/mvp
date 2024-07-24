@@ -59,7 +59,7 @@ function Chapter() {
       <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } header flex flex-col items-center p-4 sticky top-0 z-20`}>
         <div className="tools w-full max-w-96 flex justify-between">
           <Button theme={theme} fontSize="2xl" onClick={getPrevChapter} text='<' />
-          <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-lg`}>🏠︎</Link>
+          <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>⌂</Link>
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>ထ</> : wordLimit }/>
           <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} onClick={changeLanguage} text={language} />
