@@ -153,8 +153,8 @@ function Verse({ ayah, lang, setExpanded }) {
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
             <div className='flex justify-between text-lg my-2 max-w-28'>
-                <span onClick={() => playAyah(ayah.w[0])} className="border border-gray-500 cursor-pointer rounded px-2 cursor-pointer">{`${isPlaying ? '□' : '▷'}`}</span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded px-2 ml-1 cursor-pointer">{`${isCycling ? '□' : '⟳'}`}</span>
+                <span onClick={() => playAyah(ayah.w[0])} className="border border-gray-500 cursor-pointer rounded px-2 cursor-pointer text-xl">{`${isPlaying ? '□' : '▷'}`}</span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded px-2 ml-1 cursor-pointer text-xl">{`${isCycling ? '□' : '⟳'}`}</span>
                 <span onClick={toggleBookmark} className="border border-gray-500 cursor-pointer rounded px-2 ml-1 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
             </div>
             <span className='font-bold'>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>
