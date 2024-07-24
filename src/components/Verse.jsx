@@ -2,7 +2,10 @@ import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaVerses, useBookmarks } from '../hooks';
 import loopIcon from '../assets/loop.svg';
-import pauseIcon from '../assets/pause.png';
+import pauseIcon from '../assets/pause.svg';
+import playIcon from '../assets/play.svg';
+import bookmarkOn from '../assets/bookmark-on.svg';
+import bookmarkOff from '../assets/bookmark-off.svg';
 
 function Verse({ ayah, lang, setExpanded }) {
     const { wordLimit, chapterId } = React.useContext(GlobalContext);
@@ -155,9 +158,15 @@ function Verse({ ayah, lang, setExpanded }) {
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
             <div className='flex justify-between text-lg my-2 max-w-28'>
-                <span onClick={() => playAyah(ayah.w[0])} className="border border-gray-500 cursor-pointer rounded px-2 cursor-pointer text-1xl font-bold">{`${isPlaying ? '□' : '▷'}`}</span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded p-1 ml-1 cursor-pointer"><img src={isCycling ? pauseIcon : loopIcon} className='size-5 invert-[.70]' alt='download icon'/></span>
-                <span onClick={toggleBookmark} className="border border-gray-500 cursor-pointer rounded px-2 ml-1 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
+                <span onClick={() => playAyah(ayah.w[0])} className="border border-gray-500 cursor-pointer rounded p-1 cursor-pointer text-1xl font-bold">
+                    <img src={isCycling ? pauseIcon : playIcon} className='size-5 invert-[.80]' alt='pause & play icons'/>
+                </span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded p-1 ml-1 cursor-pointer">
+                    <img src={isCycling ? pauseIcon : loopIcon} className='size-5 invert-[.80]' alt='pause & loop icon'/>
+                </span>
+                <span onClick={toggleBookmark} className="border border-gray-500 cursor-pointer rounded p-1 ml-1 cursor-pointer">
+                    <img src={bookmarked ? bookmarkOn : bookmarkOff} className='size-5 invert-[.80]' alt='bookmark icon'/>
+                </span>
             </div>
             <span className='font-bold'>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>
             {sajdaVerses.includes(ayah.id) && <span className='border border-gray-500 rounded px-2'>۩</span>}
@@ -168,11 +177,6 @@ function Verse({ ayah, lang, setExpanded }) {
     )
 };
 export default Verse;
-
-/*
-TODO: add when needed
-↻ ◁ || ▷ ↺ 
-*/
   
 
   

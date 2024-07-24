@@ -74,7 +74,7 @@ function Chapter() {
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
         <div className="text-center text-xl mb-2">{chapters[chapterid-1]?.id} {chapters[chapterid-1]?.text[language]} {chapters[chapterid-1]?.words} words</div>
-        <img src={mustSayThis} className='mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
+        <img src={mustSayThis} className='hidden mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}
