@@ -24,7 +24,7 @@ export default defineConfig({
         short_name: "qwbw",
         description: "I am a simple pwa vite app",
         scope: "/",
-        start_url: "/index.html",
+        start_url: "/",
         background_color: "#f0e7db",
         theme_color: "#171717",
         display: "fullscreen",// or standalone

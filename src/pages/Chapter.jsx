@@ -2,18 +2,18 @@ import React from'react';
 import { Loading, Accordion, Button } from '../components';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { GlobalContext } from '../main';
-import { useAyahs, useFontSize, useLanguage, useTheme, useSwipe } from '../hooks';
+import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
 import mustSayThis from '../assets/bismillah.png';
 
 function Chapter() {
   const { chapterid } = useParams();
-  const { wordLimit, setWordLimit, chapters, chapterId } = React.useContext(GlobalContext);
-  const { groupedAyahs, loading } = useAyahs(chapterid || chapterId);
+  const { wordLimit, setWordLimit, chapters } = React.useContext(GlobalContext);
+  const { groupedAyahs, loading } = useAyahs(chapterid);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
   const vid = localStorage.getItem('verseId')
-  console.log({chapterid, chapterId, groupedAyahs})
+  console.log({chapterid, groupedAyahs})
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -74,7 +74,7 @@ function Chapter() {
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
         <div className="text-center text-xl mb-2">{chapters[chapterid-1]?.id} {chapters[chapterid-1]?.text[language]} {chapters[chapterid-1]?.words} words</div>
-        <img src={mustSayThis} className='mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
+        <img src={mustSayThis} className='hidden mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}

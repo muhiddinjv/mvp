@@ -10,7 +10,7 @@ function GlobalProvider({ children }){
     JSON.parse(localStorage.getItem("wordLimit")) || 100
   );
   const [chapterId, setChapterId] = React.useState(
-    JSON.parse(localStorage.getItem("chapterId")) || 1
+    JSON.parse(localStorage.getItem("chapterId")) || "1"
   )
   const [ chapters, setChapters ] = React.useState(JSON.parse(localStorage.getItem('chapters')) || []);
   const [ verseId, setVerseId ] = React.useState();
