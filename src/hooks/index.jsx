@@ -181,6 +181,11 @@ export function useSwipe(input) {
       onTouchMove,
       onTouchEnd
   }
+
+  /* HOW ITS USED IN A COMPONENT
+   const swipeHandlers = useSwipe({ onSwipedLeft: () => console.log('left'), onSwipedRight: () => console.log('right') });
+   <div {...swipeHandlers}></div>
+  */
 }
 
 // Helper functions ----------------------
