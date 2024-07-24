@@ -1,6 +1,8 @@
 import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaVerses, useBookmarks } from '../hooks';
+import loopIcon from '../assets/loop.svg';
+import pauseIcon from '../assets/pause.png';
 
 function Verse({ ayah, lang, setExpanded }) {
     const { wordLimit, chapterId } = React.useContext(GlobalContext);
@@ -154,7 +156,7 @@ function Verse({ ayah, lang, setExpanded }) {
         <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
             <div className='flex justify-between text-lg my-2 max-w-28'>
                 <span onClick={() => playAyah(ayah.w[0])} className="border border-gray-500 cursor-pointer rounded px-2 cursor-pointer text-1xl font-bold">{`${isPlaying ? '□' : '▷'}`}</span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded px-2 ml-1 cursor-pointer text-1xl font-bold">{`${isCycling ? '□' : '⟳'}`}</span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded p-1 ml-1 cursor-pointer"><img src={isCycling ? pauseIcon : loopIcon} className='size-5 invert-[.70]' alt='download icon'/></span>
                 <span onClick={toggleBookmark} className="border border-gray-500 cursor-pointer rounded px-2 ml-1 cursor-pointer">{`${bookmarked ? 'X' : 'B'}`}</span>
             </div>
             <span className='font-bold'>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>
