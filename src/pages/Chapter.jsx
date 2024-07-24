@@ -6,13 +6,14 @@ import { useAyahs, useFontSize, useLanguage, useTheme, useSwipe } from '../hooks
 import mustSayThis from '../assets/bismillah.png';
 
 function Chapter() {
-  const { chapterId } = useParams();
-  const { wordLimit, setWordLimit, chapters } = React.useContext(GlobalContext);
-  const { groupedAyahs, loading } = useAyahs(chapterId);
+  const { chapterid } = useParams();
+  const { wordLimit, setWordLimit, chapters, chapterId } = React.useContext(GlobalContext);
+  const { groupedAyahs, loading } = useAyahs(chapterid || chapterId);
   const { theme, toggleTheme } = useTheme("dark");
   const { fontSize, enlargeFont } = useFontSize(16);
   const { language, changeLanguage } = useLanguage();
   const vid = localStorage.getItem('verseId')
+  console.log({chapterid, chapterId, groupedAyahs})
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -47,11 +48,11 @@ function Chapter() {
   }
 
   function getPrevChapter(){
-    if(chapterId > 1) navigate(`/${parseInt(chapterId) - 1}`)
+    if(chapterid > 1) navigate(`/${parseInt(chapterid) - 1}`)
   }
 
   function getNextChapter(){
-    if(chapterId < 114) navigate(`/${parseInt(chapterId) + 1}`)
+    if(chapterid < 114) navigate(`/${parseInt(chapterid) + 1}`)
   }
 
   return (
@@ -72,7 +73,7 @@ function Chapter() {
         </div>
       </header>
       <main style={{ fontSize: `${fontSize}px` }}>
-        <div className="text-center text-xl mb-2">{chapters[chapterId-1]?.id} {chapters[chapterId-1]?.text[language]} {chapters[chapterId-1]?.words} words</div>
+        <div className="text-center text-xl mb-2">{chapters[chapterid-1]?.id} {chapters[chapterid-1]?.text[language]} {chapters[chapterid-1]?.words} words</div>
         <img src={mustSayThis} className='mx-auto max-w-52 z-10 mb-4' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
