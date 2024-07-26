@@ -2,8 +2,8 @@ import React from'react';
 import { useTheme, useBookmarks, useLanguage } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
-import downloadIconSlate from '../assets/dld-min-slate.svg';
-import downloadIconDark from '../assets/dld-min.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function Chapters() {
   const { theme } = useTheme("dark");
@@ -65,7 +65,7 @@ function Chapters() {
             </div>
           </Link>
           <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
-            <img src={theme === "dark" ? downloadIconSlate : downloadIconDark} className='w-6' alt='download icon'/>
+            <FontAwesomeIcon icon={faDownload} />
           </span>
         </span>)
       })}

@@ -1,16 +1,13 @@
 import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaVerses, useBookmarks } from '../hooks';
-import loopIcon from '../assets/loop.svg';
-import pauseIcon from '../assets/pause.svg';
-import playIcon from '../assets/play.svg';
-import bookmarkOn from '../assets/bookmark-on.svg';
-import bookmarkOff from '../assets/bookmark-off.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowsRotate, faPlay, faBookmark as bookMarkOn, faStop, faPause } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark as bookMarkOff } from '@fortawesome/free-regular-svg-icons'
 
 function Verse({ ayah, lang, setExpanded }) {
     const { wordLimit, chapterId } = React.useContext(GlobalContext);
     const [ bookmarked, toggleBookmark ] = useBookmarks(ayah.id);
-
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
     const [isCycling, setIsCycling] = React.useState(false);
@@ -157,15 +154,15 @@ function Verse({ ayah, lang, setExpanded }) {
 
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
-            <div className='flex justify-between text-lg my-2 max-w-28'>
-                <span onClick={() => playAyah(ayah.w[0])} className="border border-gray-500 cursor-pointer rounded p-1 cursor-pointer text-1xl font-bold">
-                    <img src={isPlaying ? pauseIcon : playIcon} className='size-5 invert-[.80]' alt='pause & play icons'/>
+            <div className='flex justify-between text-lg my-2 w-24'>
+                <span onClick={() => playAyah(ayah.w[0])} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded cursor-pointer">
+                    <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
                 </span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="border border-gray-500 cursor-pointer rounded p-1 ml-1 cursor-pointer">
-                    <img src={isCycling ? pauseIcon : loopIcon} className='size-5 invert-[.80]' alt='pause & loop icon'/>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded cursor-pointer">
+                    <FontAwesomeIcon icon={isCycling ? faPause : faArrowsRotate} />
                 </span>
-                <span onClick={toggleBookmark} className="border border-gray-500 cursor-pointer rounded p-1 ml-1 cursor-pointer">
-                    <img src={bookmarked ? bookmarkOn : bookmarkOff} className='size-5 invert-[.80]' alt='bookmark icon'/>
+                <span onClick={toggleBookmark} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded cursor-pointer">
+                    <FontAwesomeIcon icon={bookmarked ? bookMarkOn : bookMarkOff} />
                 </span>
             </div>
             <span className='font-bold'>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>

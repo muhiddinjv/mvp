@@ -1,5 +1,7 @@
 import React from 'react';
 import Verse from './Verse';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Accordion({ titleAyah, panelAyahs, lang }) {
     const [expanded, setExpanded] = React.useState(false);
@@ -7,7 +9,9 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
     return (
         <div className={`mx-4 flex ${expanded && 'border-y pb-1'}`}>
             <span>
-                <div className="text-xl cursor-pointer mt-2 border border-gray-500 rounded px-1" onClick={() => setExpanded(!expanded)}>{expanded ? <>&#65293;</> : <>&#65291;</>}</div>
+                <div className="flex items-center justify-center cursor-pointer mt-2 border border-gray-500 rounded size-7" onClick={() => setExpanded(!expanded)}>
+                    <FontAwesomeIcon icon={expanded ? faMinus : faPlus} />
+                </div>
             </span>
             <div>
                 <span className="flex items-center ml-2" >
