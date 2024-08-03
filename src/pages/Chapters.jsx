@@ -1,5 +1,5 @@
 import React from'react';
-import { useTheme, useBookmarks, useLanguage } from '../hooks';
+import { useTheme, useBookmarks } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,6 @@ function Chapters() {
   const { theme } = useTheme("dark");
   const [ sortType, setSortType ] = React.useState('id');
   const [ sortOrder, setSortOrder ] = React.useState(false);
-  const { language } = useLanguage();
   const { setChapterId, chapters, setChapters } = React.useContext(GlobalContext);
   const [,,getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
@@ -59,12 +58,12 @@ function Chapters() {
         return (<span id={chapter.id} key={chapter.id} onClick={()=> handleChapter(chapter)} className="flex border border-gray-500 rounded">
           <span className='flex items-center justify-center border-r border-gray-500 text-lg w-full max-w-12'>{chapter.id}</span>
           <Link to={`/${chapter.id}`} className='flex-grow p-1 ml-2'>
-            <div className='font-bold'>{chapter.text[language]}</div>
+            <div className='font-bold'>{chapter.text.tr}</div>
             <div className='text-sm'>
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
           </Link>
-          <span onClick={() => alert(`download ${chapter.id}-${chapter.text[language]}'s audio`)} className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
+          <span onClick={() => alert(`download ${chapter.id}-${chapter.text.tr}'s audio`)} className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
             <FontAwesomeIcon icon={faDownload} />
           </span>
         </span>)
