@@ -3,7 +3,7 @@ import { useTheme, useBookmarks } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 function Chapters() {
   const { theme } = useTheme("dark");
@@ -38,9 +38,9 @@ function Chapters() {
     <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-2 p-3 min-h-screen items-center justify-center`}>
       <div>
         <div className='flex text-center cursor-pointer border-x border border-gray-500 rounded-t'>
-          <span onClick={()=>handleSortBy('id')} className='border-r border-gray-500 w-full py-2'>Surah {sortType === 'id' && sortOrder ? '⇩' : '⇧'}</span>
-          <span onClick={()=>handleSortBy('sajda')} className='w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : '⇧'}</span>
-          <span onClick={()=>handleSortBy('words')} className='border-l border-gray-500 w-full py-2'>Word {sortType === 'words' && sortOrder ? '⇩' : '⇧'}</span>
+          <span onClick={()=>handleSortBy('id')} className='border-r border-gray-500 w-full py-2'>Surah <FontAwesomeIcon icon={sortType === 'id' && sortOrder ? faArrowDown : faArrowUp} /></span>
+          <span onClick={()=>handleSortBy('sajda')} className='w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : <FontAwesomeIcon icon={faArrowUp} />}</span>
+          <span onClick={()=>handleSortBy('words')} className='border-l border-gray-500 w-full py-2'>Word <FontAwesomeIcon icon={sortType === 'words' && sortOrder ? faArrowDown : faArrowUp} /></span>
         </div>
         <ul className={`${bookmarks.length == 0 && 'hidden'} border-x border-b border-gray-500 rounded-b p-1 flex justify-center flex-wrap`}>
           {getParsedBookmarks()
