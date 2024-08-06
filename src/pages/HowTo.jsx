@@ -24,7 +24,7 @@ const HowTo = () => {
             <li>it plays the 1st, 2nd and 3rd words 3 times, and so on...</li>
           </ol>
           <p className='mb-2'>The number of repetitions increases depending the number of words because the more words there are in an ayah, the harder it is to memorize it.</p>
-          <p>If you double-tap on a <span className='border'>word</span> and tap the repeat <FontAwesomeIcon icon={faArrowsRotate} /> button, it plays all the words upto this word only once and start repeating from this word onwards.</p>
+          <p><strong>Continue</strong> - If you double-tap on a <span className='border'>word</span> and tap the repeat <FontAwesomeIcon icon={faArrowsRotate} /> button, it plays all the words upto this word only once and start repeating from this word onwards.</p>
         </li>
         <li className='mb-4'>
           <strong>Review</strong> - Once you have listened through all the words at least once, start reviewing:
