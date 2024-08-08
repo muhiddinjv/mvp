@@ -4,7 +4,6 @@ import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import HowTo from './HowTo';
 
 function Chapters() {
   const { theme } = useTheme("dark");
@@ -72,7 +71,6 @@ function Chapters() {
           </span>
         </span>)
       })}
-      <HowTo />
     </div>
   );
 }

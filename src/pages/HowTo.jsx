@@ -43,7 +43,7 @@ const HowTo = () => {
 
       <h3 className="text-xl font-bold mb-2">HOW TO REVIEW</h3>
 
-      <p className='mb-2'>You can review the surahs you've memorized in 3 ways by tapping <span className='border rounded p-1'>ထ</span> button to limit the number of words in every ayah to:</p>
+      <p className='mb-2'>You can review the surahs you've memorized in 3 ways by tapping the <span className='border rounded p-1'>ထ</span> button to limit the number of words in every ayah to:</p>
 
       <ol className="list-decimal list-inside">
         <li><strong>Easy</strong> - 7 or 5 words.</li>
