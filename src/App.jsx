@@ -3,6 +3,7 @@ import Chapters from './pages/Chapters';
 import Chapter from './pages/Chapter';
 import NoPage from "./pages/NoPage";
 import HowTo from "./pages/HowTo";
+import Stories from "./pages/Stories";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route index element={<Chapters />} />
         <Route path="/:chapterid" element={<Chapter />} />
         <Route path="/howto" element={<HowTo />} />
+        <Route path="/stories" element={<Stories />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

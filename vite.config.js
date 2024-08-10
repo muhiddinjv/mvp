@@ -25,8 +25,8 @@ export default defineConfig({
         description: "I am a simple pwa vite app",
         scope: "/",
         start_url: "/",
-        background_color: "#f0e7db",
-        theme_color: "#171717",
+        background_color: "#2f4f4f",
+        theme_color: "#2f4f4f",
         display: "fullscreen",// or standalone
         orientation: "portrait",
         icons: [
