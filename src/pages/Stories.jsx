@@ -27,7 +27,7 @@ const Stories = () => {
           </Link>
           <h2 className="text-2xl font-bold mb-2">Stories</h2>
         </div>
-        <Quizz quiz={quiz} timer={5}/>
+        <Quizz quiz={quiz} timer={60}/>
       </div>
     </div>
   );
