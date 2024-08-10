@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { quiz } from "./quiz";
 import Quiz from "react-quiz-component";
+import { Quizz } from "./Quizz";
 
 const Stories = () => {
   const theme = localStorage.getItem("theme");
@@ -26,7 +27,7 @@ const Stories = () => {
           </Link>
           <h2 className="text-2xl font-bold mb-2">Stories</h2>
         </div>
-        <Quiz className="text-2xl" quiz={quiz} enableProgressBar={true} shuffleAnswer={true} timer={60}/>
+        <Quizz quiz={quiz} timer={5}/>
       </div>
     </div>
   );
