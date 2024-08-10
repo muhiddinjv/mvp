@@ -39,13 +39,13 @@ function Chapters() {
     <div className={`${ theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-2 p-3 min-h-screen items-center justify-center`}>
       <div>
         <div className='flex text-center cursor-pointer border-x border border-gray-500 rounded-t'>
-          <Link to='/howto' className='border-r border-gray-500 py-2 px-4'>
+          <Link to='/howto' className='border-r border-gray-500 w-full max-w-12 py-2'>
             <FontAwesomeIcon icon={faCircleQuestion} />
           </Link>
           <span onClick={()=>handleSortBy('id')} className='border-r border-gray-500 w-full py-2'>Surah <FontAwesomeIcon icon={sortType === 'id' && sortOrder ? faArrowDown : faArrowUp} /></span>
           <span onClick={()=>handleSortBy('sajda')} className='w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : <FontAwesomeIcon icon={faArrowUp} />}</span>
           <span onClick={()=>handleSortBy('words')} className='border-l border-gray-500 w-full py-2'>Word <FontAwesomeIcon icon={sortType === 'words' && sortOrder ? faArrowDown : faArrowUp} /></span>
-          <Link to='/stories' className='border-l border-gray-500 py-2 px-4'>
+          <Link to='/stories' className='border-l border-gray-500 w-full max-w-12 py-2'>
             <FontAwesomeIcon icon={faBook} />
           </Link>
         </div>
