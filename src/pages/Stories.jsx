@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { quizes } from "./quizes";
+import { words } from "./words";
 import { Quiz } from "./Quiz";
+import WordsTable from "./Table";
+import verbsPieChart from '../assets/words/verbs-pie-chart.jpg';
+
 const Stories = () => {
   const theme = localStorage.getItem("theme");
 
@@ -25,7 +29,9 @@ const Stories = () => {
           </Link>
           <h2 className="text-2xl font-bold mb-2">Stories</h2>
         </div>
-        <Quiz quiz={quizes} shuffleAnswers={true} timer={60}/>
+        <img src={verbsPieChart} alt="verbs pie chart" className="hidden"/>
+        <Quiz quiz={quizes} timer={240}/>
+        <WordsTable data={words} />
       </div>
     </div>
   );

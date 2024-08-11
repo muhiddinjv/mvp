@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
 // Utility function to shuffle an array
 const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
 // Timer Component
 const Timer = ({ timeLeft }) => (
-    <div className="mt-4 text-red-600 font-bold">
-        Time Left: {timeLeft} seconds
+    <div className="my-4 text-lg">
+        ⏰ Time Left: {timeLeft} seconds
     </div>
 );
 
@@ -31,15 +33,29 @@ const Question = ({
     const isCorrect = selectedAnswer === correctAnswer;
 
     return (
-        <div className="my-4">
-            <h2 className="text-lg">{question}</h2>
-            <div className="mt-4">
+        <div className="my-8">
+            <h2 className="text-3xl mb-6">{question}</h2>
+            {selectedAnswer && (
+                <div className="mt-6">
+                    <div className={`flex gap-2 items-center justify-center text-2xl my-4 ${isCorrect ? "text-green-600" : "text-red-600"}`}>
+                        {isCorrect ? <FontAwesomeIcon icon={faCheckCircle} /> : <FontAwesomeIcon icon={faTimesCircle} />}
+                        <p>{isCorrect ? messageForCorrectAnswer : messageForIncorrectAnswer}</p>
+                    </div>
+                    <p className="hidden m-4 text-3xl">{explanation}</p>
+                </div>
+            )}
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {shuffledAnswers.map((answer, index) => (
                     <button
                         key={index}
                         onClick={() => handleAnswerClick((index + 1).toString())}
-                        className={`bg-blue-500 text-white p-2 m-2 rounded-md hover:bg-blue-700 ${
-                            selectedAnswer === (index + 1).toString() ? 'bg-blue-800' : ''
+                        className={`transition-colors duration-300 ease-in-out p-1 rounded text-3xl font-medium shadow-md ${
+                            selectedAnswer === (index + 1).toString()
+                                ? isCorrect
+                                    ? 'bg-green-500 text-white'
+                                    : 'bg-red-500 text-white'
+                                : 'bg-blue-500 text-white hover:bg-blue-700'
                         }`}
                         disabled={selectedAnswer !== null}
                     >
@@ -48,36 +64,42 @@ const Question = ({
                 ))}
             </div>
 
-            {selectedAnswer && (
-                <div className="mt-4">
-                    <p className={isCorrect ? "text-green-600" : "text-red-600"}>
-                        {isCorrect ? messageForCorrectAnswer : messageForIncorrectAnswer}
-                    </p>
-                    <p className="mt-2">{explanation}</p>
-                </div>
-            )}
+
 
             {showNextButton && (
                 <button
                     onClick={showNextButton}
-                    className="bg-green-500 text-white p-3 rounded-md hover:bg-green-700 mt-4"
+                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 mt-6 transition-colors duration-300 ease-in-out"
                 >
-                    Next
+                    Next Question
                 </button>
             )}
         </div>
     );
 };
 
+// Progress Bar Component
+const ProgressBar = ({ current, total }) => {
+    const progressPercentage = (current / total) * 100;
+    return (
+        <div className="w-full bg-gray-300 rounded-full h-2.5 mb-6">
+            <div
+                className="bg-blue-600 h-2.5 rounded-full transition-all duration-500 ease-in-out"
+                style={{ width: `${progressPercentage}%` }}
+            ></div>
+        </div>
+    );
+};
+
 // QuizResults Component
 const QuizResults = ({ score, totalQuestions, totalPoints, maxPoints, handleTryAgain }) => (
-    <div className="p-4 text-center">
-        <h1 className="text-2xl font-bold mb-4">Quiz Completed!</h1>
-        <p>Correct answers: {score.correct} / {totalQuestions}</p>
-        <p>Total points: {totalPoints} / {maxPoints}</p>
+    <div className="p-6">
+        <h1 className="text-3xl font-bold mb-6">🎉 Quiz Completed!</h1>
+        <p className="text-xl mb-4">Correct answers: {score.correct} / {totalQuestions}</p>
+        <p className="text-xl mb-4">Total points: {totalPoints} / {maxPoints}</p>
         <button
             onClick={handleTryAgain}
-            className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-700 mt-4"
+            className="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-700 mt-4 transition-colors duration-300 ease-in-out"
         >
             Try Again
         </button>
@@ -179,12 +201,12 @@ export const Quiz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, t
 
     if (!quizStarted) {
         return (
-            <div className="p-4 text-center">
-                <h1 className="text-2xl font-bold mb-4">{quiz.quizTitle}</h1>
-                <p>{quiz.quizSynopsis}</p>
+            <div className="p-4">
+                <h1 className="text-3xl font-bold mb-6">{quiz.quizTitle}</h1>
+                <p className="text-lg text-gray-700 mb-6">{quiz.quizSynopsis}</p>
                 <button
                     onClick={handleStartQuiz}
-                    className="bg-green-500 text-white p-3 rounded-md hover:bg-green-700 mt-4"
+                    className="bg-green-500 text-white p-2 rounded-lg hover:bg-green-700 transition-colors duration-300 ease-in-out"
                 >
                     Start Quiz
                 </button>
@@ -204,13 +226,15 @@ export const Quiz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, t
         quizStatements.slice(0, currentStatementIndex).reduce((acc, statement) => acc + statement.questions.length, 0) + currentQuestionIndex + 1;
 
     return (
-        <div className="p-4 text-center">
-            <h1 className="text-2xl font-bold mb-4">{quiz.quizTitle}</h1>
+        <div className="p-6 max-w-2xl mx-auto text-center">
+            <h1 className="text-3xl font-bold mb-4">{quiz.quizTitle}</h1>
             {timer > 0 && <Timer timeLeft={timeLeft} />}
+            <ProgressBar current={currentOverallQuestionNumber} total={totalQuestions} />
             <div className="mt-4">
-                <h2 className="text-lg font-semibold">
+                <h2 className="text-lg mb-2">
                     Statement {currentStatementIndex + 1}/{quizStatements.length}, Question {currentOverallQuestionNumber}/{totalQuestions}
                 </h2>
+                <div className="text-3xl mb-4">{currentStatement.statement}</div>
                 <Question
                     questionObj={currentQuestion}
                     handleAnswerClick={handleAnswerClick}
@@ -222,4 +246,3 @@ export const Quiz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, t
         </div>
     );
 };
-
