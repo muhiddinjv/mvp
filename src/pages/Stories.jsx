@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { quiz } from "./quiz";
+import { quizes } from "./quizes";
 import Quiz from "react-quiz-component";
 import { Quizz } from "./Quizz";
 
@@ -27,7 +27,7 @@ const Stories = () => {
           </Link>
           <h2 className="text-2xl font-bold mb-2">Stories</h2>
         </div>
-        <Quizz quiz={quiz} timer={60}/>
+        <Quizz quiz={quizes} shuffleAnswers={true} timer={60}/>
       </div>
     </div>
   );
