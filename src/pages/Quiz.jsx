@@ -53,7 +53,7 @@ const Question = ({
                     <p className={isCorrect ? "text-green-600" : "text-red-600"}>
                         {isCorrect ? messageForCorrectAnswer : messageForIncorrectAnswer}
                     </p>
-                    <p className="mt-2 text-gray-700">{explanation}</p>
+                    <p className="mt-2">{explanation}</p>
                 </div>
             )}
 
