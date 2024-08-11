@@ -70,11 +70,11 @@ const Question = ({
 };
 
 // QuizResults Component
-const QuizResults = ({ score, totalQuestions, totalPoints, handleTryAgain }) => (
+const QuizResults = ({ score, totalQuestions, totalPoints, maxPoints, handleTryAgain }) => (
     <div className="p-4 text-center">
         <h1 className="text-2xl font-bold mb-4">Quiz Completed!</h1>
         <p>Correct answers: {score.correct} / {totalQuestions}</p>
-        <p>Total points: {totalPoints}</p>
+        <p>Total points: {totalPoints} / {maxPoints}</p>
         <button
             onClick={handleTryAgain}
             className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-700 mt-4"
@@ -84,8 +84,9 @@ const QuizResults = ({ score, totalQuestions, totalPoints, handleTryAgain }) => 
     </div>
 );
 
+
 // Main Quiz Component
-export const Quizz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, timer = 0 }) => {
+export const Quiz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, timer = 0 }) => {
     const [quizStarted, setQuizStarted] = useState(false);
     const [currentStatementIndex, setCurrentStatementIndex] = useState(0);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -96,6 +97,14 @@ export const Quizz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, 
     const [timeLeft, setTimeLeft] = useState(timer);
     const [quizCompleted, setQuizCompleted] = useState(false);
     const [quizStatements, setQuizStatements] = useState(quiz.statements);
+
+    // Calculate the total possible points
+    const maxPoints = quiz.statements.reduce(
+        (total, statement) =>
+            total +
+            statement.questions.reduce((qTotal, question) => qTotal + (parseInt(question.point, 10) || 0), 0),
+        0
+    );
 
     const totalQuestions = quiz.statements.reduce((total, statement) => total + statement.questions.length, 0);
 
@@ -184,7 +193,7 @@ export const Quizz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, 
     }
 
     if (quizCompleted) {
-        return <QuizResults score={score} totalQuestions={totalQuestions} totalPoints={totalPoints} handleTryAgain={handleTryAgain} />;
+        return <QuizResults score={score} totalQuestions={totalQuestions} totalPoints={totalPoints} maxPoints={maxPoints} handleTryAgain={handleTryAgain} />;
     }
 
     const currentStatement = quizStatements[currentStatementIndex];
@@ -213,3 +222,4 @@ export const Quizz = ({ quiz, shuffleAnswers = false, shuffleQuestions = false, 
         </div>
     );
 };
+
