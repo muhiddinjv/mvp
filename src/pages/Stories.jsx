@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { quizes } from "./quizes";
-import { words } from "./words";
-import { Quiz } from "./Quiz";
-import WordsTable from "./Table";
+import { quizes } from "./quiz/quizes";
+import { words } from "./quiz/words";
+import { Quiz } from "./quiz/Quiz";
+import WordsTable from "./quiz/Table";
 import verbsPieChart from '../assets/words/verbs-pie-chart.jpg';
+import Main from "./anki/Main";
 
 const Stories = () => {
   const theme = localStorage.getItem("theme");
@@ -32,6 +33,7 @@ const Stories = () => {
         <img src={verbsPieChart} alt="verbs pie chart" className="hidden"/>
         <Quiz quiz={quizes} timer={240}/>
         <WordsTable data={words} />
+        <Main />
       </div>
     </div>
   );
