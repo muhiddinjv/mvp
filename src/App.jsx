@@ -4,7 +4,7 @@ import Chapter from './pages/Chapter';
 import NoPage from "./pages/NoPage";
 import HowTo from "./pages/HowTo";
 import Stories from "./pages/Stories";
-import Main from "./pages/anki/Main";
+import SpeechRecognition from "./pages/anki/SpeechRecognition";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route index element={<Chapters />} />
         <Route path="/:chapterid" element={<Chapter />} />
-        <Route path="/howto" element={<HowTo />} />
+        <Route path="/howto" element={<SpeechRecognition />} />
         <Route path="/stories" element={<Stories />} />
         <Route path="*" element={<NoPage />} />
       </Routes>

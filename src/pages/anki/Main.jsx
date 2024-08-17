@@ -3,6 +3,7 @@ import Review from "./Review";
 import seedData from "../../db/seedData";
 import db from "../../db";
 import Streaks from "./Streaks";
+import SpeechRecognition from "./SpeechRecognition";
 
 function Main() {
   const [decks, setDecks] = useState([]);
