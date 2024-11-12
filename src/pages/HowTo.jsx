@@ -14,7 +14,7 @@ const HowTo = () => {
         <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl mr-4`}>⌂</Link>
         <h2 className="text-2xl font-bold mb-2">HOW TO MEMORIZE</h2>
       </div>
-      <p className='mb-2'>Let's say you want to memorize, the ayah 64 from Surah 36 Ya-Sin. First, set the language to English because through experiments, I found that its easy to remember the Arabic words by looking at their English translation. By doing so, you can learn Arabic through English. Then...</p>
+      <p className='mb-2'>Let's say you want to memorize the ayah 64 from Surah 36 Ya-Sin. First, set the language to English because through experiments, I found that its easy to remember the Arabic words by looking at their English translation. By doing so, you can learn Arabic through English. Then...</p>
       <ol className="list-decimal list-inside mb-4">
         <li className='mb-4'>
           <strong>Repeat</strong> - Tap / click the repeat <FontAwesomeIcon icon={faArrowsRotate} /> button and it does it's magic like this:

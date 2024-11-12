@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route index element={<Chapters />} />
         <Route path="/:chapterid" element={<Chapter />} />
-        <Route path="/howto" element={<SpeechRecognition />} />
+        <Route path="/howto" element={<HowTo />} />
         <Route path="/stories" element={<Stories />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
