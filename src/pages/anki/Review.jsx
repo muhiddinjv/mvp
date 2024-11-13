@@ -33,7 +33,6 @@ function calculateNextReview(card, difficulty) {
 function Review({ deck, setDecks }) {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [cardQueue, setCardQueue] = useState(deck.cards);
-  console.log({deck})
 
   useEffect(() => {
     setCardQueue(deck.cards);
@@ -75,10 +74,10 @@ function Review({ deck, setDecks }) {
     <div className="flex flex-col items-center">
       <Card front={currentCard.front} back={currentCard.back} />
       <div className="mt-4 space-x-3">
-        <button className="bg-slate-500 text-white px-4 py-2 rounded" onClick={() => handleReview("again")}>Again</button>
-        <button className="bg-red-500 text-white px-4 py-2 rounded" onClick={() => handleReview("hard")}>Hard</button>
-        <button className="bg-yellow-500 text-white px-4 py-2 rounded" onClick={() => handleReview("good")}>Good</button>
-        <button className="bg-green-500 text-white px-4 py-2 rounded" onClick={() => handleReview("easy")}>Easy</button>
+        <button className="px-4 py-2 text-white rounded bg-slate-500" onClick={() => handleReview("again")}>Again</button>
+        <button className="px-4 py-2 text-white bg-red-500 rounded" onClick={() => handleReview("hard")}>Hard</button>
+        <button className="px-4 py-2 text-white bg-yellow-500 rounded" onClick={() => handleReview("good")}>Good</button>
+        <button className="px-4 py-2 text-white bg-green-500 rounded" onClick={() => handleReview("easy")}>Easy</button>
       </div>
     </div>
   );
