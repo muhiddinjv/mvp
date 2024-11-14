@@ -6,7 +6,7 @@ import { useAyahs, useFontSize, useLanguage, useTheme } from '../hooks';
 import mustSayThis from '../assets/bismillah.png';
 import MultiRangeSlider from "multi-range-slider-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faMinus, faPause, faPlay, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Chapter() {
   const [minValue, setMinValue] = React.useState(1);
@@ -71,7 +71,6 @@ function Chapter() {
       switch(prev) {
         case 10: return 20;
         case 20: return 30;
-        case 30: return 50;
         default: return 10;
       }
     });
@@ -178,46 +177,81 @@ function Chapter() {
     if(chapterid < 114) navigate(`/${parseInt(chapterid) + 1}`)
   }
 
+  const adjustMinValue = (increment) => {
+    const newValue = minValue + increment;
+    if (newValue >= 1 && newValue < maxValue) {
+      setMinValue(newValue);
+    }
+  };
+
+  const adjustMaxValue = (increment) => {
+    const newValue = maxValue + increment;
+    if (newValue > minValue && newValue <= chapters[chapterid-1].verses) {
+      setMaxValue(newValue);
+    }
+  };
+
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } min-h-screen w-full pb-6`}>
       <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800" } header flex flex-col items-center p-4 sticky top-0 z-20`}>
         <div className="flex justify-between w-full tools max-w-96">
           <Button theme={theme} fontSize="2xl" onClick={getPrevChapter} text='<' />
-          <Link to="/" className={`${theme === 'dark' ? 'bg-gray-600' : 'bg-gray-300'} hover:bg-gray-400 size-8 rounded flex items-center justify-center text-2xl`}>⌂</Link>
+          <Link to="/" className={`border border-gray-500 hover:bg-gray-700 size-8 rounded flex items-center justify-center text-2xl`}>⌂</Link>
           <Button theme={theme} onClick={cycleWordLimit} text={wordLimit == 100 ? <>ထ</> : wordLimit }/>
           {/* <Button theme={theme} onClick={toggleTheme} text={theme=="light"?<>&#9734;</>:<>&#9733;</>} /> */}
-          <Button theme={theme} disabled={isPlaying} onClick={toggleAyaSliderVisibility} text={ayaSliderVisible?<>&#9734;</>:<>&#9733;</>} />
+          <Button theme={theme} onClick={toggleAyaSliderVisibility} text={ayaSliderVisible?<>&#9734;</>:<>&#9733;</>} />
           <Button theme={theme} onClick={changeLanguage} text={language} />
           <div className="flex items-center font-size">
-            <Button theme={theme} onClick={() => enlargeFont(false)} text="−" />
+            <Button theme={theme} onClick={() => enlargeFont(false)} text={<FontAwesomeIcon icon={faMinus} />} />
             <span className="mx-2 text-lg fontSizeDiv">{fontSize}</span>
-            <Button theme={theme} onClick={() => enlargeFont(true)} text="+" />
+            <Button theme={theme} onClick={() => enlargeFont(true)} text={<FontAwesomeIcon icon={faPlus} />} />
           </div>
           <Button theme={theme} fontSize="2xl" onClick={getNextChapter} text='>' />
         </div>
         <div className={`${ayaSliderVisible && 'hidden'} w-full mt-4 max-w-96`}>
-          <div className="flex items-center justify-between mb-2">
-            <span>Ayah Range: {minValue} - {maxValue}</span>
-            <div className="flex items-center gap-2">
-              {currentAyah && (
-                <span className="text-sm">
-                  {currentRepetition}/{repetitions}×
-                </span>
-              )}
+          <div className="flex justify-between items-center mb-2">
+            <div className="flex gap-2">
               <Button 
-                theme={theme}
-                fontSize={10}
-                onClick={cycleRepetitions}
-                text={`${repetitions}×`}
-                disabled={isPlaying}
+                theme={theme} 
+                onClick={() => adjustMinValue(-1)} 
+                text={<FontAwesomeIcon icon={faMinus} />} 
+                disabled={isPlaying || minValue <= 1}
               />
-              <FontAwesomeIcon 
-                onClick={togglePlayback} 
-                icon={isPlaying ? faPause : faPlay} 
-                className='cursor-pointer'
+              <span className="my-1">{minValue}</span>
+              <Button 
+                theme={theme} 
+                onClick={() => adjustMinValue(1)} 
+                text={<FontAwesomeIcon icon={faPlus} />}
+                disabled={isPlaying || minValue >= maxValue - 1}
+              />
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span onClick={cycleRepetitions} className="min-w-14 h-8 flex items-center justify-center border hover:bg-gray-700 border-gray-500 cursor-pointer rounded">
+                {currentRepetition}/{repetitions}×
+              </span>
+              <span onClick={togglePlayback} className="size-8 flex items-center justify-center border hover:bg-gray-700 border-gray-500 cursor-pointer rounded">
+                <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+              </span>
+            </div>
+
+            <div className="flex gap-2">
+              <Button 
+                theme={theme} 
+                onClick={() => adjustMaxValue(-1)} 
+                text={<FontAwesomeIcon icon={faMinus} />}  
+                disabled={isPlaying || maxValue <= minValue + 1}
+              />
+              <span className="my-1">{maxValue}</span>
+              <Button 
+                theme={theme} 
+                onClick={() => adjustMaxValue(1)} 
+                text={<FontAwesomeIcon icon={faPlus} />} 
+                disabled={isPlaying || maxValue >= chapters[chapterid-1].verses}
               />
             </div>
           </div>
+
           <MultiRangeSlider
             min={1}
             max={chapters[chapterid-1].verses || 1}

@@ -155,13 +155,13 @@ function Verse({ ayah, lang, setExpanded }) {
     return (
         <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
             <div className='flex justify-between text-lg my-2 w-24'>
-                <span onClick={() => playAyah(ayah.w[0])} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded cursor-pointer">
+                <span onClick={() => playAyah(ayah.w[0])} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded">
                     <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
                 </span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded cursor-pointer">
+                <span onClick={() => toggleCycleWords(ayah.w)} className="size-7 flex items-center justify-center border border-gray-500 rounded cursor-pointer">
                     <FontAwesomeIcon icon={isCycling ? faPause : faArrowsRotate} />
                 </span>
-                <span onClick={toggleBookmark} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded cursor-pointer">
+                <span onClick={toggleBookmark} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded">
                     <FontAwesomeIcon icon={bookmarked ? bookMarkOn : bookMarkOff} />
                 </span>
             </div>
