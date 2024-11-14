@@ -165,7 +165,7 @@ function Chapter() {
 
       <main style={{ fontSize: `${fontSize}px` }} className='flex flex-col items-center' >
         <div className='w-full max-w-96'>
-        <div className="mb-2 text-lg text-center">{id} {text[language]} ({verses} verses, {words} words)</div>
+        <div className="mb-2 text-xl text-center">{id} {text[language]} ({verses} verses, {words} words)</div>
         <img src={mustSayThis} className='z-10 mx-auto mb-4 max-w-52' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
