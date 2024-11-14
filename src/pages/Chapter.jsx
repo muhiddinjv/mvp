@@ -209,7 +209,7 @@ function Chapter() {
           <Button theme={theme} fontSize="2xl" onClick={getNextChapter} text='>' />
         </div>
         <div className={`${ayaSliderVisible && 'hidden'} w-full mt-4 max-w-96`}>
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex items-center justify-between mb-2">
             <div className="flex gap-2">
               <Button 
                 theme={theme} 
@@ -227,10 +227,10 @@ function Chapter() {
             </div>
 
             <div className="flex items-center gap-2">
-              <span onClick={cycleRepetitions} className="min-w-14 h-8 flex items-center justify-center border hover:bg-gray-700 border-gray-500 cursor-pointer rounded">
+              <span onClick={cycleRepetitions} className="flex items-center justify-center h-8 border border-gray-500 rounded cursor-pointer min-w-14 hover:bg-gray-700">
                 {currentRepetition}/{repetitions}×
               </span>
-              <span onClick={togglePlayback} className="size-8 flex items-center justify-center border hover:bg-gray-700 border-gray-500 cursor-pointer rounded">
+              <span onClick={togglePlayback} className="flex items-center justify-center border border-gray-500 rounded cursor-pointer size-8 hover:bg-gray-700">
                 <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
               </span>
             </div>
@@ -259,6 +259,10 @@ function Chapter() {
             minValue={minValue}
             maxValue={maxValue}
             onChange={handleSliderChange}
+            onInput={(e) => {
+              setMinValue(e.minValue);
+              setMaxValue(e.maxValue);
+            }}
             label={false}
             ruler={false}
             disabled={isPlaying}
