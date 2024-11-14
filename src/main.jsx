@@ -2,6 +2,7 @@ import React from 'react'
 import './index.css'
 import App from './App.jsx'
 import {createRoot} from 'react-dom/client'
+import { Analytics } from "@vercel/analytics/react";
 
 export const GlobalContext = React.createContext();
 
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <React.StrictMode>
         <GlobalProvider>
           <App/>
+          <Analytics />
         </GlobalProvider>
       </React.StrictMode>
     )}
