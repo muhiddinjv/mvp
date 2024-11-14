@@ -153,25 +153,35 @@ function Verse({ ayah, lang, setExpanded }) {
     }
 
     return (
-        <div id={ayah.id} className="text-left break-all whitespace-normal w-full">
-            <div className='flex justify-between text-lg my-2 w-24'>
-                <span onClick={() => playAyah(ayah.w[0])} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded">
-                    <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
-                </span>
-                <span onClick={() => toggleCycleWords(ayah.w)} className="size-7 flex items-center justify-center border border-gray-500 rounded cursor-pointer">
-                    <FontAwesomeIcon icon={isCycling ? faPause : faArrowsRotate} />
-                </span>
-                <span onClick={toggleBookmark} className="size-7 flex items-center justify-center border border-gray-500 cursor-pointer rounded">
+        <div id={ayah.id} className="w-full text-right break-all whitespace-normal">
+            <div className='flex justify-end gap-2 my-2 text-lg'>
+                <span onClick={toggleBookmark} className="flex items-center justify-center border border-gray-500 rounded cursor-pointer size-7">
                     <FontAwesomeIcon icon={bookmarked ? bookMarkOn : bookMarkOff} />
                 </span>
+                <span onClick={() => toggleCycleWords(ayah.w)} className="flex items-center justify-center border border-gray-500 rounded cursor-pointer size-7">
+                    <FontAwesomeIcon icon={isCycling ? faPause : faArrowsRotate} />
+                </span>
+                <span onClick={() => playAyah(ayah.w[0])} className="flex items-center justify-center border border-gray-500 rounded cursor-pointer size-7">
+                    <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
+                </span>
             </div>
-            <span className='font-bold'>{ayah.id.replace(/^\d{1,3}_/, "")}:</span>
-            {sajdaVerses.includes(ayah.id) && <span className='border border-gray-500 rounded px-2'>۩</span>}
-            {ayah.w.slice(0, wordLimit).map((word, index) => (
-                <span data-id={word.p} onDoubleClick={()=>startCycleFrom(index,word.p)} onClick={()=>playWord(word)} key={index} className={`ml-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}>{word[lang]}</span>
-            ))}
+            <div className="text-right">
+                <span className='font-bold'>{ayah.id.replace(/^\d{1,3}_/, "")} </span>
+                {sajdaVerses.includes(ayah.id) && <span className='px-2 border border-gray-500 rounded'>۩</span>}
+                {ayah.w.slice(0, wordLimit).map((word, index) => (
+                    <span 
+                        data-id={word.p} 
+                        onDoubleClick={()=>startCycleFrom(index,word.p)} 
+                        onClick={()=>playWord(word)} 
+                        key={index} 
+                        className={`mr-1 cursor-pointer rtl ${cycleFrom === index && 'border'}`}
+                    >
+                        {word[lang]}
+                    </span>
+                ))}
+            </div>
         </div>
-    )
+    );
 };
 export default Verse;
   
