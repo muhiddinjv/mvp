@@ -4,7 +4,6 @@ import Chapter from './pages/Chapter';
 import NoPage from "./pages/NoPage";
 import HowTo from "./pages/HowTo";
 import Stories from "./pages/Stories";
-import SpeechRecognition from "./pages/anki/SpeechRecognition";
 
 function App() {
   return (

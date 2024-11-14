@@ -1,8 +1,8 @@
-import React from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 // Hooks ---------------------------------
 export function useTheme(defaultTheme) {
-  const [theme, setTheme] = React.useState(
+  const [theme, setTheme] = useState(
     localStorage.getItem("theme") || defaultTheme
   );
 
@@ -11,7 +11,7 @@ export function useTheme(defaultTheme) {
     setTheme(newTheme);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
@@ -19,7 +19,7 @@ export function useTheme(defaultTheme) {
 }
 
 export function useFontSize(defaultSize) {
-  const [fontSize, setFontSize] = React.useState(
+  const [fontSize, setFontSize] = useState(
     parseInt(localStorage.getItem("fontSize"), 10) || defaultSize
   );
 
@@ -27,7 +27,7 @@ export function useFontSize(defaultSize) {
     setFontSize(fontSize + (increase ? 1 : -1));
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("fontSize", fontSize.toString());
   }, [fontSize]);
 
@@ -35,11 +35,11 @@ export function useFontSize(defaultSize) {
 }
 
 export function useLanguage() {
-  const [language, setLanguage] = React.useState(
+  const [language, setLanguage] = useState(
     localStorage.getItem("language") || 'en'
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (language === undefined) {
       setLanguage('en');
     }
@@ -53,7 +53,7 @@ export function useLanguage() {
     setLanguage(newLanguage);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("language", language);
   }, [language]);
 
@@ -61,8 +61,8 @@ export function useLanguage() {
 }
 
 export function useAyahs(ayahNumber) {
-  const [ayahs, setAyahs] = React.useState({});
-  const [loading, setLoading] = React.useState(true);
+  const [ayahs, setAyahs] = useState({});
+  const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
     const headers = { 
@@ -82,11 +82,11 @@ export function useAyahs(ayahNumber) {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetchData();
   }, [ayahNumber]); // React to changes in ayahNumber
 
-  const groupedAyahs = React.useMemo(() => {
+  const groupedAyahs = useMemo(() => {
     if (!ayahs) return []; // Return early if ayahs is not yet available
     const keys = Object.keys(ayahs);
     return keys.reduce((acc, _, i) => {
@@ -99,9 +99,9 @@ export function useAyahs(ayahNumber) {
 };
 
 export function useBookmarks(verseId){
-    const [bookmarked, setBookmarked] = React.useState(false);
+    const [bookmarked, setBookmarked] = useState(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const bookmarksString = localStorage.getItem('bookmarks') || '';
         setBookmarked(bookmarksString.includes(verseId));
     }, [verseId]);
@@ -149,8 +149,8 @@ export function useBookmarks(verseId){
 };
 
 export function useSwipe(input) {
-  const [touchStart, setTouchStart] = React.useState(0);
-  const [touchEnd, setTouchEnd] = React.useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const minSwipeDistance = 50;
 
@@ -186,6 +186,131 @@ export function useSwipe(input) {
    const swipeHandlers = useSwipe({ onSwipedLeft: () => console.log('left'), onSwipedRight: () => console.log('right') });
    <div {...swipeHandlers}></div>
   */
+}
+
+export function useAudioPlayer(chapterid, minValue, maxValue) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentAyah, setCurrentAyah] = useState(null);
+  const [currentRepetition, setCurrentRepetition] = useState(1);
+  const [repetitions, setRepetitions] = useState(10);
+  
+  const audioRef = useRef(new Audio());
+  const remoteUrlAyah = 'https://everyayah.com/data/Alafasy_128kbps';
+
+  // Cleanup effect
+  useEffect(() => {
+    const audio = audioRef.current;
+    return () => {
+      audio.pause();
+      audio.src = '';
+    };
+  }, []);
+
+  // Audio end handler
+  useEffect(() => {
+    const audio = audioRef.current;
+    const handleEnded = () => {
+      if (isPlaying && currentAyah < maxValue) {
+        playAyah(currentAyah + 1);
+      } else if (currentRepetition < repetitions) {
+        setCurrentRepetition(prev => prev + 1);
+        playAyah(minValue);
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        setIsPlaying(false);
+        setCurrentAyah(null);
+        setCurrentRepetition(1);
+      }
+    };
+
+    audio.addEventListener('ended', handleEnded);
+    return () => audio.removeEventListener('ended', handleEnded);
+  }, [isPlaying, currentAyah, maxValue, currentRepetition, repetitions, minValue]);
+
+  const playAyah = (ayahNumber) => {
+    const audio = audioRef.current;
+    
+    const formattedChapter = chapterid.toString().padStart(3, '0');
+    const formattedAyah = ayahNumber.toString().padStart(3, '0');
+    const audioFileName = `${formattedChapter}${formattedAyah}.mp3`;
+
+    audio.src = `${remoteUrlAyah}/${audioFileName}`;
+    
+    audio.play()
+      .then(() => {
+        setCurrentAyah(ayahNumber);
+      })
+      .catch(error => {
+        console.error('Audio playback failed:', error);
+      });
+  };
+
+  const togglePlayback = () => {
+    if (isPlaying) {
+      const audio = audioRef.current;
+      audio.pause();
+      audio.currentTime = 0;
+      setIsPlaying(false);
+      setCurrentRepetition(1);
+    } else {
+      setIsPlaying(true);
+      setCurrentRepetition(1);
+      playAyah(minValue);
+    }
+  };
+
+  const cycleRepetitions = () => {
+    setRepetitions(prev => {
+      switch(prev) {
+        case 10: return 20;
+        case 20: return 30;
+        default: return 10;
+      }
+    });
+  };
+
+  return {
+    isPlaying,
+    currentRepetition,
+    repetitions,
+    togglePlayback,
+    cycleRepetitions
+  };
+}
+
+export function useVerseRange(totalVerses) {
+  const [minValue, setMinValue] = useState(1);
+  const [maxValue, setMaxValue] = useState(1);
+
+  useEffect(() => {
+    if (totalVerses) {
+      setMaxValue(totalVerses);
+    }
+  }, [totalVerses]);
+
+  const adjustMinValue = (increment) => {
+    const newValue = minValue + increment;
+    if (newValue >= 1 && newValue < maxValue) {
+      setMinValue(newValue);
+    }
+  };
+
+  const adjustMaxValue = (increment) => {
+    const newValue = maxValue + increment;
+    if (newValue > minValue && newValue <= totalVerses) {
+      setMaxValue(newValue);
+    }
+  };
+
+  return {
+    minValue,
+    maxValue,
+    setMinValue,
+    setMaxValue,
+    adjustMinValue,
+    adjustMaxValue
+  };
 }
 
 // Helper functions ----------------------
