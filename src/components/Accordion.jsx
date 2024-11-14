@@ -9,7 +9,7 @@ function Accordion({ titleAyah, panelAyahs, lang }) {
     return (
         <div className={`mx-4 flex flex-row-reverse ${expanded && 'border-y pb-1'}`}>
             <span>
-                <div className="flex items-center justify-center mt-2 mr-2 border border-gray-500 rounded cursor-pointer size-7" onClick={() => setExpanded(!expanded)}>
+                <div className="flex items-center justify-center mt-2 mr-2 text-lg border border-gray-500 rounded cursor-pointer size-7" onClick={() => setExpanded(!expanded)}>
                     <FontAwesomeIcon icon={expanded ? faMinus : faPlus} />
                 </div>
             </span>

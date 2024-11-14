@@ -19,6 +19,8 @@ function Chapter() {
   const location = useLocation();
   const verseId = localStorage.getItem('verseId')
 
+  const { verses, id, words, text } = chapters[chapterid-1];
+
   React.useEffect(() => {
     setTimeout(() => {
       if (location.state?.fromBookmark) {
@@ -28,8 +30,8 @@ function Chapter() {
   }, [location.state]);
 
   React.useEffect(() => {
-    if (chapters[chapterid-1].verses) {
-      setMaxValue(chapters[chapterid-1].verses);
+    if (verses) {
+      setMaxValue(verses);
     }
   }, [groupedAyahs]);
 
@@ -40,7 +42,7 @@ function Chapter() {
     setMaxValue,
     adjustMinValue,
     adjustMaxValue
-  } = useVerseRange(chapters[chapterid-1]?.verses);
+  } = useVerseRange(verses);
 
   const {
     isPlaying,
@@ -83,6 +85,8 @@ function Chapter() {
     });
   };
 
+  
+
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} min-h-screen w-full pb-6`}>
       <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} header flex flex-col items-center p-4 sticky top-0 z-20`}>
@@ -122,13 +126,13 @@ function Chapter() {
               onDecrement={() => adjustMaxValue(-1)}
               isPlaying={isPlaying}
               min={minValue + 1}
-              max={chapters[chapterid-1]?.verses}
+              max={verses}
             />
           </div>
 
           <MultiRangeSlider
             min={1}
-            max={chapters[chapterid-1]?.verses || 1}
+            max={verses || 1}
             step={1}
             minValue={minValue}
             maxValue={maxValue}
@@ -159,12 +163,14 @@ function Chapter() {
         </div>
       </header>
 
-      <main style={{ fontSize: `${fontSize}px` }}>
-        <div className="mb-2 text-xl text-center">{chapters[chapterid-1]?.id} {chapters[chapterid-1]?.text[language]} {chapters[chapterid-1]?.words} words</div>
+      <main style={{ fontSize: `${fontSize}px` }} className='flex flex-col items-center' >
+        <div className='w-full max-w-96'>
+        <div className="mb-2 text-lg text-center">{id} {text[language]} ({verses} verses, {words} words)</div>
         <img src={mustSayThis} className='z-10 mx-auto mb-4 max-w-52' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
         {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
           <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
         ))}
+        </div>
       </main>
     </div>
   );
