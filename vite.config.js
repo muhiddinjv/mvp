@@ -21,7 +21,7 @@ export default defineConfig({
       prefer_related_applications: false,
       manifest: {
         name: "Quranim",
-        short_name: "quranim",
+        short_name: "Quranim",
         description: "I am a simple pwa vite app",
         scope: "/",
         start_url: "/",
