@@ -20,8 +20,8 @@ export default defineConfig({
       includeAssets: ["/public/*"],
       prefer_related_applications: false,
       manifest: {
-        name: "Qwbw",
-        short_name: "qwbw",
+        name: "Quranim",
+        short_name: "quranim",
         description: "I am a simple pwa vite app",
         scope: "/",
         start_url: "/",
