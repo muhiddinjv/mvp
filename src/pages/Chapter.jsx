@@ -15,10 +15,10 @@ function Chapter() {
   const { language, changeLanguage } = useLanguage();
   const { fontSize, enlargeFont } = useFontSize(16);
   const { theme } = useTheme("dark");
+  
   const navigate = useNavigate();
   const location = useLocation();
   const verseId = localStorage.getItem('verseId')
-
   const { verses, id, words, text } = chapters[chapterid-1];
 
   React.useEffect(() => {
@@ -129,7 +129,6 @@ function Chapter() {
               max={verses}
             />
           </div>
-
           <MultiRangeSlider
             min={1}
             max={verses || 1}
