@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import db from "../../db";
+import db from "../../temp/db";
 
 // src/spacedRepetition.js
 function calculateNextReview(card, difficulty) {

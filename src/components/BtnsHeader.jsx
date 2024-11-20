@@ -9,8 +9,8 @@ function BtnsHeader({
   getNextChapter,
   cycleWordLimit,
   wordLimit,
-  toggleAyaSliderVisibility,
-  ayaSliderVisible,
+  toggleShowSlider,
+  showSlider,
   changeLanguage,
   language,
   fontSize,
@@ -32,8 +32,8 @@ function BtnsHeader({
       />
       <Button 
         theme={theme} 
-        onClick={toggleAyaSliderVisibility} 
-        text={ayaSliderVisible ? <>&#9734;</> : <>&#9733;</>} 
+        onClick={toggleShowSlider} 
+        text={showSlider ? <>&#9734;</> : <>&#9733;</>} 
       />
       <Button 
         theme={theme} 

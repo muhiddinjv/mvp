@@ -9,8 +9,7 @@ import mustSayThis from '../assets/bismillah.png';
 
 function Chapter() {
   const { chapterid } = useParams();
-  const [ ayaSliderVisible, setAyaSliderVisible ] = useState(false);
-  const { chapters, wordLimit, setWordLimit } = useContext(GlobalContext);
+  const { chapters, wordLimit, setWordLimit, showSlider, setShowSlider } = useContext(GlobalContext);
   const { groupedAyahs, loading } = useAyahs(chapterid);
   const { language, changeLanguage } = useLanguage();
   const { fontSize, enlargeFont } = useFontSize(16);
@@ -68,8 +67,9 @@ function Chapter() {
     if(chapterid < 114) navigate(`/${parseInt(chapterid) + 1}`)
   }
 
-  const toggleAyaSliderVisibility = () => {
-    setAyaSliderVisible(!ayaSliderVisible);
+  const toggleShowSlider = () => {
+    setShowSlider(!showSlider);
+    localStorage.setItem("showSlider", !showSlider);
   };
   
   const cycleWordLimit = () => {
@@ -96,14 +96,14 @@ function Chapter() {
           getNextChapter={getNextChapter}
           cycleWordLimit={cycleWordLimit}
           wordLimit={wordLimit}
-          toggleAyaSliderVisibility={toggleAyaSliderVisibility}
-          ayaSliderVisible={ayaSliderVisible}
+          toggleShowSlider={toggleShowSlider}
+          showSlider={showSlider}
           changeLanguage={changeLanguage}
           language={language}
           fontSize={fontSize}
           enlargeFont={enlargeFont}
         />
-        <div className={`${ayaSliderVisible && 'hidden'} w-full mt-4 max-w-96`}>
+        <div className={`${showSlider && 'hidden'} w-full mt-4 max-w-96`}>
           <div className="flex items-center justify-between mb-2">
             <BtnsRange
               value={minValue}

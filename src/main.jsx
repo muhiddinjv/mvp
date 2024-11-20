@@ -13,7 +13,12 @@ function GlobalProvider({ children }){
   const [chapterId, setChapterId] = React.useState(
     JSON.parse(localStorage.getItem("chapterId")) || "1"
   )
-  const [ chapters, setChapters ] = React.useState(JSON.parse(localStorage.getItem('chapters')) || []);
+  const [showSlider, setShowSlider] = React.useState(
+    JSON.parse(localStorage.getItem("showSlider")) || false
+  );
+  const [ chapters, setChapters ] = React.useState(
+    JSON.parse(localStorage.getItem('chapters')) || []
+  );
   const [ verseId, setVerseId ] = React.useState();
 
   React.useEffect(() => {
@@ -32,6 +37,7 @@ function GlobalProvider({ children }){
       chapterId, setChapterId, 
       chapters, setChapters, 
       verseId, setVerseId,
+      showSlider, setShowSlider
     }}>
       {children}
     </GlobalContext.Provider>

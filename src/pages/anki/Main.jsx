@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Review from "./Review";
-import seedData from "../../db/seedData";
-import db from "../../db";
+import seedData from "../../temp/db/seedData";
+import db from "../../temp/db";
 import Streaks from "./Streaks";
-import SpeechRecognition from "./SpeechRecognition";
 
 function Main() {
   const [decks, setDecks] = useState([]);
@@ -35,7 +34,7 @@ function Main() {
   };
 
   return (
-    <div className="text-center dark:text-gray-100 p-4">
+    <div className="p-4 text-center dark:text-gray-100">
       {selectedDeck ? (
         <>
           <Streaks />
