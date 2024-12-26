@@ -27,7 +27,7 @@ export default defineConfig({
         start_url: "/",
         background_color: "#2f4f4f",
         theme_color: "#2f4f4f",
-        display: "fullscreen",// or standalone
+        display: "standalone",// or fullscreen
         orientation: "portrait",
         icons: [
           {

@@ -2,7 +2,7 @@ import React from 'react';
 import { GlobalContext } from "../main";
 import { sajdaVerses, useBookmarks } from '../hooks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowsRotate, faPlay, faBookmark as bookMarkOn, faStop, faPause } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsRotate, faPlay, faBookmark as bookMarkOn, faPause } from '@fortawesome/free-solid-svg-icons';
 import { faBookmark as bookMarkOff } from '@fortawesome/free-regular-svg-icons'
 
 function Verse({ ayah, lang, setExpanded }) {
