@@ -1,0 +1,24 @@
+@use "@/shared/ui/styles/mixins";
+
+.appLayout {
+  @include mixins.full-layout();
+
+  overflow: hidden;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: var(--app-max-width);
+  min-width: var(--app-min-width);
+  padding: 0 var(--container-padding);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.outlet {
+  overflow-y: auto;
+}
