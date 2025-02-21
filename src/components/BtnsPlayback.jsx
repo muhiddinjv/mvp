@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faPause, faPlay, faAdd, faRemove } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from 'react';
+import { GlobalContext } from '../main';
 
 function BtnsPlayback({ 
   isPlaying, 
@@ -8,8 +10,16 @@ function BtnsPlayback({
   onTogglePlay, 
   onCycleRepetitions 
 }) {
+  const { showButtons, setShowButtons } = useContext(GlobalContext);
+
   return (
     <div className="flex items-center gap-2">
+      <span 
+        onClick={()=> setShowButtons(!showButtons)} 
+        className="flex items-center justify-center border border-gray-500 rounded cursor-pointer size-8 hover:bg-gray-700"
+      >
+        <FontAwesomeIcon icon={showButtons ? faRemove : faAdd} />
+      </span>
       <span 
         onClick={onCycleRepetitions} 
         className="flex items-center justify-center h-8 border border-gray-500 rounded cursor-pointer min-w-14 hover:bg-gray-700"

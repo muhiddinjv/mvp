@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Verse from './Verse';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { GlobalContext } from '../main';
 
 function Accordion({ titleAyah, panelAyahs, lang }) {
     const [expanded, setExpanded] = React.useState(false);
+    const { showButtons } = useContext(GlobalContext);
 
     return (
         <div className={`mx-4 flex flex-row-reverse ${expanded && 'border-y pb-1'}`}>
-            <span>
+            <span className={showButtons && 'hidden'}>
                 <div className="flex items-center justify-center mt-2 mr-2 text-lg border border-gray-500 rounded cursor-pointer size-7" onClick={() => setExpanded(!expanded)}>
                     <FontAwesomeIcon icon={expanded ? faMinus : faPlus} />
                 </div>
