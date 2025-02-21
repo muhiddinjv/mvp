@@ -3,4 +3,12 @@
   column-gap: 8px;
   display: grid;
   grid-template-columns: auto 1fr auto;
+
+  &Link {
+    line-height: 0;
+  }
+
+  &Filter {
+    text-align: center;
+  }
 }

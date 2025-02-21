@@ -1,3 +1,4 @@
 export { useSurasStore } from './model/SurasStore.store';
-export type { Suras, SurasType } from './model/types';
 export { useLoadingSuras } from './model/useLoadingSuras';
+export { useSortSuras } from './model/useSortSuras';
+export type { Suras, SurasKeys } from './types';

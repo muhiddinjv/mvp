@@ -7,16 +7,20 @@
 }
 
 .center {
+  display: grid;
+  grid-template-rows: var(--app-header-height) 1fr;
+  height: calc(100% - var(--container-padding));
   margin: 0 auto;
   max-width: var(--app-max-width);
   min-width: var(--app-min-width);
-  padding: 0 var(--container-padding);
+  padding: 0 var(--container-padding) var(--container-padding);
 }
 
 .content {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  row-gap: 8px;
 }
 
 .outlet {

@@ -1,3 +1,9 @@
+import { ListSurahSort } from '@/feature/list-surah';
+
 export const Actions = () => {
-  return <div>Actions</div>;
+  return (
+    <div>
+      <ListSurahSort />
+    </div>
+  );
 };

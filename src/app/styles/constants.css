@@ -1,6 +1,7 @@
 :root {
   --app-max-width: 1280px;
   --app-min-width: 375px;
+  --app-header-height: 40px;
 
   --container-padding: 16px;
 

@@ -1,14 +1,16 @@
 import { useSurasStore } from '@entities/suras';
-import { Surah } from '@/feature/list-surah/ui/Surah';
+import { Surah } from './Surah';
+
+import styles from './ListSurah.module.scss';
 
 export const ListSurah = () => {
-  const suras = useSurasStore(state => state.suras);
+  const sortedSuras = useSurasStore(state => state.sortedSuras);
 
-  console.log(suras);
+  console.log(sortedSuras);
 
   return (
-    <div>
-      {suras.map(surah => (
+    <div className={styles.listSurah}>
+      {sortedSuras.map(surah => (
         <Surah key={surah.id} {...surah} />
       ))}
     </div>
