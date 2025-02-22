@@ -23,14 +23,15 @@ const surasStateCreator: StateCreator<SurasStore, [], [['zustand/devtools', neve
 
   sortSuras: (key, direction = 'up') => {
     const { sortedSuras, sortedKeysDirection } = get();
+    const sortedSurasNext = sortedSuras.sort((surah1, surah2) => {
+      const a = Array.isArray(surah1[key]) ? surah1[key][0] : surah1[key];
+      const b = Array.isArray(surah2[key]) ? surah2[key][0] : surah2[key];
+
+      return sortNumber(a || 0, b || 0, direction);
+    });
 
     set({
-      sortedSuras: sortedSuras.sort((surah1, surah2) => {
-        const a = Array.isArray(surah1[key]) ? surah1[key][0] : surah1[key];
-        const b = Array.isArray(surah2[key]) ? surah2[key][0] : surah2[key];
-
-        return sortNumber(a || 0, b || 0, direction);
-      }),
+      sortedSuras: [...sortedSurasNext],
 
       sortedKeysDirection: {
         ...sortedKeysDirection,

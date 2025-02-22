@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSurasStore } from '@entities/suras';
 
-const getSuras = (surasJsonLink: string) => fetch(surasJsonLink).then(res => res.json());
-
 export const useLoadingSuras = (surasJsonLink: string) => {
   const [isLoading, setIsLoading] = useState(false);
   const setSuras = useSurasStore(state => state.setSuras);
@@ -11,7 +9,8 @@ export const useLoadingSuras = (surasJsonLink: string) => {
     setIsLoading(true);
 
     try {
-      const json = await getSuras(surasJsonLink);
+      const response = await fetch(surasJsonLink);
+      const json = await response.json();
 
       setSuras(json);
     } catch (error: Error | unknown) {
