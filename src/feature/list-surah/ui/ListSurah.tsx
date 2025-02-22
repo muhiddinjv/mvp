@@ -6,8 +6,6 @@ import styles from './ListSurah.module.scss';
 export const ListSurah = () => {
   const sortedSuras = useSurasStore(state => state.sortedSuras);
 
-  console.log(sortedSuras);
-
   return (
     <div className={styles.listSurah}>
       {sortedSuras.map(surah => (

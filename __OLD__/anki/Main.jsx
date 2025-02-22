@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Review from "./Review";
-import seedData from "../../temp/db/seedData";
-import db from "../../temp/db";
-import Streaks from "./Streaks";
+import React, { useState, useEffect } from 'react';
+import Review from './Review.jsx';
+import seedData from '../temp/db/seedData.jsx';
+import db from '../temp/db/index.jsx';
+import Streaks from './Streaks.jsx';
 
 function Main() {
   const [decks, setDecks] = useState([]);
@@ -19,8 +19,8 @@ function Main() {
 
     // Fetch cards for each deck and attach them
     const decksWithCards = await Promise.all(
-      allDecks.map(async (deck) => {
-        const cards = await db.cards.where("deckId").equals(deck.id).toArray();
+      allDecks.map(async deck => {
+        const cards = await db.cards.where('deckId').equals(deck.id).toArray();
         return { ...deck, cards };
       })
     );

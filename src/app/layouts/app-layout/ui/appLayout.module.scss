@@ -3,6 +3,7 @@
 .appLayout {
   @include mixins.full-layout();
 
+  background-color: var(--bg-main);
   overflow: hidden;
 }
 
@@ -14,6 +15,10 @@
   max-width: var(--app-max-width);
   min-width: var(--app-min-width);
   padding: 0 var(--container-padding) var(--container-padding);
+
+  @media (max-width: 520px) {
+    padding: 0 var(--mobile-container-padding);
+  }
 }
 
 .content {

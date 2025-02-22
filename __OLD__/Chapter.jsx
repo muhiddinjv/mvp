@@ -1,9 +1,9 @@
-import React, {useState, useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import MultiRangeSlider from "multi-range-slider-react";
+import MultiRangeSlider from 'multi-range-slider-react';
 
-import { Loading, Accordion,BtnsRange, BtnsPlayback, BtnsHeader } from '../components';
-import { useAudioPlayer, useTheme, useVerseRange, useLanguage, useAyahs, useFontSize } from '../hooks';
+import { Loading, Accordion, BtnsRange, BtnsPlayback, BtnsHeader } from './components/index.jsx';
+import { useAudioPlayer, useTheme, useVerseRange, useLanguage, useAyahs, useFontSize } from './hooks/index.jsx';
 import { GlobalContext } from '../main';
 import mustSayThis from '../assets/bismillah.png';
 
@@ -13,12 +13,12 @@ function Chapter() {
   const { groupedAyahs, loading } = useAyahs(chapterid);
   const { language, changeLanguage } = useLanguage();
   const { fontSize, enlargeFont } = useFontSize(16);
-  const { theme } = useTheme("dark");
-  
+  const { theme } = useTheme('dark');
+
   const navigate = useNavigate();
   const location = useLocation();
-  const verseId = localStorage.getItem('verseId')
-  const { verses, id, words, text } = chapters[chapterid-1];
+  const verseId = localStorage.getItem('verseId');
+  const { verses, id, words, text } = chapters[chapterid - 1];
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -34,46 +34,37 @@ function Chapter() {
     }
   }, [groupedAyahs]);
 
-  const {
+  const { minValue, maxValue, setMinValue, setMaxValue, adjustMinValue, adjustMaxValue } = useVerseRange(verses);
+
+  const { isPlaying, currentRepetition, repetitions, togglePlayback, cycleRepetitions } = useAudioPlayer(
+    chapterid,
     minValue,
-    maxValue,
-    setMinValue,
-    setMaxValue,
-    adjustMinValue,
-    adjustMaxValue
-  } = useVerseRange(verses);
+    maxValue
+  );
 
-  const {
-    isPlaying,
-    currentRepetition,
-    repetitions,
-    togglePlayback,
-    cycleRepetitions,
-  } = useAudioPlayer(chapterid, minValue, maxValue);
-
-  function scrollToVerse(){
+  function scrollToVerse() {
     let element = document.getElementById(verseId);
     element?.scrollIntoView({
-      behavior: 'smooth', 
+      behavior: 'smooth',
       // block: "center"
     });
   }
 
-  function getPrevChapter(){
-    if(chapterid > 1) navigate(`/${parseInt(chapterid) - 1}`)
+  function getPrevChapter() {
+    if (chapterid > 1) navigate(`/${parseInt(chapterid) - 1}`);
   }
 
-  function getNextChapter(){
-    if(chapterid < 114) navigate(`/${parseInt(chapterid) + 1}`)
+  function getNextChapter() {
+    if (chapterid < 114) navigate(`/${parseInt(chapterid) + 1}`);
   }
 
   const toggleShowSlider = () => {
     setShowSlider(!showSlider);
-    localStorage.setItem("showSlider", !showSlider);
+    localStorage.setItem('showSlider', !showSlider);
   };
-  
+
   const cycleWordLimit = () => {
-    setWordLimit((prevLimit) => {
+    setWordLimit(prevLimit => {
       let newLimit;
       if (prevLimit === 100) newLimit = 7;
       else if (prevLimit === 7) newLimit = 5;
@@ -85,11 +76,13 @@ function Chapter() {
     });
   };
 
-  
-
   return (
-    <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} min-h-screen w-full pb-6`}>
-      <header className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} header flex flex-col items-center p-4 sticky top-0 z-20`}>
+    <div
+      className={`${theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-slate-800'} min-h-screen w-full pb-6`}
+    >
+      <header
+        className={`${theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-slate-800'} header flex flex-col items-center p-4 sticky top-0 z-20`}
+      >
         <BtnsHeader
           theme={theme}
           getPrevChapter={getPrevChapter}
@@ -135,11 +128,11 @@ function Chapter() {
             step={1}
             minValue={minValue}
             maxValue={maxValue}
-            onChange={(e) => {
+            onChange={e => {
               setMinValue(e.minValue);
               setMaxValue(e.maxValue);
             }}
-            onInput={(e) => {
+            onInput={e => {
               setMinValue(e.minValue);
               setMaxValue(e.maxValue);
             }}
@@ -147,28 +140,39 @@ function Chapter() {
             ruler={false}
             disabled={isPlaying}
             style={{
-              border: "none",
-              boxShadow: "none",
-              padding: "15px 10px",
-              opacity: isPlaying ? "0.5" : "1",
-              pointerEvents: isPlaying ? "none" : "auto",
+              border: 'none',
+              boxShadow: 'none',
+              padding: '15px 10px',
+              opacity: isPlaying ? '0.5' : '1',
+              pointerEvents: isPlaying ? 'none' : 'auto',
             }}
-            barInnerColor={theme === "dark" ? "#4B5563" : "#E5E7EB"}
-            barLeftColor={theme === "dark" ? "#374151" : "#D1D5DB"}
-            barRightColor={theme === "dark" ? "#374151" : "#D1D5DB"}
-            thumbLeftColor={theme === "dark" ? "#9CA3AF" : "#6B7280"}
-            thumbRightColor={theme === "dark" ? "#9CA3AF" : "#6B7280"}
+            barInnerColor={theme === 'dark' ? '#4B5563' : '#E5E7EB'}
+            barLeftColor={theme === 'dark' ? '#374151' : '#D1D5DB'}
+            barRightColor={theme === 'dark' ? '#374151' : '#D1D5DB'}
+            thumbLeftColor={theme === 'dark' ? '#9CA3AF' : '#6B7280'}
+            thumbRightColor={theme === 'dark' ? '#9CA3AF' : '#6B7280'}
           />
         </div>
       </header>
 
-      <main style={{ fontSize: `${fontSize}px` }} className='flex flex-col items-center' >
-        <div className='w-full max-w-96'>
-        <div className="mb-2 text-xl text-center">{id} {text[language]} ({verses} verses, {words} words)</div>
-        <img src={mustSayThis} className='z-10 mx-auto mb-4 max-w-52' alt='bismillah icon' style={{ filter: theme === "dark" && 'invert(80%)' }}/>
-        {loading ? <Loading /> : groupedAyahs?.map((group, index) => (
-          <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language}/>
-        ))}
+      <main style={{ fontSize: `${fontSize}px` }} className="flex flex-col items-center">
+        <div className="w-full max-w-96">
+          <div className="mb-2 text-xl text-center">
+            {id} {text[language]} ({verses} verses, {words} words)
+          </div>
+          <img
+            src={mustSayThis}
+            className="z-10 mx-auto mb-4 max-w-52"
+            alt="bismillah icon"
+            style={{ filter: theme === 'dark' && 'invert(80%)' }}
+          />
+          {loading ? (
+            <Loading />
+          ) : (
+            groupedAyahs?.map((group, index) => (
+              <Accordion key={index} titleAyah={group[0]} panelAyahs={group?.slice(1)} lang={language} />
+            ))
+          )}
         </div>
       </main>
     </div>

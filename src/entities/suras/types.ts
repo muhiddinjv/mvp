@@ -16,7 +16,7 @@ export type Suras = {
 };
 
 export type SurasKeys = keyof Pick<Suras, 'id' | 'verses' | 'words' | 'sajda'>;
-export type SortDirection = 'up' | 'down';
+export type SortDirection = 'up' | 'down' | 'none';
 
 export type SurasStore = {
   suras: Suras[];
