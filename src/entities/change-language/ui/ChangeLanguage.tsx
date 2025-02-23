@@ -3,9 +3,9 @@ import { LanguageType } from '@shared/types';
 import { Select } from 'antd';
 import { useChangeLanguage } from '../model/useChangeLanguage';
 
-const languagesType: { label: keyof typeof LANGUAGES; value: LanguageType }[] = [
+const languagesType: { label: string; value: LanguageType }[] = [
   {
-    label: 'En',
+    label: 'Eng',
     value: LANGUAGES.En,
   },
   {
@@ -13,7 +13,11 @@ const languagesType: { label: keyof typeof LANGUAGES; value: LanguageType }[] = 
     value: LANGUAGES.Uzb,
   },
   {
-    label: 'Ru',
+    label: 'Узб',
+    value: LANGUAGES.Uzс,
+  },
+  {
+    label: 'Рус',
     value: LANGUAGES.Ru,
   },
 ];
