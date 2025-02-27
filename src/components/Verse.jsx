@@ -6,7 +6,7 @@ import { faArrowsRotate, faPlay, faBookmark as bookMarkOn, faPause } from '@fort
 import { faBookmark as bookMarkOff } from '@fortawesome/free-regular-svg-icons'
 
 function Verse({ ayah, lang, setExpanded }) {
-    const { wordLimit, chapterId } = React.useContext(GlobalContext);
+    const { wordLimit, chapterId, showButtons } = React.useContext(GlobalContext);
     const [ bookmarked, toggleBookmark ] = useBookmarks(ayah.id);
     const [audioAyah, setAudioAyah] = React.useState(null);
     const [isPlaying, setIsPlaying] = React.useState(false);
@@ -154,7 +154,7 @@ function Verse({ ayah, lang, setExpanded }) {
 
     return (
         <div id={ayah.id} className="w-full text-right break-all whitespace-normal">
-            <div className='flex justify-end gap-2 my-2 text-lg'>
+            <div className={`${showButtons && 'hidden'} flex justify-end gap-2 my-2 text-lg`}>
                 <span onClick={toggleBookmark} className="flex items-center justify-center border border-gray-500 rounded cursor-pointer size-7">
                     <FontAwesomeIcon icon={bookmarked ? bookMarkOn : bookMarkOff} />
                 </span>
