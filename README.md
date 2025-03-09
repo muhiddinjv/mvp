@@ -10,6 +10,7 @@
 - major source 4 for data https://www.surequran.com/download/
 - major source 5 for data https://everyayah.com/data/tools/
 - major source 6 for data: https://corpus.quran.com/verbs.jsp?page=1
+- major source 6 for data: https://corpus.quran.com/lemmas.jsp
 
 vscode extension: markdown preview mermaid support
 ```mermaid
