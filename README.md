@@ -3,14 +3,15 @@
 - https://quranwbw.com/36 the first word plays the word below: 
 - words: https://words.audios.quranwbw.com/36/036_001_001.mp3
 - ayahs: https://everyayah.com/data/Alafasy_128kbps/036002.mp3
-- MEGA SOURCE: https://github.com/risan/quran-json/tree/main
+- MEGA SOURCE 1: https://github.com/hablullah/data-quran
+- MEGA SOURCE 2: https://github.com/risan/quran-json/tree/main
 - major source 1 for data: https://github.com/qazasaz/quranwbw
-- major source 2 for data: https://github.com/hablullah/data-quran
-- major source 3 for data: https://github.com/gadingnst/quran-api
-- major source 4 for data https://www.surequran.com/download/
-- major source 5 for data https://everyayah.com/data/tools/
-- major source 6 for data: https://corpus.quran.com/verbs.jsp?page=1
+- major source 2 for data: https://github.com/gadingnst/quran-api
+- major source 3 for data https://www.surequran.com/download/
+- major source 4 for data https://everyayah.com/data/tools/
+- major source 5 for data: https://corpus.quran.com/verbs.jsp?page=1
 - major source 6 for data: https://corpus.quran.com/lemmas.jsp
+- major source 7 for data: https://github.com/rn0x/Quran-Data/blob/version-2.0/data/json/audio/audio_surah_1.json
 
 vscode extension: markdown preview mermaid support
 ```mermaid
