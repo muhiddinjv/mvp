@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVP</title>
+    <style>
+      :root {
+        --body-bg: #f5f5f5;
+        --accordion-btn-bg: #e0e0e0;
+        --accordion-pannel-bg: #ebebeb;
+        --text-color: #252525;
+      }
+      .dark {
+        --body-bg: #333; /*#222831*/
+        --accordion-btn-bg: #555;
+        --accordion-pannel-bg: #3e3e3e;
+        --text-color: #f5f5f5;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--body-bg);
+        color: var(--text-color);
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .tools {
+        width: 270px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .tools > .font-size {
+        display: flex;
+        align-items: center;
+      }
+      .fontSizeDiv {
+        font-size: large;
+        margin: 0 5px;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .accordion-btn {
+        /* background-color: #f5f5f5; */
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 10px;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: background-color 0.3s;
+      }
+
+      .accordion-btn:hover {
+        background-color: var(--accordion-btn-bg);
+      }
+
+      .accordion-panel {
+        display: none;
+        background: var(--accordion-pannel-bg);
+        padding: 10px;
+      }
+
+      .accordion-panel.show {
+        display: block;
+      }
+
+      .sign {
+        font-size: 20px;
+      }
+
+      .pointer:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="tools">
+        <button class="get_words" onclick="getWords()">words</button>
+        <button class="theme_toggler" onclick="toggleTheme()">theme</button>
+        <button class="language" onclick="changeLanguage()">language</button>
+        <div class="font-size">
+          <button class="pointer sign enlarge" onclick="enlargeFont(false)">
+             &#8722;
+          </button>
+          <div class="fontSizeDiv"></div>
+          <button class="pointer sign shrink" onclick="enlargeFont(true)">
+             &#43;
+          </button>
+        </div>
+      </div>
+      <div class="title"></div>
+    </header>
+    <main class="main"></main>
+    <script>
+      if (!localStorage.getItem("wordQty")) {
+        const wordQty = {
+          0: true,
+          1: false,
+          2: false,
+          3: false,
+        };
+        localStorage.setItem("wordQty", JSON.stringify(wordQty));
+      }
+      if (!localStorage.getItem("language")) {
+        localStorage.setItem("language", "translation");
+      }
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
+      }
+      if (!localStorage.getItem("fontSize")) {
+        localStorage.setItem("fontSize", "16");
+      }
+
+      const title = document.querySelector(".title");
+      const main = document.querySelector(".main");
+      const fontSizeDiv = document.querySelector(".fontSizeDiv");
+      const wordQty = JSON.parse(localStorage.getItem("wordQty"));
+      let fontSize = Number(localStorage.getItem("fontSize"));
+      let language = localStorage.getItem("language");
+      fontSizeDiv.textContent = fontSize;
+      main.style.fontSize = `${fontSize}px`;
+
+      function getWords() {
+        let i = 0;
+        for (const key in wordQty) {
+          if (wordQty[key]) {
+            wordQty[key] = false;
+            i = Object.keys(wordQty).indexOf(key);
+          }
+        }
+        const nextKey = Object.keys(wordQty)[i + 1];
+
+        if (i === 3) {
+          wordQty[0] = true;
+        } else {
+          wordQty[nextKey] = true;
+        }
+        localStorage.setItem("wordQty", JSON.stringify(wordQty));
+        location.reload();
+      }
+
+      function toggleTheme() {
+        document.body.classList.toggle("dark");
+        localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+      }
+
+      function retrieveTheme() {
+        const theme = localStorage.getItem("theme");
+        if (theme != null) {
+          document.body.classList.remove("light", "dark");
+          document.body.classList.add(theme);
+        }
+      }
+
+      function changeLanguage() {
+        if (language === "text") {
+          language = "transliteration";
+        } else if (language === "transliteration") {
+          language = "translation";
+        } else {
+          language = "text";
+        }
+        localStorage.setItem("language", language);
+        location.reload();
+      }
+
+      const enlargeFont = (yes) => {
+        fontSize = yes ? fontSize + 1 : fontSize - 1;
+        localStorage.setItem("fontSize", fontSize);
+        main.style.fontSize = `${fontSize}px`;
+        fontSizeDiv.textContent = fontSize;
+      };
+
+      function createAccordion(verses) {
+        const accordion = document.createElement("div");
+        const language = localStorage.getItem("language");
+
+        for (let i = 0; i < verses.length; i += 5) {
+          const button = document.createElement("div");
+          const btnId = document.createElement("span");
+          const btnText = document.createElement("span");
+          btnText.classList.add("accordion-btn-text");
+          button.classList.add("accordion-btn");
+          btnId.textContent = `${i + 1}) `;
+          btnText.textContent = `${verses[i]}`;
+          button.appendChild(btnId);
+          button.appendChild(btnText);
+
+          const panel = document.createElement("div");
+          panel.classList.add("accordion-panel");
+
+          for (let j = i + 1; j <= i + 4 && j < verses.length; j++) {
+            const div = document.createElement("div");
+            const text = document.createElement("span");
+            const id = document.createElement("span");
+            div.classList.add("accordion-item");
+            text.classList.add("accordion-panel-text");
+            id.textContent = `${j + 1}) `;
+            text.textContent = `${verses[j]}`;
+            div.appendChild(id);
+            div.appendChild(text);
+            panel.appendChild(div);
+          }
+
+          button.addEventListener("click", function () {
+            panel.classList.toggle("show");
+          });
+
+          accordion.appendChild(button);
+          accordion.appendChild(panel);
+        }
+        return accordion;
+      }
+
+      async function showSurah() {
+        const response = await fetch("./mvp.json");
+        console.log('response', response)
+        const data = await response.json();
+        data.verses = data.verses.map((verse, index) => {
+          const words = verse[language ? language : "translation"].split(" ");
+          if (wordQty[0]) return words.join(" ");
+
+          for (let key in wordQty) {
+            if (wordQty[key]) return words.slice(0, key).join(" ");
+          }
+        });
+        title.innerHTML = `
+          <span>Surah: ${data.id} |</span>
+          <span>Verses: ${data.total_verses} |</span>
+          <span style="font-size:24px">${data.name}</span>
+          <span>${data.translation}</span>
+        `;
+        let accordion = createAccordion(data.verses);
+        document.querySelector(".main").appendChild(accordion);
+      }
+
+      window.addEventListener("storage", () => retrieveTheme(), false);
+      document.addEventListener(
+        "DOMContentLoaded",
+        retrieveTheme(),
+        showSurah()
+      );
+    </script>
+  </body>
+</html>

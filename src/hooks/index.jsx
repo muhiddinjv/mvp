@@ -46,10 +46,9 @@ export function useLanguage() {
   }, []);
 
   const changeLanguage = () => {
-    const newLanguage =
-    language === "en" ? "tr" : 
-    language === "tr" ? "ar" : 
-    language === "ar" ? "en" : "en";
+    const languages = ["en", "tr", "ar", "ru"];
+    const currentIndex = languages.indexOf(language);
+    const newLanguage = languages[(currentIndex + 1) % languages.length];
     setLanguage(newLanguage);
   };
 
@@ -314,53 +313,6 @@ export function useVerseRange(totalVerses) {
 }
 
 // Helper functions ----------------------
-export function addNewline(array, lang){
-  let newResult = '';
-  for (let i = 0; i < array.length; i++) {
-    newResult += array[i][lang];
-    if ((i + 1) % 3 === 0) {
-      newResult += '\n';
-    } else {
-      newResult += ' ';
-    }
-  }
-  return newResult;
-};
-
-export function addPFieldToObject(obj) {
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      const childObj = obj[key];
-      if (childObj.w && Array.isArray(childObj.w)) {
-        childObj.w.forEach((word, index) => {
-          const pageNumber = `036_${key.padStart(3, '0')}_${(index + 1).toString().padStart(3, '0')}`;
-          word.p = pageNumber;
-        });
-      }
-    }
-  }
-    // Convert the updated data to a JSON string
-  const jsonStr = JSON.stringify(obj, null, 2);
-
-  // Create a Blob with the JSON data
-  const blob = new Blob([jsonStr], { type: 'application/json' });
-
-  // Create a temporary URL for the Blob
-  const url = URL.createObjectURL(blob);
-
-  // Create a link element to trigger the download
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'updatedData.json';
-
-  // Append the link to the document and trigger the download
-  document.body.appendChild(link);
-  link.click();
-
-  // Clean up by revoking the URL object
-  URL.revokeObjectURL(url);
-}
-
 export function uuid(){
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
       var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r && 0x3 | 0x8);

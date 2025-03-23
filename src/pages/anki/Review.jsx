@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import db from "../../temp/db";
+import dexiedb from "../../../public/data/dexiedb";
 
 // src/spacedRepetition.js
 function calculateNextReview(card, difficulty) {
@@ -48,7 +48,7 @@ function Review({ deck, setDecks }) {
     const updatedCard = calculateNextReview(currentCard, difficulty);
 
     // Update the card in the database
-    await db.cards.put(updatedCard);
+    await dexiedb.cards.put(updatedCard);
 
     // Update the deck and card queue
     let updatedQueue = [...cardQueue];

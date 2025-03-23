@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Review from "./Review";
-import seedData from "../../temp/db/seedData";
-import db from "../../temp/db";
+import seedData from "../../../public/data/seedData";
+import db from "../../../public/data/dexiedb";
 import Streaks from "./Streaks";
 
 function Main() {
