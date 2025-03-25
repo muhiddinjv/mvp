@@ -3,8 +3,9 @@ import { useTheme, useBookmarks } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faArrowDown, faArrowUp, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faBook, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
+import ankiImage from '../assets/anki.png';
 
 function Chapters() {
   const { theme } = useTheme("dark");
@@ -70,9 +71,9 @@ function Chapters() {
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
           </Link>
-          <span onClick={() => alert(`download ${chapter.id}-${chapter.text.tr}'s audio`)} className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
-            <FontAwesomeIcon icon={faDownload} />
-          </span>
+          <Link to={`/anki/${chapter.id}`} className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
+            <img src={ankiImage} alt="anki" className="w-6 h-6 ml-1" />
+          </Link>
         </span>)
       })}
     </div>

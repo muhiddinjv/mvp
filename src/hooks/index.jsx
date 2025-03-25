@@ -59,43 +59,47 @@ export function useLanguage() {
   return { language, changeLanguage };
 }
 
-export function useAyahs(ayahNumber) {
-  const [ayahs, setAyahs] = useState({});
+export function useAyahs(suraNum) {
+  const [ayahs, setAyahs] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
     const headers = { 
       'Content-Type': 'application/json',
       'Accept': 'application/json'
-    }
-    const url = `/json/surah/${ayahNumber}.json`;
+    };
+    const url = `/json/surah/${suraNum}.json`;
     
     try {
       const response = await fetch(url, headers);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
       const json = await response.json();
       setAyahs(json);
-      setLoading(false)
     } catch (error) {
-      console.log("error", error);
-      setLoading(true)
+      console.error("Fetch error:", error);
+      setAyahs([]);
+    } finally {
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     fetchData();
-  }, [ayahNumber]); // React to changes in ayahNumber
+  }, [suraNum]);
 
   const groupedAyahs = useMemo(() => {
-    if (!ayahs) return []; // Return early if ayahs is not yet available
+    if (!ayahs || ayahs.length === 0) return [];
     const keys = Object.keys(ayahs);
     return keys.reduce((acc, _, i) => {
       if (i % 5 === 0) acc.push(keys.slice(i, i + 5).map(key => ({...ayahs[key], id: key })));
       return acc;
     }, []);
-  }, [ayahs]); 
+  }, [ayahs]);
 
   return { ayahs, groupedAyahs, loading };
-};
+}
 
 export function useBookmarks(verseId){
     const [bookmarked, setBookmarked] = useState(false);

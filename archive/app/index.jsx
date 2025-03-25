@@ -45,7 +45,7 @@ export function useLanguage() {
         const res = await fetch('/json/temp/languages.json');
         const langs = await res.json();
         setLanguages(langs);
-        if (!langs.includes(language)) setLanguage(langs[0]); // Default to first available language
+        if (!langs.includes(language)) setLanguage(langs[0]);
       } catch (error) {
         console.error('Failed to load languages:', error);
         setLanguages(['en']); // Fallback
