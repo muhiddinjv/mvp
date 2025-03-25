@@ -3,7 +3,7 @@ import { useTheme, useBookmarks } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp, faBook, faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faBook, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
 import ankiImage from '../assets/anki.png';
 

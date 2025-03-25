@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Rating, State, generatorParameters, fsrs } from "ts-fsrs";
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Speech from "react-text-to-speech";
 import moment from "moment";
 
 import { voiceText, uiLang } from "../data";
 import { useAyahs, useLanguage, useTheme } from "../hooks";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CardStorage = {
   loadCards: (words, chapterId) => {
@@ -136,6 +138,9 @@ const StatusBar = ({ cards }) => {
 
   return (
     <div className="flex justify-between gap-2 mb-2">
+      <Link to="/" className="size-8 rounded flex items-center justify-center text-2xl">
+        <FontAwesomeIcon icon={faHome} />
+      </Link>
       <StatusBadge label={newWord[language]} count={newCount} color="blue" title="New cards to learn today"/>
       <StatusBadge label={learning[language]} count={learningCount} color="red" title="Cards currently being learned"/>
       <StatusBadge label={review[language]} count={reviewCount} color="green" title="Learned cards due for review"/>
