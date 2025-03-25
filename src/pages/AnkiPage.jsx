@@ -8,6 +8,7 @@ import { voiceText, uiLang } from "../data";
 import { useAyahs, useLanguage, useTheme } from "../hooks";
 import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../components/Button";
 
 const CardStorage = {
   loadCards: (words, chapterId) => {
@@ -114,7 +115,8 @@ function getUniqueWords(surahData) {
 }
 
 const StatusBar = ({ cards }) => {
-  const { language } = useLanguage();
+  const { ankiLanguage, changeAnkiLanguage } = useLanguage();
+
   const { newWord, learning, review } = uiLang.words;
 
   const now = moment();
@@ -141,9 +143,13 @@ const StatusBar = ({ cards }) => {
       <Link to="/" className="size-8 rounded flex items-center justify-center text-2xl">
         <FontAwesomeIcon icon={faHome} />
       </Link>
-      <StatusBadge label={newWord[language]} count={newCount} color="blue" title="New cards to learn today"/>
-      <StatusBadge label={learning[language]} count={learningCount} color="red" title="Cards currently being learned"/>
-      <StatusBadge label={review[language]} count={reviewCount} color="green" title="Learned cards due for review"/>
+      <StatusBadge label={newWord[ankiLanguage]} count={newCount} color="blue" title="New cards to learn today"/>
+      <StatusBadge label={learning[ankiLanguage]} count={learningCount} color="red" title="Cards currently being learned"/>
+      <StatusBadge label={review[ankiLanguage]} count={reviewCount} color="green" title="Learned cards due for review"/>
+      <Button 
+        onClick={changeAnkiLanguage} 
+        text={ankiLanguage} 
+      />
     </div>
   );
 };
@@ -202,7 +208,7 @@ const CardReview = ({
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const { language, changeLanguage } = useLanguage();
+  const { ankiLanguage, changeLanguage } = useLanguage();
 
   return (
     <div className="flex flex-col justify-between w-full h-full p-4">
@@ -224,7 +230,7 @@ const CardReview = ({
             {currentCard.image && !imageError && (
               <img 
                 src={currentCard.image}
-                alt={currentCard.text[language]}
+                alt={currentCard.text[ankiLanguage]}
                 className={`bg-gray-200 mt-4 text-center text-gray-700 w-96 aspect-square rounded-lg ${!imageLoaded && "hidden"}`}
                 onLoad={()=>setImageLoaded(true)}
                 onError={()=>setImageError(true)}
@@ -236,7 +242,7 @@ const CardReview = ({
             )}
 
             <div className="mt-4 text-lg text-center">
-              {currentCard.text[language]}
+              {currentCard.text[ankiLanguage]}
             </div>
           </div>
         )}
@@ -247,7 +253,7 @@ const CardReview = ({
             onClick={() => setShowAnswer(true)}
             className="px-4 py-2 text-white bg-blue-500 rounded"
           >
-            {uiLang.words.answer[language]}
+            {uiLang.words.answer[ankiLanguage]}
           </button>
         ) : (
           <GradeButtons handleGrade={handleGrade} intervals={intervals} />
@@ -259,7 +265,7 @@ const CardReview = ({
 
 const GradeButtons = ({ handleGrade, intervals }) => {
   const { again, hard, good, easy } = uiLang.words;
-  const { language } = useLanguage();
+  const { ankiLanguage } = useLanguage();
 
   return (
     <div className="flex justify-center w-full gap-2">
@@ -270,7 +276,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         interval={intervals[Rating.Again]}
         tip="Your answer was completely incorrect."
       >
-        {again[language]}
+        {again[ankiLanguage]}
       </GradeButton>
       <GradeButton
         bgColor="bg-yellow-500"
@@ -279,7 +285,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         interval={intervals[Rating.Hard]}
         tip="Your answer was partially correct, and/or you hesitated a lot."
       >
-        {hard[language]}
+        {hard[ankiLanguage]}
       </GradeButton>
       <GradeButton
         bgColor="bg-green-500"
@@ -288,7 +294,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         interval={intervals[Rating.Good]}
         tip="You answered correctly with a little bit of hesitation."
       >
-        {good[language]}
+        {good[ankiLanguage]}
       </GradeButton>
       <GradeButton
         bgColor="bg-blue-500"
@@ -297,7 +303,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         interval={intervals[Rating.Easy]}
         tip="You answered correctly with no hesitation."
       >
-        {easy[language]}
+        {easy[ankiLanguage]}
       </GradeButton>
     </div>
   )

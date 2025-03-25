@@ -39,24 +39,29 @@ export function useLanguage() {
     localStorage.getItem("language") || 'en'
   );
 
-  useEffect(() => {
-    if (language === undefined) {
-      setLanguage('en');
-    }
-  }, []);
+  const [ankiLanguage, setAnkiLanguage] = useState(
+    localStorage.getItem("ankiLanguage") || 'en'
+  );
+  const languages = ["en", "tr", "ar", "ru"];
+  const ankilanguages = ["en", "ru"];
 
   const changeLanguage = () => {
-    const languages = ["en", "tr", "ar", "ru"];
     const currentIndex = languages.indexOf(language);
     const newLanguage = languages[(currentIndex + 1) % languages.length];
     setLanguage(newLanguage);
   };
 
+  const changeAnkiLanguage = () => {
+    const currentIndex = ankilanguages.indexOf(ankiLanguage);
+    const newLanguage = ankilanguages[(currentIndex + 1) % ankilanguages.length];
+    setAnkiLanguage(newLanguage);
+  };
   useEffect(() => {
-    localStorage.setItem("language", language);
-  }, [language]);
+    localStorage.setItem("language", language); 
+    localStorage.setItem("ankiLanguage", ankiLanguage);
+  }, [language, ankiLanguage]);
 
-  return { language, changeLanguage };
+  return { language, changeLanguage, ankiLanguage, changeAnkiLanguage };
 }
 
 export function useAyahs(suraNum) {
