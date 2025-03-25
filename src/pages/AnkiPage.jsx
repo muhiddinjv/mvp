@@ -157,14 +157,14 @@ const StatusBadge = ({ label, count, color, title }) => {
 };
 
 const GradeButton = ({
-  color,
+  bgColor,
   rating,
   children,
   handleClick,
   interval,
   tip,
 }) => {
-  const buttonClass = `bg-${color}-500 text-white py-2 px-4 rounded`;
+  const buttonClass = `${bgColor} text-white py-2 px-4 rounded`;
   
   return (
     <button
@@ -264,7 +264,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
   return (
     <div className="flex justify-center w-full gap-2">
       <GradeButton
-        color="red"
+        bgColor="bg-red-500"
         rating={Rating.Again}
         handleClick={handleGrade}
         interval={intervals[Rating.Again]}
@@ -273,7 +273,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         {again[language]}
       </GradeButton>
       <GradeButton
-        color="yellow"
+        bgColor="bg-yellow-500"
         rating={Rating.Hard}
         handleClick={handleGrade}
         interval={intervals[Rating.Hard]}
@@ -282,7 +282,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         {hard[language]}
       </GradeButton>
       <GradeButton
-        color="green"
+        bgColor="bg-green-500"
         rating={Rating.Good}
         handleClick={handleGrade}
         interval={intervals[Rating.Good]}
@@ -291,7 +291,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
         {good[language]}
       </GradeButton>
       <GradeButton
-        color="blue"
+        bgColor="bg-blue-500"
         rating={Rating.Easy}
         handleClick={handleGrade}
         interval={intervals[Rating.Easy]}
