@@ -3,9 +3,8 @@ import { useTheme, useBookmarks } from '../hooks';
 import { GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp, faBook, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faBook, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
-import ankiImage from '../assets/anki.png';
 
 function Chapters() {
   const { theme } = useTheme("dark");
@@ -15,14 +14,17 @@ function Chapters() {
   const [,,getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
 
+  React.useEffect(() => {
+    setChapters(sortChapters(chapters, sortType, sortOrder));
+  }, [sortType, sortOrder, setChapters]);
+
   const sortChapters = (data, field, ascending) => {
-    return [...data].sort((a, b) => (ascending ? a[field] - b[field] : b[field] - a[field]));
+    return [...data].sort((a, b) => (ascending ? b[field] - a[field] : a[field] - b[field]));
   };
 
   const handleSortBy = (type) => {
     setSortType(type);
     setSortOrder((prevOrder) => !prevOrder);
-    setChapters(sortChapters(chapters, type, sortOrder));
   };
 
   const handleBookmark = (bookmark) => {
@@ -30,6 +32,8 @@ function Chapters() {
     localStorage.setItem("chapterId", bookmark.chapterId);
     localStorage.setItem("verseId", `${bookmark.chapterId}_${bookmark.verseId}`);
   };
+
+  const lowestUnlocked = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
 
   const handleChapter = (chapter) => {
     setChapterId(chapter.id);
@@ -47,7 +51,7 @@ function Chapters() {
           <span onClick={()=>handleSortBy('sajda')} className='w-full py-2'>Sajda {sortType === 'sajda' && sortOrder ? '۩' : <FontAwesomeIcon icon={faArrowUp} />}</span>
           <span onClick={()=>handleSortBy('words')} className='border-l border-gray-500 w-full py-2'>Word <FontAwesomeIcon icon={sortType === 'words' && sortOrder ? faArrowDown : faArrowUp} /></span>
           <Link to='/stories' className='border-l border-gray-500 w-full max-w-12 py-2'>
-            <FontAwesomeIcon icon={faBook} />
+            <FontAwesomeIcon icon={faLightbulb} />
           </Link>
         </div>
         <ul className={`${bookmarks.length == 0 && 'hidden'} border-x border-b border-gray-500 rounded-b p-1 flex justify-center flex-wrap`}>
@@ -63,6 +67,9 @@ function Chapters() {
         </ul>
       </div>
       {chapters?.map(chapter => {
+        const chapterNum = Number(chapter.id);
+        const isLocked = chapterNum < lowestUnlocked;
+
         return (<span id={chapter.id} key={chapter.id} onClick={()=> handleChapter(chapter)} className="flex border border-gray-500 rounded">
           <span className='flex items-center justify-center border-r border-gray-500 text-lg w-full max-w-12'>{chapter.id}</span>
           <Link to={`/${chapter.id}`} className='flex-grow p-1 ml-2'>
@@ -71,9 +78,18 @@ function Chapters() {
               {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
             </div>
           </Link>
-          <Link to={`/anki/${chapter.id}`} className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
-            <img src={ankiImage} alt="anki" className="w-6 h-6 ml-1" />
-          </Link>
+          {isLocked ? (
+              <div className="w-12 border-l border-gray-500 p-2 flex justify-center items-center opacity-50 cursor-not-allowed">
+                <FontAwesomeIcon icon={faBook} />
+              </div>
+            ) : (
+              <Link
+                to={`/anki/${chapter.id}`}
+                className="w-12 border-l border-gray-500 p-2 flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faBook} />
+              </Link>
+            )}
         </span>)
       })}
     </div>
