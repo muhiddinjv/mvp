@@ -352,6 +352,17 @@ const AnkiPage = () => {
       }
     : {};
 
+  useEffect(() => {
+    if (reviewComplete && suraid) {
+      const currentSura = Number(suraid);
+      const lowestUnlocked = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
+      // Only update if the current chapter is the locked one and not the very first chapter.
+      if (currentSura === lowestUnlocked && currentSura > 1) {
+        localStorage.setItem("lowestUnlockedSurah", currentSura - 1);
+      }
+    }
+  }, [reviewComplete, suraid]);
+
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} flex flex-col items-center h-full py-4`}>
       <StatusBar cards={cards} />
