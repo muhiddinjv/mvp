@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "الْفَلَقِ",
+      "en": "(of) the dawn",
+      "tr": "l-falaqi",
+      "ru": "рассвета"
+    },
+    "aud": "113_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "مَا",
+      "en": "(of) what",
+      "tr": "mā",
+      "ru": "того, что"
+    },
+    "aud": "113_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "خَلَقَ",
+      "en": "He created",
+      "tr": "khalaqa",
+      "ru": "Он сотворил,"
+    },
+    "aud": "113_002_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "وَمِنْ",
+      "en": "And from",
+      "tr": "wamin",
+      "ru": "и от"
+    },
+    "aud": "113_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "غَاسِقٍ",
+      "en": "(of) darkness",
+      "tr": "ghāsiqin",
+      "ru": "мрака,"
+    },
+    "aud": "113_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "إِذَا",
+      "en": "when",
+      "tr": "idhā",
+      "ru": "когда"
+    },
+    "aud": "113_003_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "وَقَبَ",
+      "en": "it settles",
+      "tr": "waqaba",
+      "ru": "он окутывает"
+    },
+    "aud": "113_003_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "النَّفَّاثَاتِ",
+      "en": "(of) the blowers",
+      "tr": "l-nafāthāti",
+      "ru": "плюющих (колдуний)"
+    },
+    "aud": "113_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "الْعُقَدِ",
+      "en": "the knots",
+      "tr": "l-ʿuqadi",
+      "ru": "узлы,"
+    },
+    "aud": "113_004_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "حَاسِدٍ",
+      "en": "(of) an envier",
+      "tr": "ḥāsidin",
+      "ru": "завистника,"
+    },
+    "aud": "113_005_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "حَسَدَ",
+      "en": "he envies",
+      "tr": "ḥasada",
+      "ru": "он завидует»."
+    },
+    "aud": "113_005_005",
+    "img": "/img/book.png"
+  }
+]

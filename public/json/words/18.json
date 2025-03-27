@@ -1,0 +1,4611 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "عِوَجَا",
+      "en": "any crookedness",
+      "tr": "ʿiwajā",
+      "ru": "искажения! –"
+    },
+    "aud": "018_001_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "قَيِّمًا",
+      "en": "Straight",
+      "tr": "qayyiman",
+      "ru": "прямую,"
+    },
+    "aud": "018_002_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "بَأْسًا",
+      "en": "(of) a punishment",
+      "tr": "basan",
+      "ru": "ярости"
+    },
+    "aud": "018_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "لَدُنْهُ",
+      "en": "near Him",
+      "tr": "ladun'hu",
+      "ru": "Него"
+    },
+    "aud": "018_002_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "وَيُبَشِّرَ",
+      "en": "and give glad tidings",
+      "tr": "wayubashira",
+      "ru": "и обрадовать"
+    },
+    "aud": "018_002_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "مَاكِثِينَ",
+      "en": "(They will) abide",
+      "tr": "mākithīna",
+      "ru": "будучи пребывающими (они)"
+    },
+    "aud": "018_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "وَيُنْذِرَ",
+      "en": "And to warn",
+      "tr": "wayundhira",
+      "ru": "и (чтобы) предостеречь"
+    },
+    "aud": "018_004_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "كَبُرَتْ",
+      "en": "Mighty (is)",
+      "tr": "kaburat",
+      "ru": "Велико оно,"
+    },
+    "aud": "018_005_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "فَلَعَلَّكَ",
+      "en": "Then perhaps you would (be)",
+      "tr": "falaʿallaka",
+      "ru": "Так может быть, ты"
+    },
+    "aud": "018_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "أَسَفًا",
+      "en": "(in) grief",
+      "tr": "asafan",
+      "ru": "из-за печали."
+    },
+    "aud": "018_006_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "زِينَةً",
+      "en": "adornment",
+      "tr": "zīnatan",
+      "ru": "украшением"
+    },
+    "aud": "018_007_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "لِنَبْلُوَهُمْ",
+      "en": "that We may test [them]",
+      "tr": "linabluwahum",
+      "ru": "чтобы испытать Нам их,"
+    },
+    "aud": "018_007_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "لَجَاعِلُونَ",
+      "en": "(will) surely make",
+      "tr": "lajāʿilūna",
+      "ru": "обязательно сделаем"
+    },
+    "aud": "018_008_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "صَعِيدًا",
+      "en": "soil",
+      "tr": "ṣaʿīdan",
+      "ru": "почвой,"
+    },
+    "aud": "018_008_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "جُرُزًا",
+      "en": "barren",
+      "tr": "juruzan",
+      "ru": "лишенной растительности."
+    },
+    "aud": "018_008_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "حَسِبْتَ",
+      "en": "you think",
+      "tr": "ḥasib'ta",
+      "ru": "ты посчитал,"
+    },
+    "aud": "018_009_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "الْكَهْفِ",
+      "en": "(of) the cave",
+      "tr": "l-kahfi",
+      "ru": "пещеры"
+    },
+    "aud": "018_009_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "وَالرَّقِيمِ",
+      "en": "and the inscription",
+      "tr": "wal-raqīmi",
+      "ru": "и плиты"
+    },
+    "aud": "018_009_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "أَوَى",
+      "en": "retreated",
+      "tr": "awā",
+      "ru": "укрылись (досл. укрылся)"
+    },
+    "aud": "018_010_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "الْفِتْيَةُ",
+      "en": "the youths",
+      "tr": "l-fit'yatu",
+      "ru": "юноши"
+    },
+    "aud": "018_010_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "ءَاتِنَا",
+      "en": "Grant us",
+      "tr": "ātinā",
+      "ru": "Даруй нам"
+    },
+    "aud": "018_010_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "وَهَيِّئْ",
+      "en": "and facilitate",
+      "tr": "wahayyi",
+      "ru": "и устрой"
+    },
+    "aud": "018_010_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "فَضَرَبْنَا",
+      "en": "So We cast",
+      "tr": "faḍarabnā",
+      "ru": "И (затем) ударили Мы"
+    },
+    "aud": "018_011_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "بَعَثْنَاهُمْ",
+      "en": "We raised them up",
+      "tr": "baʿathnāhum",
+      "ru": "воскресили Мы их,"
+    },
+    "aud": "018_012_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "الْحِزْبَيْنِ",
+      "en": "(of) the two parties",
+      "tr": "l-ḥiz'bayni",
+      "ru": "(из) двух групп"
+    },
+    "aud": "018_012_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "أَحْصَى",
+      "en": "best calculated",
+      "tr": "aḥṣā",
+      "ru": "более точна в счёте"
+    },
+    "aud": "018_012_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "نَبَأَهُمْ",
+      "en": "their story",
+      "tr": "naba-ahum",
+      "ru": "весть о них"
+    },
+    "aud": "018_013_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "فِتْيَةٌ",
+      "en": "youths",
+      "tr": "fit'yatun",
+      "ru": "юноши,"
+    },
+    "aud": "018_013_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "وَزِدْنَاهُمْ",
+      "en": "and We increased them",
+      "tr": "wazid'nāhum",
+      "ru": "и увеличили Мы им"
+    },
+    "aud": "018_013_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "وَرَبَطْنَا",
+      "en": "And We made firm",
+      "tr": "warabaṭnā",
+      "ru": "И укрепили Мы"
+    },
+    "aud": "018_014_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "قَامُوا",
+      "en": "they stood up",
+      "tr": "qāmū",
+      "ru": "встали они"
+    },
+    "aud": "018_014_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "نَدْعُوَا",
+      "en": "we will invoke",
+      "tr": "nadʿuwā",
+      "ru": "будем мы обращаться с мольбой"
+    },
+    "aud": "018_014_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "قَوْمُنَا",
+      "en": "our people",
+      "tr": "qawmunā",
+      "ru": "наш народ,"
+    },
+    "aud": "018_015_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "بَيِّنٍ",
+      "en": "clear",
+      "tr": "bayyinin",
+      "ru": "ясное?"
+    },
+    "aud": "018_015_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "وَإِذِ",
+      "en": "And when",
+      "tr": "wa-idhi",
+      "ru": "И раз"
+    },
+    "aud": "018_016_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "اعْتَزَلْتُمُوهُمْ",
+      "en": "you withdraw from them",
+      "tr": "iʿ'tazaltumūhum",
+      "ru": "отделились вы от них"
+    },
+    "aud": "018_016_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "فَأْوُوا",
+      "en": "then retreat",
+      "tr": "fawū",
+      "ru": "то укройтесь"
+    },
+    "aud": "018_016_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 38,
+    "text": {
+      "ar": "يَنْشُرْ",
+      "en": "Will spread",
+      "tr": "yanshur",
+      "ru": "распрострёт"
+    },
+    "aud": "018_016_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 39,
+    "text": {
+      "ar": "وَيُهَيِّئْ",
+      "en": "and will facilitate",
+      "tr": "wayuhayyi",
+      "ru": "и уготовит Он"
+    },
+    "aud": "018_016_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 40,
+    "text": {
+      "ar": "أَمْرِكُمْ",
+      "en": "your affair",
+      "tr": "amrikum",
+      "ru": "вашего дела"
+    },
+    "aud": "018_016_018",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 41,
+    "text": {
+      "ar": "مِرفَقًا",
+      "en": "(in) ease",
+      "tr": "mir'faqan",
+      "ru": "удобство»."
+    },
+    "aud": "018_016_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 42,
+    "text": {
+      "ar": "طَلَعَتْ",
+      "en": "it rose",
+      "tr": "ṭalaʿat",
+      "ru": "восходит оно,"
+    },
+    "aud": "018_017_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 43,
+    "text": {
+      "ar": "تَزَاوَرُ",
+      "en": "inclining away",
+      "tr": "tazāwaru",
+      "ru": "уклоняется"
+    },
+    "aud": "018_017_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 44,
+    "text": {
+      "ar": "كَهْفِهِمْ",
+      "en": "their cave",
+      "tr": "kahfihim",
+      "ru": "их пещеры"
+    },
+    "aud": "018_017_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 45,
+    "text": {
+      "ar": "غَرَبَتْ",
+      "en": "it set",
+      "tr": "gharabat",
+      "ru": "оно заходит,"
+    },
+    "aud": "018_017_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 46,
+    "text": {
+      "ar": "تَقْرِضُهُمْ",
+      "en": "passing away from them",
+      "tr": "taqriḍuhum",
+      "ru": "минует их"
+    },
+    "aud": "018_017_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 47,
+    "text": {
+      "ar": "فَجْوَةٍ",
+      "en": "the open space",
+      "tr": "fajwatin",
+      "ru": "просторном месте"
+    },
+    "aud": "018_017_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 48,
+    "text": {
+      "ar": "الْمُهْتَدِ",
+      "en": "(is) the guided one",
+      "tr": "l-muh'tadi",
+      "ru": "идущий по прямому пути,"
+    },
+    "aud": "018_017_027",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 49,
+    "text": {
+      "ar": "يُضْلِلْ",
+      "en": "He lets go astray",
+      "tr": "yuḍ'lil",
+      "ru": "вводит Он в заблуждение,"
+    },
+    "aud": "018_017_029",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 50,
+    "text": {
+      "ar": "مُرْشِدًا",
+      "en": "a guide",
+      "tr": "mur'shidan",
+      "ru": "(ни) наставника."
+    },
+    "aud": "018_017_034",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 51,
+    "text": {
+      "ar": "وَتَحْسَبُهُمْ",
+      "en": "And you (would) think them",
+      "tr": "wataḥsabuhum",
+      "ru": "И ты считаешь, что они –"
+    },
+    "aud": "018_018_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 52,
+    "text": {
+      "ar": "أَيْقَاظًا",
+      "en": "awake",
+      "tr": "ayqāẓan",
+      "ru": "бодрствующие,"
+    },
+    "aud": "018_018_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 53,
+    "text": {
+      "ar": "رُقُودٌ",
+      "en": "(were) asleep",
+      "tr": "ruqūdun",
+      "ru": "спящие."
+    },
+    "aud": "018_018_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 54,
+    "text": {
+      "ar": "وَنُقَلِّبُهُمْ",
+      "en": "And We turned them",
+      "tr": "wanuqallibuhum",
+      "ru": "И переворачиваем Мы их"
+    },
+    "aud": "018_018_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 55,
+    "text": {
+      "ar": "وَذَاتَ",
+      "en": "and to",
+      "tr": "wadhāta",
+      "ru": "и налево."
+    },
+    "aud": "018_018_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 56,
+    "text": {
+      "ar": "وَكَلْبُهُمْ",
+      "en": "while their dog",
+      "tr": "wakalbuhum",
+      "ru": "А собака их"
+    },
+    "aud": "018_018_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 57,
+    "text": {
+      "ar": "بَاسِطٌ",
+      "en": "stretched",
+      "tr": "bāsiṭun",
+      "ru": "растянувшая"
+    },
+    "aud": "018_018_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 58,
+    "text": {
+      "ar": "ذِرَاعَيْهِ",
+      "en": "his two forelegs",
+      "tr": "dhirāʿayhi",
+      "ru": "лапы свои"
+    },
+    "aud": "018_018_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 59,
+    "text": {
+      "ar": "بِالْوَصِيدِ",
+      "en": "at the entrance",
+      "tr": "bil-waṣīdi",
+      "ru": "у порога."
+    },
+    "aud": "018_018_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 60,
+    "text": {
+      "ar": "لَوِ",
+      "en": "If",
+      "tr": "lawi",
+      "ru": "Если бы"
+    },
+    "aud": "018_018_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 61,
+    "text": {
+      "ar": "اطَّلَعْتَ",
+      "en": "you had looked",
+      "tr": "iṭṭalaʿta",
+      "ru": "ты посмотрел"
+    },
+    "aud": "018_018_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 62,
+    "text": {
+      "ar": "لَوَلَّيْتَ",
+      "en": "you (would) have surely turned back",
+      "tr": "lawallayta",
+      "ru": "то обратился бы"
+    },
+    "aud": "018_018_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 63,
+    "text": {
+      "ar": "وَلَمُلِئْتَ",
+      "en": "and surely you would have been filled",
+      "tr": "walamuli'ta",
+      "ru": "и, однозначно, переполнился бы ты"
+    },
+    "aud": "018_018_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 64,
+    "text": {
+      "ar": "رُعْبًا",
+      "en": "(with) terror",
+      "tr": "ruʿ'ban",
+      "ru": "страхом."
+    },
+    "aud": "018_018_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 65,
+    "text": {
+      "ar": "لِيَتَسَاءَلُوا",
+      "en": "that they might question",
+      "tr": "liyatasāalū",
+      "ru": "чтобы они стали расспрашивать"
+    },
+    "aud": "018_019_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 66,
+    "text": {
+      "ar": "فَابْعَثُوا",
+      "en": "So send",
+      "tr": "fa-ib'ʿathū",
+      "ru": "так пошлите"
+    },
+    "aud": "018_019_021",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 67,
+    "text": {
+      "ar": "أَحَدَكُمْ",
+      "en": "one of you",
+      "tr": "aḥadakum",
+      "ru": "одного из вас"
+    },
+    "aud": "018_019_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 68,
+    "text": {
+      "ar": "بِوَرِقِكُمْ",
+      "en": "(with this) silver coin of yours",
+      "tr": "biwariqikum",
+      "ru": "с вашими серебряными монетами"
+    },
+    "aud": "018_019_023",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 69,
+    "text": {
+      "ar": "طَعَامًا",
+      "en": "food",
+      "tr": "ṭaʿāman",
+      "ru": "пищей,"
+    },
+    "aud": "018_019_030",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 70,
+    "text": {
+      "ar": "فَلْيَأْتِكُمْ",
+      "en": "and let him bring to you",
+      "tr": "falyatikum",
+      "ru": "и пусть придёт он к вам"
+    },
+    "aud": "018_019_031",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 71,
+    "text": {
+      "ar": "بِرِزْقٍ",
+      "en": "provision",
+      "tr": "biriz'qin",
+      "ru": "с (неким) пропитанием"
+    },
+    "aud": "018_019_032",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 72,
+    "text": {
+      "ar": "وَلْيَتَلَطَّفْ",
+      "en": "and let him be cautious",
+      "tr": "walyatalaṭṭaf",
+      "ru": "но пусть ведёт себя спокойно"
+    },
+    "aud": "018_019_034",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 73,
+    "text": {
+      "ar": "يُشْعِرَنَّ",
+      "en": "be aware",
+      "tr": "yush'ʿiranna",
+      "ru": "даст знать"
+    },
+    "aud": "018_019_036",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 74,
+    "text": {
+      "ar": "يَرْجُمُوكُمْ",
+      "en": "they will stone you",
+      "tr": "yarjumūkum",
+      "ru": "забьют вас камнями"
+    },
+    "aud": "018_020_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 75,
+    "text": {
+      "ar": "يُعِيدُوكُمْ",
+      "en": "return you",
+      "tr": "yuʿīdūkum",
+      "ru": "обратят вас"
+    },
+    "aud": "018_020_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 76,
+    "text": {
+      "ar": "مِلَّتِهِمْ",
+      "en": "their religion",
+      "tr": "millatihim",
+      "ru": "их верование,"
+    },
+    "aud": "018_020_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 77,
+    "text": {
+      "ar": "تُفْلِحُوا",
+      "en": "will you succeed",
+      "tr": "tuf'liḥū",
+      "ru": "обретёте вы успеха"
+    },
+    "aud": "018_020_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 78,
+    "text": {
+      "ar": "أَعْثَرْنَا",
+      "en": "We made known",
+      "tr": "aʿtharnā",
+      "ru": "дали Мы знать"
+    },
+    "aud": "018_021_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 79,
+    "text": {
+      "ar": "لِيَعْلَمُوا",
+      "en": "that they might know",
+      "tr": "liyaʿlamū",
+      "ru": "чтобы они знали,"
+    },
+    "aud": "018_021_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 80,
+    "text": {
+      "ar": "غَلَبُوا",
+      "en": "prevailed",
+      "tr": "ghalabū",
+      "ru": "держали верх"
+    },
+    "aud": "018_021_027",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 81,
+    "text": {
+      "ar": "لَنَتَّخِذَنَّ",
+      "en": "Surely we will take",
+      "tr": "lanattakhidhanna",
+      "ru": "«Непременно, мы устроим"
+    },
+    "aud": "018_021_030",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 82,
+    "text": {
+      "ar": "مَسْجِدًا",
+      "en": "a place of worship",
+      "tr": "masjidan",
+      "ru": "мечеть!»"
+    },
+    "aud": "018_021_032",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 83,
+    "text": {
+      "ar": "ثَلَاثَةٌ",
+      "en": "(they were) three",
+      "tr": "thalāthatun",
+      "ru": "«Трое,"
+    },
+    "aud": "018_022_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 84,
+    "text": {
+      "ar": "كَلْبُهُمْ",
+      "en": "their dog",
+      "tr": "kalbuhum",
+      "ru": "их пес»."
+    },
+    "aud": "018_022_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 85,
+    "text": {
+      "ar": "خَمْسَةٌ",
+      "en": "(they were) five",
+      "tr": "khamsatun",
+      "ru": "«Пять,"
+    },
+    "aud": "018_022_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 86,
+    "text": {
+      "ar": "رَجْمًا",
+      "en": "guessing",
+      "tr": "rajman",
+      "ru": "(лишь) предполагая"
+    },
+    "aud": "018_022_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 87,
+    "text": {
+      "ar": "سَبْعَةٌ",
+      "en": "(they were) seven",
+      "tr": "sabʿatun",
+      "ru": "«Семь,"
+    },
+    "aud": "018_022_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 88,
+    "text": {
+      "ar": "وَثَامِنُهُمْ",
+      "en": "and the eight of them",
+      "tr": "wathāminuhum",
+      "ru": "а восьмой из них –"
+    },
+    "aud": "018_022_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 89,
+    "text": {
+      "ar": "بِعِدَّتِهِمْ",
+      "en": "their number",
+      "tr": "biʿiddatihim",
+      "ru": "о числе их."
+    },
+    "aud": "018_022_018",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 90,
+    "text": {
+      "ar": "يَعْلَمُهُمْ",
+      "en": "knows them",
+      "tr": "yaʿlamuhum",
+      "ru": "знают их,"
+    },
+    "aud": "018_022_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 91,
+    "text": {
+      "ar": "قَلِيلٌ",
+      "en": "a few",
+      "tr": "qalīlun",
+      "ru": "немногие»."
+    },
+    "aud": "018_022_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 92,
+    "text": {
+      "ar": "تُمَارِ",
+      "en": "argue",
+      "tr": "tumāri",
+      "ru": "спорь"
+    },
+    "aud": "018_022_024",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 93,
+    "text": {
+      "ar": "مِرَاءً",
+      "en": "(with) an argument",
+      "tr": "mirāan",
+      "ru": "спором"
+    },
+    "aud": "018_022_027",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 94,
+    "text": {
+      "ar": "تَسْتَفْتِ",
+      "en": "inquire",
+      "tr": "tastafti",
+      "ru": "спрашивай"
+    },
+    "aud": "018_022_030",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 95,
+    "text": {
+      "ar": "تَقُولَنَّ",
+      "en": "say",
+      "tr": "taqūlanna",
+      "ru": "говори никак"
+    },
+    "aud": "018_023_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 96,
+    "text": {
+      "ar": "لِشَيْءٍ",
+      "en": "of anything",
+      "tr": "lishāy'in",
+      "ru": "о чём-либо:"
+    },
+    "aud": "018_023_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 97,
+    "text": {
+      "ar": "فَاعِلٌ",
+      "en": "will do",
+      "tr": "fāʿilun",
+      "ru": "сделаю"
+    },
+    "aud": "018_023_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 98,
+    "text": {
+      "ar": "نَسِيتَ",
+      "en": "you forget",
+      "tr": "nasīta",
+      "ru": "забудешь,"
+    },
+    "aud": "018_024_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 99,
+    "text": {
+      "ar": "يَهْدِيَنِ",
+      "en": "will guide me",
+      "tr": "yahdiyani",
+      "ru": "поведёт меня"
+    },
+    "aud": "018_024_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 100,
+    "text": {
+      "ar": "لِأَقْرَبَ",
+      "en": "to a nearer (way)",
+      "tr": "li-aqraba",
+      "ru": "к более близкому,"
+    },
+    "aud": "018_024_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 101,
+    "text": {
+      "ar": "وَلَبِثُوا",
+      "en": "And they remained",
+      "tr": "walabithū",
+      "ru": "И пребывали они"
+    },
+    "aud": "018_025_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 102,
+    "text": {
+      "ar": "مِائَةٍ",
+      "en": "hundred",
+      "tr": "mi-atin",
+      "ru": "сотни"
+    },
+    "aud": "018_025_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 103,
+    "text": {
+      "ar": "وَازْدَادُوا",
+      "en": "and add",
+      "tr": "wa-iz'dādū",
+      "ru": "и прибавили ещё"
+    },
+    "aud": "018_025_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 104,
+    "text": {
+      "ar": "تِسْعًا",
+      "en": "nine",
+      "tr": "tis'ʿan",
+      "ru": "девять."
+    },
+    "aud": "018_025_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 105,
+    "text": {
+      "ar": "غَيْبُ",
+      "en": "(is the) unseen",
+      "tr": "ghaybu",
+      "ru": "скрытое знание"
+    },
+    "aud": "018_026_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 106,
+    "text": {
+      "ar": "أَبْصِرْ",
+      "en": "How clearly He sees",
+      "tr": "abṣir",
+      "ru": "Как прекрасно видит"
+    },
+    "aud": "018_026_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 107,
+    "text": {
+      "ar": "وَأَسْمِعْ",
+      "en": "And how clearly He hears",
+      "tr": "wa-asmiʿ",
+      "ru": "и слышит!"
+    },
+    "aud": "018_026_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 108,
+    "text": {
+      "ar": "يُشْرِكُ",
+      "en": "He shares",
+      "tr": "yush'riku",
+      "ru": "делает Он соучастником"
+    },
+    "aud": "018_026_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 109,
+    "text": {
+      "ar": "حُكْمِهِ",
+      "en": "His Commands",
+      "tr": "ḥuk'mihi",
+      "ru": "Своих решениях"
+    },
+    "aud": "018_026_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 110,
+    "text": {
+      "ar": "مُبَدِّلَ",
+      "en": "can change",
+      "tr": "mubaddila",
+      "ru": "изменяющего"
+    },
+    "aud": "018_027_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 111,
+    "text": {
+      "ar": "لِكَلِمَاتِهِ",
+      "en": "His Words",
+      "tr": "likalimātihi",
+      "ru": "Его словам,"
+    },
+    "aud": "018_027_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 112,
+    "text": {
+      "ar": "بِالْغَدَوةِ",
+      "en": "in the morning",
+      "tr": "bil-ghadati",
+      "ru": "по утрам"
+    },
+    "aud": "018_028_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 113,
+    "text": {
+      "ar": "وَالْعَشِيِّ",
+      "en": "and the evening",
+      "tr": "wal-ʿashiyi",
+      "ru": "и вечерам,"
+    },
+    "aud": "018_028_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 114,
+    "text": {
+      "ar": "تَعْدُ",
+      "en": "pass beyond",
+      "tr": "taʿdu",
+      "ru": "отвращаются"
+    },
+    "aud": "018_028_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 115,
+    "text": {
+      "ar": "عَيْنَاكَ",
+      "en": "your eyes",
+      "tr": "ʿaynāka",
+      "ru": "твои глаза"
+    },
+    "aud": "018_028_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 116,
+    "text": {
+      "ar": "زِينَةَ",
+      "en": "adornment",
+      "tr": "zīnata",
+      "ru": "украшению"
+    },
+    "aud": "018_028_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 117,
+    "text": {
+      "ar": "أَغْفَلْنَا",
+      "en": "We Have Made Heedless",
+      "tr": "aghfalnā",
+      "ru": "сделали Мы беспечным"
+    },
+    "aud": "018_028_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 118,
+    "text": {
+      "ar": "فُرُطًا",
+      "en": "(in) excess",
+      "tr": "furuṭan",
+      "ru": "чрезмерным (или упущением)."
+    },
+    "aud": "018_028_030",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 119,
+    "text": {
+      "ar": "فَلْيُؤْمِنْ",
+      "en": "let him believe",
+      "tr": "falyu'min",
+      "ru": "пусть верует,"
+    },
+    "aud": "018_029_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 120,
+    "text": {
+      "ar": "فَلْيَكْفُرْ",
+      "en": "let him disbelieve",
+      "tr": "falyakfur",
+      "ru": "пусть станет неверным»."
+    },
+    "aud": "018_029_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 121,
+    "text": {
+      "ar": "سُرَادِقُهَا",
+      "en": "its walls",
+      "tr": "surādiquhā",
+      "ru": "стены которого."
+    },
+    "aud": "018_029_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 122,
+    "text": {
+      "ar": "يَسْتَغِيثُوا",
+      "en": "they call for relief",
+      "tr": "yastaghīthū",
+      "ru": "воззовут они о помощи,"
+    },
+    "aud": "018_029_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 123,
+    "text": {
+      "ar": "يُغَاثُوا",
+      "en": "they will be relieved",
+      "tr": "yughāthū",
+      "ru": "им помогут"
+    },
+    "aud": "018_029_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 124,
+    "text": {
+      "ar": "يَشْوِي",
+      "en": "(which) scalds",
+      "tr": "yashwī",
+      "ru": "(которая) опаляет"
+    },
+    "aud": "018_029_023",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 125,
+    "text": {
+      "ar": "الْوُجُوهَ",
+      "en": "the faces",
+      "tr": "l-wujūha",
+      "ru": "лица."
+    },
+    "aud": "018_029_024",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 126,
+    "text": {
+      "ar": "الشَّرَابُ",
+      "en": "(is) the drink",
+      "tr": "l-sharābu",
+      "ru": "(это) питье,"
+    },
+    "aud": "018_029_026",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 127,
+    "text": {
+      "ar": "مُرْتَفَقًا",
+      "en": "(is) the resting place",
+      "tr": "mur'tafaqan",
+      "ru": "как место прислонения!"
+    },
+    "aud": "018_029_028",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 128,
+    "text": {
+      "ar": "نُضِيعُ",
+      "en": "will not let go waste",
+      "tr": "nuḍīʿu",
+      "ru": "сводим Мы на нет"
+    },
+    "aud": "018_030_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 129,
+    "text": {
+      "ar": "تَحْتِهِمُ",
+      "en": "underneath them",
+      "tr": "taḥtihimu",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_031_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 130,
+    "text": {
+      "ar": "وَيَلْبَسُونَ",
+      "en": "and will wear",
+      "tr": "wayalbasūna",
+      "ru": "и облекутся они"
+    },
+    "aud": "018_031_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 131,
+    "text": {
+      "ar": "ثِيَابًا",
+      "en": "garments",
+      "tr": "thiyāban",
+      "ru": "(в) одеяния"
+    },
+    "aud": "018_031_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 132,
+    "text": {
+      "ar": "خُضْرًا",
+      "en": "green",
+      "tr": "khuḍ'ran",
+      "ru": "зеленые"
+    },
+    "aud": "018_031_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 133,
+    "text": {
+      "ar": "الثَّوَابُ",
+      "en": "(is) the reward",
+      "tr": "l-thawābu",
+      "ru": "награда,"
+    },
+    "aud": "018_031_026",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 134,
+    "text": {
+      "ar": "وَحَسُنَتْ",
+      "en": "and good",
+      "tr": "waḥasunat",
+      "ru": "и как хороша"
+    },
+    "aud": "018_031_027",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 135,
+    "text": {
+      "ar": "لِأَحَدِهِمَا",
+      "en": "for one of them",
+      "tr": "li-aḥadihimā",
+      "ru": "для одного из них двоих"
+    },
+    "aud": "018_032_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 136,
+    "text": {
+      "ar": "أَعْنَابٍ",
+      "en": "grapes",
+      "tr": "aʿnābin",
+      "ru": "виноградников,"
+    },
+    "aud": "018_032_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 137,
+    "text": {
+      "ar": "وَحَفَفْنَاهُمَا",
+      "en": "and We bordered them",
+      "tr": "waḥafafnāhumā",
+      "ru": "и окружили их оба"
+    },
+    "aud": "018_032_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 138,
+    "text": {
+      "ar": "بِنَخْلٍ",
+      "en": "with date-palms",
+      "tr": "binakhlin",
+      "ru": "пальмами"
+    },
+    "aud": "018_032_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 139,
+    "text": {
+      "ar": "كِلْتَا",
+      "en": "Each",
+      "tr": "kil'tā",
+      "ru": "Оба"
+    },
+    "aud": "018_033_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 140,
+    "text": {
+      "ar": "ءَاتَتْ",
+      "en": "brought forth",
+      "tr": "ātat",
+      "ru": "принесли"
+    },
+    "aud": "018_033_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 141,
+    "text": {
+      "ar": "أُكُلَهَا",
+      "en": "its produce",
+      "tr": "ukulahā",
+      "ru": "свои плоды"
+    },
+    "aud": "018_033_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 142,
+    "text": {
+      "ar": "تَظْلِمْ",
+      "en": "did wrong",
+      "tr": "taẓlim",
+      "ru": "притеснили (уменьшили)"
+    },
+    "aud": "018_033_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 143,
+    "text": {
+      "ar": "خِلَالَهُمَا",
+      "en": "within them",
+      "tr": "khilālahumā",
+      "ru": "между ними двоими"
+    },
+    "aud": "018_033_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 144,
+    "text": {
+      "ar": "نَهَرًا",
+      "en": "a river",
+      "tr": "naharan",
+      "ru": "(некую) реку."
+    },
+    "aud": "018_033_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 145,
+    "text": {
+      "ar": "ثَمَرٌ",
+      "en": "fruit",
+      "tr": "thamarun",
+      "ru": "плоды,"
+    },
+    "aud": "018_034_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 146,
+    "text": {
+      "ar": "لِصَاحِبِهِ",
+      "en": "to his companion",
+      "tr": "liṣāḥibihi",
+      "ru": "своему товарищу,"
+    },
+    "aud": "018_034_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 147,
+    "text": {
+      "ar": "يُحَاوِرُهُ",
+      "en": "(was) talking with him",
+      "tr": "yuḥāwiruhu",
+      "ru": "беседует с ним:"
+    },
+    "aud": "018_034_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 148,
+    "text": {
+      "ar": "وَأَعَزُّ",
+      "en": "and stronger",
+      "tr": "wa-aʿazzu",
+      "ru": "и сильнее"
+    },
+    "aud": "018_034_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 149,
+    "text": {
+      "ar": "جَنَّتَهُ",
+      "en": "his garden",
+      "tr": "jannatahu",
+      "ru": "в свой сад,"
+    },
+    "aud": "018_035_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 150,
+    "text": {
+      "ar": "تَبِيدَ",
+      "en": "will perish",
+      "tr": "tabīda",
+      "ru": "исчезнет"
+    },
+    "aud": "018_035_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 151,
+    "text": {
+      "ar": "رُدِدْتُ",
+      "en": "I am brought back",
+      "tr": "rudidttu",
+      "ru": "буду я возвращён"
+    },
+    "aud": "018_036_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 152,
+    "text": {
+      "ar": "لَأَجِدَنَّ",
+      "en": "I will surely find",
+      "tr": "la-ajidanna",
+      "ru": "то, конечно же, найду я"
+    },
+    "aud": "018_036_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 153,
+    "text": {
+      "ar": "مُنْقَلَبًا",
+      "en": "(as) a return",
+      "tr": "munqalaban",
+      "ru": "как место возвращения»."
+    },
+    "aud": "018_036_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 154,
+    "text": {
+      "ar": "صَاحِبُهُ",
+      "en": "his companion",
+      "tr": "ṣāḥibuhu",
+      "ru": "его товарищ,"
+    },
+    "aud": "018_037_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 155,
+    "text": {
+      "ar": "أَكَفَرْتَ",
+      "en": "Do you disbelieve",
+      "tr": "akafarta",
+      "ru": "«Разве ты проявил неверие"
+    },
+    "aud": "018_037_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 156,
+    "text": {
+      "ar": "سَوَّاكَ",
+      "en": "fashioned you",
+      "tr": "sawwāka",
+      "ru": "выровнял тебя"
+    },
+    "aud": "018_037_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 157,
+    "text": {
+      "ar": "لَكِنَّا",
+      "en": "But as for me",
+      "tr": "lākinnā",
+      "ru": "Однако:"
+    },
+    "aud": "018_038_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 158,
+    "text": {
+      "ar": "دَخَلْتَ",
+      "en": "you entered",
+      "tr": "dakhalta",
+      "ru": "ты вошел"
+    },
+    "aud": "018_039_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 159,
+    "text": {
+      "ar": "جَنَّتَكَ",
+      "en": "your garden",
+      "tr": "jannataka",
+      "ru": "в свой сад,"
+    },
+    "aud": "018_039_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 160,
+    "text": {
+      "ar": "قُلْتَ",
+      "en": "say",
+      "tr": "qul'ta",
+      "ru": "сказал ты:"
+    },
+    "aud": "018_039_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 161,
+    "text": {
+      "ar": "قُوَّةَ",
+      "en": "power",
+      "tr": "quwwata",
+      "ru": "мощи,"
+    },
+    "aud": "018_039_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 162,
+    "text": {
+      "ar": "تَرَنِ",
+      "en": "you see",
+      "tr": "tarani",
+      "ru": "видишь ты меня,"
+    },
+    "aud": "018_039_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 163,
+    "text": {
+      "ar": "أَقَلَّ",
+      "en": "lesser",
+      "tr": "aqalla",
+      "ru": "меньше,"
+    },
+    "aud": "018_039_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 164,
+    "text": {
+      "ar": "يُؤْتِيَنِ",
+      "en": "will give me",
+      "tr": "yu'tiyani",
+      "ru": "даст мне"
+    },
+    "aud": "018_040_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 165,
+    "text": {
+      "ar": "جَنَّتِكَ",
+      "en": "your garden",
+      "tr": "jannatika",
+      "ru": "твой сад,"
+    },
+    "aud": "018_040_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 166,
+    "text": {
+      "ar": "وَيُرْسِلَ",
+      "en": "and will send",
+      "tr": "wayur'sila",
+      "ru": "и пошлёт"
+    },
+    "aud": "018_040_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 167,
+    "text": {
+      "ar": "حُسْبَانًا",
+      "en": "a calamity",
+      "tr": "ḥus'bānan",
+      "ru": "кару"
+    },
+    "aud": "018_040_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 168,
+    "text": {
+      "ar": "فَتُصْبِحَ",
+      "en": "then it will become",
+      "tr": "fatuṣ'biḥa",
+      "ru": "и станет он"
+    },
+    "aud": "018_040_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 169,
+    "text": {
+      "ar": "زَلَقًا",
+      "en": "slippery",
+      "tr": "zalaqan",
+      "ru": "гладкой (или скользкой),"
+    },
+    "aud": "018_040_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 170,
+    "text": {
+      "ar": "يُصْبِحَ",
+      "en": "will become",
+      "tr": "yuṣ'biḥa",
+      "ru": "станет"
+    },
+    "aud": "018_041_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 171,
+    "text": {
+      "ar": "مَاؤُهَا",
+      "en": "its water",
+      "tr": "māuhā",
+      "ru": "вода его"
+    },
+    "aud": "018_041_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 172,
+    "text": {
+      "ar": "تَسْتَطِيعَ",
+      "en": "you will be able",
+      "tr": "tastaṭīʿa",
+      "ru": "не сможешь ты"
+    },
+    "aud": "018_041_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 173,
+    "text": {
+      "ar": "طَلَبًا",
+      "en": "to find it",
+      "tr": "ṭalaban",
+      "ru": "достать»."
+    },
+    "aud": "018_041_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 174,
+    "text": {
+      "ar": "وَأُحِيطَ",
+      "en": "And were surrounded",
+      "tr": "wa-uḥīṭa",
+      "ru": "И окружены были"
+    },
+    "aud": "018_042_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 175,
+    "text": {
+      "ar": "بِثَمَرِهِ",
+      "en": "his fruits",
+      "tr": "bithamarihi",
+      "ru": "плоды его,"
+    },
+    "aud": "018_042_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 176,
+    "text": {
+      "ar": "كَفَّيْهِ",
+      "en": "his hands",
+      "tr": "kaffayhi",
+      "ru": "свои ладони"
+    },
+    "aud": "018_042_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 177,
+    "text": {
+      "ar": "أُشْرِكْ",
+      "en": "I had not associated",
+      "tr": "ush'rik",
+      "ru": "приобщал бы в сотоварищи"
+    },
+    "aud": "018_042_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 178,
+    "text": {
+      "ar": "فِئَةٌ",
+      "en": "a group",
+      "tr": "fi-atun",
+      "ru": "людей,"
+    },
+    "aud": "018_043_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 179,
+    "text": {
+      "ar": "مُنْتَصِرًا",
+      "en": "(he) supported",
+      "tr": "muntaṣiran",
+      "ru": "в состоянии помочь самому себе."
+    },
+    "aud": "018_043_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 180,
+    "text": {
+      "ar": "الْوَلَايَةُ",
+      "en": "the protection",
+      "tr": "l-walāyatu",
+      "ru": "помощь –"
+    },
+    "aud": "018_044_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 181,
+    "text": {
+      "ar": "عُقْبًا",
+      "en": "(for) the final end",
+      "tr": "ʿuq'ban",
+      "ru": "по исходу."
+    },
+    "aud": "018_044_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 182,
+    "text": {
+      "ar": "مَثَلَ",
+      "en": "the example",
+      "tr": "mathala",
+      "ru": "пример"
+    },
+    "aud": "018_045_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 183,
+    "text": {
+      "ar": "كَمَاءٍ",
+      "en": "like water",
+      "tr": "kamāin",
+      "ru": "(она) как вода,"
+    },
+    "aud": "018_045_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 184,
+    "text": {
+      "ar": "فَاخْتَلَطَ",
+      "en": "then mingles",
+      "tr": "fa-ikh'talaṭa",
+      "ru": "затем смешались"
+    },
+    "aud": "018_045_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 185,
+    "text": {
+      "ar": "نَبَاتُ",
+      "en": "(the) vegetation",
+      "tr": "nabātu",
+      "ru": "растения"
+    },
+    "aud": "018_045_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 186,
+    "text": {
+      "ar": "هَشِيمًا",
+      "en": "dry stalks",
+      "tr": "hashīman",
+      "ru": "сухим сором,"
+    },
+    "aud": "018_045_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 187,
+    "text": {
+      "ar": "تَذْرُوهُ",
+      "en": "it (is) scattered",
+      "tr": "tadhrūhu",
+      "ru": "развеивают который"
+    },
+    "aud": "018_045_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 188,
+    "text": {
+      "ar": "الرِّيَاحُ",
+      "en": "(by) the winds",
+      "tr": "l-riyāḥu",
+      "ru": "ветры."
+    },
+    "aud": "018_045_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 189,
+    "text": {
+      "ar": "مُقْتَدِرًا",
+      "en": "(is) All Able",
+      "tr": "muq'tadiran",
+      "ru": "мощен!"
+    },
+    "aud": "018_045_023",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 190,
+    "text": {
+      "ar": "الْمَالُ",
+      "en": "The wealth",
+      "tr": "al-mālu",
+      "ru": "Богатство"
+    },
+    "aud": "018_046_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 191,
+    "text": {
+      "ar": "وَالْبَنُونَ",
+      "en": "and children",
+      "tr": "wal-banūna",
+      "ru": "и сыновья –"
+    },
+    "aud": "018_046_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 192,
+    "text": {
+      "ar": "زِينَةُ",
+      "en": "(are) adornment",
+      "tr": "zīnatu",
+      "ru": "украшение"
+    },
+    "aud": "018_046_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 193,
+    "text": {
+      "ar": "أَمَلًا",
+      "en": "(for) hope",
+      "tr": "amalan",
+      "ru": "по надеждам."
+    },
+    "aud": "018_046_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 194,
+    "text": {
+      "ar": "نُسَيِّرُ",
+      "en": "We will cause (to) move",
+      "tr": "nusayyiru",
+      "ru": "двинем Мы"
+    },
+    "aud": "018_047_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 195,
+    "text": {
+      "ar": "بَارِزَةً",
+      "en": "(as) a leveled plain",
+      "tr": "bārizatan",
+      "ru": "выравненной;"
+    },
+    "aud": "018_047_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 196,
+    "text": {
+      "ar": "وَحَشَرْنَاهُمْ",
+      "en": "and We will gather them",
+      "tr": "waḥasharnāhum",
+      "ru": "и соберём Мы их"
+    },
+    "aud": "018_047_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 197,
+    "text": {
+      "ar": "نُغَادِرْ",
+      "en": "We will leave behind",
+      "tr": "nughādir",
+      "ru": "оставим Мы позади"
+    },
+    "aud": "018_047_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 198,
+    "text": {
+      "ar": "وَعُرِضُوا",
+      "en": "And they will be presented",
+      "tr": "waʿuriḍū",
+      "ru": "И будут представлены они"
+    },
+    "aud": "018_048_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 199,
+    "text": {
+      "ar": "جِئْتُمُونَا",
+      "en": "you have come to Us",
+      "tr": "ji'tumūnā",
+      "ru": "пришли вы к Нам,"
+    },
+    "aud": "018_048_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 200,
+    "text": {
+      "ar": "نَجْعَلَ",
+      "en": "We made",
+      "tr": "najʿala",
+      "ru": "назначим Мы"
+    },
+    "aud": "018_048_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 201,
+    "text": {
+      "ar": "يَاوَيْلَتَنَا",
+      "en": "Oh woe to us!",
+      "tr": "yāwaylatanā",
+      "ru": "«О, горе нам!"
+    },
+    "aud": "018_049_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 202,
+    "text": {
+      "ar": "يُغَادِرُ",
+      "en": "leaves",
+      "tr": "yughādiru",
+      "ru": "оставляет"
+    },
+    "aud": "018_049_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 203,
+    "text": {
+      "ar": "صَغِيرَةً",
+      "en": "a small",
+      "tr": "ṣaghīratan",
+      "ru": "(ни) малого,"
+    },
+    "aud": "018_049_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 204,
+    "text": {
+      "ar": "كَبِيرَةً",
+      "en": "a great",
+      "tr": "kabīratan",
+      "ru": "великого,"
+    },
+    "aud": "018_049_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 205,
+    "text": {
+      "ar": "أَحْصَاهَا",
+      "en": "has enumerated it",
+      "tr": "aḥṣāhā",
+      "ru": "исчислить это»."
+    },
+    "aud": "018_049_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 206,
+    "text": {
+      "ar": "وَوَجَدُوا",
+      "en": "And they will find",
+      "tr": "wawajadū",
+      "ru": "И нашли [найдут] они"
+    },
+    "aud": "018_049_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 207,
+    "text": {
+      "ar": "حَاضِرًا",
+      "en": "presented",
+      "tr": "ḥāḍiran",
+      "ru": "представленным."
+    },
+    "aud": "018_049_023",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 208,
+    "text": {
+      "ar": "يَظْلِمُ",
+      "en": "deals unjustly",
+      "tr": "yaẓlimu",
+      "ru": "притесняет"
+    },
+    "aud": "018_049_025",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 209,
+    "text": {
+      "ar": "فَفَسَقَ",
+      "en": "and he rebelled",
+      "tr": "fafasaqa",
+      "ru": "и ослушался [вышел] он"
+    },
+    "aud": "018_050_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 210,
+    "text": {
+      "ar": "أَفَتَتَّخِذُونَهُ",
+      "en": "Will you then take him",
+      "tr": "afatattakhidhūnahu",
+      "ru": "Неужели вы берете его"
+    },
+    "aud": "018_050_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 211,
+    "text": {
+      "ar": "وَذُرِّيَّتَهُ",
+      "en": "and his offspring",
+      "tr": "wadhurriyyatahu",
+      "ru": "и его потомство"
+    },
+    "aud": "018_050_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 212,
+    "text": {
+      "ar": "دُونِي",
+      "en": "other than Me",
+      "tr": "dūnī",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_050_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 213,
+    "text": {
+      "ar": "بَدَلًا",
+      "en": "(is) the exchange",
+      "tr": "badalan",
+      "ru": "как замена!"
+    },
+    "aud": "018_050_026",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 214,
+    "text": {
+      "ar": "أَشْهَدْتُهُمْ",
+      "en": "I made them witness",
+      "tr": "ashhadttuhum",
+      "ru": "брал Я их свидетелями"
+    },
+    "aud": "018_051_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 215,
+    "text": {
+      "ar": "مُتَّخِذَ",
+      "en": "the One to take",
+      "tr": "muttakhidha",
+      "ru": "берующим"
+    },
+    "aud": "018_051_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 216,
+    "text": {
+      "ar": "الْمُضِلِّينَ",
+      "en": "the misleaders",
+      "tr": "l-muḍilīna",
+      "ru": "вводящих в заблуждение"
+    },
+    "aud": "018_051_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 217,
+    "text": {
+      "ar": "عَضُدًا",
+      "en": "(as) helper(s)",
+      "tr": "ʿaḍudan",
+      "ru": "помощником."
+    },
+    "aud": "018_051_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 218,
+    "text": {
+      "ar": "نَادُوا",
+      "en": "Call",
+      "tr": "nādū",
+      "ru": "«Позовите"
+    },
+    "aud": "018_052_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 219,
+    "text": {
+      "ar": "مَوْبِقًا",
+      "en": "a barrier",
+      "tr": "mawbiqan",
+      "ru": "место погибели."
+    },
+    "aud": "018_052_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 220,
+    "text": {
+      "ar": "وَرَأَى",
+      "en": "And will see",
+      "tr": "waraā",
+      "ru": "И увидят"
+    },
+    "aud": "018_053_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 221,
+    "text": {
+      "ar": "فَظَنُّوا",
+      "en": "and they (will be) certain",
+      "tr": "faẓannū",
+      "ru": "и подумают [убедятся],"
+    },
+    "aud": "018_053_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 222,
+    "text": {
+      "ar": "مُوَاقِعُوهَا",
+      "en": "are to fall in it",
+      "tr": "muwāqiʿūhā",
+      "ru": "попадающие в неё"
+    },
+    "aud": "018_053_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 223,
+    "text": {
+      "ar": "مَصْرِفًا",
+      "en": "a way of escape",
+      "tr": "maṣrifan",
+      "ru": "избавления."
+    },
+    "aud": "018_053_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 224,
+    "text": {
+      "ar": "صَرَّفْنَا",
+      "en": "We have explained",
+      "tr": "ṣarrafnā",
+      "ru": "распределили Мы"
+    },
+    "aud": "018_054_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 225,
+    "text": {
+      "ar": "مَنَعَ",
+      "en": "prevents",
+      "tr": "manaʿa",
+      "ru": "помешало"
+    },
+    "aud": "018_055_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 226,
+    "text": {
+      "ar": "وَيَسْتَغْفِرُوا",
+      "en": "and they ask forgiveness",
+      "tr": "wayastaghfirū",
+      "ru": "и просить прощения у"
+    },
+    "aud": "018_055_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 227,
+    "text": {
+      "ar": "سُنَّةُ",
+      "en": "(the) way",
+      "tr": "sunnatu",
+      "ru": "пример"
+    },
+    "aud": "018_055_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 228,
+    "text": {
+      "ar": "يَأْتِيَهُمُ",
+      "en": "comes to them",
+      "tr": "yatiyahumu",
+      "ru": "постигнет их"
+    },
+    "aud": "018_055_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 229,
+    "text": {
+      "ar": "قُبُلًا",
+      "en": "before (them)",
+      "tr": "qubulan",
+      "ru": "воочию."
+    },
+    "aud": "018_055_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 230,
+    "text": {
+      "ar": "نُرْسِلُ",
+      "en": "We send",
+      "tr": "nur'silu",
+      "ru": "посылаем Мы"
+    },
+    "aud": "018_056_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 231,
+    "text": {
+      "ar": "مُبَشِّرِينَ",
+      "en": "(as) bearers of glad tidings",
+      "tr": "mubashirīna",
+      "ru": "вестниками радости"
+    },
+    "aud": "018_056_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 232,
+    "text": {
+      "ar": "وَمُنْذِرِينَ",
+      "en": "and (as) warners",
+      "tr": "wamundhirīna",
+      "ru": "и увещевателями."
+    },
+    "aud": "018_056_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 233,
+    "text": {
+      "ar": "وَيُجَادِلُ",
+      "en": "And dispute",
+      "tr": "wayujādilu",
+      "ru": "И препираются"
+    },
+    "aud": "018_056_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 234,
+    "text": {
+      "ar": "أَكِنَّةً",
+      "en": "coverings",
+      "tr": "akinnatan",
+      "ru": "покровы,"
+    },
+    "aud": "018_057_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 235,
+    "text": {
+      "ar": "يَفْقَهُوهُ",
+      "en": "they understand it",
+      "tr": "yafqahūhu",
+      "ru": "они (не) понимали его,"
+    },
+    "aud": "018_057_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 236,
+    "text": {
+      "ar": "تَدْعُهُمْ",
+      "en": "you call them",
+      "tr": "tadʿuhum",
+      "ru": "призовешь ты их"
+    },
+    "aud": "018_057_024",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 237,
+    "text": {
+      "ar": "الرَّحْمَةِ",
+      "en": "(of) the Mercy",
+      "tr": "l-raḥmati",
+      "ru": "милосердия."
+    },
+    "aud": "018_058_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 238,
+    "text": {
+      "ar": "يُؤَاخِذُهُمْ",
+      "en": "He were to seize them",
+      "tr": "yuākhidhuhum",
+      "ru": "взыскал Он с них"
+    },
+    "aud": "018_058_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 239,
+    "text": {
+      "ar": "لَعَجَّلَ",
+      "en": "surely, He (would) have hastened",
+      "tr": "laʿajjala",
+      "ru": "(то) непременно ускорил бы Он"
+    },
+    "aud": "018_058_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 240,
+    "text": {
+      "ar": "مَوْعِدٌ",
+      "en": "(is) an appointment",
+      "tr": "mawʿidun",
+      "ru": "срок,"
+    },
+    "aud": "018_058_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 241,
+    "text": {
+      "ar": "مَوْئِلًا",
+      "en": "an escape",
+      "tr": "mawilan",
+      "ru": "убежища."
+    },
+    "aud": "018_058_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 242,
+    "text": {
+      "ar": "لِمَهْلِكِهِمْ",
+      "en": "for their destruction",
+      "tr": "limahlikihim",
+      "ru": "для их гибели"
+    },
+    "aud": "018_059_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 243,
+    "text": {
+      "ar": "لِفَتَاهُ",
+      "en": "to his boy",
+      "tr": "lifatāhu",
+      "ru": "своему юноше:"
+    },
+    "aud": "018_060_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 244,
+    "text": {
+      "ar": "أَبْرَحُ",
+      "en": "I will cease",
+      "tr": "abraḥu",
+      "ru": "остановлюсь я,"
+    },
+    "aud": "018_060_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 245,
+    "text": {
+      "ar": "أَبْلُغَ",
+      "en": "I reach",
+      "tr": "ablugha",
+      "ru": "дойду"
+    },
+    "aud": "018_060_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 246,
+    "text": {
+      "ar": "مَجْمَعَ",
+      "en": "the junction",
+      "tr": "majmaʿa",
+      "ru": "до места соединения"
+    },
+    "aud": "018_060_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 247,
+    "text": {
+      "ar": "أَمْضِيَ",
+      "en": "I continue",
+      "tr": "amḍiya",
+      "ru": "буду я продолжать (идти)"
+    },
+    "aud": "018_060_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 248,
+    "text": {
+      "ar": "حُقُبًا",
+      "en": "(for) a long period",
+      "tr": "ḥuquban",
+      "ru": "годы»."
+    },
+    "aud": "018_060_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 249,
+    "text": {
+      "ar": "بَلَغَا",
+      "en": "they reached",
+      "tr": "balaghā",
+      "ru": "дошли они (двое) до"
+    },
+    "aud": "018_061_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 250,
+    "text": {
+      "ar": "بَيْنِهِمَا",
+      "en": "between them",
+      "tr": "baynihimā",
+      "ru": "между ними (двумя),"
+    },
+    "aud": "018_061_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 251,
+    "text": {
+      "ar": "نَسِيَا",
+      "en": "they forgot",
+      "tr": "nasiyā",
+      "ru": "забыли они (двое)"
+    },
+    "aud": "018_061_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 252,
+    "text": {
+      "ar": "حُوتَهُمَا",
+      "en": "their fish",
+      "tr": "ḥūtahumā",
+      "ru": "свою (двоих) рыбу,"
+    },
+    "aud": "018_061_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 253,
+    "text": {
+      "ar": "فَاتَّخَذَ",
+      "en": "and it took",
+      "tr": "fa-ittakhadha",
+      "ru": "и (затем) взял он [рыба]"
+    },
+    "aud": "018_061_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 254,
+    "text": {
+      "ar": "سَبِيلَهُ",
+      "en": "its way",
+      "tr": "sabīlahu",
+      "ru": "свой путь"
+    },
+    "aud": "018_061_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 255,
+    "text": {
+      "ar": "سَرَبًا",
+      "en": "slipping away",
+      "tr": "saraban",
+      "ru": "как по проходу."
+    },
+    "aud": "018_061_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 256,
+    "text": {
+      "ar": "جَاوَزَا",
+      "en": "they had passed beyond",
+      "tr": "jāwazā",
+      "ru": "они прошли (некое расстояние),"
+    },
+    "aud": "018_062_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 257,
+    "text": {
+      "ar": "غَدَاءَنَا",
+      "en": "our morning meal",
+      "tr": "ghadāanā",
+      "ru": "наш завтрак,"
+    },
+    "aud": "018_062_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 258,
+    "text": {
+      "ar": "لَقِينَا",
+      "en": "we have suffered",
+      "tr": "laqīnā",
+      "ru": "мы встретили"
+    },
+    "aud": "018_062_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 259,
+    "text": {
+      "ar": "سَفَرِنَا",
+      "en": "our journey",
+      "tr": "safarinā",
+      "ru": "нашего пути"
+    },
+    "aud": "018_062_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 260,
+    "text": {
+      "ar": "نَصَبًا",
+      "en": "fatigue",
+      "tr": "naṣaban",
+      "ru": "усталость»."
+    },
+    "aud": "018_062_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 261,
+    "text": {
+      "ar": "أَوَيْنَا",
+      "en": "we retired",
+      "tr": "awaynā",
+      "ru": "укрылись мы"
+    },
+    "aud": "018_063_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 262,
+    "text": {
+      "ar": "الصَّخْرَةِ",
+      "en": "the rock",
+      "tr": "l-ṣakhrati",
+      "ru": "(той) скалы?"
+    },
+    "aud": "018_063_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 263,
+    "text": {
+      "ar": "نَسِيتُ",
+      "en": "[I] forgot",
+      "tr": "nasītu",
+      "ru": "забыл"
+    },
+    "aud": "018_063_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 264,
+    "text": {
+      "ar": "الْحُوتَ",
+      "en": "the fish",
+      "tr": "l-ḥūta",
+      "ru": "рыбу."
+    },
+    "aud": "018_063_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 265,
+    "text": {
+      "ar": "أَنْسَانِيهُ",
+      "en": "made me forget it",
+      "tr": "ansānīhu",
+      "ru": "заставил меня забыть ее,"
+    },
+    "aud": "018_063_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 266,
+    "text": {
+      "ar": "أَذْكُرَهُ",
+      "en": "I mention it",
+      "tr": "adhkurahu",
+      "ru": "упомянуть о ней."
+    },
+    "aud": "018_063_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 267,
+    "text": {
+      "ar": "وَاتَّخَذَ",
+      "en": "And it took",
+      "tr": "wa-ittakhadha",
+      "ru": "И взяла она [рыба]"
+    },
+    "aud": "018_063_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 268,
+    "text": {
+      "ar": "نَبْغِ",
+      "en": "seeking",
+      "tr": "nabghi",
+      "ru": "желающими!»."
+    },
+    "aud": "018_064_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 269,
+    "text": {
+      "ar": "فَارْتَدَّا",
+      "en": "So they returned",
+      "tr": "fa-ir'taddā",
+      "ru": "И (затем) вернулись оба они"
+    },
+    "aud": "018_064_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 270,
+    "text": {
+      "ar": "ءَاثَارِهِمَا",
+      "en": "their footprints",
+      "tr": "āthārihimā",
+      "ru": "своим (двоих) следам"
+    },
+    "aud": "018_064_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 271,
+    "text": {
+      "ar": "قَصَصًا",
+      "en": "retracing",
+      "tr": "qaṣaṣan",
+      "ru": "следуя."
+    },
+    "aud": "018_064_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 272,
+    "text": {
+      "ar": "فَوَجَدَا",
+      "en": "Then they found",
+      "tr": "fawajadā",
+      "ru": "И (затем) нашли они (двое)"
+    },
+    "aud": "018_065_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 273,
+    "text": {
+      "ar": "أَتَّبِعُكَ",
+      "en": "I follow you",
+      "tr": "attabiʿuka",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_066_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 274,
+    "text": {
+      "ar": "تُعَلِّمَنِ",
+      "en": "you teach me",
+      "tr": "tuʿallimani",
+      "ru": "научил ты меня"
+    },
+    "aud": "018_066_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 275,
+    "text": {
+      "ar": "عُلِّمْتَ",
+      "en": "you have been taught",
+      "tr": "ʿullim'ta",
+      "ru": "дано тебе знанием"
+    },
+    "aud": "018_066_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 276,
+    "text": {
+      "ar": "رُشْدًا",
+      "en": "(of) right guidance",
+      "tr": "rush'dan",
+      "ru": "(о) правильном пути?»"
+    },
+    "aud": "018_066_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 277,
+    "text": {
+      "ar": "وَكَيْفَ",
+      "en": "And how can",
+      "tr": "wakayfa",
+      "ru": "И как"
+    },
+    "aud": "018_068_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 278,
+    "text": {
+      "ar": "تَصْبِرُ",
+      "en": "you have patience",
+      "tr": "taṣbiru",
+      "ru": "утерпишь ты"
+    },
+    "aud": "018_068_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 279,
+    "text": {
+      "ar": "خُبْرًا",
+      "en": "any knowledge",
+      "tr": "khub'ran",
+      "ru": "осведомлённостью?»"
+    },
+    "aud": "018_068_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 280,
+    "text": {
+      "ar": "أَعْصِي",
+      "en": "I will disobey",
+      "tr": "aʿṣī",
+      "ru": "ослушаюсь я"
+    },
+    "aud": "018_069_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 281,
+    "text": {
+      "ar": "اتَّبَعْتَنِي",
+      "en": "you follow me",
+      "tr": "ittabaʿtanī",
+      "ru": "ты последуешь за мной,"
+    },
+    "aud": "018_070_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 282,
+    "text": {
+      "ar": "تَسْءَلْنِي",
+      "en": "ask me",
+      "tr": "tasalnī",
+      "ru": "спрашивай у меня"
+    },
+    "aud": "018_070_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 283,
+    "text": {
+      "ar": "أُحْدِثَ",
+      "en": "I present",
+      "tr": "uḥ'ditha",
+      "ru": "начну (сам)"
+    },
+    "aud": "018_070_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 284,
+    "text": {
+      "ar": "فَانْطَلَقَا",
+      "en": "So they both set out",
+      "tr": "fa-inṭalaqā",
+      "ru": "И (затем) отправились они вдвоём (в путь;)"
+    },
+    "aud": "018_071_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 285,
+    "text": {
+      "ar": "رَكِبَا",
+      "en": "they had embarked",
+      "tr": "rakibā",
+      "ru": "сели они двое"
+    },
+    "aud": "018_071_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 286,
+    "text": {
+      "ar": "خَرَقَهَا",
+      "en": "he made a hole in it",
+      "tr": "kharaqahā",
+      "ru": "продырявил он его."
+    },
+    "aud": "018_071_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 287,
+    "text": {
+      "ar": "أَخَرَقْتَهَا",
+      "en": "Have you made a hole in it",
+      "tr": "akharaqtahā",
+      "ru": "«Неужели ты продырявил её [судна]?,"
+    },
+    "aud": "018_071_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 288,
+    "text": {
+      "ar": "لِتُغْرِقَ",
+      "en": "to drown",
+      "tr": "litugh'riqa",
+      "ru": "чтобы потопить"
+    },
+    "aud": "018_071_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 289,
+    "text": {
+      "ar": "إِمْرًا",
+      "en": "grave",
+      "tr": "im'ran",
+      "ru": "ужасное!»"
+    },
+    "aud": "018_071_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 290,
+    "text": {
+      "ar": "تُؤَاخِذْنِي",
+      "en": "blame me",
+      "tr": "tuākhidh'nī",
+      "ru": "укоряй меня"
+    },
+    "aud": "018_073_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 291,
+    "text": {
+      "ar": "تُرْهِقْنِي",
+      "en": "be hard (upon) me",
+      "tr": "tur'hiq'nī",
+      "ru": "возлагай на меня"
+    },
+    "aud": "018_073_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 292,
+    "text": {
+      "ar": "عُسْرًا",
+      "en": "(raising) difficulty",
+      "tr": "ʿus'ran",
+      "ru": "тяжести»."
+    },
+    "aud": "018_073_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 293,
+    "text": {
+      "ar": "لَقِيَا",
+      "en": "they met",
+      "tr": "laqiyā",
+      "ru": "встретили они (двое)"
+    },
+    "aud": "018_074_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 294,
+    "text": {
+      "ar": "فَقَتَلَهُ",
+      "en": "then he killed him",
+      "tr": "faqatalahu",
+      "ru": "и (затем) убил он его."
+    },
+    "aud": "018_074_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 295,
+    "text": {
+      "ar": "أَقَتَلْتَ",
+      "en": "Have you killed",
+      "tr": "aqatalta",
+      "ru": "«Неужели убил ты"
+    },
+    "aud": "018_074_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 296,
+    "text": {
+      "ar": "زَكِيَّةً",
+      "en": "pure",
+      "tr": "zakiyyatan",
+      "ru": "чистую"
+    },
+    "aud": "018_074_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 297,
+    "text": {
+      "ar": "سَأَلْتُكَ",
+      "en": "I ask you",
+      "tr": "sa-altuka",
+      "ru": "спрошу я у тебя"
+    },
+    "aud": "018_076_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 298,
+    "text": {
+      "ar": "تُصَاحِبْنِي",
+      "en": "keep me as a companion",
+      "tr": "tuṣāḥib'nī",
+      "ru": "держи меня своим путником:"
+    },
+    "aud": "018_076_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 299,
+    "text": {
+      "ar": "بَلَغْتَ",
+      "en": "you have reached",
+      "tr": "balaghta",
+      "ru": "достиг ты"
+    },
+    "aud": "018_076_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 300,
+    "text": {
+      "ar": "لَدُنِّي",
+      "en": "from me",
+      "tr": "ladunnī",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_076_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 301,
+    "text": {
+      "ar": "أَتَيَا",
+      "en": "they came",
+      "tr": "atayā",
+      "ru": "пришли они (двое) к"
+    },
+    "aud": "018_077_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 302,
+    "text": {
+      "ar": "اسْتَطْعَمَا",
+      "en": "they asked for food",
+      "tr": "is'taṭʿamā",
+      "ru": "попросили они (двое) еды у"
+    },
+    "aud": "018_077_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 303,
+    "text": {
+      "ar": "فَأَبَوْا",
+      "en": "but they refused",
+      "tr": "fa-abaw",
+      "ru": "но (те) отказались"
+    },
+    "aud": "018_077_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 304,
+    "text": {
+      "ar": "يُضَيِّفُوهُمَا",
+      "en": "offer them hospitality",
+      "tr": "yuḍayyifūhumā",
+      "ru": "принять в гости их (двоих)."
+    },
+    "aud": "018_077_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 305,
+    "text": {
+      "ar": "جِدَارًا",
+      "en": "a wall",
+      "tr": "jidāran",
+      "ru": "стену,"
+    },
+    "aud": "018_077_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 306,
+    "text": {
+      "ar": "يَنْقَضَّ",
+      "en": "collapse",
+      "tr": "yanqaḍḍa",
+      "ru": "обрушиться,"
+    },
+    "aud": "018_077_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 307,
+    "text": {
+      "ar": "فَأَقَامَهُ",
+      "en": "so he set it straight",
+      "tr": "fa-aqāmahu",
+      "ru": "и поправил он ее [стену]."
+    },
+    "aud": "018_077_018",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 308,
+    "text": {
+      "ar": "لَاتَّخَذْتَ",
+      "en": "surely you (could) have taken",
+      "tr": "lattakhadhta",
+      "ru": "однозначно взял бы"
+    },
+    "aud": "018_077_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 309,
+    "text": {
+      "ar": "فِرَاقُ",
+      "en": "(is) parting",
+      "tr": "firāqu",
+      "ru": "разлука"
+    },
+    "aud": "018_078_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 310,
+    "text": {
+      "ar": "سَأُنَبِّئُكَ",
+      "en": "I will inform you",
+      "tr": "sa-unabbi-uka",
+      "ru": "(Вскоре) я сообщу тебе"
+    },
+    "aud": "018_078_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 311,
+    "text": {
+      "ar": "بِتَأْوِيلِ",
+      "en": "of (the) interpretation",
+      "tr": "bitawīli",
+      "ru": "толкование"
+    },
+    "aud": "018_078_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 312,
+    "text": {
+      "ar": "تَسْتَطِعْ",
+      "en": "you were able",
+      "tr": "tastaṭiʿ",
+      "ru": "смог ты"
+    },
+    "aud": "018_078_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 313,
+    "text": {
+      "ar": "السَّفِينَةُ",
+      "en": "the ship",
+      "tr": "l-safīnatu",
+      "ru": "судна,"
+    },
+    "aud": "018_079_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 314,
+    "text": {
+      "ar": "لِمَسَاكِينَ",
+      "en": "of (the) poor people",
+      "tr": "limasākīna",
+      "ru": "принадлежащей беднякам, (которые)"
+    },
+    "aud": "018_079_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 315,
+    "text": {
+      "ar": "فَأَرَدْتُ",
+      "en": "So I intended",
+      "tr": "fa-aradttu",
+      "ru": "И я захотел"
+    },
+    "aud": "018_079_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 316,
+    "text": {
+      "ar": "أَعِيبَهَا",
+      "en": "I cause defect (in) it",
+      "tr": "aʿībahā",
+      "ru": "испортить её [судно],"
+    },
+    "aud": "018_079_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 317,
+    "text": {
+      "ar": "مَلِكٌ",
+      "en": "a king",
+      "tr": "malikun",
+      "ru": "(некий) царь,"
+    },
+    "aud": "018_079_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 318,
+    "text": {
+      "ar": "يَأْخُذُ",
+      "en": "who seized",
+      "tr": "yakhudhu",
+      "ru": "(который) отбирает"
+    },
+    "aud": "018_079_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 319,
+    "text": {
+      "ar": "سَفِينَةٍ",
+      "en": "ship",
+      "tr": "safīnatin",
+      "ru": "судно"
+    },
+    "aud": "018_079_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 320,
+    "text": {
+      "ar": "غَصْبًا",
+      "en": "(by) force",
+      "tr": "ghaṣban",
+      "ru": "насильно."
+    },
+    "aud": "018_079_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 321,
+    "text": {
+      "ar": "الْغُلَامُ",
+      "en": "the boy",
+      "tr": "l-ghulāmu",
+      "ru": "(того) мальчика,"
+    },
+    "aud": "018_080_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 322,
+    "text": {
+      "ar": "أَبَوَاهُ",
+      "en": "his parents were",
+      "tr": "abawāhu",
+      "ru": "родители оба его"
+    },
+    "aud": "018_080_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 323,
+    "text": {
+      "ar": "مُؤْمِنَيْنِ",
+      "en": "believers",
+      "tr": "mu'minayni",
+      "ru": "(двумя) верующими,"
+    },
+    "aud": "018_080_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 324,
+    "text": {
+      "ar": "فَخَشِينَا",
+      "en": "and we feared",
+      "tr": "fakhashīnā",
+      "ru": "и (затем) боялись мы,"
+    },
+    "aud": "018_080_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 325,
+    "text": {
+      "ar": "يُرْهِقَهُمَا",
+      "en": "he would overburden them",
+      "tr": "yur'hiqahumā",
+      "ru": "обречёт он их (на)"
+    },
+    "aud": "018_080_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 326,
+    "text": {
+      "ar": "طُغْيَانًا",
+      "en": "(by) transgression",
+      "tr": "ṭugh'yānan",
+      "ru": "непомерность"
+    },
+    "aud": "018_080_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 327,
+    "text": {
+      "ar": "وَكُفْرًا",
+      "en": "and disbelief",
+      "tr": "wakuf'ran",
+      "ru": "и неверие."
+    },
+    "aud": "018_080_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 328,
+    "text": {
+      "ar": "فَأَرَدْنَا",
+      "en": "So we intended",
+      "tr": "fa-aradnā",
+      "ru": "И (так) мы хотели,"
+    },
+    "aud": "018_081_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 329,
+    "text": {
+      "ar": "يُبْدِلَهُمَا",
+      "en": "would change for them",
+      "tr": "yub'dilahumā",
+      "ru": "заменил им (двоим)"
+    },
+    "aud": "018_081_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 330,
+    "text": {
+      "ar": "رَبُّهُمَا",
+      "en": "their Lord",
+      "tr": "rabbuhumā",
+      "ru": "Господь их (двоих)"
+    },
+    "aud": "018_081_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 331,
+    "text": {
+      "ar": "زَكَوةً",
+      "en": "(in) purity",
+      "tr": "zakatan",
+      "ru": "по чистоте"
+    },
+    "aud": "018_081_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 332,
+    "text": {
+      "ar": "وَأَقْرَبَ",
+      "en": "and nearer",
+      "tr": "wa-aqraba",
+      "ru": "и более близкого"
+    },
+    "aud": "018_081_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 333,
+    "text": {
+      "ar": "رُحْمًا",
+      "en": "(in) affection",
+      "tr": "ruḥ'man",
+      "ru": "по милосердию."
+    },
+    "aud": "018_081_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 334,
+    "text": {
+      "ar": "الْجِدَارُ",
+      "en": "the wall",
+      "tr": "l-jidāru",
+      "ru": "стены,"
+    },
+    "aud": "018_082_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 335,
+    "text": {
+      "ar": "لِغُلَامَيْنِ",
+      "en": "for two orphan boys",
+      "tr": "lighulāmayni",
+      "ru": "двум мальчикам"
+    },
+    "aud": "018_082_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 336,
+    "text": {
+      "ar": "يَتِيمَيْنِ",
+      "en": "for two orphan boys",
+      "tr": "yatīmayni",
+      "ru": "сиротам"
+    },
+    "aud": "018_082_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 337,
+    "text": {
+      "ar": "تَحْتَهُ",
+      "en": "underneath it",
+      "tr": "taḥtahu",
+      "ru": "под нею"
+    },
+    "aud": "018_082_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 338,
+    "text": {
+      "ar": "أَبُوهُمَا",
+      "en": "their father",
+      "tr": "abūhumā",
+      "ru": "отец их"
+    },
+    "aud": "018_082_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 339,
+    "text": {
+      "ar": "فَأَرَادَ",
+      "en": "So intended",
+      "tr": "fa-arāda",
+      "ru": "и пожелал"
+    },
+    "aud": "018_082_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 340,
+    "text": {
+      "ar": "يَبْلُغَا",
+      "en": "they reach",
+      "tr": "yablughā",
+      "ru": "достигли они двое"
+    },
+    "aud": "018_082_018",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 341,
+    "text": {
+      "ar": "أَشُدَّهُمَا",
+      "en": "their maturity",
+      "tr": "ashuddahumā",
+      "ru": "зрелости своей"
+    },
+    "aud": "018_082_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 342,
+    "text": {
+      "ar": "وَيَسْتَخْرِجَا",
+      "en": "and bring forth",
+      "tr": "wayastakhrijā",
+      "ru": "и извлекли они двое"
+    },
+    "aud": "018_082_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 343,
+    "text": {
+      "ar": "كَنْزَهُمَا",
+      "en": "their treasure",
+      "tr": "kanzahumā",
+      "ru": "свой (двоих) клад"
+    },
+    "aud": "018_082_021",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 344,
+    "text": {
+      "ar": "فَعَلْتُهُ",
+      "en": "I did it",
+      "tr": "faʿaltuhu",
+      "ru": "делал я этого"
+    },
+    "aud": "018_082_026",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 345,
+    "text": {
+      "ar": "تَأْوِيلُ",
+      "en": "(is the) interpretation",
+      "tr": "tawīlu",
+      "ru": "толкование"
+    },
+    "aud": "018_082_030",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 346,
+    "text": {
+      "ar": "تَسْطِعْ",
+      "en": "you were able",
+      "tr": "tasṭiʿ",
+      "ru": "смог ты"
+    },
+    "aud": "018_082_033",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 347,
+    "text": {
+      "ar": "الْقَرْنَيْنِ",
+      "en": "Dhul-qarnain",
+      "tr": "l-qarnayni",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_083_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 348,
+    "text": {
+      "ar": "سَأَتْلُوا",
+      "en": "I will recite",
+      "tr": "sa-atlū",
+      "ru": "«(Вскоре) прочитаю я"
+    },
+    "aud": "018_083_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 349,
+    "text": {
+      "ar": "مَكَّنَّا",
+      "en": "[We] established",
+      "tr": "makkannā",
+      "ru": "укрепили"
+    },
+    "aud": "018_084_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 350,
+    "text": {
+      "ar": "سَبَبًا",
+      "en": "a means",
+      "tr": "sababan",
+      "ru": "путь [средство, способ],"
+    },
+    "aud": "018_084_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 351,
+    "text": {
+      "ar": "فَأَتْبَعَ",
+      "en": "So he followed",
+      "tr": "fa-atbaʿa",
+      "ru": "и (так) последовал он"
+    },
+    "aud": "018_085_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 352,
+    "text": {
+      "ar": "مَغْرِبَ",
+      "en": "(the) setting place",
+      "tr": "maghriba",
+      "ru": "место заката"
+    },
+    "aud": "018_086_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 353,
+    "text": {
+      "ar": "وَجَدَهَا",
+      "en": "he found it",
+      "tr": "wajadahā",
+      "ru": "обнаружил он его [солнце]"
+    },
+    "aud": "018_086_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 354,
+    "text": {
+      "ar": "تَغْرُبُ",
+      "en": "setting",
+      "tr": "taghrubu",
+      "ru": "закатывающимся"
+    },
+    "aud": "018_086_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 355,
+    "text": {
+      "ar": "حَمِئَةٍ",
+      "en": "(of) dark mud",
+      "tr": "ḥami-atin",
+      "ru": "горячий глиняный,"
+    },
+    "aud": "018_086_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 356,
+    "text": {
+      "ar": "يَاذَا",
+      "en": "O Dhul-qarnain",
+      "tr": "yādhā",
+      "ru": "«О Зу-ль-"
+    },
+    "aud": "018_086_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 357,
+    "text": {
+      "ar": "تُعَذِّبَ",
+      "en": "you punish",
+      "tr": "tuʿadhiba",
+      "ru": "накажешь ты,"
+    },
+    "aud": "018_086_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 358,
+    "text": {
+      "ar": "تَتَّخِذَ",
+      "en": "you take",
+      "tr": "tattakhidha",
+      "ru": "возьмёшь ты"
+    },
+    "aud": "018_086_022",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 359,
+    "text": {
+      "ar": "نُعَذِّبُهُ",
+      "en": "we will punish him",
+      "tr": "nuʿadhibuhu",
+      "ru": "накажем мы его,"
+    },
+    "aud": "018_087_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 360,
+    "text": {
+      "ar": "وَسَنَقُولُ",
+      "en": "And we will speak",
+      "tr": "wasanaqūlu",
+      "ru": "и скажем мы"
+    },
+    "aud": "018_088_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 361,
+    "text": {
+      "ar": "أَتْبَعَ",
+      "en": "he followed",
+      "tr": "atbaʿa",
+      "ru": "последовал он"
+    },
+    "aud": "018_089_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 362,
+    "text": {
+      "ar": "مَطْلِعَ",
+      "en": "(the) rising place",
+      "tr": "maṭliʿa",
+      "ru": "место восхода"
+    },
+    "aud": "018_090_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 363,
+    "text": {
+      "ar": "تَطْلُعُ",
+      "en": "rising",
+      "tr": "taṭluʿu",
+      "ru": "восходящим"
+    },
+    "aud": "018_090_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 364,
+    "text": {
+      "ar": "دُونِهَا",
+      "en": "against it",
+      "tr": "dūnihā",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_090_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 365,
+    "text": {
+      "ar": "سِتْرًا",
+      "en": "any shelter",
+      "tr": "sit'ran",
+      "ru": "(никакой) завесы."
+    },
+    "aud": "018_090_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 366,
+    "text": {
+      "ar": "أَحَطْنَا",
+      "en": "We encompassed",
+      "tr": "aḥaṭnā",
+      "ru": "объяли Мы"
+    },
+    "aud": "018_091_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 367,
+    "text": {
+      "ar": "السَّدَّيْنِ",
+      "en": "the two mountains",
+      "tr": "l-sadayni",
+      "ru": "двумя преградами,"
+    },
+    "aud": "018_093_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 368,
+    "text": {
+      "ar": "يَأْجُوجَ",
+      "en": "Yajuj",
+      "tr": "yajūja",
+      "ru": "Йаджудж"
+    },
+    "aud": "018_094_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 369,
+    "text": {
+      "ar": "وَمَأْجُوجَ",
+      "en": "and Majuj",
+      "tr": "wamajūja",
+      "ru": "и Маджудж"
+    },
+    "aud": "018_094_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 370,
+    "text": {
+      "ar": "مُفْسِدُونَ",
+      "en": "(are) corrupters",
+      "tr": "muf'sidūna",
+      "ru": "сеют беспорядок"
+    },
+    "aud": "018_094_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 371,
+    "text": {
+      "ar": "تَجْعَلَ",
+      "en": "you make",
+      "tr": "tajʿala",
+      "ru": "устроил ты"
+    },
+    "aud": "018_094_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 372,
+    "text": {
+      "ar": "مَكَّنِّي",
+      "en": "has established me",
+      "tr": "makkannī",
+      "ru": "укрепил меня"
+    },
+    "aud": "018_095_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 373,
+    "text": {
+      "ar": "فَأَعِينُونِي",
+      "en": "but assist me",
+      "tr": "fa-aʿīnūnī",
+      "ru": "Помогите же мне"
+    },
+    "aud": "018_095_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 374,
+    "text": {
+      "ar": "أَجْعَلْ",
+      "en": "I will make",
+      "tr": "ajʿal",
+      "ru": "устрою я"
+    },
+    "aud": "018_095_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 375,
+    "text": {
+      "ar": "رَدْمًا",
+      "en": "a barrier",
+      "tr": "radman",
+      "ru": "вал [насыпь]."
+    },
+    "aud": "018_095_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 376,
+    "text": {
+      "ar": "ءَاتُونِي",
+      "en": "Bring me",
+      "tr": "ātūnī",
+      "ru": "Принесите мне"
+    },
+    "aud": "018_096_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 377,
+    "text": {
+      "ar": "زُبَرَ",
+      "en": "sheets",
+      "tr": "zubara",
+      "ru": "куски"
+    },
+    "aud": "018_096_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 378,
+    "text": {
+      "ar": "الْحَدِيدِ",
+      "en": "(of) iron",
+      "tr": "l-ḥadīdi",
+      "ru": "железа»."
+    },
+    "aud": "018_096_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 379,
+    "text": {
+      "ar": "سَاوَى",
+      "en": "he (had) leveled",
+      "tr": "sāwā",
+      "ru": "сровнял он"
+    },
+    "aud": "018_096_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 380,
+    "text": {
+      "ar": "الصَّدَفَيْنِ",
+      "en": "the two cliffs",
+      "tr": "l-ṣadafayni",
+      "ru": "двумя склонами,"
+    },
+    "aud": "018_096_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 381,
+    "text": {
+      "ar": "انْفُخُوا",
+      "en": "Blow",
+      "tr": "unfukhū",
+      "ru": "«Раздувайте!»"
+    },
+    "aud": "018_096_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 382,
+    "text": {
+      "ar": "جَعَلَهُ",
+      "en": "he made it",
+      "tr": "jaʿalahu",
+      "ru": "превратил он его"
+    },
+    "aud": "018_096_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 383,
+    "text": {
+      "ar": "أُفْرِغْ",
+      "en": "I pour",
+      "tr": "uf'righ",
+      "ru": "вылью я"
+    },
+    "aud": "018_096_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 384,
+    "text": {
+      "ar": "قِطْرًا",
+      "en": "molten copper",
+      "tr": "qiṭ'ran",
+      "ru": "расплавленную медь»."
+    },
+    "aud": "018_096_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 385,
+    "text": {
+      "ar": "اسْطَاعُوا",
+      "en": "they were able",
+      "tr": "is'ṭāʿū",
+      "ru": "могли они"
+    },
+    "aud": "018_097_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 386,
+    "text": {
+      "ar": "يَظْهَرُوهُ",
+      "en": "scale it",
+      "tr": "yaẓharūhu",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_097_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 387,
+    "text": {
+      "ar": "نَقْبًا",
+      "en": "(to do) any penetration",
+      "tr": "naqban",
+      "ru": "(сделать) отверстие."
+    },
+    "aud": "018_097_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 388,
+    "text": {
+      "ar": "رَحْمَةٌ",
+      "en": "(is) a mercy",
+      "tr": "raḥmatun",
+      "ru": "милосердие"
+    },
+    "aud": "018_098_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 389,
+    "text": {
+      "ar": "وَعْدُ",
+      "en": "(the) Promise",
+      "tr": "waʿdu",
+      "ru": "обещание"
+    },
+    "aud": "018_098_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 390,
+    "text": {
+      "ar": "دَكَّاءَ",
+      "en": "level",
+      "tr": "dakkāa",
+      "ru": "ровным;"
+    },
+    "aud": "018_098_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 391,
+    "text": {
+      "ar": "يَمُوجُ",
+      "en": "to surge",
+      "tr": "yamūju",
+      "ru": "будут захлынивать они"
+    },
+    "aud": "018_099_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 392,
+    "text": {
+      "ar": "فَجَمَعْنَاهُمْ",
+      "en": "then We (will) gather them",
+      "tr": "fajamaʿnāhum",
+      "ru": "и (затем) соберём Мы их"
+    },
+    "aud": "018_099_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 393,
+    "text": {
+      "ar": "وَعَرَضْنَا",
+      "en": "And We (will) present",
+      "tr": "waʿaraḍnā",
+      "ru": "И представим Мы"
+    },
+    "aud": "018_100_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 394,
+    "text": {
+      "ar": "عَرْضًا",
+      "en": "(on) display",
+      "tr": "ʿarḍan",
+      "ru": "открыто,"
+    },
+    "aud": "018_100_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 395,
+    "text": {
+      "ar": "غِطَاءٍ",
+      "en": "a cover",
+      "tr": "ghiṭāin",
+      "ru": "завесой, (отдаляющей их)"
+    },
+    "aud": "018_101_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 396,
+    "text": {
+      "ar": "أَفَحَسِبَ",
+      "en": "Do then think",
+      "tr": "afaḥasiba",
+      "ru": "Неужели думали"
+    },
+    "aud": "018_102_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 397,
+    "text": {
+      "ar": "يَتَّخِذُوا",
+      "en": "they (can) take",
+      "tr": "yattakhidhū",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_102_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 398,
+    "text": {
+      "ar": "نُنَبِّئُكُمْ",
+      "en": "We inform you",
+      "tr": "nunabbi-ukum",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "018_103_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 399,
+    "text": {
+      "ar": "بِالْأَخْسَرِينَ",
+      "en": "of the greatest losers",
+      "tr": "bil-akhsarīna",
+      "ru": "про потерпевших наибольший убыток"
+    },
+    "aud": "018_103_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 400,
+    "text": {
+      "ar": "أَعْمَالًا",
+      "en": "(as to their) deeds",
+      "tr": "aʿmālan",
+      "ru": "(в) делах?"
+    },
+    "aud": "018_103_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 401,
+    "text": {
+      "ar": "سَعْيُهُمْ",
+      "en": "their effort",
+      "tr": "saʿyuhum",
+      "ru": "усердие которых"
+    },
+    "aud": "018_104_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 402,
+    "text": {
+      "ar": "يُحْسِنُونَ",
+      "en": "(were) acquiring good",
+      "tr": "yuḥ'sinūna",
+      "ru": "поступают хорошо"
+    },
+    "aud": "018_104_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 403,
+    "text": {
+      "ar": "صُنْعًا",
+      "en": "(in) work",
+      "tr": "ṣun'ʿan",
+      "ru": "(в) деяниях?»"
+    },
+    "aud": "018_104_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 404,
+    "text": {
+      "ar": "فَحَبِطَتْ",
+      "en": "So (are) vain",
+      "tr": "faḥabiṭat",
+      "ru": "И (затем) оказались тщетными"
+    },
+    "aud": "018_105_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 405,
+    "text": {
+      "ar": "نُقِيمُ",
+      "en": "We will assign",
+      "tr": "nuqīmu",
+      "ru": "установим Мы"
+    },
+    "aud": "018_105_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 406,
+    "text": {
+      "ar": "وَزْنًا",
+      "en": "any weight",
+      "tr": "waznan",
+      "ru": "(никакого) веса."
+    },
+    "aud": "018_105_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 407,
+    "text": {
+      "ar": "الْفِرْدَوْسِ",
+      "en": "(of) the Paradise",
+      "tr": "l-fir'dawsi",
+      "ru": "Фирдауса"
+    },
+    "aud": "018_107_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 408,
+    "text": {
+      "ar": "يَبْغُونَ",
+      "en": "they will desire",
+      "tr": "yabghūna",
+      "ru": "будут желать они"
+    },
+    "aud": "018_108_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 409,
+    "text": {
+      "ar": "حِوَلًا",
+      "en": "any transfer",
+      "tr": "ḥiwalan",
+      "ru": "перемещения."
+    },
+    "aud": "018_108_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 410,
+    "text": {
+      "ar": "الْبَحْرُ",
+      "en": "the sea",
+      "tr": "l-baḥru",
+      "ru": "море"
+    },
+    "aud": "018_109_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 411,
+    "text": {
+      "ar": "مِدَادًا",
+      "en": "ink",
+      "tr": "midādan",
+      "ru": "чернилами"
+    },
+    "aud": "018_109_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 412,
+    "text": {
+      "ar": "لِكَلِمَاتِ",
+      "en": "for (the) Words",
+      "tr": "likalimāti",
+      "ru": "для слов"
+    },
+    "aud": "018_109_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 413,
+    "text": {
+      "ar": "لَنَفِدَ",
+      "en": "surely (would be) exhausted",
+      "tr": "lanafida",
+      "ru": "(то) однозначно, иссякло бы"
+    },
+    "aud": "018_109_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 414,
+    "text": {
+      "ar": "تَنْفَدَ",
+      "en": "(were) exhausted",
+      "tr": "tanfada",
+      "ru": "иссякли бы"
+    },
+    "aud": "018_109_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 415,
+    "text": {
+      "ar": "جِئْنَا",
+      "en": "We brought",
+      "tr": "ji'nā",
+      "ru": "пришли Мы"
+    },
+    "aud": "018_109_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 416,
+    "text": {
+      "ar": "بِمِثْلِهِ",
+      "en": "(the) like (of) it",
+      "tr": "bimith'lihi",
+      "ru": "с (ещё) подобным этому"
+    },
+    "aud": "018_109_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 417,
+    "text": {
+      "ar": "مَدَدًا",
+      "en": "(as) a supplement",
+      "tr": "madadan",
+      "ru": "(объёмом) чернил»."
+    },
+    "aud": "018_109_018",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 418,
+    "text": {
+      "ar": "فَلْيَعْمَلْ",
+      "en": "let him do",
+      "tr": "falyaʿmal",
+      "ru": "пусть совершает он"
+    },
+    "aud": "018_110_017",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 419,
+    "text": {
+      "ar": "بِعِبَادَةِ",
+      "en": "in (the) worship",
+      "tr": "biʿibādati",
+      "ru": "в поклонении"
+    },
+    "aud": "018_110_022",
+    "img": "/img/book.png"
+  }
+]

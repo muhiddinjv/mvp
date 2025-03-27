@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "وَيْلٌ",
+      "en": "Woe",
+      "tr": "waylun",
+      "ru": "Горе"
+    },
+    "aud": "104_001_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "لِكُلِّ",
+      "en": "to every",
+      "tr": "likulli",
+      "ru": "всякому"
+    },
+    "aud": "104_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "هُمَزَةٍ",
+      "en": "slanderer",
+      "tr": "humazatin",
+      "ru": "хулителю"
+    },
+    "aud": "104_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "لُمَزَةٍ",
+      "en": "backbiter!",
+      "tr": "lumazatin",
+      "ru": "поносителю."
+    },
+    "aud": "104_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "جَمَعَ",
+      "en": "collects",
+      "tr": "jamaʿa",
+      "ru": "собрал"
+    },
+    "aud": "104_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "مَالًا",
+      "en": "wealth",
+      "tr": "mālan",
+      "ru": "богатство"
+    },
+    "aud": "104_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "وَعَدَّدَهُ",
+      "en": "and counts it",
+      "tr": "waʿaddadahu",
+      "ru": "и пересчитывал его!"
+    },
+    "aud": "104_002_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "يَحْسَبُ",
+      "en": "Thinking",
+      "tr": "yaḥsabu",
+      "ru": "Думает он,"
+    },
+    "aud": "104_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "أَنَّ",
+      "en": "that",
+      "tr": "anna",
+      "ru": "что"
+    },
+    "aud": "104_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "مَالَهُ",
+      "en": "his wealth",
+      "tr": "mālahu",
+      "ru": "богатство его"
+    },
+    "aud": "104_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "أَخْلَدَهُ",
+      "en": "will make him immortal",
+      "tr": "akhladahu",
+      "ru": "увековечит его."
+    },
+    "aud": "104_003_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "كَلَّا",
+      "en": "Nay!",
+      "tr": "kallā",
+      "ru": "Так нет же!"
+    },
+    "aud": "104_004_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "لَيُنْبَذَنَّ",
+      "en": "Surely he will be thrown",
+      "tr": "layunbadhanna",
+      "ru": "Он будет ввергнут"
+    },
+    "aud": "104_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "الْحُطَمَةِ",
+      "en": "the Crusher",
+      "tr": "l-ḥuṭamati",
+      "ru": "в «Сокрушилище»."
+    },
+    "aud": "104_004_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "أَدْرَاكَ",
+      "en": "will make you know",
+      "tr": "adrāka",
+      "ru": "дало тебе знать,"
+    },
+    "aud": "104_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "الْحُطَمَةُ",
+      "en": "the Crusher (is)",
+      "tr": "l-ḥuṭamatu",
+      "ru": "«Сокрушилище»?"
+    },
+    "aud": "104_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "نَارُ",
+      "en": "A Fire",
+      "tr": "nāru",
+      "ru": "Огонь"
+    },
+    "aud": "104_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "الْمُوقَدَةُ",
+      "en": "kindled",
+      "tr": "l-mūqadatu",
+      "ru": "разожженный,"
+    },
+    "aud": "104_006_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "الَّتِي",
+      "en": "Which",
+      "tr": "allatī",
+      "ru": "который"
+    },
+    "aud": "104_007_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "تَطَّلِعُ",
+      "en": "mounts up",
+      "tr": "taṭṭaliʿu",
+      "ru": "доходит"
+    },
+    "aud": "104_007_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "الْأَفْئِدَةِ",
+      "en": "the hearts",
+      "tr": "l-afidati",
+      "ru": "сердец!"
+    },
+    "aud": "104_007_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "إِنَّهَا",
+      "en": "Indeed it",
+      "tr": "innahā",
+      "ru": "Поистине, он (будет)"
+    },
+    "aud": "104_008_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "مُؤْصَدَةٌ",
+      "en": "closed over",
+      "tr": "mu'ṣadatun",
+      "ru": "сомкнутым"
+    },
+    "aud": "104_008_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "عَمَدٍ",
+      "en": "columns",
+      "tr": "ʿamadin",
+      "ru": "колоннах"
+    },
+    "aud": "104_009_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "مُمَدَّدَةٍ",
+      "en": "extended",
+      "tr": "mumaddadatin",
+      "ru": "вытянутых"
+    },
+    "aud": "104_009_003",
+    "img": "/img/book.png"
+  }
+]

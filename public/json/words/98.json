@@ -1,0 +1,607 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "يَكُنِ",
+      "en": "were",
+      "tr": "yakuni",
+      "ru": "были"
+    },
+    "aud": "098_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "كَفَرُوا",
+      "en": "disbelieved",
+      "tr": "kafarū",
+      "ru": "стали неверующими"
+    },
+    "aud": "098_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "أَهْلِ",
+      "en": "(the) People",
+      "tr": "ahli",
+      "ru": "людей"
+    },
+    "aud": "098_001_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "الْكِتَابِ",
+      "en": "of the Book",
+      "tr": "l-kitābi",
+      "ru": "Писания"
+    },
+    "aud": "098_001_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "وَالْمُشْرِكِينَ",
+      "en": "and the polytheists",
+      "tr": "wal-mush'rikīna",
+      "ru": "и многобожников,"
+    },
+    "aud": "098_001_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "مُنْفَكِّينَ",
+      "en": "to be abandoned",
+      "tr": "munfakkīna",
+      "ru": "расставшимися (со своим неверием),"
+    },
+    "aud": "098_001_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "تَأْتِيَهُمُ",
+      "en": "(there) comes to them",
+      "tr": "tatiyahumu",
+      "ru": "пришло к ним"
+    },
+    "aud": "098_001_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "الْبَيِّنَةُ",
+      "en": "the clear evidence",
+      "tr": "l-bayinatu",
+      "ru": "ясное знамение"
+    },
+    "aud": "098_001_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "رَسُولٌ",
+      "en": "A Messenger",
+      "tr": "rasūlun",
+      "ru": "посланник"
+    },
+    "aud": "098_002_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "يَتْلُوا",
+      "en": "reciting",
+      "tr": "yatlū",
+      "ru": "(который) читает"
+    },
+    "aud": "098_002_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "صُحُفًا",
+      "en": "pages",
+      "tr": "ṣuḥufan",
+      "ru": "свитки"
+    },
+    "aud": "098_002_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "مُطَهَّرَةً",
+      "en": "purified",
+      "tr": "muṭahharatan",
+      "ru": "очищенные"
+    },
+    "aud": "098_002_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "فِيهَا",
+      "en": "Wherein",
+      "tr": "fīhā",
+      "ru": "в которых"
+    },
+    "aud": "098_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "كُتُبٌ",
+      "en": "(are) writings",
+      "tr": "kutubun",
+      "ru": "писания"
+    },
+    "aud": "098_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "قَيِّمَةٌ",
+      "en": "correct",
+      "tr": "qayyimatun",
+      "ru": "прямые [истинные, правильные, не имеющие отклонений]"
+    },
+    "aud": "098_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "تَفَرَّقَ",
+      "en": "became divided",
+      "tr": "tafarraqa",
+      "ru": "разделились"
+    },
+    "aud": "098_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "أُوتُوا",
+      "en": "were given",
+      "tr": "ūtū",
+      "ru": "было дано"
+    },
+    "aud": "098_004_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "الْكِتَابَ",
+      "en": "the Book",
+      "tr": "l-kitāba",
+      "ru": "Писание"
+    },
+    "aud": "098_004_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "بَعْدِ",
+      "en": "after",
+      "tr": "baʿdi",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "098_004_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "جَاءَتْهُمُ",
+      "en": "came (to) them",
+      "tr": "jāathumu",
+      "ru": "пришло к ним"
+    },
+    "aud": "098_004_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "أُمِرُوا",
+      "en": "they were commanded",
+      "tr": "umirū",
+      "ru": "было повелено им"
+    },
+    "aud": "098_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "لِيَعْبُدُوا",
+      "en": "to worship",
+      "tr": "liyaʿbudū",
+      "ru": "поклонялись они"
+    },
+    "aud": "098_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "اللَّهَ",
+      "en": "Allah",
+      "tr": "l-laha",
+      "ru": "Аллаху"
+    },
+    "aud": "098_005_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "مُخْلِصِينَ",
+      "en": "(being) sincere",
+      "tr": "mukh'liṣīna",
+      "ru": "делая исключительным"
+    },
+    "aud": "098_005_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "الدِّينَ",
+      "en": "(in) the religion",
+      "tr": "l-dīna",
+      "ru": "Верование,"
+    },
+    "aud": "098_005_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "حُنَفَاءَ",
+      "en": "upright",
+      "tr": "ḥunafāa",
+      "ru": "будучи единобожниками,"
+    },
+    "aud": "098_005_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "وَيُقِيمُوا",
+      "en": "and to establish",
+      "tr": "wayuqīmū",
+      "ru": "и совершать"
+    },
+    "aud": "098_005_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "الصَّلَوةَ",
+      "en": "the prayer",
+      "tr": "l-ṣalata",
+      "ru": "молитву,"
+    },
+    "aud": "098_005_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "وَيُؤْتُوا",
+      "en": "and to give",
+      "tr": "wayu'tū",
+      "ru": "и давать"
+    },
+    "aud": "098_005_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "الزَّكَوةَ",
+      "en": "the Zakah",
+      "tr": "l-zakata",
+      "ru": "обязательную милостыню."
+    },
+    "aud": "098_005_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "وَذَلِكَ",
+      "en": "And that",
+      "tr": "wadhālika",
+      "ru": "Это –"
+    },
+    "aud": "098_005_014",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "دِينُ",
+      "en": "(is the) religion",
+      "tr": "dīnu",
+      "ru": "верование"
+    },
+    "aud": "098_005_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "الْقَيِّمَةِ",
+      "en": "the correct",
+      "tr": "l-qayimati",
+      "ru": "прямоты."
+    },
+    "aud": "098_005_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "نَارِ",
+      "en": "(the) Fire",
+      "tr": "nāri",
+      "ru": "огне"
+    },
+    "aud": "098_006_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "جَهَنَّمَ",
+      "en": "(of) Hell",
+      "tr": "jahannama",
+      "ru": "Геенны"
+    },
+    "aud": "098_006_010",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "خَالِدِينَ",
+      "en": "abiding eternally",
+      "tr": "khālidīna",
+      "ru": "(будучи) вечно пребывающими"
+    },
+    "aud": "098_006_011",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "أُولَئِكَ",
+      "en": "Those",
+      "tr": "ulāika",
+      "ru": "Те [такие] –"
+    },
+    "aud": "098_006_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 38,
+    "text": {
+      "ar": "شَرُّ",
+      "en": "(are the) worst",
+      "tr": "sharru",
+      "ru": "худшие"
+    },
+    "aud": "098_006_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 39,
+    "text": {
+      "ar": "الْبَرِيَّةِ",
+      "en": "(of) the creatures",
+      "tr": "l-bariyati",
+      "ru": "творения."
+    },
+    "aud": "098_006_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 40,
+    "text": {
+      "ar": "خَيْرُ",
+      "en": "(are the) best",
+      "tr": "khayru",
+      "ru": "лучшие"
+    },
+    "aud": "098_007_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 41,
+    "text": {
+      "ar": "جَزَاؤُهُمْ",
+      "en": "Their reward",
+      "tr": "jazāuhum",
+      "ru": "Воздаяние им"
+    },
+    "aud": "098_008_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 42,
+    "text": {
+      "ar": "عِنْدَ",
+      "en": "(is) with",
+      "tr": "ʿinda",
+      "ru": "у"
+    },
+    "aud": "098_008_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 43,
+    "text": {
+      "ar": "رَبِّهِمْ",
+      "en": "their Lord",
+      "tr": "rabbihim",
+      "ru": "их Господа –"
+    },
+    "aud": "098_008_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 44,
+    "text": {
+      "ar": "جَنَّاتُ",
+      "en": "Gardens",
+      "tr": "jannātu",
+      "ru": "сады"
+    },
+    "aud": "098_008_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 45,
+    "text": {
+      "ar": "عَدْنٍ",
+      "en": "(of) Eternity",
+      "tr": "ʿadnin",
+      "ru": "(вечного) пребывания"
+    },
+    "aud": "098_008_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 46,
+    "text": {
+      "ar": "تَجْرِي",
+      "en": "flow",
+      "tr": "tajrī",
+      "ru": "текут"
+    },
+    "aud": "098_008_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 47,
+    "text": {
+      "ar": "تَحْتِهَا",
+      "en": "underneath them",
+      "tr": "taḥtihā",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "098_008_008",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 48,
+    "text": {
+      "ar": "الْأَنْهَارُ",
+      "en": "the rivers",
+      "tr": "l-anhāru",
+      "ru": "реки"
+    },
+    "aud": "098_008_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 49,
+    "text": {
+      "ar": "أَبَدًا",
+      "en": "forever",
+      "tr": "abadan",
+      "ru": "без конца."
+    },
+    "aud": "098_008_012",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 50,
+    "text": {
+      "ar": "رَضِيَ",
+      "en": "(will be) pleased",
+      "tr": "raḍiya",
+      "ru": "Доволен"
+    },
+    "aud": "098_008_013",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 51,
+    "text": {
+      "ar": "عَنْهُمْ",
+      "en": "with them",
+      "tr": "ʿanhum",
+      "ru": "ими,"
+    },
+    "aud": "098_008_015",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 52,
+    "text": {
+      "ar": "وَرَضُوا",
+      "en": "and they (will be) pleased",
+      "tr": "waraḍū",
+      "ru": "и они довольны"
+    },
+    "aud": "098_008_016",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 53,
+    "text": {
+      "ar": "لِمَنْ",
+      "en": "(is) for whoever",
+      "tr": "liman",
+      "ru": "для тех, кто"
+    },
+    "aud": "098_008_019",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 54,
+    "text": {
+      "ar": "خَشِيَ",
+      "en": "feared",
+      "tr": "khashiya",
+      "ru": "боялся"
+    },
+    "aud": "098_008_020",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 55,
+    "text": {
+      "ar": "رَبَّهُ",
+      "en": "his Lord",
+      "tr": "rabbahu",
+      "ru": "своего Господа"
+    },
+    "aud": "098_008_021",
+    "img": "/img/book.png"
+  }
+]

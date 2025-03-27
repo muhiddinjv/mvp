@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "يَاأَيُّهَا",
+      "en": "O",
+      "tr": "yāayyuhā",
+      "ru": "«О"
+    },
+    "aud": "109_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "الْكَافِرُونَ",
+      "en": "disbelievers",
+      "tr": "l-kāfirūna",
+      "ru": "неверующие!"
+    },
+    "aud": "109_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "لَا",
+      "en": "Not",
+      "tr": "lā",
+      "ru": "Не"
+    },
+    "aud": "109_002_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "أَعْبُدُ",
+      "en": "I worship",
+      "tr": "aʿbudu",
+      "ru": "поклоняюсь я"
+    },
+    "aud": "109_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "تَعْبُدُونَ",
+      "en": "you worship",
+      "tr": "taʿbudūna",
+      "ru": "вы поклоняетесь"
+    },
+    "aud": "109_002_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "وَلَا",
+      "en": "And not",
+      "tr": "walā",
+      "ru": "И ни"
+    },
+    "aud": "109_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "أَنْتُمْ",
+      "en": "you",
+      "tr": "antum",
+      "ru": "вы"
+    },
+    "aud": "109_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "عَابِدُونَ",
+      "en": "(are) worshippers",
+      "tr": "ʿābidūna",
+      "ru": "поклоняющиеся"
+    },
+    "aud": "109_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "أَنَا",
+      "en": "I am",
+      "tr": "anā",
+      "ru": "я (есть)"
+    },
+    "aud": "109_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "عَابِدٌ",
+      "en": "a worshipper",
+      "tr": "ʿābidun",
+      "ru": "поклоняющийся"
+    },
+    "aud": "109_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "عَبَدْتُمْ",
+      "en": "you worship",
+      "tr": "ʿabadttum",
+      "ru": "вы поклонялись"
+    },
+    "aud": "109_004_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "لَكُمْ",
+      "en": "For you",
+      "tr": "lakum",
+      "ru": "Вам –"
+    },
+    "aud": "109_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "دِينُكُمْ",
+      "en": "(is) your religion",
+      "tr": "dīnukum",
+      "ru": "ваше верование,"
+    },
+    "aud": "109_006_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "وَلِيَ",
+      "en": "and for me",
+      "tr": "waliya",
+      "ru": "а мне –"
+    },
+    "aud": "109_006_003",
+    "img": "/img/book.png"
+  }
+]

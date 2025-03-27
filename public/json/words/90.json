@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "أُقْسِمُ",
+      "en": "I swear",
+      "tr": "uq'simu",
+      "ru": "клянусь"
+    },
+    "aud": "090_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "بِهَذَا",
+      "en": "by this",
+      "tr": "bihādhā",
+      "ru": "этим"
+    },
+    "aud": "090_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "وَأَنْتَ",
+      "en": "And you",
+      "tr": "wa-anta",
+      "ru": "И ты –"
+    },
+    "aud": "090_002_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "حِلٌّ",
+      "en": "(are) free (to dwell)",
+      "tr": "ḥillun",
+      "ru": "тот, кому (будет) дозволено (сражение)"
+    },
+    "aud": "090_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "وَوَالِدٍ",
+      "en": "And the begetter",
+      "tr": "wawālidin",
+      "ru": "И (клянусь) родителем"
+    },
+    "aud": "090_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "وَلَدَ",
+      "en": "he begot",
+      "tr": "walada",
+      "ru": "что он породил"
+    },
+    "aud": "090_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "كَبَدٍ",
+      "en": "hardship",
+      "tr": "kabadin",
+      "ru": "тяготах"
+    },
+    "aud": "090_004_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "أَيَحْسَبُ",
+      "en": "Does he think",
+      "tr": "ayaḥsabu",
+      "ru": "Неужели он думает,"
+    },
+    "aud": "090_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "لَنْ",
+      "en": "not",
+      "tr": "lan",
+      "ru": "никогда не"
+    },
+    "aud": "090_005_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "يَقْدِرَ",
+      "en": "has power",
+      "tr": "yaqdira",
+      "ru": "справится"
+    },
+    "aud": "090_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "عَلَيْهِ",
+      "en": "over him",
+      "tr": "ʿalayhi",
+      "ru": "с ним"
+    },
+    "aud": "090_005_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "يَقُولُ",
+      "en": "He will say",
+      "tr": "yaqūlu",
+      "ru": "Говорит он"
+    },
+    "aud": "090_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "أَهْلَكْتُ",
+      "en": "I have squandered",
+      "tr": "ahlaktu",
+      "ru": "«Я израсходовал"
+    },
+    "aud": "090_006_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "لُبَدًا",
+      "en": "abundant",
+      "tr": "lubadan",
+      "ru": "несметное»"
+    },
+    "aud": "090_006_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "نَجْعَلْ",
+      "en": "We made",
+      "tr": "najʿal",
+      "ru": "Мы не сделали"
+    },
+    "aud": "090_008_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "عَيْنَيْنِ",
+      "en": "two eyes",
+      "tr": "ʿaynayni",
+      "ru": "два глаза"
+    },
+    "aud": "090_008_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "وَلِسَانًا",
+      "en": "And a tongue",
+      "tr": "walisānan",
+      "ru": "и язык,"
+    },
+    "aud": "090_009_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "وَشَفَتَيْنِ",
+      "en": "and two lips",
+      "tr": "washafatayni",
+      "ru": "и две губы?"
+    },
+    "aud": "090_009_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "وَهَدَيْنَاهُ",
+      "en": "And shown him",
+      "tr": "wahadaynāhu",
+      "ru": "и указали Мы ему"
+    },
+    "aud": "090_010_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "النَّجْدَيْنِ",
+      "en": "the two ways",
+      "tr": "l-najdayni",
+      "ru": "на две высоты?"
+    },
+    "aud": "090_010_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "اقْتَحَمَ",
+      "en": "he has attempted",
+      "tr": "iq'taḥama",
+      "ru": "стал он преодолевать"
+    },
+    "aud": "090_011_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "الْعَقَبَةَ",
+      "en": "the steep path",
+      "tr": "l-ʿaqabata",
+      "ru": "препятствие."
+    },
+    "aud": "090_011_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "الْعَقَبَةُ",
+      "en": "the steep path is",
+      "tr": "l-ʿaqabatu",
+      "ru": "препятствие?"
+    },
+    "aud": "090_012_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "فَكُّ",
+      "en": "(It is) freeing",
+      "tr": "fakku",
+      "ru": "освобождение"
+    },
+    "aud": "090_013_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "رَقَبَةٍ",
+      "en": "a neck",
+      "tr": "raqabatin",
+      "ru": "раба"
+    },
+    "aud": "090_013_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "إِطْعَامٌ",
+      "en": "feeding",
+      "tr": "iṭ'ʿāmun",
+      "ru": "кормление"
+    },
+    "aud": "090_014_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "يَوْمٍ",
+      "en": "a day",
+      "tr": "yawmin",
+      "ru": "день"
+    },
+    "aud": "090_014_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "ذِي",
+      "en": "of",
+      "tr": "dhī",
+      "ru": "голода"
+    },
+    "aud": "090_014_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "مَسْغَبَةٍ",
+      "en": "severe hunger",
+      "tr": "masghabatin",
+      "ru": "[[MISSING]]"
+    },
+    "aud": "090_014_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "ذَا",
+      "en": "of",
+      "tr": "dhā",
+      "ru": "обладателя"
+    },
+    "aud": "090_015_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "مَقْرَبَةٍ",
+      "en": "near relationship",
+      "tr": "maqrabatin",
+      "ru": "родства"
+    },
+    "aud": "090_015_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "مِسْكِينًا",
+      "en": "a needy person",
+      "tr": "mis'kīnan",
+      "ru": "бедняка"
+    },
+    "aud": "090_016_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "مَتْرَبَةٍ",
+      "en": "misery",
+      "tr": "matrabatin",
+      "ru": "крайнюю нужду"
+    },
+    "aud": "090_016_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "بِالْمَرْحَمَةِ",
+      "en": "to compassion",
+      "tr": "bil-marḥamati",
+      "ru": "милосердие"
+    },
+    "aud": "090_017_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "أَصْحَابُ",
+      "en": "(are the) companions",
+      "tr": "aṣḥābu",
+      "ru": "(люди) обладатели"
+    },
+    "aud": "090_018_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "الْمَيْمَنَةِ",
+      "en": "(of) the right hand",
+      "tr": "l-maymanati",
+      "ru": "правой стороны"
+    },
+    "aud": "090_018_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "وَالَّذِينَ",
+      "en": "But those who",
+      "tr": "wa-alladhīna",
+      "ru": "А те, которые"
+    },
+    "aud": "090_019_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 38,
+    "text": {
+      "ar": "بِءَايَاتِنَا",
+      "en": "in Our Verses",
+      "tr": "biāyātinā",
+      "ru": "в Наши знамения,"
+    },
+    "aud": "090_019_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 39,
+    "text": {
+      "ar": "الْمَشْءَمَةِ",
+      "en": "(of) the left hand",
+      "tr": "l-mashamati",
+      "ru": "злополучия"
+    },
+    "aud": "090_019_006",
+    "img": "/img/book.png"
+  }
+]

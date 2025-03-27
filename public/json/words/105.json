@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "أَلَمْ",
+      "en": "Have not",
+      "tr": "alam",
+      "ru": "Разве не"
+    },
+    "aud": "105_001_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "تَرَ",
+      "en": "you seen",
+      "tr": "tara",
+      "ru": "видел ты"
+    },
+    "aud": "105_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "كَيْفَ",
+      "en": "how",
+      "tr": "kayfa",
+      "ru": "как"
+    },
+    "aud": "105_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "فَعَلَ",
+      "en": "dealt",
+      "tr": "faʿala",
+      "ru": "поступил"
+    },
+    "aud": "105_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "رَبُّكَ",
+      "en": "your Lord",
+      "tr": "rabbuka",
+      "ru": "Господь твой"
+    },
+    "aud": "105_001_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "بِأَصْحَابِ",
+      "en": "with (the) Companions",
+      "tr": "bi-aṣḥābi",
+      "ru": "с владельцами"
+    },
+    "aud": "105_001_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "الْفِيلِ",
+      "en": "(of the) Elephant",
+      "tr": "l-fīli",
+      "ru": "слона?"
+    },
+    "aud": "105_001_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "يَجْعَلْ",
+      "en": "He make",
+      "tr": "yajʿal",
+      "ru": "вверг Он"
+    },
+    "aud": "105_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "كَيْدَهُمْ",
+      "en": "their plan",
+      "tr": "kaydahum",
+      "ru": "козни их"
+    },
+    "aud": "105_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "تَضْلِيلٍ",
+      "en": "astray",
+      "tr": "taḍlīlin",
+      "ru": "тщетность?"
+    },
+    "aud": "105_002_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "وَأَرْسَلَ",
+      "en": "And He sent",
+      "tr": "wa-arsala",
+      "ru": "И наслал Он"
+    },
+    "aud": "105_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "عَلَيْهِمْ",
+      "en": "against them",
+      "tr": "ʿalayhim",
+      "ru": "на них"
+    },
+    "aud": "105_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "طَيْرًا",
+      "en": "birds",
+      "tr": "ṭayran",
+      "ru": "птиц"
+    },
+    "aud": "105_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "أَبَابِيلَ",
+      "en": "(in) flocks",
+      "tr": "abābīla",
+      "ru": "стаями,"
+    },
+    "aud": "105_003_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "تَرْمِيهِمْ",
+      "en": "Striking them",
+      "tr": "tarmīhim",
+      "ru": "(которые) бросали в них"
+    },
+    "aud": "105_004_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "بِحِجَارَةٍ",
+      "en": "with stones",
+      "tr": "biḥijāratin",
+      "ru": "камни"
+    },
+    "aud": "105_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "سِجِّيلٍ",
+      "en": "baked clay",
+      "tr": "sijjīlin",
+      "ru": "обожжённой глины"
+    },
+    "aud": "105_004_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "فَجَعَلَهُمْ",
+      "en": "Then He made them",
+      "tr": "fajaʿalahum",
+      "ru": "и сделал Он их"
+    },
+    "aud": "105_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "كَعَصْفٍ",
+      "en": "like straw",
+      "tr": "kaʿaṣfin",
+      "ru": "подобными сухим листьям (злаковых)"
+    },
+    "aud": "105_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "مَأْكُولٍ",
+      "en": "eaten up",
+      "tr": "makūlin",
+      "ru": "изъеденным."
+    },
+    "aud": "105_005_003",
+    "img": "/img/book.png"
+  }
+]

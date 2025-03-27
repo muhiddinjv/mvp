@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "نَشْرَحْ",
+      "en": "We expanded",
+      "tr": "nashraḥ",
+      "ru": "раскрыли Мы"
+    },
+    "aud": "094_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "لَكَ",
+      "en": "for you",
+      "tr": "laka",
+      "ru": "тебе"
+    },
+    "aud": "094_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "صَدْرَكَ",
+      "en": "your breast",
+      "tr": "ṣadraka",
+      "ru": "твою грудь?"
+    },
+    "aud": "094_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "وَوَضَعْنَا",
+      "en": "And We removed",
+      "tr": "wawaḍaʿnā",
+      "ru": "И сложили"
+    },
+    "aud": "094_002_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "عَنْكَ",
+      "en": "from you",
+      "tr": "ʿanka",
+      "ru": "с тебя"
+    },
+    "aud": "094_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "وِزْرَكَ",
+      "en": "your burden",
+      "tr": "wiz'raka",
+      "ru": "твою ношу?"
+    },
+    "aud": "094_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "أَنْقَضَ",
+      "en": "weighed upon",
+      "tr": "anqaḍa",
+      "ru": "тяготила"
+    },
+    "aud": "094_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "ظَهْرَكَ",
+      "en": "your back",
+      "tr": "ẓahraka",
+      "ru": "твою спину?"
+    },
+    "aud": "094_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "وَرَفَعْنَا",
+      "en": "And We raised high",
+      "tr": "warafaʿnā",
+      "ru": "И возвысили Мы"
+    },
+    "aud": "094_004_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "ذِكْرَكَ",
+      "en": "your esteem",
+      "tr": "dhik'raka",
+      "ru": "твое поминание?"
+    },
+    "aud": "094_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "فَإِنَّ",
+      "en": "So indeed",
+      "tr": "fa-inna",
+      "ru": "И, поистине,"
+    },
+    "aud": "094_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "مَعَ",
+      "en": "with",
+      "tr": "maʿa",
+      "ru": "с"
+    },
+    "aud": "094_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "الْعُسْرِ",
+      "en": "the hardship",
+      "tr": "l-ʿus'ri",
+      "ru": "трудностью –"
+    },
+    "aud": "094_005_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "يُسْرًا",
+      "en": "(is) ease",
+      "tr": "yus'ran",
+      "ru": "лёгкость!"
+    },
+    "aud": "094_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "فَإِذَا",
+      "en": "So when",
+      "tr": "fa-idhā",
+      "ru": "И когда"
+    },
+    "aud": "094_007_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "فَرَغْتَ",
+      "en": "you are free",
+      "tr": "faraghta",
+      "ru": "ты освободишься,"
+    },
+    "aud": "094_007_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "فَانْصَبْ",
+      "en": "then stand up",
+      "tr": "fa-inṣab",
+      "ru": "труждайся!"
+    },
+    "aud": "094_007_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "وَإِلَى",
+      "en": "And to",
+      "tr": "wa-ilā",
+      "ru": "И к"
+    },
+    "aud": "094_008_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "فَارْغَبْ",
+      "en": "turn your attention",
+      "tr": "fa-ir'ghab",
+      "ru": "устремляйся!"
+    },
+    "aud": "094_008_003",
+    "img": "/img/book.png"
+  }
+]
