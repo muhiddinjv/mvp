@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Rating, State, generatorParameters, fsrs } from "ts-fsrs";
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Speech from "react-text-to-speech";
@@ -10,31 +10,7 @@ import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../components/Button";
 import { Loading } from "../components";
-
-const CardStorage = {
-  loadCards: (words, chapterId) => {
-    const storedCards = localStorage.getItem(`cards_${chapterId}`);
-    if (storedCards) {
-      const parsedCards = JSON.parse(storedCards);
-      return parsedCards;
-    }
-    return words.map(card => ({
-      ...card,
-      due: moment().valueOf(),
-      difficulty: 0,
-      elapsed_days: 0,
-      lapses: 0,
-      last_review: null,
-      reps: 0,
-      scheduled_days: 0,
-      stability: 0,
-      state: State.New
-    }));
-  },
-  saveCards: (cards, chapterId) => {
-    localStorage.setItem(`cards_${chapterId}`, JSON.stringify(cards));
-  },
-};
+import { CardStorage, GlobalContext } from "../main";
 
 const Scheduler = {
   f: fsrs(generatorParameters({ initial_stability: 0.5 })),
@@ -280,43 +256,27 @@ const GradeButtons = ({ handleGrade, intervals }) => {
 };
 
 const AnkiPage = () => {
+  const { chapterId, words } = useContext(GlobalContext);
+  const [cards, setCards] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [reviewComplete, setReviewComplete] = useState(false);
   const [currentCard, setCurrentCard] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [cards, setCards] = useState([]);
-  const [words, setWords] = useState([]);
 
   const { suraid } = useParams();
   const { theme } = useTheme("dark");
 
   useEffect(() => {
-    fetch(`/json/words/${suraid}.json`)
-      .then((res) => res.json())
-      .then((json) => setWords(json))
-      .catch((err) => console.error("Error loading data:", err));
-  }, []);
-  console.log(words);
-
-
-  const getDueCards = (cards) => {
-    const now = moment();
-    return cards
-      ?.filter((card) => card.state === State.New || moment(card.due).isSameOrBefore(now))
-      ?.sort((a, b) => moment(a.due).diff(moment(b.due)));
-  };
-
-  useEffect(() => {
-    if (words.length > 0) {
-      const storedCards = CardStorage.loadCards(words, suraid);
+    if (words[chapterId]) {
+      const storedCards = CardStorage.loadCards(words[chapterId], chapterId);
       setCards(storedCards);
       setLoading(false);
     }
-  }, [words, suraid]);
+  }, [words, chapterId]);
 
   useEffect(() => {
     if (!loading) {
-      CardStorage.saveCards(cards, suraid);
+      CardStorage.saveCards(cards, chapterId);
       const dueCards = getDueCards(cards);
       if (dueCards?.length === 0) {
         setReviewComplete(true);
@@ -326,7 +286,14 @@ const AnkiPage = () => {
         setCurrentCard(dueCards[0]);
       }
     }
-  }, [cards, loading, suraid]);
+  }, [cards, loading, chapterId]);
+
+  const getDueCards = (cards) => {
+    const now = moment();
+    return cards
+      ?.filter((card) => card.state === State.New || moment(card.due).isSameOrBefore(now))
+      ?.sort((a, b) => moment(a.due).diff(moment(b.due)));
+  };
 
   const handleGrade = (rating) => {
     if (!currentCard) return;
@@ -337,7 +304,10 @@ const AnkiPage = () => {
     );
 
     setCards(updatedCards);
+    setCurrentCard(updatedCard);
     setShowAnswer(false);
+
+    CardStorage.saveCards(updatedCards, chapterId);
   };
 
   const sortedByDue = cards?.sort((a, b) => moment(a.due).diff(moment(b.due)));

@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTheme, useBookmarks } from '../hooks';
-import { GlobalContext } from '../main';
+import { CardStorage, GlobalContext } from '../main';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp, faHome, faLightbulb, faBook, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
-import ankiImage from '../assets/anki.png';
+import { faArrowDown, faArrowUp, faLightbulb, faBook, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
+import { State } from 'ts-fsrs';
+import moment from 'moment';
 
 function Chapters() {
   const { theme } = useTheme("dark");
   const [ sortType, setSortType ] = React.useState('id');
   const [ sortOrder, setSortOrder ] = React.useState(false);
-  const { setChapterId, chapters, setChapters } = React.useContext(GlobalContext);
+  const { setChapterId, chapters, setChapters, cardCounts, setCardCounts, words } = React.useContext(GlobalContext);
   const [,, getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
 
@@ -35,10 +36,25 @@ function Chapters() {
     localStorage.setItem("chapterId", chapter.id);
   };
 
-  // Get the lowest unlocked surah from localStorage.
-  // Default to 114 if not set.
   const lowestUnlocked = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
 
+  useEffect(() => {
+    // Recalculate counts whenever the component mounts or when chapters change
+    const newCardCounts = {};
+    for (const chapter of chapters) {
+      if (words[chapter.id]) { // Check if words for the chapter exist
+        const storedCards = CardStorage.loadCards(words[chapter.id], chapter.id);
+        const newCount = storedCards.filter(card => card.state === State.New).length;
+        const learningCount = storedCards.filter(card => (card.state === State.Learning || card.state === State.Relearning) && moment(card.due).isSameOrBefore(moment())).length;
+        const reviewCount = storedCards.filter(card => card.state === State.Review && moment(card.due).isSameOrBefore(moment())).length;
+
+        newCardCounts[chapter.id] = { newCount, learningCount, reviewCount };
+      } else {
+        newCardCounts[chapter.id] = { newCount: 0, learningCount: 0, reviewCount: 0 }; // Default counts
+      }
+    }
+    setCardCounts(newCardCounts);
+  }, [chapters]); // Add words as a dependency
 
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-2 p-3 min-h-screen items-center justify-center`}>
@@ -70,6 +86,8 @@ function Chapters() {
         const chapterNum = Number(chapter.id);
         // Only chapters with an id >= lowestUnlocked are unlocked.
         const isUnlocked = chapterNum >= lowestUnlocked;
+        const counts = cardCounts[chapter.id] || { newCount: 0, learningCount: 0, reviewCount: 0 };
+
         return (
           <span id={chapter.id} key={chapter.id} onClick={() => handleChapter(chapter)} className="flex border border-gray-500 rounded">
             <span className='flex items-center justify-center border-r border-gray-500 text-lg w-full max-w-12'>{chapter.id}</span>
@@ -80,14 +98,16 @@ function Chapters() {
               </div>
             </Link>
             {isUnlocked ? (
-              <Link
-                to={`/anki/${chapter.id}`}
-                className='w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'
-              >
+              <Link to={`/anki/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
                 <FontAwesomeIcon icon={faBook} />
+                {(counts.newCount + counts.learningCount + counts.reviewCount) > 0 && (
+                  <span className="absolute top-0 right-0 bg-slate-300 text-gray-800 text-xs rounded-full px-1">
+                    {counts.newCount + counts.learningCount + counts.reviewCount}
+                  </span>
+                )}
               </Link>
             ) : (
-              <div className="w-full max-w-12 border-l border-gray-500 p-2 flex justify-center items-center opacity-50 cursor-not-allowed">
+              <div className="w-full max-w-12 border-l border-gray-500 flex justify-center items-center opacity-50 cursor-not-allowed">
                 <FontAwesomeIcon icon={faBook} />
               </div>
             )}
