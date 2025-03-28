@@ -99,7 +99,7 @@ function Chapters() {
             </Link>
             {isUnlocked ? (
               <Link to={`/anki/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
-                <FontAwesomeIcon icon={faBook} size='lg' />
+                <FontAwesomeIcon icon={faBook}/>
                 {(counts.newCount + counts.learningCount + counts.reviewCount) > 0 && (
                   <span className="absolute top-0 right-0 bg-slate-300 text-gray-800 text-xs rounded-full px-1">
                     {counts.newCount + counts.learningCount + counts.reviewCount}
@@ -108,7 +108,7 @@ function Chapters() {
               </Link>
             ) : (
               <div className="w-full max-w-12 border-l border-gray-500 flex justify-center items-center opacity-50 cursor-not-allowed">
-                <FontAwesomeIcon icon={faBook} size='lg'/>
+                <FontAwesomeIcon icon={faBook}/>
               </div>
             )}
           </span>
