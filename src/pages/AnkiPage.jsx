@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { Rating, State, generatorParameters, fsrs } from "ts-fsrs";
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import Speech from "react-text-to-speech";
 import moment from "moment";
 
 import { voiceText, uiLang } from "../data";
-import { useLanguage, useTheme } from "../hooks";
+import { useTheme } from "../hooks";
 import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../components/Button";
@@ -61,7 +61,7 @@ function Skeleton() {
 }
 
 const StatusBar = ({ cards }) => {
-  const { ankiLanguage, changeAnkiLanguage } = useLanguage();
+  const { ankiLanguage } = useContext(GlobalContext);
 
   const { newWord, learning, review } = uiLang.words;
 
@@ -86,16 +86,9 @@ const StatusBar = ({ cards }) => {
 
   return (
     <div className="flex justify-between gap-2 mb-2">
-      <Link to="/" className="size-8 rounded flex items-center justify-center text-2xl">
-        <FontAwesomeIcon icon={faHome} />
-      </Link>
       <StatusBadge label={newWord[ankiLanguage]} count={newCount} color="blue" title="New cards to learn today"/>
       <StatusBadge label={learning[ankiLanguage]} count={learningCount} color="red" title="Cards currently being learned"/>
       <StatusBadge label={review[ankiLanguage]} count={reviewCount} color="green" title="Learned cards due for review"/>
-      <Button 
-        onClick={changeAnkiLanguage} 
-        text={ankiLanguage} 
-      />
     </div>
   );
 };
@@ -131,7 +124,7 @@ const GradeButton = ({
 };
 
 const ReviewComplete = ({ earliestDue }) => {
-  const { language } = useLanguage();
+  const { language } = useContext(GlobalContext);
 
   return (
     <div className="my-6">
@@ -154,7 +147,8 @@ const CardReview = ({
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const { ankiLanguage } = useLanguage();
+  const { ankiLanguage } = useContext(GlobalContext);
+
 
   return (
     <div className="flex flex-col justify-between w-full h-full p-4">
@@ -211,7 +205,7 @@ const CardReview = ({
 
 const GradeButtons = ({ handleGrade, intervals }) => {
   const { again, hard, good, easy } = uiLang.words;
-  const { ankiLanguage } = useLanguage();
+  const { ankiLanguage } = useContext(GlobalContext);
 
   return (
     <div className="flex justify-center w-full gap-2">
@@ -256,7 +250,7 @@ const GradeButtons = ({ handleGrade, intervals }) => {
 };
 
 const AnkiPage = () => {
-  const { chapterId, words } = useContext(GlobalContext);
+  const { chapterId, chapters, words, ankiLanguage, changeAnkiLanguage } = useContext(GlobalContext);
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(true);
   const [reviewComplete, setReviewComplete] = useState(false);
@@ -265,6 +259,8 @@ const AnkiPage = () => {
 
   const { suraid } = useParams();
   const { theme } = useTheme("dark");
+
+  const chapter = chapters.find(chapter => chapter.id === chapterId);
 
   useEffect(() => {
     if (words[chapterId]) {
@@ -335,6 +331,13 @@ const AnkiPage = () => {
 
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} flex flex-col items-center h-full py-4`}>
+      <div className="flex justify-between gap-6 mb-4">
+        <Link to="/" className="size-8 rounded flex items-center justify-center text-2xl">
+          <FontAwesomeIcon icon={faHome} />
+        </Link>
+        <h3 className="text-2xl font-semibold text-center">{chapter.id}: {chapter.text[ankiLanguage]}</h3>
+        <Button onClick={changeAnkiLanguage} text={ankiLanguage}/>
+      </div>
       <StatusBar cards={cards} />
       {reviewComplete && cards.length > 0 ? (
         <ReviewComplete earliestDue={earliestDue} />

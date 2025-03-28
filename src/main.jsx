@@ -59,6 +59,33 @@ function GlobalProvider({ children }){
   const [cards, setCards] = useState([]);
   const [cardCounts, setCardCounts] = useState({});
 
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || 'en'
+  );
+
+  const [ankiLanguage, setAnkiLanguage] = useState(
+    localStorage.getItem("ankiLanguage") || 'en'
+  );
+  const languages = ["en", "tr", "ar", "ru"];
+  const ankilanguages = ["en", "ru"];
+
+  const changeLanguage = () => {
+    const currentIndex = languages.indexOf(language);
+    const newLanguage = languages[(currentIndex + 1) % languages.length];
+    setLanguage(newLanguage);
+  };
+
+  const changeAnkiLanguage = () => {
+    const currentIndex = ankilanguages.indexOf(ankiLanguage);
+    const newLanguage = ankilanguages[(currentIndex + 1) % ankilanguages.length];
+    setAnkiLanguage(newLanguage);
+  };
+
+  useEffect(() => {
+    localStorage.setItem("language", language); 
+    localStorage.setItem("ankiLanguage", ankiLanguage);
+  }, [language, ankiLanguage]);
+
   useEffect(() => {
     fetch('/json/chapters.json')
       .then(res => res.json())
@@ -101,7 +128,9 @@ function GlobalProvider({ children }){
       showButtons, setShowButtons,
       words, setWords,
       cards, setCards,
-      cardCounts, setCardCounts
+      cardCounts, setCardCounts,
+      language, changeLanguage,
+      ankiLanguage, changeAnkiLanguage
     }}>
       {children}
     </GlobalContext.Provider>

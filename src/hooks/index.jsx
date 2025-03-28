@@ -34,35 +34,35 @@ export function useFontSize(defaultSize) {
   return { fontSize, enlargeFont };
 }
 
-export function useLanguage() {
-  const [language, setLanguage] = useState(
-    localStorage.getItem("language") || 'en'
-  );
+// export function useLanguage() {
+//   const [language, setLanguage] = useState(
+//     localStorage.getItem("language") || 'en'
+//   );
 
-  const [ankiLanguage, setAnkiLanguage] = useState(
-    localStorage.getItem("ankiLanguage") || 'en'
-  );
-  const languages = ["en", "tr", "ar", "ru"];
-  const ankilanguages = ["en", "ru"];
+//   const [ankiLanguage, setAnkiLanguage] = useState(
+//     localStorage.getItem("ankiLanguage") || 'en'
+//   );
+//   const languages = ["en", "tr", "ar", "ru"];
+//   const ankilanguages = ["en", "ru"];
 
-  const changeLanguage = () => {
-    const currentIndex = languages.indexOf(language);
-    const newLanguage = languages[(currentIndex + 1) % languages.length];
-    setLanguage(newLanguage);
-  };
+//   const changeLanguage = () => {
+//     const currentIndex = languages.indexOf(language);
+//     const newLanguage = languages[(currentIndex + 1) % languages.length];
+//     setLanguage(newLanguage);
+//   };
 
-  const changeAnkiLanguage = () => {
-    const currentIndex = ankilanguages.indexOf(ankiLanguage);
-    const newLanguage = ankilanguages[(currentIndex + 1) % ankilanguages.length];
-    setAnkiLanguage(newLanguage);
-  };
-  useEffect(() => {
-    localStorage.setItem("language", language); 
-    localStorage.setItem("ankiLanguage", ankiLanguage);
-  }, [language, ankiLanguage]);
+//   const changeAnkiLanguage = () => {
+//     const currentIndex = ankilanguages.indexOf(ankiLanguage);
+//     const newLanguage = ankilanguages[(currentIndex + 1) % ankilanguages.length];
+//     setAnkiLanguage(newLanguage);
+//   };
+//   useEffect(() => {
+//     localStorage.setItem("language", language); 
+//     localStorage.setItem("ankiLanguage", ankiLanguage);
+//   }, [language, ankiLanguage]);
 
-  return { language, changeLanguage, ankiLanguage, changeAnkiLanguage };
-}
+//   return { language, changeLanguage, ankiLanguage, changeAnkiLanguage };
+// }
 
 export function useAyahs(suraNum) {
   const [ayahs, setAyahs] = useState([]);

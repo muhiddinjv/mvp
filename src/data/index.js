@@ -33,7 +33,7 @@ export const uiLang = {
     again: {
       en: "Again",
       uz: "Yana",
-      ru: "Еще раз",
+      ru: "Повтор",
     },
     hard: {
       en: "Hard",

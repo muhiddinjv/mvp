@@ -3,15 +3,14 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import MultiRangeSlider from "multi-range-slider-react";
 
 import { Loading, Accordion,BtnsRange, BtnsPlayback, BtnsHeader } from '../components';
-import { useAudioPlayer, useTheme, useVerseRange, useLanguage, useAyahs, useFontSize } from '../hooks';
+import { useAudioPlayer, useTheme, useVerseRange, useAyahs, useFontSize } from '../hooks';
 import { GlobalContext } from '../main';
 import mustSayThis from '../assets/bismillah.png';
 
 function Chapter() {
   const { chapterid } = useParams();
-  const { chapters, wordLimit, setWordLimit, showSlider, setShowSlider } = useContext(GlobalContext);
+  const { chapters, wordLimit, setWordLimit, showSlider, setShowSlider, language, changeLanguage } = useContext(GlobalContext);
   const { groupedAyahs, loading } = useAyahs(chapterid);
-  const { language, changeLanguage } = useLanguage();
   const { fontSize, enlargeFont } = useFontSize(16);
   const { theme } = useTheme("dark");
   
