@@ -57,24 +57,24 @@ export const uiLang = {
       ru: "Новый",
     },
     learning: {
-      en: "Learning",
-      uz: "O'rganish",
-      ru: "Обучение",
+      en: "Learn",
+      uz: "O'rgan",
+      ru: "Учись",
     },
     review: {
       en: "Review",
-      uz: "Qaytarish",
-      ru: "Проверка",
+      uz: "Qaytar",
+      ru: "Повтор",
     },
     complete: {
       en: "Review Complete!",
-      uz: "Qaytarish Bajarildi!",
-      ru: "Проверка завершена!",
+      uz: "Qaytarish Tugallandi!",
+      ru: "Повтор завершен!",
     },
     next: {
       en: "Next review",
       uz: "Keyngi qaytarish",
-      ru: "Следующая проверка",
+      ru: "Следующая повтор",
     },
   },
 };
