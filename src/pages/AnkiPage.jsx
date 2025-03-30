@@ -153,7 +153,7 @@ const CardReview = ({
   return (
     <div className="flex flex-col justify-between w-full h-full p-4">
       <div>
-        <div className="flex items-center justify-center text-xl font-semibold">
+        <div className="flex items-center justify-center text-xl">
           <Speech
             text={currentCard.text['ar']}
             voiceURI={voiceText['ar'].voiceURI}
@@ -161,7 +161,7 @@ const CardReview = ({
             rate={1.0}
             stopBtn={false}
           /> {/* CARD FRONT */}
-          <span className="ml-2 text-4xl font-semibold">{currentCard.text['ar']}</span>
+          <span className="ml-2 text-4xl">{currentCard.text['ar']}</span>
         </div>
         {showAnswer && (
           <div className="flex flex-col items-center">
