@@ -165,9 +165,8 @@ const CardReview = ({
         </div>
         {showAnswer && (
           <div className="flex flex-col items-center">
-            {!imageLoaded && !imageError && <Skeleton />}
-
-            {currentCard.img && !imageError && (
+            {/* {!imageLoaded && !imageError && <Skeleton />} */}
+            {/* {currentCard.img && !imageError && (
               <img 
                 src={currentCard.img}
                 alt={currentCard.text[ankiLanguage]}
@@ -175,8 +174,7 @@ const CardReview = ({
                 onLoad={()=>setImageLoaded(true)}
                 onError={()=>setImageError(true)}
               />
-            )}
-
+            )} */}
             {imageError && (
               <div className="mt-4 text-center text-red-500">Image failed to load</div>
             )}
