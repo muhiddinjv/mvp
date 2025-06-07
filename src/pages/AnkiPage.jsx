@@ -1,16 +1,17 @@
 import { useState, useEffect, useContext } from "react";
 import { Rating, State, generatorParameters, fsrs } from "ts-fsrs";
-import { faHome, faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Speech from "react-text-to-speech";
 import moment from "moment";
 
 import { voiceText, uiLang } from "../data";
 import { useTheme } from "../hooks";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../components/Button";
 import { Loading } from "../components";
 import { CardStorage, GlobalContext } from "../main";
+import { increaseSessionStreak, markDailyStreakCompleted } from "../utils/streaks";
 
 const Scheduler = {
   f: fsrs(generatorParameters({ initial_stability: 0.5 })),
@@ -254,9 +255,11 @@ const AnkiPage = () => {
   const [reviewComplete, setReviewComplete] = useState(false);
   const [currentCard, setCurrentCard] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [hasReviewed, setHasReviewed] = useState(false);
 
   const { suraid } = useParams();
   const { theme } = useTheme("dark");
+  const navigate = useNavigate();
 
   const chapter = chapters.find(chapter => chapter.id === chapterId);
 
@@ -272,15 +275,32 @@ const AnkiPage = () => {
     if (!loading) {
       CardStorage.saveCards(cards, chapterId);
       const dueCards = getDueCards(cards);
+  
       if (dueCards?.length === 0) {
         setReviewComplete(true);
         setCurrentCard(null);
+  
+        if (hasReviewed) {
+          increaseSessionStreak();
+          markDailyStreakCompleted();
+          const currentId = Number(suraid); // e.g. 1
+          const nextId = currentId - 1; // assuming descending order from 114 to 1
+          const prevUnlocked = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
+        
+          if (nextId > 0 && nextId < prevUnlocked) {
+            localStorage.setItem("lowestUnlockedSurah", nextId);
+          }
+          const audio = new Audio("/aud/sound/treasure.mp3");
+          audio.play();
+          navigate("/", { state: { streakUpdated: true } });
+        }
       } else {
         setReviewComplete(false);
         setCurrentCard(dueCards[0]);
       }
     }
-  }, [cards, loading, chapterId]);
+  }, [cards, loading, chapterId, hasReviewed]);
+  
 
   const getDueCards = (cards) => {
     const now = moment();
@@ -291,16 +311,18 @@ const AnkiPage = () => {
 
   const handleGrade = (rating) => {
     if (!currentCard) return;
-
+  
     const updatedCard = Scheduler.scheduleCard(currentCard, rating);
     const updatedCards = cards.map((card) =>
       card.id === updatedCard.id ? updatedCard : card
     );
-
+  
     setCards(updatedCards);
     setCurrentCard(updatedCard);
     setShowAnswer(false);
-
+  
+    setHasReviewed(true);
+  
     CardStorage.saveCards(updatedCards, chapterId);
   };
 
@@ -329,7 +351,7 @@ const AnkiPage = () => {
 
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} flex flex-col items-center h-full py-4`}>
-      <div className="flex justify-between gap-6 mb-4">
+      <div className="flex justify-between gap-2 mb-4">
         <Link to="/" className="size-8 rounded flex items-center justify-center text-2xl">
           <FontAwesomeIcon icon={faHome} />
         </Link>

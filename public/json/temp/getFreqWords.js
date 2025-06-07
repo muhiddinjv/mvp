@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-function getMostFrequentWords(filePath, limit) {
+function getMostCommonWords(filePath, limit) {
     // Read the JSON file
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     
@@ -39,5 +39,5 @@ function getMostFrequentWords(filePath, limit) {
 
 // Example usage
 const filePath = path.join(__dirname, 'ar.json'); // safer path
-const mostFrequentWords = getMostFrequentWords(filePath, 20);
-console.log(mostFrequentWords);
+const mostCommonWords = getMostCommonWords(filePath, 20);
+console.log(mostCommonWords);

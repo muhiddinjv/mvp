@@ -5,6 +5,7 @@ import NoPage from "./pages/NoPage";
 import HowTo from "./pages/HowTo";
 import Stories from "./pages/Stories";
 import AnkiPage from "./pages/AnkiPage";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (

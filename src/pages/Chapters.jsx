@@ -1,19 +1,35 @@
 import React, { useEffect } from 'react';
 import { useTheme, useBookmarks } from '../hooks';
 import { CardStorage, GlobalContext } from '../main';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faArrowUp, faLightbulb, faBook, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { State } from 'ts-fsrs';
 import moment from 'moment';
+import StreakBanner from '../components/StreakBanner';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Chapters() {
   const { theme } = useTheme("dark");
   const [ sortType, setSortType ] = React.useState('id');
-  const [ sortOrder, setSortOrder ] = React.useState(false);
+  const [ sortOrder, setSortOrder ] = React.useState();
+  const [lowestUnlocked, setLowestUnlocked] = React.useState(() =>
+    Number(localStorage.getItem("lowestUnlockedSurah")) || 114
+  );
   const { setChapterId, chapters, setChapters, cardCounts, setCardCounts, words } = React.useContext(GlobalContext);
   const [,, getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.streakUpdated) {
+      toast.success("Review completed! Streak updated.");
+      const updatedUnlock = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
+      setLowestUnlocked(updatedUnlock);
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
 
   const sortChapters = (data, field, ascending) => {
     return [...data].sort((a, b) => (ascending ? a[field] - b[field] : b[field] - a[field]));
@@ -25,6 +41,11 @@ function Chapters() {
     setChapters(sortChapters(chapters, type, sortOrder));
   };
 
+  // useEffect(() => {
+  //   const sorted = sortChapters(chapters, 'id', false);
+  //   setChapters(sorted);
+  // }, []);
+
   const handleBookmark = (bookmark) => {
     setChapterId(bookmark.chapterId);
     localStorage.setItem("chapterId", bookmark.chapterId);
@@ -35,8 +56,6 @@ function Chapters() {
     setChapterId(chapter.id);
     localStorage.setItem("chapterId", chapter.id);
   };
-
-  const lowestUnlocked = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
 
   useEffect(() => {
     // Recalculate counts whenever the component mounts or when chapters change
@@ -59,7 +78,10 @@ function Chapters() {
   return (
     <div className={`${theme === "dark" ? "bg-gray-800 text-slate-300" : "bg-gray-100 text-slate-800"} grid grid-cols-1 gap-2 p-3 min-h-screen items-center justify-center`}>
       <div>
-        <div className='flex text-center cursor-pointer border-x border border-gray-500 rounded-t'>
+      <StreakBanner />
+      <Toaster position="top-center" />
+      {/* <ReviewCalendar /> */}
+        <div className='flex text-center cursor-pointer border-x border border-gray-500 rounded'>
           <Link to='/howto' className='border-r border-gray-500 w-full max-w-12 py-2'>
             <FontAwesomeIcon icon={faCircleQuestion} />
           </Link>
@@ -83,9 +105,8 @@ function Chapters() {
         </ul>
       </div>
       {chapters?.map(chapter => {
-        const chapterNum = Number(chapter.id);
         // Only chapters with an id >= lowestUnlocked are unlocked.
-        const isUnlocked = chapterNum >= lowestUnlocked;
+        const isUnlocked = Number(chapter.id) >= lowestUnlocked;
         const counts = cardCounts[chapter.id] || { newCount: 0, learningCount: 0, reviewCount: 0 };
 
         return (
