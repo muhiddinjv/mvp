@@ -130,7 +130,7 @@ const SortAyas = () => {
     <div
       className={`${
         theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-black'
-      } p-6 flex flex-col items-center min-h-screen relative`}
+      } p-4 flex flex-col items-center min-h-screen relative`}
     >
       <BtnsHeader
         theme={theme}
