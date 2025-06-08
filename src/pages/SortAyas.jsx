@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useFontSize, useTheme, useVerses } from '../hooks';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BtnsHeader, Loading } from '../components';
-import { DndContext, closestCenter, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
+import { DndContext, closestCenter } from '@dnd-kit/core';
 import {
   arrayMove,
   SortableContext,
@@ -54,17 +54,7 @@ const SortAyas = () => {
   const [correctOrder, setCorrectOrder] = useState([]);
   const [items, setItems] = useState([]);
   const [checkResults, setCheckResults] = useState(null);
-  const [isDragDisabled, setIsDragDisabled] = useState(false);
-
-  const sensors = useSensors(
-    useSensor(PointerSensor, {
-      activationConstraint: {
-        delay: 250, // ms before drag starts
-        tolerance: 5, // pixels movement before drag starts
-      },
-    })
-  );
-  
+  const [isDragDisabled, setIsDragDisabled] = useState(false);  
 
   useEffect(() => {
     if (!ayahs?.verses || !ayahs.verses.length) return;
@@ -131,7 +121,7 @@ const SortAyas = () => {
     <div
       className={`${
         theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-black'
-      } py-4 flex flex-col items-center min-h-screen relative`}
+      } p-6 flex flex-col items-center min-h-screen relative`}
     >
       <BtnsHeader
         theme={theme}
@@ -152,7 +142,6 @@ const SortAyas = () => {
           <DndContext 
             collisionDetection={closestCenter} 
             onDragEnd={handleDragEnd}
-            sensors={sensors}          
           >
             <SortableContext items={items.map(item => item.id)} strategy={verticalListSortingStrategy}>
               <div className="flex flex-col items-center">
