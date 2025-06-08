@@ -17,7 +17,7 @@ function BtnsHeader({
   enlargeFont,
 }) {
   return (
-    <div className="flex justify-center w-full tools max-w-96 flex-wrap gap-3">
+    <div className="flex justify-center w-full tools max-w-96 flex-wrap gap-2">
       {getPrevChapter && (
         <Button theme={theme} fontSize="2xl" onClick={getPrevChapter} text='<' />
       )}
