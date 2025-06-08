@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useFontSize, useTheme, useVerses } from '../hooks';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BtnsHeader, Loading } from '../components';
-import { DndContext, closestCenter } from '@dnd-kit/core';
+import { DndContext, closestCenter, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
 import {
   arrayMove,
   SortableContext,
@@ -55,6 +55,16 @@ const SortAyas = () => {
   const [items, setItems] = useState([]);
   const [checkResults, setCheckResults] = useState(null);
   const [isDragDisabled, setIsDragDisabled] = useState(false);
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        delay: 250, // ms before drag starts
+        tolerance: 5, // pixels movement before drag starts
+      },
+    })
+  );
+  
 
   useEffect(() => {
     if (!ayahs?.verses || !ayahs.verses.length) return;
@@ -121,7 +131,7 @@ const SortAyas = () => {
     <div
       className={`${
         theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-black'
-      } flex flex-col items-center min-h-screen relative`}
+      } py-4 flex flex-col items-center min-h-screen relative`}
     >
       <BtnsHeader
         theme={theme}
@@ -131,7 +141,7 @@ const SortAyas = () => {
         enlargeFont={enlargeFont}
       />
   
-      <h1 className="text-2xl font-bold m-4">
+      <h1 className="text-xl font-bold m-4">
         Sort the Verses for {ayahs[language] || 'None'}
       </h1>
   
@@ -139,7 +149,11 @@ const SortAyas = () => {
         {loading ? (
           <Loading />
         ) : (
-          <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+          <DndContext 
+            collisionDetection={closestCenter} 
+            onDragEnd={handleDragEnd}
+            sensors={sensors}          
+          >
             <SortableContext items={items.map(item => item.id)} strategy={verticalListSortingStrategy}>
               <div className="flex flex-col items-center">
                 {items.map((ayah, index) => (
@@ -159,7 +173,7 @@ const SortAyas = () => {
       </div>
   
       {/* ✅ Fixed button bar */}
-      <div className="fixed bottom-0 left-0 w-full bg-gray-800 py-4 flex justify-center gap-4">
+      <div className="fixed bottom-0 left-0 w-full bg-gray-800 py-2 flex justify-center gap-4">
         <button
           onClick={handleCheck}
           className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded shadow"
