@@ -3,7 +3,7 @@ import { useTheme, useBookmarks } from '../hooks';
 import { CardStorage, GlobalContext } from '../main';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp, faLightbulb, faBook, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faLightbulb, faBook, faCircleQuestion, faUpDownLeftRight } from '@fortawesome/free-solid-svg-icons';
 import { State } from 'ts-fsrs';
 import moment from 'moment';
 import StreakBanner from '../components/StreakBanner';
@@ -128,6 +128,9 @@ function Chapters() {
               <div className='text-sm'>
                 {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
               </div>
+            </Link>
+            <Link to={`/dnd/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
+              <FontAwesomeIcon icon={faUpDownLeftRight} />
             </Link>
             {isUnlocked ? (
               <Link to={`/anki/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>

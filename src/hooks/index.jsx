@@ -34,6 +34,38 @@ export function useFontSize(defaultSize) {
   return { fontSize, enlargeFont };
 }
 
+export function useVerses(suraNum){
+  const [ayahs, setAyahs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchData = async () => {
+    const headers = { 
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    };
+    
+    try {
+      const response = await fetch("/json/quran_en.json", headers);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const json = await response.json();
+      setAyahs(json[suraNum-1]);
+    } catch (error) {
+      console.error("Fetch error:", error);
+      setAyahs([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, [suraNum]);
+
+  return { ayahs, loading };
+}
+
 export function useAyahs(suraNum) {
   const [ayahs, setAyahs] = useState([]);
   const [loading, setLoading] = useState(true);

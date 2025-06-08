@@ -5,7 +5,6 @@ import {createRoot} from 'react-dom/client'
 import { Analytics } from "@vercel/analytics/react";
 import moment from 'moment';
 import { State } from "ts-fsrs";
-import { Toaster } from 'react-hot-toast';
 
 export const CardStorage = {
   loadCards: (words, chapterId) => {

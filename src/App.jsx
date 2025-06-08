@@ -5,7 +5,7 @@ import NoPage from "./pages/NoPage";
 import HowTo from "./pages/HowTo";
 import Stories from "./pages/Stories";
 import AnkiPage from "./pages/AnkiPage";
-import { Toaster } from "react-hot-toast";
+import SortAyas from "./pages/SortAyas";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route index element={<Chapters />} />
         <Route path="/:chapterid" element={<Chapter />} />
         <Route path="/anki/:suraid" element={<AnkiPage />} />
+        <Route path="/dnd/:suraid" element={<SortAyas />} />
         <Route path="/howto" element={<HowTo />} />
         <Route path="/stories" element={<Stories />} />
         <Route path="*" element={<NoPage />} />
