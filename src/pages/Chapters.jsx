@@ -11,8 +11,11 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function Chapters() {
   const { theme } = useTheme("dark");
-  const [ sortType, setSortType ] = React.useState('id');
-  const [ sortOrder, setSortOrder ] = React.useState();
+  const [ sortType, setSortType ] = React.useState(() => localStorage.getItem('sortType') || 'id');
+  const [sortOrder, setSortOrder] = React.useState(() => {
+    const stored = localStorage.getItem('sortOrder');
+    return stored !== null ? stored === 'true' : false;
+  });
   const [lowestUnlocked, setLowestUnlocked] = React.useState(() =>
     Number(localStorage.getItem("lowestUnlockedSurah")) || 114
   );
@@ -24,27 +27,35 @@ function Chapters() {
 
   useEffect(() => {
     if (location.state?.streakUpdated) {
-      toast.success("Review completed! Streak updated.");
+      toast.success("Review completed!");
       const updatedUnlock = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
       setLowestUnlocked(updatedUnlock);
       window.history.replaceState({}, document.title);
     }
   }, [location.state]);
 
+  useEffect(() => {
+    if (chapters && chapters.length > 0) {
+      const sorted = sortChapters(chapters, sortType, sortOrder);
+      setChapters(sorted);
+    }
+  }, [chapters, sortType, sortOrder]);
+  
+
   const sortChapters = (data, field, ascending) => {
     return [...data].sort((a, b) => (ascending ? a[field] - b[field] : b[field] - a[field]));
   };
 
   const handleSortBy = (type) => {
+    const newOrder = type === sortType ? !sortOrder : false;
     setSortType(type);
-    setSortOrder(prevOrder => !prevOrder);
-    setChapters(sortChapters(chapters, type, sortOrder));
+    setSortOrder(newOrder);
+    localStorage.setItem('sortType', type);
+    localStorage.setItem('sortOrder', newOrder);
+  
+    const sorted = sortChapters(chapters, type, newOrder);
+    setChapters(sorted);
   };
-
-  // useEffect(() => {
-  //   const sorted = sortChapters(chapters, 'id', false);
-  //   setChapters(sorted);
-  // }, []);
 
   const handleBookmark = (bookmark) => {
     setChapterId(bookmark.chapterId);

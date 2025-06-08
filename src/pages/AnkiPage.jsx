@@ -1,13 +1,13 @@
 import { useState, useEffect, useContext } from "react";
 import { Rating, State, generatorParameters, fsrs } from "ts-fsrs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Speech from "react-text-to-speech";
 import moment from "moment";
 
 import { voiceText, uiLang } from "../data";
 import { useTheme } from "../hooks";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../components/Button";
 import { Loading } from "../components";
 import { CardStorage, GlobalContext } from "../main";
