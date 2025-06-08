@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useFontSize, useTheme, useVerses } from '../hooks';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BtnsHeader, Loading } from '../components';
-import { DndContext, closestCenter } from '@dnd-kit/core';
+import { DndContext, closestCenter, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
 import {
   arrayMove,
   SortableContext,
@@ -75,6 +75,15 @@ const SortAyas = () => {
     }
   }, [ayahs]);
 
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        delay: 250, // ms before drag starts
+        tolerance: 5, // pixels movement before drag starts
+      },
+    })
+  );
+
   const handleDragEnd = (event) => {
     if (isDragDisabled) return;
     const { active, over } = event;
@@ -142,6 +151,7 @@ const SortAyas = () => {
           <DndContext 
             collisionDetection={closestCenter} 
             onDragEnd={handleDragEnd}
+            sensors={sensors}
           >
             <SortableContext items={items.map(item => item.id)} strategy={verticalListSortingStrategy}>
               <div className="flex flex-col items-center">
@@ -161,7 +171,6 @@ const SortAyas = () => {
         )}
       </div>
   
-      {/* ✅ Fixed button bar */}
       <div className="fixed bottom-0 left-0 w-full bg-gray-800 py-2 flex justify-center gap-4">
         <button
           onClick={handleCheck}
