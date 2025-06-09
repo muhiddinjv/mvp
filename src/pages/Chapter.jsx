@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import MultiRangeSlider from "multi-range-slider-react";
 
@@ -10,7 +10,7 @@ import mustSayThis from '../assets/bismillah.png';
 function Chapter() {
   const { chapterid } = useParams();
   const { chapters, wordLimit, setWordLimit, showSlider, setShowSlider, language, changeLanguage } = useContext(GlobalContext);
-  const { groupedAyahs, loading } = useAyahs(chapterid);
+  const { groupedAyahs, loading } = useAyahs('surah',chapterid);
   const { fontSize, enlargeFont } = useFontSize(16);
   const { theme } = useTheme("dark");
   

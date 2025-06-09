@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "قُلْ",
+      "en": "Say",
+      "tr": "qul",
+      "ru": "Скажи:"
+    },
+    "aud": "114_001_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "أَعُوذُ",
+      "en": "I seek refuge",
+      "tr": "aʿūdhu",
+      "ru": "«Я обращаюсь за защитой"
+    },
+    "aud": "114_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "بِرَبِّ",
+      "en": "in (the) Lord",
+      "tr": "birabbi",
+      "ru": "к Господу"
+    },
+    "aud": "114_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "النَّاسِ",
+      "en": "(of) mankind",
+      "tr": "l-nāsi",
+      "ru": "людей,"
+    },
+    "aud": "114_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "مَلِكِ",
+      "en": "(The) King",
+      "tr": "maliki",
+      "ru": "Владыке"
+    },
+    "aud": "114_002_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "إِلَهِ",
+      "en": "(The) God",
+      "tr": "ilāhi",
+      "ru": "Богу"
+    },
+    "aud": "114_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "مِنْ",
+      "en": "From",
+      "tr": "min",
+      "ru": "от"
+    },
+    "aud": "114_004_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "شَرِّ",
+      "en": "(the) evil",
+      "tr": "sharri",
+      "ru": "зла"
+    },
+    "aud": "114_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "الْوَسْوَاسِ",
+      "en": "(of) the whisperer",
+      "tr": "l-waswāsi",
+      "ru": "наущателя (досл. наущения)"
+    },
+    "aud": "114_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "الْخَنَّاسِ",
+      "en": "the one who withdraws",
+      "tr": "l-khanāsi",
+      "ru": "отступающего,"
+    },
+    "aud": "114_004_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "الَّذِي",
+      "en": "The one who",
+      "tr": "alladhī",
+      "ru": "который"
+    },
+    "aud": "114_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "يُوَسْوِسُ",
+      "en": "whispers",
+      "tr": "yuwaswisu",
+      "ru": "наущает"
+    },
+    "aud": "114_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "فِي",
+      "en": "in",
+      "tr": "fī",
+      "ru": "в"
+    },
+    "aud": "114_005_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "صُدُورِ",
+      "en": "(the) breasts",
+      "tr": "ṣudūri",
+      "ru": "грудях"
+    },
+    "aud": "114_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "مِنَ",
+      "en": "From",
+      "tr": "mina",
+      "ru": "(будучи) из (числа)"
+    },
+    "aud": "114_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "الْجِنَّةِ",
+      "en": "the jinn",
+      "tr": "l-jinati",
+      "ru": "джиннов"
+    },
+    "aud": "114_006_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "وَالنَّاسِ",
+      "en": "and men",
+      "tr": "wal-nāsi",
+      "ru": "и людей»."
+    },
+    "aud": "114_006_003",
+    "img": "/img/book.png"
+  }
+]

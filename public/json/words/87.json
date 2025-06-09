@@ -1,0 +1,409 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "سَبِّحِ",
+      "en": "Glorify",
+      "tr": "sabbiḥi",
+      "ru": "Славь"
+    },
+    "aud": "087_001_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "اسْمَ",
+      "en": "(the) name",
+      "tr": "is'ma",
+      "ru": "имя"
+    },
+    "aud": "087_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "فَسَوَّى",
+      "en": "then proportioned",
+      "tr": "fasawwā",
+      "ru": "и затем соразмерил,"
+    },
+    "aud": "087_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "وَالَّذِي",
+      "en": "And the One Who",
+      "tr": "wa-alladhī",
+      "ru": "и Который"
+    },
+    "aud": "087_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "قَدَّرَ",
+      "en": "measured",
+      "tr": "qaddara",
+      "ru": "определил"
+    },
+    "aud": "087_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "أَخْرَجَ",
+      "en": "brings forth",
+      "tr": "akhraja",
+      "ru": "вывел"
+    },
+    "aud": "087_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "الْمَرْعَى",
+      "en": "the pasture",
+      "tr": "l-marʿā",
+      "ru": "пастбище"
+    },
+    "aud": "087_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "فَجَعَلَهُ",
+      "en": "And then made it",
+      "tr": "fajaʿalahu",
+      "ru": "и затем Он сделал его"
+    },
+    "aud": "087_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "غُثَاءً",
+      "en": "stubble",
+      "tr": "ghuthāan",
+      "ru": "(сухим) сором"
+    },
+    "aud": "087_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "أَحْوَى",
+      "en": "dark",
+      "tr": "aḥwā",
+      "ru": "потемневшим"
+    },
+    "aud": "087_005_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "سَنُقْرِئُكَ",
+      "en": "We will make you recite",
+      "tr": "sanuq'ri-uka",
+      "ru": "Сделаем Мы так, что ты будешь читать (Коран)"
+    },
+    "aud": "087_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "تَنْسَى",
+      "en": "you will forget",
+      "tr": "tansā",
+      "ru": "забудешь ты (его)"
+    },
+    "aud": "087_006_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "شَاءَ",
+      "en": "wills",
+      "tr": "shāa",
+      "ru": "пожелает"
+    },
+    "aud": "087_007_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "الْجَهْرَ",
+      "en": "the manifest",
+      "tr": "l-jahra",
+      "ru": "явное"
+    },
+    "aud": "087_007_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "يَخْفَى",
+      "en": "is hidden",
+      "tr": "yakhfā",
+      "ru": "скрыто"
+    },
+    "aud": "087_007_009",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "وَنُيَسِّرُكَ",
+      "en": "And We will ease you",
+      "tr": "wanuyassiruka",
+      "ru": "И облегчим Мы тебе"
+    },
+    "aud": "087_008_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "نَفَعَتِ",
+      "en": "benefits",
+      "tr": "nafaʿati",
+      "ru": "приносит пользу"
+    },
+    "aud": "087_009_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "سَيَذَّكَّرُ",
+      "en": "He will pay heed",
+      "tr": "sayadhakkaru",
+      "ru": "Внимет (увещание)"
+    },
+    "aud": "087_010_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "يَخْشَى",
+      "en": "fears (Allah)",
+      "tr": "yakhshā",
+      "ru": "боится (Аллаха)"
+    },
+    "aud": "087_010_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "وَيَتَجَنَّبُهَا",
+      "en": "And will avoid it",
+      "tr": "wayatajannabuhā",
+      "ru": "и отстранится от него"
+    },
+    "aud": "087_011_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "يَصْلَى",
+      "en": "will burn",
+      "tr": "yaṣlā",
+      "ru": "будет гореть"
+    },
+    "aud": "087_012_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "النَّارَ",
+      "en": "(in) the Fire",
+      "tr": "l-nāra",
+      "ru": "(в) Огне"
+    },
+    "aud": "087_012_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "الْكُبْرَى",
+      "en": "[the] great",
+      "tr": "l-kub'rā",
+      "ru": "Величайшем"
+    },
+    "aud": "087_012_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "يَمُوتُ",
+      "en": "he will die",
+      "tr": "yamūtu",
+      "ru": "умрёт он"
+    },
+    "aud": "087_013_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "يَحْيَى",
+      "en": "will live",
+      "tr": "yaḥyā",
+      "ru": "будет жить"
+    },
+    "aud": "087_013_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "تَزَكَّى",
+      "en": "purifies (himself)",
+      "tr": "tazakkā",
+      "ru": "очистился"
+    },
+    "aud": "087_014_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "وَذَكَرَ",
+      "en": "And remembers",
+      "tr": "wadhakara",
+      "ru": "и помнил (поминал)"
+    },
+    "aud": "087_015_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "فَصَلَّى",
+      "en": "and prays",
+      "tr": "faṣallā",
+      "ru": "и совершал молитвы"
+    },
+    "aud": "087_015_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "تُؤْثِرُونَ",
+      "en": "You prefer",
+      "tr": "tu'thirūna",
+      "ru": "вы предпочитаете"
+    },
+    "aud": "087_016_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "الْحَيَوةَ",
+      "en": "the life",
+      "tr": "l-ḥayata",
+      "ru": "жизнь"
+    },
+    "aud": "087_016_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "الدُّنْيَا",
+      "en": "(of) the world",
+      "tr": "l-dun'yā",
+      "ru": "ближайшую"
+    },
+    "aud": "087_016_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "وَالْءَاخِرَةُ",
+      "en": "While the Hereafter",
+      "tr": "wal-ākhiratu",
+      "ru": "в то время как Последняя жизнь"
+    },
+    "aud": "087_017_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "وَأَبْقَى",
+      "en": "and ever lasting",
+      "tr": "wa-abqā",
+      "ru": "и длительнее"
+    },
+    "aud": "087_017_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "الصُّحُفِ",
+      "en": "the Scriptures",
+      "tr": "l-ṣuḥufi",
+      "ru": "свитках"
+    },
+    "aud": "087_018_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "صُحُفِ",
+      "en": "(The) Scriptures",
+      "tr": "ṣuḥufi",
+      "ru": "свитках"
+    },
+    "aud": "087_019_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "إِبْرَاهِيمَ",
+      "en": "(of) Ibrahim",
+      "tr": "ib'rāhīma",
+      "ru": "Ибрахима"
+    },
+    "aud": "087_019_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "وَمُوسَى",
+      "en": "and Musa",
+      "tr": "wamūsā",
+      "ru": "и Мусы"
+    },
+    "aud": "087_019_003",
+    "img": "/img/book.png"
+  }
+]

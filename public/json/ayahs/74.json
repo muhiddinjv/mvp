@@ -1,0 +1,290 @@
+{
+  "id": 74,
+  "ar": "المدثر",
+  "tr": "Al-Muddaththir",
+  "en": "The Cloaked One",
+  "type": "meccan",
+  "total_verses": 56,
+  "verses": [
+    {
+      "id": 1,
+      "ar": "يَـٰٓأَيُّهَا ٱلۡمُدَّثِّرُ",
+      "en": "O you who covers himself [with a garment]"
+    },
+    {
+      "id": 2,
+      "ar": "قُمۡ فَأَنذِرۡ",
+      "en": "Arise and warn"
+    },
+    {
+      "id": 3,
+      "ar": "وَرَبَّكَ فَكَبِّرۡ",
+      "en": "And your Lord glorify"
+    },
+    {
+      "id": 4,
+      "ar": "وَثِيَابَكَ فَطَهِّرۡ",
+      "en": "And your clothing purify"
+    },
+    {
+      "id": 5,
+      "ar": "وَٱلرُّجۡزَ فَٱهۡجُرۡ",
+      "en": "And uncleanliness avoid"
+    },
+    {
+      "id": 6,
+      "ar": "وَلَا تَمۡنُن تَسۡتَكۡثِرُ",
+      "en": "And do not confer favor to acquire more"
+    },
+    {
+      "id": 7,
+      "ar": "وَلِرَبِّكَ فَٱصۡبِرۡ",
+      "en": "But for your Lord be patient"
+    },
+    {
+      "id": 8,
+      "ar": "فَإِذَا نُقِرَ فِي ٱلنَّاقُورِ",
+      "en": "And when the trumpet is blown"
+    },
+    {
+      "id": 9,
+      "ar": "فَذَٰلِكَ يَوۡمَئِذٖ يَوۡمٌ عَسِيرٌ",
+      "en": "That Day will be a difficult day"
+    },
+    {
+      "id": 10,
+      "ar": "عَلَى ٱلۡكَٰفِرِينَ غَيۡرُ يَسِيرٖ",
+      "en": "For the disbelievers - not easy"
+    },
+    {
+      "id": 11,
+      "ar": "ذَرۡنِي وَمَنۡ خَلَقۡتُ وَحِيدٗا",
+      "en": "Leave Me with the one I created alone"
+    },
+    {
+      "id": 12,
+      "ar": "وَجَعَلۡتُ لَهُۥ مَالٗا مَّمۡدُودٗا",
+      "en": "And to whom I granted extensive wealth"
+    },
+    {
+      "id": 13,
+      "ar": "وَبَنِينَ شُهُودٗا",
+      "en": "And children present [with him]"
+    },
+    {
+      "id": 14,
+      "ar": "وَمَهَّدتُّ لَهُۥ تَمۡهِيدٗا",
+      "en": "And spread [everything] before him, easing [his life]"
+    },
+    {
+      "id": 15,
+      "ar": "ثُمَّ يَطۡمَعُ أَنۡ أَزِيدَ",
+      "en": "Then he desires that I should add more"
+    },
+    {
+      "id": 16,
+      "ar": "كَلَّآۖ إِنَّهُۥ كَانَ لِأٓيَٰتِنَا عَنِيدٗا",
+      "en": "No! Indeed, he has been toward Our verses obstinate"
+    },
+    {
+      "id": 17,
+      "ar": "سَأُرۡهِقُهُۥ صَعُودًا",
+      "en": "I will cover him with arduous torment"
+    },
+    {
+      "id": 18,
+      "ar": "إِنَّهُۥ فَكَّرَ وَقَدَّرَ",
+      "en": "Indeed, he thought and deliberated"
+    },
+    {
+      "id": 19,
+      "ar": "فَقُتِلَ كَيۡفَ قَدَّرَ",
+      "en": "So may he be destroyed [for] how he deliberated"
+    },
+    {
+      "id": 20,
+      "ar": "ثُمَّ قُتِلَ كَيۡفَ قَدَّرَ",
+      "en": "Then may he be destroyed [for] how he deliberated"
+    },
+    {
+      "id": 21,
+      "ar": "ثُمَّ نَظَرَ",
+      "en": "Then he considered [again]"
+    },
+    {
+      "id": 22,
+      "ar": "ثُمَّ عَبَسَ وَبَسَرَ",
+      "en": "Then he frowned and scowled"
+    },
+    {
+      "id": 23,
+      "ar": "ثُمَّ أَدۡبَرَ وَٱسۡتَكۡبَرَ",
+      "en": "Then he turned back and was arrogant"
+    },
+    {
+      "id": 24,
+      "ar": "فَقَالَ إِنۡ هَٰذَآ إِلَّا سِحۡرٞ يُؤۡثَرُ",
+      "en": "And said, \"This is not but magic imitated [from others]"
+    },
+    {
+      "id": 25,
+      "ar": "إِنۡ هَٰذَآ إِلَّا قَوۡلُ ٱلۡبَشَرِ",
+      "en": "This is not but the word of a human being"
+    },
+    {
+      "id": 26,
+      "ar": "سَأُصۡلِيهِ سَقَرَ",
+      "en": "I will drive him into Saqar"
+    },
+    {
+      "id": 27,
+      "ar": "وَمَآ أَدۡرَىٰكَ مَا سَقَرُ",
+      "en": "And what can make you know what is Saqar"
+    },
+    {
+      "id": 28,
+      "ar": "لَا تُبۡقِي وَلَا تَذَرُ",
+      "en": "It lets nothing remain and leaves nothing [unburned]"
+    },
+    {
+      "id": 29,
+      "ar": "لَوَّاحَةٞ لِّلۡبَشَرِ",
+      "en": "Blackening the skins"
+    },
+    {
+      "id": 30,
+      "ar": "عَلَيۡهَا تِسۡعَةَ عَشَرَ",
+      "en": "Over it are nineteen [angels]"
+    },
+    {
+      "id": 31,
+      "ar": "وَمَا جَعَلۡنَآ أَصۡحَٰبَ ٱلنَّارِ إِلَّا مَلَـٰٓئِكَةٗۖ وَمَا جَعَلۡنَا عِدَّتَهُمۡ إِلَّا فِتۡنَةٗ لِّلَّذِينَ كَفَرُواْ لِيَسۡتَيۡقِنَ ٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ وَيَزۡدَادَ ٱلَّذِينَ ءَامَنُوٓاْ إِيمَٰنٗا وَلَا يَرۡتَابَ ٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ وَٱلۡمُؤۡمِنُونَ وَلِيَقُولَ ٱلَّذِينَ فِي قُلُوبِهِم مَّرَضٞ وَٱلۡكَٰفِرُونَ مَاذَآ أَرَادَ ٱللَّهُ بِهَٰذَا مَثَلٗاۚ كَذَٰلِكَ يُضِلُّ ٱللَّهُ مَن يَشَآءُ وَيَهۡدِي مَن يَشَآءُۚ وَمَا يَعۡلَمُ جُنُودَ رَبِّكَ إِلَّا هُوَۚ وَمَا هِيَ إِلَّا ذِكۡرَىٰ لِلۡبَشَرِ",
+      "en": "And We have not made the keepers of the Fire except angels. And We have not made their number except as a trial for those who disbelieve - that those who were given the Scripture will be convinced and those who have believed will increase in faith and those who were given the Scripture and the believers will not doubt and that those in whose hearts is hypocrisy and the disbelievers will say, \"What does Allah intend by this as an example?\" Thus does Allah leave astray whom He wills and guides whom He wills. And none knows the soldiers of your Lord except Him. And mention of the Fire is not but a reminder to humanity"
+    },
+    {
+      "id": 32,
+      "ar": "كَلَّا وَٱلۡقَمَرِ",
+      "en": "No! By the moon"
+    },
+    {
+      "id": 33,
+      "ar": "وَٱلَّيۡلِ إِذۡ أَدۡبَرَ",
+      "en": "And [by] the night when it departs"
+    },
+    {
+      "id": 34,
+      "ar": "وَٱلصُّبۡحِ إِذَآ أَسۡفَرَ",
+      "en": "And [by] the morning when it brightens"
+    },
+    {
+      "id": 35,
+      "ar": "إِنَّهَا لَإِحۡدَى ٱلۡكُبَرِ",
+      "en": "Indeed, the Fire is of the greatest [afflictions]"
+    },
+    {
+      "id": 36,
+      "ar": "نَذِيرٗا لِّلۡبَشَرِ",
+      "en": "As a warning to humanity"
+    },
+    {
+      "id": 37,
+      "ar": "لِمَن شَآءَ مِنكُمۡ أَن يَتَقَدَّمَ أَوۡ يَتَأَخَّرَ",
+      "en": "To whoever wills among you to proceed or stay behind"
+    },
+    {
+      "id": 38,
+      "ar": "كُلُّ نَفۡسِۭ بِمَا كَسَبَتۡ رَهِينَةٌ",
+      "en": "Every soul, for what it has earned, will be retained"
+    },
+    {
+      "id": 39,
+      "ar": "إِلَّآ أَصۡحَٰبَ ٱلۡيَمِينِ",
+      "en": "Except the companions of the right"
+    },
+    {
+      "id": 40,
+      "ar": "فِي جَنَّـٰتٖ يَتَسَآءَلُونَ",
+      "en": "[Who will be] in gardens, questioning each other"
+    },
+    {
+      "id": 41,
+      "ar": "عَنِ ٱلۡمُجۡرِمِينَ",
+      "en": "About the criminals"
+    },
+    {
+      "id": 42,
+      "ar": "مَا سَلَكَكُمۡ فِي سَقَرَ",
+      "en": "[And asking them], \"What put you into Saqar"
+    },
+    {
+      "id": 43,
+      "ar": "قَالُواْ لَمۡ نَكُ مِنَ ٱلۡمُصَلِّينَ",
+      "en": "They will say, \"We were not of those who prayed"
+    },
+    {
+      "id": 44,
+      "ar": "وَلَمۡ نَكُ نُطۡعِمُ ٱلۡمِسۡكِينَ",
+      "en": "Nor did we used to feed the poor"
+    },
+    {
+      "id": 45,
+      "ar": "وَكُنَّا نَخُوضُ مَعَ ٱلۡخَآئِضِينَ",
+      "en": "And we used to enter into vain discourse with those who engaged [in it]"
+    },
+    {
+      "id": 46,
+      "ar": "وَكُنَّا نُكَذِّبُ بِيَوۡمِ ٱلدِّينِ",
+      "en": "And we used to deny the Day of Recompense"
+    },
+    {
+      "id": 47,
+      "ar": "حَتَّىٰٓ أَتَىٰنَا ٱلۡيَقِينُ",
+      "en": "Until there came to us the certainty"
+    },
+    {
+      "id": 48,
+      "ar": "فَمَا تَنفَعُهُمۡ شَفَٰعَةُ ٱلشَّـٰفِعِينَ",
+      "en": "So there will not benefit them the intercession of [any] intercessors"
+    },
+    {
+      "id": 49,
+      "ar": "فَمَا لَهُمۡ عَنِ ٱلتَّذۡكِرَةِ مُعۡرِضِينَ",
+      "en": "Then what is [the matter] with them that they are, from the reminder, turning away"
+    },
+    {
+      "id": 50,
+      "ar": "كَأَنَّهُمۡ حُمُرٞ مُّسۡتَنفِرَةٞ",
+      "en": "As if they were alarmed donkeys"
+    },
+    {
+      "id": 51,
+      "ar": "فَرَّتۡ مِن قَسۡوَرَةِۭ",
+      "en": "Fleeing from a lion"
+    },
+    {
+      "id": 52,
+      "ar": "بَلۡ يُرِيدُ كُلُّ ٱمۡرِيٕٖ مِّنۡهُمۡ أَن يُؤۡتَىٰ صُحُفٗا مُّنَشَّرَةٗ",
+      "en": "Rather, every person among them desires that he would be given scriptures spread about"
+    },
+    {
+      "id": 53,
+      "ar": "كَلَّاۖ بَل لَّا يَخَافُونَ ٱلۡأٓخِرَةَ",
+      "en": "No! But they do not fear the Hereafter"
+    },
+    {
+      "id": 54,
+      "ar": "كَلَّآ إِنَّهُۥ تَذۡكِرَةٞ",
+      "en": "No! Indeed, the Qur'an is a reminder"
+    },
+    {
+      "id": 55,
+      "ar": "فَمَن شَآءَ ذَكَرَهُۥ",
+      "en": "Then whoever wills will remember it"
+    },
+    {
+      "id": 56,
+      "ar": "وَمَا يَذۡكُرُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُۚ هُوَ أَهۡلُ ٱلتَّقۡوَىٰ وَأَهۡلُ ٱلۡمَغۡفِرَةِ",
+      "en": "And they will not remember except that Allah wills. He is worthy of fear and adequate for [granting] forgiveness"
+    }
+  ]
+}

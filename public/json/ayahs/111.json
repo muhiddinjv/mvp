@@ -1,0 +1,35 @@
+{
+  "id": 111,
+  "ar": "المسد",
+  "tr": "Al-Masad",
+  "en": "The Palm Fiber",
+  "type": "meccan",
+  "total_verses": 5,
+  "verses": [
+    {
+      "id": 1,
+      "ar": "تَبَّتۡ يَدَآ أَبِي لَهَبٖ وَتَبَّ",
+      "en": "May the hands of Abu Lahab be ruined, and ruined is he"
+    },
+    {
+      "id": 2,
+      "ar": "مَآ أَغۡنَىٰ عَنۡهُ مَالُهُۥ وَمَا كَسَبَ",
+      "en": "His wealth will not avail him or that which he gained"
+    },
+    {
+      "id": 3,
+      "ar": "سَيَصۡلَىٰ نَارٗا ذَاتَ لَهَبٖ",
+      "en": "He will [enter to] burn in a Fire of [blazing] flame"
+    },
+    {
+      "id": 4,
+      "ar": "وَٱمۡرَأَتُهُۥ حَمَّالَةَ ٱلۡحَطَبِ",
+      "en": "And his wife [as well] - the carrier of firewood"
+    },
+    {
+      "id": 5,
+      "ar": "فِي جِيدِهَا حَبۡلٞ مِّن مَّسَدِۭ",
+      "en": "Around her neck is a rope of [twisted] fiber"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useFontSize, useTheme, useVerses } from '../hooks';
+import { useAyahs, useFontSize, useTheme } from '../hooks';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BtnsHeader, Loading } from '../components';
 import { DndContext, closestCenter, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
@@ -48,7 +48,8 @@ const SortAyas = () => {
   const navigate = useNavigate();
   const { theme } = useTheme('dark');
   const { fontSize, enlargeFont } = useFontSize(16);
-  const { ayahs, loading } = useVerses(Number(suraid));
+  const { ayahs, loading } = useAyahs('ayahs',suraid);
+  console.log('ayahs :>> ', ayahs);
   const { language, changeLanguage } = useContext(GlobalContext);
 
   const [correctOrder, setCorrectOrder] = useState([]);

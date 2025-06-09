@@ -1,0 +1,25 @@
+{
+  "id": 108,
+  "ar": "الكوثر",
+  "tr": "Al-Kawthar",
+  "en": "The Abundance",
+  "type": "meccan",
+  "total_verses": 3,
+  "verses": [
+    {
+      "id": 1,
+      "ar": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
+      "en": "Indeed, We have granted you, [O Muhammad], al-Kawthar"
+    },
+    {
+      "id": 2,
+      "ar": "فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ",
+      "en": "So pray to your Lord and sacrifice [to Him alone]"
+    },
+    {
+      "id": 3,
+      "ar": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
+      "en": "Indeed, your enemy is the one cut off"
+    }
+  ]
+}

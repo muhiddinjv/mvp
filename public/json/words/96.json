@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "اقْرَأْ",
+      "en": "Read",
+      "tr": "iq'ra",
+      "ru": "Читай"
+    },
+    "aud": "096_001_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "بِاسْمِ",
+      "en": "in (the) name",
+      "tr": "bi-is'mi",
+      "ru": "с именем"
+    },
+    "aud": "096_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "عَلَقٍ",
+      "en": "a clinging substance",
+      "tr": "ʿalaqin",
+      "ru": "сгустка"
+    },
+    "aud": "096_002_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "وَرَبُّكَ",
+      "en": "and your Lord",
+      "tr": "warabbuka",
+      "ru": "и Господь твой"
+    },
+    "aud": "096_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "الْأَكْرَمُ",
+      "en": "(is) the Most Generous",
+      "tr": "l-akramu",
+      "ru": "Щедрейший"
+    },
+    "aud": "096_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "عَلَّمَ",
+      "en": "taught",
+      "tr": "ʿallama",
+      "ru": "научил"
+    },
+    "aud": "096_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "بِالْقَلَمِ",
+      "en": "by the pen",
+      "tr": "bil-qalami",
+      "ru": "пером"
+    },
+    "aud": "096_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "يَعْلَمْ",
+      "en": "he knew",
+      "tr": "yaʿlam",
+      "ru": "знал он."
+    },
+    "aud": "096_005_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "لَيَطْغَى",
+      "en": "surely transgresses",
+      "tr": "layaṭghā",
+      "ru": "преступает границы"
+    },
+    "aud": "096_006_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "أَنْ",
+      "en": "Because",
+      "tr": "an",
+      "ru": "от того, что"
+    },
+    "aud": "096_007_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "رَءَاهُ",
+      "en": "he sees himself",
+      "tr": "raāhu",
+      "ru": "увидел [посчитал] (себя)"
+    },
+    "aud": "096_007_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "اسْتَغْنَى",
+      "en": "self-sufficient",
+      "tr": "is'taghnā",
+      "ru": "ни в чём не нуждающимся"
+    },
+    "aud": "096_007_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "إِلَى",
+      "en": "to",
+      "tr": "ilā",
+      "ru": "к"
+    },
+    "aud": "096_008_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "الرُّجْعَى",
+      "en": "(is) the return",
+      "tr": "l-ruj'ʿā",
+      "ru": "возвращение"
+    },
+    "aud": "096_008_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "يَنْهَى",
+      "en": "forbids",
+      "tr": "yanhā",
+      "ru": "препятствует"
+    },
+    "aud": "096_009_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "عَبْدًا",
+      "en": "A slave",
+      "tr": "ʿabdan",
+      "ru": "рабу"
+    },
+    "aud": "096_010_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "صَلَّى",
+      "en": "he prays",
+      "tr": "ṣallā",
+      "ru": "он молится"
+    },
+    "aud": "096_010_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "إِنْ",
+      "en": "if",
+      "tr": "in",
+      "ru": "если"
+    },
+    "aud": "096_011_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "الْهُدَى",
+      "en": "[the] guidance",
+      "tr": "l-hudā",
+      "ru": "истинном пути"
+    },
+    "aud": "096_011_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "أَوْ",
+      "en": "Or",
+      "tr": "aw",
+      "ru": "Или"
+    },
+    "aud": "096_012_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "أَمَرَ",
+      "en": "he enjoins",
+      "tr": "amara",
+      "ru": "приказывал"
+    },
+    "aud": "096_012_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "بِالتَّقْوَى",
+      "en": "[of the] righteousness",
+      "tr": "bil-taqwā",
+      "ru": "остерегаться (наказания Аллаха) [досл. остережение]"
+    },
+    "aud": "096_012_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "كَذَّبَ",
+      "en": "he denies",
+      "tr": "kadhaba",
+      "ru": "посчитал он ложью"
+    },
+    "aud": "096_013_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "وَتَوَلَّى",
+      "en": "and turns away",
+      "tr": "watawallā",
+      "ru": "и отвернулся"
+    },
+    "aud": "096_013_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "يَرَى",
+      "en": "sees",
+      "tr": "yarā",
+      "ru": "видит"
+    },
+    "aud": "096_014_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "لَئِنْ",
+      "en": "If",
+      "tr": "la-in",
+      "ru": "Клянусь, если"
+    },
+    "aud": "096_015_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "يَنْتَهِ",
+      "en": "he desists",
+      "tr": "yantahi",
+      "ru": "перестанет он,"
+    },
+    "aud": "096_015_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "لَنَسْفَعًا",
+      "en": "surely We will drag him",
+      "tr": "lanasfaʿan",
+      "ru": "(то) однозначно, схватим Мы"
+    },
+    "aud": "096_015_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "بِالنَّاصِيَةِ",
+      "en": "by the forelock",
+      "tr": "bil-nāṣiyati",
+      "ru": "за хохол –"
+    },
+    "aud": "096_015_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "نَاصِيَةٍ",
+      "en": "A forelock",
+      "tr": "nāṣiyatin",
+      "ru": "хохол"
+    },
+    "aud": "096_016_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "كَاذِبَةٍ",
+      "en": "lying",
+      "tr": "kādhibatin",
+      "ru": "лживый"
+    },
+    "aud": "096_016_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "خَاطِئَةٍ",
+      "en": "sinful",
+      "tr": "khāṭi-atin",
+      "ru": "грешный"
+    },
+    "aud": "096_016_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "فَلْيَدْعُ",
+      "en": "Then let him call",
+      "tr": "falyadʿu",
+      "ru": "Пусть же позовёт он"
+    },
+    "aud": "096_017_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "نَادِيَهُ",
+      "en": "his associates",
+      "tr": "nādiyahu",
+      "ru": "своё сборище"
+    },
+    "aud": "096_017_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "سَنَدْعُ",
+      "en": "We will call",
+      "tr": "sanadʿu",
+      "ru": "а Мы позовём"
+    },
+    "aud": "096_018_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "الزَّبَانِيَةَ",
+      "en": "the Angels of Hell",
+      "tr": "l-zabāniyata",
+      "ru": "адских стражей!"
+    },
+    "aud": "096_018_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "تُطِعْهُ",
+      "en": "obey him",
+      "tr": "tuṭiʿ'hu",
+      "ru": "подчиняйся ему,"
+    },
+    "aud": "096_019_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 38,
+    "text": {
+      "ar": "وَاسْجُدْ",
+      "en": "But prostrate",
+      "tr": "wa-us'jud",
+      "ru": "преклоняйся ниц (пред Аллахом)"
+    },
+    "aud": "096_019_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 39,
+    "text": {
+      "ar": "وَاقْتَرِبْ",
+      "en": "and draw near (to Allah)",
+      "tr": "wa-iq'tarib",
+      "ru": "и приближайся (к Нему)!"
+    },
+    "aud": "096_019_005",
+    "img": "/img/book.png"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "مَالِكِ",
+      "en": "Master",
+      "tr": "māliki",
+      "ru": "Владыке"
+    },
+    "aud": "001_004_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "إِيَّاكَ",
+      "en": "You Alone",
+      "tr": "iyyāka",
+      "ru": "(Только) Тебе"
+    },
+    "aud": "001_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "وَإِيَّاكَ",
+      "en": "and You Alone",
+      "tr": "wa-iyyāka",
+      "ru": "и (только) у Тебя"
+    },
+    "aud": "001_005_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "نَسْتَعِينُ",
+      "en": "we ask for help",
+      "tr": "nastaʿīnu",
+      "ru": "просим помощи!"
+    },
+    "aud": "001_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "اهْدِنَا",
+      "en": "Guide us",
+      "tr": "ih'dinā",
+      "ru": "Веди нас"
+    },
+    "aud": "001_006_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "صِرَاطَ",
+      "en": "(The) path",
+      "tr": "ṣirāṭa",
+      "ru": "Путём"
+    },
+    "aud": "001_007_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "الْمَغْضُوبِ",
+      "en": "those who earned (Your) wrath",
+      "tr": "l-maghḍūbi",
+      "ru": "(тех, которые) под гневом (Твоим),"
+    },
+    "aud": "001_007_006",
+    "img": "/img/book.png"
+  }
+]

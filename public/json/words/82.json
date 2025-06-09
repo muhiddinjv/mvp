@@ -1,0 +1,409 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "انْفَطَرَتْ",
+      "en": "(is) cleft asunder",
+      "tr": "infaṭarat",
+      "ru": "разверзнётся,"
+    },
+    "aud": "082_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "الْكَوَاكِبُ",
+      "en": "the stars",
+      "tr": "l-kawākibu",
+      "ru": "небесные тела"
+    },
+    "aud": "082_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "انْتَثَرَتْ",
+      "en": "scatter",
+      "tr": "intatharat",
+      "ru": "осыплются"
+    },
+    "aud": "082_002_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "الْبِحَارُ",
+      "en": "the seas",
+      "tr": "l-biḥāru",
+      "ru": "моря"
+    },
+    "aud": "082_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "فُجِّرَتْ",
+      "en": "are made to gush forth",
+      "tr": "fujjirat",
+      "ru": "будут перемешаны"
+    },
+    "aud": "082_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "الْقُبُورُ",
+      "en": "the graves",
+      "tr": "l-qubūru",
+      "ru": "могилы"
+    },
+    "aud": "082_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "بُعْثِرَتْ",
+      "en": "are overturned",
+      "tr": "buʿ'thirat",
+      "ru": "будут перевёрнуты"
+    },
+    "aud": "082_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "عَلِمَتْ",
+      "en": "Will know",
+      "tr": "ʿalimat",
+      "ru": "узнает"
+    },
+    "aud": "082_005_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "نَفْسٌ",
+      "en": "a soul",
+      "tr": "nafsun",
+      "ru": "(каждая) душа,"
+    },
+    "aud": "082_005_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "قَدَّمَتْ",
+      "en": "it has sent forth",
+      "tr": "qaddamat",
+      "ru": "уготовала она наперёд"
+    },
+    "aud": "082_005_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "وَأَخَّرَتْ",
+      "en": "and left behind",
+      "tr": "wa-akharat",
+      "ru": "и что оставила позади"
+    },
+    "aud": "082_005_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "غَرَّكَ",
+      "en": "has deceived you",
+      "tr": "gharraka",
+      "ru": "обольстило тебя"
+    },
+    "aud": "082_006_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "بِرَبِّكَ",
+      "en": "concerning your Lord",
+      "tr": "birabbika",
+      "ru": "относительно Господа твоего"
+    },
+    "aud": "082_006_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "الْكَرِيمِ",
+      "en": "the Most Noble",
+      "tr": "l-karīmi",
+      "ru": "Великочестивого"
+    },
+    "aud": "082_006_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "خَلَقَكَ",
+      "en": "created you",
+      "tr": "khalaqaka",
+      "ru": "сотворил тебя,"
+    },
+    "aud": "082_007_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "فَسَوَّاكَ",
+      "en": "then fashioned you",
+      "tr": "fasawwāka",
+      "ru": "и выровнял тебя"
+    },
+    "aud": "082_007_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "فَعَدَلَكَ",
+      "en": "then balanced you",
+      "tr": "faʿadalaka",
+      "ru": "и соразмерил тебя"
+    },
+    "aud": "082_007_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "أَيِّ",
+      "en": "whatever",
+      "tr": "ayyi",
+      "ru": "таком"
+    },
+    "aud": "082_008_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "صُورَةٍ",
+      "en": "form",
+      "tr": "ṣūratin",
+      "ru": "виде,"
+    },
+    "aud": "082_008_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "رَكَّبَكَ",
+      "en": "He assembled you",
+      "tr": "rakkabaka",
+      "ru": "устроил Он тебя"
+    },
+    "aud": "082_008_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "عَلَيْكُمْ",
+      "en": "over you",
+      "tr": "ʿalaykum",
+      "ru": "(есть) над вами,"
+    },
+    "aud": "082_010_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "لَحَافِظِينَ",
+      "en": "(are) surely guardians",
+      "tr": "laḥāfiẓīna",
+      "ru": "однозначно, наблюдающие,"
+    },
+    "aud": "082_010_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "كِرَامًا",
+      "en": "Noble",
+      "tr": "kirāman",
+      "ru": "почтенные"
+    },
+    "aud": "082_011_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "كَاتِبِينَ",
+      "en": "recording",
+      "tr": "kātibīna",
+      "ru": "писцы"
+    },
+    "aud": "082_011_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "يَعْلَمُونَ",
+      "en": "They know",
+      "tr": "yaʿlamūna",
+      "ru": "Знают они,"
+    },
+    "aud": "082_012_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "تَفْعَلُونَ",
+      "en": "you do",
+      "tr": "tafʿalūna",
+      "ru": "вы делаете."
+    },
+    "aud": "082_012_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "الْفُجَّارَ",
+      "en": "the wicked",
+      "tr": "l-fujāra",
+      "ru": "грехолюбы,"
+    },
+    "aud": "082_014_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "جَحِيمٍ",
+      "en": "Hellfire",
+      "tr": "jaḥīmin",
+      "ru": "огне!"
+    },
+    "aud": "082_014_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "يَصْلَوْنَهَا",
+      "en": "They will burn (in) it",
+      "tr": "yaṣlawnahā",
+      "ru": "Они будут гореть там"
+    },
+    "aud": "082_015_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "عَنْهَا",
+      "en": "from it",
+      "tr": "ʿanhā",
+      "ru": "от него"
+    },
+    "aud": "082_016_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "بِغَائِبِينَ",
+      "en": "(will be) absent",
+      "tr": "bighāibīna",
+      "ru": "скрывшимися [не скроются]"
+    },
+    "aud": "082_016_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "يَوْمُ",
+      "en": "(is the) Day",
+      "tr": "yawmu",
+      "ru": "День"
+    },
+    "aud": "082_017_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "تَمْلِكُ",
+      "en": "will have power",
+      "tr": "tamliku",
+      "ru": "владеет"
+    },
+    "aud": "082_019_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "لِنَفْسٍ",
+      "en": "for a soul",
+      "tr": "linafsin",
+      "ru": "для (другой) души,"
+    },
+    "aud": "082_019_005",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "شَيْئًا",
+      "en": "anything",
+      "tr": "shayan",
+      "ru": "ничем,"
+    },
+    "aud": "082_019_006",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "وَالْأَمْرُ",
+      "en": "and the Command",
+      "tr": "wal-amru",
+      "ru": "а вся власть"
+    },
+    "aud": "082_019_007",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "لِلَّهِ",
+      "en": "(will be) with Allah",
+      "tr": "lillahi",
+      "ru": "принадлежит Аллаху."
+    },
+    "aud": "082_019_009",
+    "img": "/img/book.png"
+  }
+]

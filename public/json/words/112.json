@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "text": {
+      "ar": "هُوَ",
+      "en": "He",
+      "tr": "huwa",
+      "ru": "«Он,"
+    },
+    "aud": "112_001_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "اللَّهُ",
+      "en": "(is) Allah",
+      "tr": "l-lahu",
+      "ru": "Аллах,"
+    },
+    "aud": "112_001_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "أَحَدٌ",
+      "en": "the One",
+      "tr": "aḥadun",
+      "ru": "один,"
+    },
+    "aud": "112_001_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "الصَّمَدُ",
+      "en": "the Eternal the Absolute",
+      "tr": "l-ṣamadu",
+      "ru": "Тот, в Котором все нуждаются"
+    },
+    "aud": "112_002_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "لَمْ",
+      "en": "Not",
+      "tr": "lam",
+      "ru": "не"
+    },
+    "aud": "112_003_001",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "يَلِدْ",
+      "en": "He begets",
+      "tr": "yalid",
+      "ru": "родил Он"
+    },
+    "aud": "112_003_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "وَلَمْ",
+      "en": "and not",
+      "tr": "walam",
+      "ru": "и не"
+    },
+    "aud": "112_003_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "يُولَدْ",
+      "en": "He is begotten",
+      "tr": "yūlad",
+      "ru": "был Он рождён"
+    },
+    "aud": "112_003_004",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "يَكُنْ",
+      "en": "is",
+      "tr": "yakun",
+      "ru": "был"
+    },
+    "aud": "112_004_002",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "لَهُ",
+      "en": "for Him",
+      "tr": "lahu",
+      "ru": "Ему"
+    },
+    "aud": "112_004_003",
+    "img": "/img/book.png"
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "كُفُوًا",
+      "en": "equivalent",
+      "tr": "kufuwan",
+      "ru": "равен"
+    },
+    "aud": "112_004_004",
+    "img": "/img/book.png"
+  }
+]
