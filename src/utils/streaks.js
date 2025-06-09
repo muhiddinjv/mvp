@@ -2,15 +2,24 @@ export function getTodayStr() {
   return new Date().toISOString().slice(0, 10);
 }
 
-// 🔁 Session Streak Logic
+function getYesterdayStr() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+
+// 🔁 Session Streak Logic (resets only if you skip a day)
 export function getSessionStreak() {
   const today = getTodayStr();
+  const yesterday = getYesterdayStr();
+
   const saved = JSON.parse(localStorage.getItem("session_meta")) || {
-    date: today,
+    date: null,
     count: 0,
   };
 
-  if (saved.date !== today) {
+  // Reset only if last session was not yesterday or today
+  if (saved.date !== today && saved.date !== yesterday) {
     saved.count = 0;
     saved.date = today;
     localStorage.setItem("session_meta", JSON.stringify(saved));
@@ -27,7 +36,6 @@ export function increaseSessionStreak() {
   };
 
   if (saved.date !== today) {
-    saved.count = 0;
     saved.date = today;
   }
 
@@ -53,11 +61,9 @@ export function markDailyStreakCompleted() {
 
   if (saved.lastDate === today) return; // already counted today
 
-  const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
-  const yestStr = yesterday.toISOString().slice(0, 10);
+  const yesterday = getYesterdayStr();
 
-  const newCount = saved.lastDate === yestStr ? saved.count + 1 : 1;
+  const newCount = saved.lastDate === yesterday ? saved.count + 1 : 1;
 
   localStorage.setItem(
     "daily_streak",
