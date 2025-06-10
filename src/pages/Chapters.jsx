@@ -32,15 +32,7 @@ function Chapters() {
       setLowestUnlocked(updatedUnlock);
       window.history.replaceState({}, document.title);
     }
-  }, [location.state]);
-
-  useEffect(() => {
-    if (chapters && chapters.length > 0) {
-      const sorted = sortChapters(chapters, sortType, sortOrder);
-      setChapters(sorted);
-    }
-  }, [sortType, sortOrder]);
-  
+  }, [location.state]);  
 
   const sortChapters = (data, field, ascending) => {
     return [...data].sort((a, b) => (ascending ? a[field] - b[field] : b[field] - a[field]));
