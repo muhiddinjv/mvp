@@ -11,6 +11,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { GlobalContext } from '../main';
+import { increaseSessionStreak, markDailyStreakCompleted } from '../utils/streaks';
 
 const SortableItem = ({ id, text, isCorrect, disabled, fontSize }) => {
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
@@ -109,7 +110,9 @@ const SortAyas = () => {
       setIsDragDisabled(true);
       const audio = new Audio('/aud/sound/treasure.mp3');
       audio.play();
-      setTimeout(() => navigate('/'), 2000);
+      increaseSessionStreak();
+      markDailyStreakCompleted();
+      setTimeout(() => navigate('/',{ state: { streakUpdated: true }}), 2000);
     }
   };
 
