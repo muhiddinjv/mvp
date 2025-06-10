@@ -97,26 +97,37 @@ function GlobalProvider({ children }){
   }, []);
 
   useEffect(() => {
+    if (chapters.length === 0) return;
+  
     fetch(`/json/words.json`)
       .then((res) => res.json())
       .then((json) => {
         setWords(json);
-        // Load cards for each chapter
+  
+        const allCards = [];
         const newCardCounts = {};
+  
         for (const chapter of chapters) {
           const storedCards = CardStorage.loadCards(json[chapter.id], chapter.id);
-          setCards(prevCards => [...prevCards, ...storedCards]);
-
+          allCards.push(...storedCards);
+  
           const newCount = storedCards.filter(card => card.state === State.New).length;
-          const learningCount = storedCards.filter(card => (card.state === State.Learning || card.state === State.Relearning) && moment(card.due).isSameOrBefore(moment())).length;
-          const reviewCount = storedCards.filter(card => card.state === State.Review && moment(card.due).isSameOrBefore(moment())).length;
-
+          const learningCount = storedCards.filter(card => 
+            (card.state === State.Learning || card.state === State.Relearning) && moment(card.due).isSameOrBefore(moment())
+          ).length;
+          const reviewCount = storedCards.filter(card => 
+            card.state === State.Review && moment(card.due).isSameOrBefore(moment())
+          ).length;
+  
           newCardCounts[chapter.id] = { newCount, learningCount, reviewCount };
         }
+  
+        setCards(allCards);
         setCardCounts(newCardCounts);
       })
       .catch((err) => console.error("Error loading words:", err));
-  }, [chapters]);
+  }, [chapters.length]);
+  
 
   return (
     <GlobalContext.Provider value={{ 
@@ -149,5 +160,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <Analytics />
         </GlobalProvider>
       </React.StrictMode>
-    )}
+    )
+  }
 });

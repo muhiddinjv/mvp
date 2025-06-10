@@ -102,7 +102,7 @@ function Chapter() {
           fontSize={fontSize}
           enlargeFont={enlargeFont}
         />
-        <div className={`${showSlider && 'hidden'} w-full mt-4 max-w-96`}>
+        <div className={`${showSlider ? 'hidden' : undefined} w-full mt-4 max-w-96`}>
           <div className="flex items-center justify-between mb-2">
             <BtnsRange
               value={minValue}

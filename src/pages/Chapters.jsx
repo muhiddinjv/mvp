@@ -39,7 +39,7 @@ function Chapters() {
       const sorted = sortChapters(chapters, sortType, sortOrder);
       setChapters(sorted);
     }
-  }, [chapters, sortType, sortOrder]);
+  }, [sortType, sortOrder]);
   
 
   const sortChapters = (data, field, ascending) => {
@@ -103,7 +103,7 @@ function Chapters() {
             <FontAwesomeIcon icon={faLightbulb} />
           </Link>
         </div>
-        <ul className={`${bookmarks.length === 0 && 'hidden'} border-x border-b border-gray-500 rounded-b p-1 flex justify-center flex-wrap`}>
+        <ul className={`${bookmarks.length === 0 ? 'hidden' : undefined} border-x border-b border-gray-500 rounded-b p-1 flex justify-center flex-wrap`}>
           {getParsedBookmarks()
             .filter(bookmark => chapters.some(chapter => chapter.id === bookmark.chapterId))
             .map(bookmark => (
