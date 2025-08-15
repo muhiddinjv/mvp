@@ -1,140 +1,106 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { useAyahs, useFontSize, useTheme } from '../hooks';
+import React, { useContext, useEffect, useMemo, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { BtnsHeader, Loading } from '../components';
 import { DndContext, closestCenter, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
-import {
-  arrayMove,
-  SortableContext,
-  useSortable,
-  verticalListSortingStrategy,
-} from '@dnd-kit/sortable';
-import { CSS } from '@dnd-kit/utilities';
+import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-kit/sortable';
+
 import { GlobalContext } from '../main';
-import { increaseSessionStreak, markDailyStreakCompleted } from '../utils/streaks';
+import { useAyahs, useFontSize, useTheme, useChunkNavigation } from '../hooks';
+import { increaseSessionStreak, markDailyStreakCompleted, shuffleArray } from '../utils/streaks';
 
-const SortableItem = ({ id, text, isCorrect, disabled, fontSize }) => {
-  const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
-  const style = {
-    transform: CSS.Transform.toString(transform),
-    transition,
-    opacity: disabled ? 0.5 : 1,
-    cursor: disabled ? 'default' : 'grab',
-    touchAction: disabled ? 'auto' : 'none',
-    fontSize
-  };
+import { BtnsHeader, Loading, SortableItem } from '../components';
 
-  return (
-    <div
-      ref={setNodeRef}
-      {...(disabled ? {} : { ...attributes, ...listeners })}
-      style={style}
-      className={`w-full max-w-sm p-3 m-2 rounded shadow text-center text-lg border-2
-        ${
-          isCorrect === true
-            ? 'border-green-500'
-            : isCorrect === false
-            ? 'border-red-500'
-            : 'border-gray-300'
-        }
-        bg-white dark:bg-gray-700 dark:text-white`}
-    >
-      {text}
-    </div>
-  );
-};
+const CHUNK_SIZE = 10;
 
 const SortAyas = () => {
   const { suraid } = useParams();
   const navigate = useNavigate();
   const { theme } = useTheme('dark');
   const { fontSize, enlargeFont } = useFontSize(16);
-  const { ayahs, loading } = useAyahs('ayahs',suraid);
+  const { ayahs, loading } = useAyahs('ayahs', suraid);
   const { language, changeLanguage } = useContext(GlobalContext);
 
-  const [correctOrder, setCorrectOrder] = useState([]);
   const [items, setItems] = useState([]);
+  const [correctOrder, setCorrectOrder] = useState([]);
+  const [currentChunk, setCurrentChunk] = useState(0);
   const [checkResults, setCheckResults] = useState(null);
-  const [isDragDisabled, setIsDragDisabled] = useState(false);  
+  const [isDragDisabled, setIsDragDisabled] = useState(false);
+
+  const sensors = useSensors(useSensor(PointerSensor, {
+    activationConstraint: { delay: 250, tolerance: 5 }
+  }));
+
+  const { totalChunks, getChunk } = useChunkNavigation(items, CHUNK_SIZE, currentChunk);
+  const currentItems = useMemo(() => getChunk(), [getChunk]);
+  const correctChunk = useMemo(() => correctOrder.slice(currentChunk * CHUNK_SIZE, (currentChunk + 1) * CHUNK_SIZE), [correctOrder, currentChunk]);
 
   useEffect(() => {
     if (!ayahs?.verses || !ayahs.verses.length) return;
 
-    setCorrectOrder(ayahs.verses);
+    const verses = ayahs.verses;
+    setCorrectOrder(verses);
 
     const saved = JSON.parse(localStorage.getItem('dnd_order') || 'null');
-    if (saved && Array.isArray(saved) && saved.length === ayahs.verses.length) {
+    if (saved && Array.isArray(saved) && saved.length === verses.length) {
       setItems(saved);
     } else {
-      const shuffled = [...ayahs.verses]
-        .map(value => ({ value, sort: Math.random() }))
-        .sort((a, b) => a.sort - b.sort)
-        .map(obj => obj.value);
-
+      const shuffled = verses.reduce((acc, _, i) => {
+        if (i % CHUNK_SIZE === 0) {
+          const chunk = verses.slice(i, i + CHUNK_SIZE);
+          acc.push(...shuffleArray(chunk));
+        }
+        return acc;
+      }, []);
       setItems(shuffled);
       localStorage.setItem('dnd_order', JSON.stringify(shuffled));
     }
   }, [ayahs]);
 
-  const sensors = useSensors(
-    useSensor(PointerSensor, {
-      activationConstraint: {
-        delay: 250, // ms before drag starts
-        tolerance: 5, // pixels movement before drag starts
-      },
-    })
-  );
+  const handleDragEnd = useCallback(({ active, over }) => {
+    if (!over || active.id === over.id || isDragDisabled) return;
 
-  const handleDragEnd = (event) => {
-    if (isDragDisabled) return;
-    const { active, over } = event;
-    if (!over || active.id === over.id) return;
+    const oldIndex = currentItems.findIndex(i => i.id === active.id);
+    const newIndex = currentItems.findIndex(i => i.id === over.id);
+    if (oldIndex === -1 || newIndex === -1) return;
 
-    const oldIndex = items.findIndex(item => item.id === active.id);
-    const newIndex = items.findIndex(item => item.id === over.id);
-    const newItems = arrayMove(items, oldIndex, newIndex);
+    const reordered = arrayMove(currentItems, oldIndex, newIndex);
+    const newItems = [...items];
+    reordered.forEach((item, i) => newItems[currentChunk * CHUNK_SIZE + i] = item);
 
     setItems(newItems);
     setCheckResults(null);
     localStorage.setItem('dnd_order', JSON.stringify(newItems));
-  };
+  }, [currentItems, items, currentChunk, isDragDisabled]);
 
-  const handleCheck = () => {
-    const results = items.map((item, index) => item.id === correctOrder[index]?.id);
+  const handleCheck = useCallback(() => {
+    const results = currentItems.map((item, idx) => item.id === correctChunk[idx]?.id);
     setCheckResults(results);
 
-    const isAllCorrect = results.every(r => r);
-    localStorage.setItem('dnd_done', isAllCorrect ? 'true' : 'false');
-
+    const isAllCorrect = results.every(Boolean);
     if (isAllCorrect) {
-      setIsDragDisabled(true);
-      const audio = new Audio('/aud/sound/treasure.mp3');
-      audio.play();
-      increaseSessionStreak();
-      markDailyStreakCompleted();
-      setTimeout(() => navigate('/',{ state: { streakUpdated: true }}), 2000);
+      if (currentChunk < totalChunks - 1) {
+        setCurrentChunk(c => c + 1);
+        setCheckResults(null);
+      } else {
+        setIsDragDisabled(true);
+        new Audio('/aud/sound/treasure.mp3').play();
+        increaseSessionStreak();
+        markDailyStreakCompleted();
+        setTimeout(() => navigate('/', { state: { streakUpdated: true } }), 2000);
+      }
     }
-  };
+  }, [currentItems, correctChunk, currentChunk, totalChunks, navigate]);
 
-  const handleReset = () => {
-    const shuffled = [...correctOrder]
-      .map(value => ({ value, sort: Math.random() }))
-      .sort((a, b) => a.sort - b.sort)
-      .map(obj => obj.value);
-
-    setItems(shuffled);
+  const handleReset = useCallback(() => {
+    const shuffled = shuffleArray(correctChunk);
+    const newItems = [...items];
+    shuffled.forEach((item, i) => newItems[currentChunk * CHUNK_SIZE + i] = item);
+    setItems(newItems);
     setCheckResults(null);
-    setIsDragDisabled(false);
-    localStorage.setItem('dnd_order', JSON.stringify(shuffled));
-    localStorage.setItem('dnd_done', 'false');
-  };
+    localStorage.setItem('dnd_order', JSON.stringify(newItems));
+  }, [correctChunk, currentChunk, items]);
 
   return (
-    <div
-      className={`${
-        theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-black'
-      } p-4 flex flex-col items-center min-h-screen relative`}
-    >
+    <div className={`${theme === 'dark' ? 'bg-gray-800 text-slate-300' : 'bg-gray-100 text-black'} p-4 flex flex-col items-center min-h-screen relative`}>
       <BtnsHeader
         theme={theme}
         changeLanguage={changeLanguage}
@@ -142,29 +108,48 @@ const SortAyas = () => {
         fontSize={fontSize}
         enlargeFont={enlargeFont}
       />
-  
-      <h1 className="text-xl font-bold m-4">
+
+      <h1 className="m-4 text-xl font-bold">
         Sort the Verses for {ayahs[language] || 'None'}
       </h1>
-  
-      <div className="w-full flex-1 overflow-auto pb-32 flex justify-center">
+
+      <div className="flex gap-4 items-center mb-4">
+        <button
+          onClick={() => setCurrentChunk(c => c - 1)}
+          disabled={currentChunk === 0}
+          className="px-4 py-2 font-semibold text-white bg-blue-600 rounded shadow hover:bg-blue-700 disabled:bg-gray-400"
+        >
+          Prev
+        </button>
+        <span className="text-lg font-semibold">
+          Part {currentChunk + 1} of {totalChunks}
+        </span>
+        <button
+          onClick={() => setCurrentChunk(c => c + 1)}
+          disabled={
+            currentChunk >= totalChunks - 1 ||
+            !checkResults?.every(r => r)
+          }
+          className="px-4 py-2 font-semibold text-white bg-blue-600 rounded shadow hover:bg-blue-700 disabled:bg-gray-400"
+        >
+          Next
+        </button>
+      </div>
+
+      <div className="flex overflow-auto flex-1 justify-center pb-32 w-full">
         {loading ? (
           <Loading />
         ) : (
-          <DndContext 
-            collisionDetection={closestCenter} 
-            onDragEnd={handleDragEnd}
-            sensors={sensors}
-          >
-            <SortableContext items={items.map(item => item.id)} strategy={verticalListSortingStrategy}>
+          <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd} sensors={sensors}>
+            <SortableContext items={currentItems.map(i => i.id)} strategy={verticalListSortingStrategy}>
               <div className="flex flex-col items-center">
-                {items.map((ayah, index) => (
+                {currentItems.map((ayah, i) => (
                   <SortableItem
                     key={ayah.id}
                     id={ayah.id}
                     fontSize={fontSize}
                     text={ayah[language] || 'translation not found'}
-                    isCorrect={checkResults ? checkResults[index] : null}
+                    isCorrect={checkResults?.[i] ?? null}
                     disabled={isDragDisabled}
                   />
                 ))}
@@ -173,25 +158,24 @@ const SortAyas = () => {
           </DndContext>
         )}
       </div>
-  
-      <div className="fixed bottom-0 left-0 w-full bg-gray-800 py-2 flex justify-center gap-4">
+
+      <div className="flex fixed bottom-0 left-0 gap-4 justify-center py-2 w-full bg-gray-800">
         <button
           onClick={handleCheck}
-          className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded shadow"
+          className="px-6 py-2 font-semibold text-white bg-green-600 rounded shadow hover:bg-green-700"
           disabled={isDragDisabled}
         >
           Check
         </button>
         <button
           onClick={handleReset}
-          className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded shadow"
+          className="px-4 py-2 font-semibold text-white bg-red-600 rounded shadow hover:bg-red-700"
         >
           Reset
         </button>
       </div>
     </div>
   );
-  
 };
 
 export default SortAyas;

@@ -1,6 +1,20 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 // Hooks ---------------------------------
+export const useChunkNavigation = (items, chunkSize, currentChunk) => {
+  const totalChunks = useMemo(() => Math.ceil(items.length / chunkSize), [items, chunkSize]);
+
+  const getChunk = () => {
+    const start = currentChunk * chunkSize;
+    return items.slice(start, start + chunkSize);
+  };
+
+  return {
+    totalChunks,
+    getChunk,
+  };
+};
+
 export function useTheme(defaultTheme) {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") || defaultTheme

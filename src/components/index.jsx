@@ -5,5 +5,6 @@ import Loading from './Loading';
 import BtnsRange from './BtnsRange'
 import BtnsPlayback from './BtnsPlayback'
 import BtnsHeader from './BtnsHeader'
+import SortableItem from './SortableItem'
 
-export { Accordion, Button, Verse, Loading, BtnsRange, BtnsPlayback, BtnsHeader };
+export { Accordion, Button, Verse, Loading, BtnsRange, BtnsPlayback, BtnsHeader, SortableItem };

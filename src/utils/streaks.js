@@ -1,3 +1,9 @@
+export const shuffleArray = (array) =>
+  [...array]
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(obj => obj.value);
+
 export function getTodayStr() {
   return new Date().toISOString().slice(0, 10);
 }
