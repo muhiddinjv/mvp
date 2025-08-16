@@ -10,7 +10,7 @@ import { markSortCompleted } from '../components/SortLock';
 
 import { BtnsHeader, Loading, SortableItem } from '../components';
 
-const CHUNK_SIZE = 10;
+const CHUNK_SIZE = 5;
 
 const SortAyas = () => {
   const { suraid } = useParams();
