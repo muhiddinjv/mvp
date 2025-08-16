@@ -1,1570 +1,16 @@
 [
   {
-    "id": 1,
-    "text": {
-      "ar": "الفاتحة",
-      "tr": "Al-Fatihah",
-      "en": "The Opener",
-      "ru": "Открывающая Коран"
-    },
-    "type": "meccan",
-    "verses": 7,
-    "words": 29,
-    "chars": 143,
-    "sajda": null
-  },
-  {
-    "id": 2,
-    "text": {
-      "ar": "البقرة",
-      "tr": "Al-Baqarah",
-      "en": "The Cow",
-      "ru": "Корова"
-    },
-    "type": "medinan",
-    "verses": 286,
-    "words": 6140,
-    "chars": 26249,
-    "sajda": null
-  },
-  {
-    "id": 3,
-    "text": {
-      "ar": "آل عمران",
-      "tr": "Ali 'Imran",
-      "en": "Family of Imran",
-      "ru": "Семейство Имрана"
-    },
-    "type": "medinan",
-    "verses": 200,
-    "words": 3501,
-    "chars": 14985,
-    "sajda": null
-  },
-  {
-    "id": 4,
-    "text": {
-      "ar": "النساء",
-      "tr": "An-Nisa",
-      "en": "The Women",
-      "ru": "Женщины"
-    },
-    "type": "medinan",
-    "verses": 176,
-    "words": 3763,
-    "chars": 16332,
-    "sajda": null
-  },
-  {
-    "id": 5,
-    "text": {
-      "ar": "المائدة",
-      "tr": "Al-Ma'idah",
-      "en": "The Table Spread",
-      "ru": "Трапеза"
-    },
-    "type": "medinan",
-    "verses": 120,
-    "words": 2837,
-    "chars": 12206,
-    "sajda": null
-  },
-  {
-    "id": 6,
-    "text": {
-      "ar": "الأنعام",
-      "tr": "Al-An'am",
-      "en": "The Cattle",
-      "ru": "Скот"
-    },
-    "type": "meccan",
-    "verses": 165,
-    "words": 3056,
-    "chars": 12726,
-    "sajda": null
-  },
-  {
-    "id": 7,
-    "text": {
-      "ar": "الأعراف",
-      "tr": "Al-A'raf",
-      "en": "The Heights",
-      "ru": "Ограды"
-    },
-    "type": "meccan",
-    "verses": 206,
-    "words": 3341,
-    "chars": 14435,
-    "sajda": [206]
-  },
-  {
-    "id": 8,
-    "text": {
-      "ar": "الأنفال",
-      "tr": "Al-Anfal",
-      "en": "The Spoils of War",
-      "ru": "Трофеи"
-    },
-    "type": "medinan",
-    "verses": 75,
-    "words": 1242,
-    "chars": 5387,
-    "sajda": null
-  },
-  {
-    "id": 9,
-    "text": {
-      "ar": "التوبة",
-      "tr": "At-Tawbah",
-      "en": "The Repentance",
-      "ru": "Покаяние"
-    },
-    "type": "medinan",
-    "verses": 129,
-    "words": 2505,
-    "chars": 11115,
-    "sajda": null
-  },
-  {
-    "id": 10,
-    "text": {
-      "ar": "يونس",
-      "tr": "Yunus",
-      "en": "Jonah",
-      "ru": "Йунус"
-    },
-    "type": "meccan",
-    "verses": 109,
-    "words": 1839,
-    "chars": 7589,
-    "sajda": null
-  },
-  {
-    "id": 11,
-    "text": {
-      "ar": "هود",
-      "tr": "Hud",
-      "en": "Hud",
-      "ru": "Худ"
-    },
-    "type": "meccan",
-    "verses": 123,
-    "words": 1946,
-    "chars": 7817,
-    "sajda": null
-  },
-  {
-    "id": 12,
-    "text": {
-      "ar": "يوسف",
-      "tr": "Yusuf",
-      "en": "Joseph",
-      "ru": "Йусуф"
-    },
-    "type": "meccan",
-    "verses": 111,
-    "words": 1795,
-    "chars": 7307,
-    "sajda": null
-  },
-  {
-    "id": 13,
-    "text": {
-      "ar": "الرعد",
-      "tr": "Ar-Ra'd",
-      "en": "The Thunder",
-      "ru": "Гром"
-    },
-    "type": "medinan",
-    "verses": 43,
-    "words": 853,
-    "chars": 3545,
-    "sajda": [15]
-  },
-  {
-    "id": 14,
-    "text": {
-      "ar": "ابراهيم",
-      "tr": "Ibrahim",
-      "en": "Abraham",
-      "ru": "Ибрахим"
-    },
-    "type": "meccan",
-    "verses": 52,
-    "words": 830,
-    "chars": 3539,
-    "sajda": null
-  },
-  {
-    "id": 15,
-    "text": {
-      "ar": "الحجر",
-      "tr": "Al-Hijr",
-      "en": "The Rocky Tract",
-      "ru": "Хиджр "
-    },
-    "type": "meccan",
-    "verses": 99,
-    "words": 657,
-    "chars": 2882,
-    "sajda": null
-  },
-  {
-    "id": 16,
-    "text": {
-      "ar": "النحل",
-      "tr": "An-Nahl",
-      "en": "The Bee",
-      "ru": "Пчелы"
-    },
-    "type": "meccan",
-    "verses": 128,
-    "words": 1844,
-    "chars": 7832,
-    "sajda": [50]
-  },
-  {
-    "id": 17,
-    "text": {
-      "ar": "الإسراء",
-      "tr": "Al-Isra",
-      "en": "The Night Journey",
-      "ru": "Ночной перенос"
-    },
-    "type": "meccan",
-    "verses": 111,
-    "words": 1558,
-    "chars": 6643,
-    "sajda": [109]
-  },
-  {
-    "id": 18,
-    "text": {
-      "ar": "الكهف",
-      "tr": "Al-Kahf",
-      "en": "The Cave",
-      "ru": "Пещера"
-    },
-    "type": "meccan",
-    "verses": 110,
-    "words": 1583,
-    "chars": 6552,
-    "sajda": null
-  },
-  {
-    "id": 19,
-    "text": {
-      "ar": "مريم",
-      "tr": "Maryam",
-      "en": "Mary",
-      "ru": "Марьям"
-    },
-    "type": "meccan",
-    "verses": 98,
-    "words": 971,
-    "chars": 3935,
-    "sajda": [58]
-  },
-  {
-    "id": 20,
-    "text": {
-      "ar": "طه",
-      "tr": "Taha",
-      "en": "Ta-Ha",
-      "ru": "Та Ха "
-    },
-    "type": "meccan",
-    "verses": 135,
-    "words": 1353,
-    "chars": 5399,
-    "sajda": null
-  },
-  {
-    "id": 21,
-    "text": {
-      "ar": "الأنبياء",
-      "tr": "Al-Anbya",
-      "en": "The Prophets",
-      "ru": "Пророки"
-    },
-    "type": "meccan",
-    "verses": 112,
-    "words": 1174,
-    "chars": 5094,
-    "sajda": null
-  },
-  {
-    "id": 22,
-    "text": {
-      "ar": "الحج",
-      "tr": "Al-Hajj",
-      "en": "The Pilgrimage",
-      "ru": "Паломничество"
-    },
-    "type": "medinan",
-    "verses": 78,
-    "words": 1279,
-    "chars": 5314,
-    "sajda": [18, 77]
-  },
-  {
-    "id": 23,
-    "text": {
-      "ar": "المؤمنون",
-      "tr": "Al-Mu'minun",
-      "en": "The Believers",
-      "ru": "Верующие"
-    },
-    "type": "meccan",
-    "verses": 118,
-    "words": 1052,
-    "chars": 4483,
-    "sajda": null
-  },
-  {
-    "id": 24,
-    "text": {
-      "ar": "النور",
-      "tr": "An-Nur",
-      "en": "The Light",
-      "ru": "Свет"
-    },
-    "type": "medinan",
-    "verses": 64,
-    "words": 1319,
-    "chars": 5754,
-    "sajda": null
-  },
-  {
-    "id": 25,
-    "text": {
-      "ar": "الفرقان",
-      "tr": "Al-Furqan",
-      "en": "The Criterion",
-      "ru": "аль-Фуркан"
-    },
-    "type": "meccan",
-    "verses": 77,
-    "words": 896,
-    "chars": 3878,
-    "sajda": [60]
-  },
-  {
-    "id": 26,
-    "text": {
-      "ar": "الشعراء",
-      "tr": "Ash-Shu'ara",
-      "en": "The Poets",
-      "ru": "Поэты"
-    },
-    "type": "meccan",
-    "verses": 227,
-    "words": 1320,
-    "chars": 5630,
-    "sajda": null
-  },
-  {
-    "id": 27,
-    "text": {
-      "ar": "النمل",
-      "tr": "An-Naml",
-      "en": "The Ant",
-      "ru": "Муравьи"
-    },
-    "type": "meccan",
-    "verses": 93,
-    "words": 1159,
-    "chars": 4790,
-    "sajda": [26]
-  },
-  {
-    "id": 28,
-    "text": {
-      "ar": "القصص",
-      "tr": "Al-Qasas",
-      "en": "The Stories",
-      "ru": "Рассказ"
-    },
-    "type": "meccan",
-    "verses": 88,
-    "words": 1438,
-    "chars": 5930,
-    "sajda": null
-  },
-  {
-    "id": 29,
-    "text": {
-      "ar": "العنكبوت",
-      "tr": "Al-'Ankabut",
-      "en": "The Spider",
-      "ru": "Паук"
-    },
-    "type": "meccan",
-    "verses": 69,
-    "words": 978,
-    "chars": 4317,
-    "sajda": null
-  },
-  {
-    "id": 30,
-    "text": {
-      "ar": "الروم",
-      "tr": "Ar-Rum",
-      "en": "The Romans",
-      "ru": "Римляне"
-    },
-    "type": "meccan",
-    "verses": 60,
-    "words": 817,
-    "chars": 3472,
-    "sajda": null
-  },
-  {
-    "id": 31,
-    "text": {
-      "ar": "لقمان",
-      "tr": "Luqman",
-      "en": "Luqman",
-      "ru": "Лукман"
-    },
-    "type": "meccan",
-    "verses": 34,
-    "words": 550,
-    "chars": 2171,
-    "sajda": null
-  },
-  {
-    "id": 32,
-    "text": {
-      "ar": "السجدة",
-      "tr": "As-Sajdah",
-      "en": "The Prostration",
-      "ru": "Земной поклон"
-    },
-    "type": "meccan",
-    "verses": 30,
-    "words": 372,
-    "chars": 1563,
-    "sajda": [15]
-  },
-  {
-    "id": 33,
-    "text": {
-      "ar": "الأحزاب",
-      "tr": "Al-Ahzab",
-      "en": "The Combined Forces",
-      "ru": "Союзники"
-    },
-    "type": "medinan",
-    "verses": 73,
-    "words": 1303,
-    "chars": 5788,
-    "sajda": null
-  },
-  {
-    "id": 34,
-    "text": {
-      "ar": "سبإ",
-      "tr": "Saba",
-      "en": "Sheba",
-      "ru": "Сава"
-    },
-    "type": "meccan",
-    "verses": 54,
-    "words": 884,
-    "chars": 3594,
-    "sajda": null
-  },
-  {
-    "id": 35,
-    "text": {
-      "ar": "فاطر",
-      "tr": "Fatir",
-      "en": "Originator",
-      "ru": "Творец"
-    },
-    "type": "meccan",
-    "verses": 45,
-    "words": 778,
-    "chars": 3238,
-    "sajda": null
-  },
-  {
-    "id": 36,
-    "text": {
-      "ar": "يس",
-      "tr": "Ya-Sin",
-      "en": "Ya Sin",
-      "ru": "Йа Син"
-    },
-    "type": "meccan",
-    "verses": 83,
-    "words": 730,
-    "chars": 3068,
-    "sajda": null
-  },
-  {
-    "id": 37,
-    "text": {
-      "ar": "الصافات",
-      "tr": "As-Saffat",
-      "en": "Those who set the Ranks",
-      "ru": "Выстроившиеся в ряды"
-    },
-    "type": "meccan",
-    "verses": 182,
-    "words": 865,
-    "chars": 3899,
-    "sajda": null
-  },
-  {
-    "id": 38,
-    "text": {
-      "ar": "ص",
-      "tr": "Sad",
-      "en": "The Letter \"Saad\"",
-      "ru": "Сод"
-    },
-    "type": "meccan",
-    "verses": 88,
-    "words": 735,
-    "chars": 3065,
-    "sajda": [24]
-  },
-  {
-    "id": 39,
-    "text": {
-      "ar": "الزمر",
-      "tr": "Az-Zumar",
-      "en": "The Troops",
-      "ru": "Толпы"
-    },
-    "type": "meccan",
-    "verses": 75,
-    "words": 1177,
-    "chars": 4869,
-    "sajda": null
-  },
-  {
-    "id": 40,
-    "text": {
-      "ar": "غافر",
-      "tr": "Ghafir",
-      "en": "The Forgiver",
-      "ru": "Прощающий"
-    },
-    "type": "meccan",
-    "verses": 85,
-    "words": 1226,
-    "chars": 5108,
-    "sajda": null
-  },
-  {
-    "id": 41,
-    "text": {
-      "ar": "فصلت",
-      "tr": "Fussilat",
-      "en": "Explained in Detail",
-      "ru": "Разъяснены"
-    },
-    "type": "meccan",
-    "verses": 54,
-    "words": 794,
-    "chars": 3365,
-    "sajda": [38]
-  },
-  {
-    "id": 42,
-    "text": {
-      "ar": "الشورى",
-      "tr": "Ash-Shuraa",
-      "en": "The Consultation",
-      "ru": "Совет"
-    },
-    "type": "meccan",
-    "verses": 53,
-    "words": 860,
-    "chars": 3522,
-    "sajda": null
-  },
-  {
-    "id": 43,
-    "text": {
-      "ar": "الزخرف",
-      "tr": "Az-Zukhruf",
-      "en": "Ornaments of Gold",
-      "ru": "Украшения"
-    },
-    "type": "meccan",
-    "verses": 89,
-    "words": 836,
-    "chars": 3609,
-    "sajda": null
-  },
-  {
-    "id": 44,
-    "text": {
-      "ar": "الدخان",
-      "tr": "Ad-Dukhan",
-      "en": "The Smoke",
-      "ru": "Дым"
-    },
-    "type": "meccan",
-    "verses": 59,
-    "words": 346,
-    "chars": 1474,
-    "sajda": null
-  },
-  {
-    "id": 45,
-    "text": {
-      "ar": "الجاثية",
-      "tr": "Al-Jathiyah",
-      "en": "The Crouching",
-      "ru": "Коленопреклоненные"
-    },
-    "type": "meccan",
-    "verses": 37,
-    "words": 488,
-    "chars": 2085,
-    "sajda": null
-  },
-  {
-    "id": 46,
-    "text": {
-      "ar": "الأحقاف",
-      "tr": "Al-Ahqaf",
-      "en": "The Wind-Curved Sandhills",
-      "ru": "Барханы"
-    },
-    "type": "meccan",
-    "verses": 35,
-    "words": 645,
-    "chars": 2667,
-    "sajda": null
-  },
-  {
-    "id": 47,
-    "text": {
-      "ar": "محمد",
-      "tr": "Muhammad",
-      "en": "Muhammad",
-      "ru": "Мухаммад"
-    },
-    "type": "medinan",
-    "verses": 38,
-    "words": 542,
-    "chars": 2423,
-    "sajda": null
-  },
-  {
-    "id": 48,
-    "text": {
-      "ar": "الفتح",
-      "tr": "Al-Fath",
-      "en": "The Victory",
-      "ru": "Победа"
-    },
-    "type": "medinan",
-    "verses": 29,
-    "words": 560,
-    "chars": 2510,
-    "sajda": null
-  },
-  {
-    "id": 49,
-    "text": {
-      "ar": "الحجرات",
-      "tr": "Al-Hujurat",
-      "en": "The Rooms",
-      "ru": "Комнаты"
-    },
-    "type": "medinan",
-    "verses": 18,
-    "words": 353,
-    "chars": 1533,
-    "sajda": null
-  },
-  {
-    "id": 50,
-    "text": {
-      "ar": "ق",
-      "tr": "Qaf",
-      "en": "The Letter \"Qaf\"",
-      "ru": "Каф"
-    },
-    "type": "meccan",
-    "verses": 45,
-    "words": 373,
-    "chars": 1507,
-    "sajda": null
-  },
-  {
-    "id": 51,
-    "text": {
-      "ar": "الذاريات",
-      "tr": "Adh-Dhariyat",
-      "en": "The Winnowing Winds",
-      "ru": "Рассеивающие прах"
-    },
-    "type": "meccan",
-    "verses": 60,
-    "words": 360,
-    "chars": 1546,
-    "sajda": null
-  },
-  {
-    "id": 52,
-    "text": {
-      "ar": "الطور",
-      "tr": "At-Tur",
-      "en": "The Mount",
-      "ru": "Гора"
-    },
-    "type": "meccan",
-    "verses": 49,
-    "words": 312,
-    "chars": 1324,
-    "sajda": null
-  },
-  {
-    "id": 53,
-    "text": {
-      "ar": "النجم",
-      "tr": "An-Najm",
-      "en": "The Star",
-      "ru": "Звезда"
-    },
-    "type": "meccan",
-    "verses": 62,
-    "words": 360,
-    "chars": 1433,
-    "sajda": [62]
-  },
-  {
-    "id": 54,
-    "text": {
-      "ar": "القمر",
-      "tr": "Al-Qamar",
-      "en": "The Moon",
-      "ru": "Месяц"
-    },
-    "type": "meccan",
-    "verses": 55,
-    "words": 342,
-    "chars": 1469,
-    "sajda": null
-  },
-  {
-    "id": 55,
-    "text": {
-      "ar": "الرحمن",
-      "tr": "Ar-Rahman",
-      "en": "The Beneficent",
-      "ru": "Милостивый"
-    },
-    "type": "medinan",
-    "verses": 78,
-    "words": 352,
-    "chars": 1647,
-    "sajda": null
-  },
-  {
-    "id": 56,
-    "text": {
-      "ar": "الواقعة",
-      "tr": "Al-Waqi'ah",
-      "en": "The Inevitable",
-      "ru": "Событие"
-    },
-    "type": "meccan",
-    "verses": 96,
-    "words": 379,
-    "chars": 1756,
-    "sajda": null
-  },
-  {
-    "id": 57,
-    "text": {
-      "ar": "الحديد",
-      "tr": "Al-Hadid",
-      "en": "The Iron",
-      "ru": "Железо"
-    },
-    "type": "medinan",
-    "verses": 29,
-    "words": 575,
-    "chars": 2545,
-    "sajda": null
-  },
-  {
-    "id": 58,
-    "text": {
-      "ar": "المجادلة",
-      "tr": "Al-Mujadila",
-      "en": "The Pleading Woman",
-      "ru": "Препирающаяся"
-    },
-    "type": "medinan",
-    "verses": 22,
-    "words": 475,
-    "chars": 2046,
-    "sajda": null
-  },
-  {
-    "id": 59,
-    "text": {
-      "ar": "الحشر",
-      "tr": "Al-Hashr",
-      "en": "The Exile",
-      "ru": "Сбор"
-    },
-    "type": "medinan",
-    "verses": 24,
-    "words": 447,
-    "chars": 1970,
-    "sajda": null
-  },
-  {
-    "id": 60,
-    "text": {
-      "ar": "الممتحنة",
-      "tr": "Al-Mumtahanah",
-      "en": "She that is to be examined",
-      "ru": "Испытуемая"
-    },
-    "type": "medinan",
-    "verses": 13,
-    "words": 352,
-    "chars": 1560,
-    "sajda": null
-  },
-  {
-    "id": 61,
-    "text": {
-      "ar": "الصف",
-      "tr": "As-Saf",
-      "en": "The Ranks",
-      "ru": "Ряды"
-    },
-    "type": "medinan",
-    "verses": 14,
-    "words": 226,
-    "chars": 966,
-    "sajda": null
-  },
-  {
-    "id": 62,
-    "text": {
-      "ar": "الجمعة",
-      "tr": "Al-Jumu'ah",
-      "en": "The Congregation, Friday",
-      "ru": "Собрание"
-    },
-    "type": "medinan",
-    "verses": 11,
-    "words": 177,
-    "chars": 768,
-    "sajda": null
-  },
-  {
-    "id": 63,
-    "text": {
-      "ar": "المنافقون",
-      "tr": "Al-Munafiqun",
-      "en": "The Hypocrites",
-      "ru": "Лицемеры"
-    },
-    "type": "medinan",
-    "verses": 11,
-    "words": 181,
-    "chars": 801,
-    "sajda": null
-  },
-  {
-    "id": 64,
-    "text": {
-      "ar": "التغابن",
-      "tr": "At-Taghabun",
-      "en": "The Mutual Disillusion",
-      "ru": "Взаимное обделение"
-    },
-    "type": "medinan",
-    "verses": 18,
-    "words": 242,
-    "chars": 1091,
-    "sajda": null
-  },
-  {
-    "id": 65,
-    "text": {
-      "ar": "الطلاق",
-      "tr": "At-Talaq",
-      "en": "The Divorce",
-      "ru": "Развод"
-    },
-    "type": "medinan",
-    "verses": 12,
-    "words": 289,
-    "chars": 1203,
-    "sajda": null
-  },
-  {
-    "id": 66,
-    "text": {
-      "ar": "التحريم",
-      "tr": "At-Tahrim",
-      "en": "The Prohibition",
-      "ru": "Запрещение"
-    },
-    "type": "medinan",
-    "verses": 12,
-    "words": 254,
-    "chars": 1105,
-    "sajda": null
-  },
-  {
-    "id": 67,
-    "text": {
-      "ar": "الملك",
-      "tr": "Al-Mulk",
-      "en": "The Sovereignty",
-      "ru": "Власть"
-    },
-    "type": "meccan",
-    "verses": 30,
-    "words": 333,
-    "chars": 1347,
-    "sajda": null
-  },
-  {
-    "id": 68,
-    "text": {
-      "ar": "القلم",
-      "tr": "Al-Qalam",
-      "en": "The Pen",
-      "ru": "Письменная трость"
-    },
-    "type": "meccan",
-    "verses": 52,
-    "words": 301,
-    "chars": 1289,
-    "sajda": null
-  },
-  {
-    "id": 69,
-    "text": {
-      "ar": "الحاقة",
-      "tr": "Al-Haqqah",
-      "en": "The Reality",
-      "ru": "Неминуемое"
-    },
-    "type": "meccan",
-    "verses": 52,
-    "words": 260,
-    "chars": 1133,
-    "sajda": null
-  },
-  {
-    "id": 70,
-    "text": {
-      "ar": "المعارج",
-      "tr": "Al-Ma'arij",
-      "en": "The Ascending Stairways",
-      "ru": "Ступени"
-    },
-    "type": "meccan",
-    "verses": 44,
-    "words": 217,
-    "chars": 971,
-    "sajda": null
-  },
-  {
-    "id": 71,
-    "text": {
-      "ar": "نوح",
-      "tr": "Nuh",
-      "en": "Noah",
-      "ru": "Нух"
-    },
-    "type": "meccan",
-    "verses": 28,
-    "words": 227,
-    "chars": 965,
-    "sajda": null
-  },
-  {
-    "id": 72,
-    "text": {
-      "ar": "الجن",
-      "tr": "Al-Jinn",
-      "en": "The Jinn",
-      "ru": "Джинны"
-    },
-    "type": "meccan",
-    "verses": 28,
-    "words": 286,
-    "chars": 1109,
-    "sajda": null
-  },
-  {
-    "id": 73,
-    "text": {
-      "ar": "المزمل",
-      "tr": "Al-Muzzammil",
-      "en": "The Enshrouded One",
-      "ru": "Закутавшийся"
-    },
-    "type": "meccan",
-    "verses": 20,
-    "words": 200,
-    "chars": 854,
-    "sajda": null
-  },
-  {
-    "id": 74,
-    "text": {
-      "ar": "المدثر",
-      "tr": "Al-Muddaththir",
-      "en": "The Cloaked One",
-      "ru": "Завернувшийся"
-    },
-    "type": "meccan",
-    "verses": 56,
-    "words": 256,
-    "chars": 1035,
-    "sajda": null
-  },
-  {
-    "id": 75,
-    "text": {
-      "ar": "القيامة",
-      "tr": "Al-Qiyamah",
-      "en": "The Resurrection",
-      "ru": "Воскресение"
-    },
-    "type": "meccan",
-    "verses": 40,
-    "words": 164,
-    "chars": 676,
-    "sajda": null
-  },
-  {
-    "id": 76,
-    "text": {
-      "ar": "الانسان",
-      "tr": "Al-Insan",
-      "en": "The Man",
-      "ru": "Человек"
-    },
-    "type": "medinan",
-    "verses": 31,
-    "words": 243,
-    "chars": 1087,
-    "sajda": null
-  },
-  {
-    "id": 77,
-    "text": {
-      "ar": "المرسلات",
-      "tr": "Al-Mursalat",
-      "en": "The Emissaries",
-      "ru": "Посылаемые"
-    },
-    "type": "meccan",
-    "verses": 50,
-    "words": 181,
-    "chars": 841,
-    "sajda": null
-  },
-  {
-    "id": 78,
-    "text": {
-      "ar": "النبإ",
-      "tr": "An-Naba",
-      "en": "The Tidings",
-      "ru": "Весть"
-    },
-    "type": "meccan",
-    "verses": 40,
-    "words": 174,
-    "chars": 796,
-    "sajda": null
-  },
-  {
-    "id": 79,
-    "text": {
-      "ar": "النازعات",
-      "tr": "An-Nazi'at",
-      "en": "Those who drag forth",
-      "ru": "Исторгающие"
-    },
-    "type": "meccan",
-    "verses": 46,
-    "words": 179,
-    "chars": 785,
-    "sajda": null
-  },
-  {
-    "id": 80,
-    "text": {
-      "ar": "عبس",
-      "tr": "'Abasa",
-      "en": "He Frowned",
-      "ru": "Нахмурился"
-    },
-    "type": "meccan",
-    "verses": 42,
-    "words": 133,
-    "chars": 552,
-    "sajda": null
-  },
-  {
-    "id": 81,
-    "text": {
-      "ar": "التكوير",
-      "tr": "At-Takwir",
-      "en": "The Overthrowing",
-      "ru": "Скручивание"
-    },
-    "type": "meccan",
-    "verses": 29,
-    "words": 104,
-    "chars": 435,
-    "sajda": null
-  },
-  {
-    "id": 82,
-    "text": {
-      "ar": "الإنفطار",
-      "tr": "Al-Infitar",
-      "en": "The Cleaving",
-      "ru": "Раскалывание"
-    },
-    "type": "meccan",
-    "verses": 19,
-    "words": 81,
-    "chars": 333,
-    "sajda": null
-  },
-  {
-    "id": 83,
-    "text": {
-      "ar": "المطففين",
-      "tr": "Al-Mutaffifin",
-      "en": "The Defrauding",
-      "ru": "Обвешивающие"
-    },
-    "type": "meccan",
-    "verses": 36,
-    "words": 169,
-    "chars": 750,
-    "sajda": null
-  },
-  {
-    "id": 84,
-    "text": {
-      "ar": "الإنشقاق",
-      "tr": "Al-Inshiqaq",
-      "en": "The Sundering",
-      "ru": "Разверзнется"
-    },
-    "type": "meccan",
-    "verses": 25,
-    "words": 108,
-    "chars": 445,
-    "sajda": [21]
-  },
-  {
-    "id": 85,
-    "text": {
-      "ar": "البروج",
-      "tr": "Al-Buruj",
-      "en": "The Mansions of the Stars",
-      "ru": "Созвездия Зодиака"
-    },
-    "type": "meccan",
-    "verses": 22,
-    "words": 109,
-    "chars": 469,
-    "sajda": null
-  },
-  {
-    "id": 86,
-    "text": {
-      "ar": "الطارق",
-      "tr": "At-Tariq",
-      "en": "The Nightcommer",
-      "ru": "Ночной путник"
-    },
-    "type": "meccan",
-    "verses": 17,
-    "words": 61,
-    "chars": 254,
-    "sajda": null
-  },
-  {
-    "id": 87,
-    "text": {
-      "ar": "الأعلى",
-      "tr": "Al-A'la",
-      "en": "The Most High",
-      "ru": "Всевышний"
-    },
-    "type": "meccan",
-    "verses": 19,
-    "words": 72,
-    "chars": 296,
-    "sajda": null
-  },
-  {
-    "id": 88,
-    "text": {
-      "ar": "الغاشية",
-      "tr": "Al-Ghashiyah",
-      "en": "The Overwhelming",
-      "ru": "Покрывающее"
-    },
-    "type": "meccan",
-    "verses": 26,
-    "words": 92,
-    "chars": 382,
-    "sajda": null
-  },
-  {
-    "id": 89,
-    "text": {
-      "ar": "الفجر",
-      "tr": "Al-Fajr",
-      "en": "The Dawn",
-      "ru": "Заря"
-    },
-    "type": "meccan",
-    "verses": 30,
-    "words": 139,
-    "chars": 584,
-    "sajda": null
-  },
-  {
-    "id": 90,
-    "text": {
-      "ar": "البلد",
-      "tr": "Al-Balad",
-      "en": "The City",
-      "ru": "Город"
-    },
-    "type": "meccan",
-    "verses": 20,
-    "words": 82,
-    "chars": 342,
-    "sajda": null
-  },
-  {
-    "id": 91,
-    "text": {
-      "ar": "الشمس",
-      "tr": "Ash-Shams",
-      "en": "The Sun",
-      "ru": "Солнце"
-    },
-    "type": "meccan",
-    "verses": 15,
-    "words": 54,
-    "chars": 253,
-    "sajda": null
-  },
-  {
-    "id": 92,
-    "text": {
-      "ar": "الليل",
-      "tr": "Al-Layl",
-      "en": "The Night",
-      "ru": "Ночь"
-    },
-    "type": "meccan",
-    "verses": 21,
-    "words": 71,
-    "chars": 314,
-    "sajda": null
-  },
-  {
-    "id": 93,
-    "text": {
-      "ar": "الضحى",
-      "tr": "Ad-Duhaa",
-      "en": "The Morning Hours",
-      "ru": "Утро"
-    },
-    "type": "meccan",
-    "verses": 11,
-    "words": 40,
-    "chars": 165,
-    "sajda": null
-  },
-  {
-    "id": 94,
-    "text": {
-      "ar": "الشرح",
-      "tr": "Ash-Sharh",
-      "en": "The Relief",
-      "ru": "Раскрытие"
-    },
-    "type": "meccan",
-    "verses": 8,
-    "words": 27,
-    "chars": 102,
-    "sajda": null
-  },
-  {
-    "id": 95,
-    "text": {
-      "ar": "التين",
-      "tr": "At-Tin",
-      "en": "The Fig",
-      "ru": "Смоковница"
-    },
-    "type": "meccan",
-    "verses": 8,
-    "words": 34,
-    "chars": 162,
-    "sajda": null
-  },
-  {
-    "id": 96,
-    "text": {
-      "ar": "العلق",
-      "tr": "Al-'Alaq",
-      "en": "The Clot",
-      "ru": "Сгусток крови"
-    },
-    "type": "meccan",
-    "verses": 19,
-    "words": 72,
-    "chars": 288,
-    "sajda": [19]
-  },
-  {
-    "id": 97,
-    "text": {
-      "ar": "القدر",
-      "tr": "Al-Qadr",
-      "en": "The Power",
-      "ru": "Предопределение"
-    },
-    "type": "meccan",
-    "verses": 5,
-    "words": 30,
-    "chars": 115,
-    "sajda": null
-  },
-  {
-    "id": 98,
-    "text": {
-      "ar": "البينة",
-      "tr": "Al-Bayyinah",
-      "en": "The Clear Proof",
-      "ru": "Ясное знамение"
-    },
-    "type": "medinan",
-    "verses": 8,
-    "words": 94,
-    "chars": 404,
-    "sajda": null
-  },
-  {
-    "id": 99,
-    "text": {
-      "ar": "الزلزلة",
-      "tr": "Az-Zalzalah",
-      "en": "The Earthquake",
-      "ru": "Сотрясение"
-    },
-    "type": "medinan",
-    "verses": 8,
-    "words": 36,
-    "chars": 158,
-    "sajda": null
-  },
-  {
-    "id": 100,
-    "text": {
-      "ar": "العاديات",
-      "tr": "Al-'Adiyat",
-      "en": "The Courser",
-      "ru": "Скачущие"
-    },
-    "type": "meccan",
-    "verses": 11,
-    "words": 40,
-    "chars": 169,
-    "sajda": null
-  },
-  {
-    "id": 101,
-    "text": {
-      "ar": "القارعة",
-      "tr": "Al-Qari'ah",
-      "en": "The Calamity",
-      "ru": "Великое бедствие"
-    },
-    "type": "meccan",
-    "verses": 11,
-    "words": 36,
-    "chars": 160,
-    "sajda": null
-  },
-  {
-    "id": 102,
-    "text": {
-      "ar": "التكاثر",
-      "tr": "At-Takathur",
-      "en": "The Rivalry in world increase",
-      "ru": "Страсть к приумножению"
-    },
-    "type": "meccan",
-    "verses": 8,
-    "words": 28,
-    "chars": 123,
-    "sajda": null
-  },
-  {
-    "id": 103,
-    "text": {
-      "ar": "العصر",
-      "tr": "Al-'Asr",
-      "en": "The Declining Day",
-      "ru": "Предвечернее время"
-    },
-    "type": "meccan",
-    "verses": 3,
-    "words": 14,
-    "chars": 73,
-    "sajda": null
-  },
-  {
-    "id": 104,
-    "text": {
-      "ar": "الهمزة",
-      "tr": "Al-Humazah",
-      "en": "The Traducer",
-      "ru": "Хулитель"
-    },
-    "type": "meccan",
-    "verses": 9,
-    "words": 33,
-    "chars": 134,
-    "sajda": null
-  },
-  {
-    "id": 105,
-    "text": {
-      "ar": "الفيل",
-      "tr": "Al-Fil",
-      "en": "The Elephant",
-      "ru": "Слон"
-    },
-    "type": "meccan",
-    "verses": 5,
-    "words": 23,
-    "chars": 97,
-    "sajda": null
-  },
-  {
-    "id": 106,
-    "text": {
-      "ar": "قريش",
-      "tr": "Quraysh",
-      "en": "Quraysh",
-      "ru": "Курейшиты"
-    },
-    "type": "meccan",
-    "verses": 4,
-    "words": 17,
-    "chars": 77,
-    "sajda": null
-  },
-  {
-    "id": 107,
-    "text": {
-      "ar": "الماعون",
-      "tr": "Al-Ma'un",
-      "en": "The Small kindnesses",
-      "ru": "Мелочь"
-    },
-    "type": "meccan",
-    "verses": 7,
-    "words": 25,
-    "chars": 114,
-    "sajda": null
-  },
-  {
-    "id": 108,
-    "text": {
-      "ar": "الكوثر",
-      "tr": "Al-Kawthar",
-      "en": "The Abundance",
-      "ru": "Изобилие"
-    },
-    "type": "meccan",
-    "verses": 3,
-    "words": 10,
-    "chars": 43,
-    "sajda": null
-  },
-  {
-    "id": 109,
-    "text": {
-      "ar": "الكافرون",
-      "tr": "Al-Kafirun",
-      "en": "The Disbelievers",
-      "ru": "Неверующие"
+    "id": 114,
+    "text": {
+      "ar": "الناس",
+      "tr": "An-Nas",
+      "en": "Mankind",
+      "ru": "Люди"
     },
     "type": "meccan",
     "verses": 6,
-    "words": 27,
-    "chars": 99,
-    "sajda": null
-  },
-  {
-    "id": 110,
-    "text": {
-      "ar": "النصر",
-      "tr": "An-Nasr",
-      "en": "The Divine Support",
-      "ru": "Помощь"
-    },
-    "type": "medinan",
-    "verses": 3,
-    "words": 19,
+    "words": 20,
     "chars": 80,
-    "sajda": null
-  },
-  {
-    "id": 111,
-    "text": {
-      "ar": "المسد",
-      "tr": "Al-Masad",
-      "en": "The Palm Fiber",
-      "ru": "Пальмовые волокна"
-    },
-    "type": "meccan",
-    "verses": 5,
-    "words": 23,
-    "chars": 81,
-    "sajda": null
-  },
-  {
-    "id": 112,
-    "text": {
-      "ar": "الإخلاص",
-      "tr": "Al-Ikhlas",
-      "en": "The Sincerity",
-      "ru": "Очищение веры"
-    },
-    "type": "meccan",
-    "verses": 4,
-    "words": 15,
-    "chars": 47,
     "sajda": null
   },
   {
@@ -1582,17 +28,1600 @@
     "sajda": null
   },
   {
-    "id": 114,
+    "id": 112,
     "text": {
-      "ar": "الناس",
-      "tr": "An-Nas",
-      "en": "Mankind",
-      "ru": "Люди"
+      "ar": "الإخلاص",
+      "tr": "Al-Ikhlas",
+      "en": "The Sincerity",
+      "ru": "Очищение веры"
+    },
+    "type": "meccan",
+    "verses": 4,
+    "words": 15,
+    "chars": 47,
+    "sajda": null
+  },
+  {
+    "id": 111,
+    "text": {
+      "ar": "المسد",
+      "tr": "Al-Masad",
+      "en": "The Palm Fiber",
+      "ru": "Пальмовые волокна"
+    },
+    "type": "meccan",
+    "verses": 5,
+    "words": 23,
+    "chars": 81,
+    "sajda": null
+  },
+  {
+    "id": 110,
+    "text": {
+      "ar": "النصر",
+      "tr": "An-Nasr",
+      "en": "The Divine Support",
+      "ru": "Помощь"
+    },
+    "type": "medinan",
+    "verses": 3,
+    "words": 19,
+    "chars": 80,
+    "sajda": null
+  },
+  {
+    "id": 109,
+    "text": {
+      "ar": "الكافرون",
+      "tr": "Al-Kafirun",
+      "en": "The Disbelievers",
+      "ru": "Неверующие"
     },
     "type": "meccan",
     "verses": 6,
-    "words": 20,
-    "chars": 80,
+    "words": 27,
+    "chars": 99,
+    "sajda": null
+  },
+  {
+    "id": 108,
+    "text": {
+      "ar": "الكوثر",
+      "tr": "Al-Kawthar",
+      "en": "The Abundance",
+      "ru": "Изобилие"
+    },
+    "type": "meccan",
+    "verses": 3,
+    "words": 10,
+    "chars": 43,
+    "sajda": null
+  },
+  {
+    "id": 107,
+    "text": {
+      "ar": "الماعون",
+      "tr": "Al-Ma'un",
+      "en": "The Small kindnesses",
+      "ru": "Мелочь"
+    },
+    "type": "meccan",
+    "verses": 7,
+    "words": 25,
+    "chars": 114,
+    "sajda": null
+  },
+  {
+    "id": 106,
+    "text": {
+      "ar": "قريش",
+      "tr": "Quraysh",
+      "en": "Quraysh",
+      "ru": "Курейшиты"
+    },
+    "type": "meccan",
+    "verses": 4,
+    "words": 17,
+    "chars": 77,
+    "sajda": null
+  },
+  {
+    "id": 105,
+    "text": {
+      "ar": "الفيل",
+      "tr": "Al-Fil",
+      "en": "The Elephant",
+      "ru": "Слон"
+    },
+    "type": "meccan",
+    "verses": 5,
+    "words": 23,
+    "chars": 97,
+    "sajda": null
+  },
+  {
+    "id": 104,
+    "text": {
+      "ar": "الهمزة",
+      "tr": "Al-Humazah",
+      "en": "The Traducer",
+      "ru": "Хулитель"
+    },
+    "type": "meccan",
+    "verses": 9,
+    "words": 33,
+    "chars": 134,
+    "sajda": null
+  },
+  {
+    "id": 103,
+    "text": {
+      "ar": "العصر",
+      "tr": "Al-'Asr",
+      "en": "The Declining Day",
+      "ru": "Предвечернее время"
+    },
+    "type": "meccan",
+    "verses": 3,
+    "words": 14,
+    "chars": 73,
+    "sajda": null
+  },
+  {
+    "id": 102,
+    "text": {
+      "ar": "التكاثر",
+      "tr": "At-Takathur",
+      "en": "The Rivalry in world increase",
+      "ru": "Страсть к приумножению"
+    },
+    "type": "meccan",
+    "verses": 8,
+    "words": 28,
+    "chars": 123,
+    "sajda": null
+  },
+  {
+    "id": 101,
+    "text": {
+      "ar": "القارعة",
+      "tr": "Al-Qari'ah",
+      "en": "The Calamity",
+      "ru": "Великое бедствие"
+    },
+    "type": "meccan",
+    "verses": 11,
+    "words": 36,
+    "chars": 160,
+    "sajda": null
+  },
+  {
+    "id": 100,
+    "text": {
+      "ar": "العاديات",
+      "tr": "Al-'Adiyat",
+      "en": "The Courser",
+      "ru": "Скачущие"
+    },
+    "type": "meccan",
+    "verses": 11,
+    "words": 40,
+    "chars": 169,
+    "sajda": null
+  },
+  {
+    "id": 99,
+    "text": {
+      "ar": "الزلزلة",
+      "tr": "Az-Zalzalah",
+      "en": "The Earthquake",
+      "ru": "Сотрясение"
+    },
+    "type": "medinan",
+    "verses": 8,
+    "words": 36,
+    "chars": 158,
+    "sajda": null
+  },
+  {
+    "id": 98,
+    "text": {
+      "ar": "البينة",
+      "tr": "Al-Bayyinah",
+      "en": "The Clear Proof",
+      "ru": "Ясное знамение"
+    },
+    "type": "medinan",
+    "verses": 8,
+    "words": 94,
+    "chars": 404,
+    "sajda": null
+  },
+  {
+    "id": 97,
+    "text": {
+      "ar": "القدر",
+      "tr": "Al-Qadr",
+      "en": "The Power",
+      "ru": "Предопределение"
+    },
+    "type": "meccan",
+    "verses": 5,
+    "words": 30,
+    "chars": 115,
+    "sajda": null
+  },
+  {
+    "id": 96,
+    "text": {
+      "ar": "العلق",
+      "tr": "Al-'Alaq",
+      "en": "The Clot",
+      "ru": "Сгусток крови"
+    },
+    "type": "meccan",
+    "verses": 19,
+    "words": 72,
+    "chars": 288,
+    "sajda": [
+      19
+    ]
+  },
+  {
+    "id": 95,
+    "text": {
+      "ar": "التين",
+      "tr": "At-Tin",
+      "en": "The Fig",
+      "ru": "Смоковница"
+    },
+    "type": "meccan",
+    "verses": 8,
+    "words": 34,
+    "chars": 162,
+    "sajda": null
+  },
+  {
+    "id": 94,
+    "text": {
+      "ar": "الشرح",
+      "tr": "Ash-Sharh",
+      "en": "The Relief",
+      "ru": "Раскрытие"
+    },
+    "type": "meccan",
+    "verses": 8,
+    "words": 27,
+    "chars": 102,
+    "sajda": null
+  },
+  {
+    "id": 93,
+    "text": {
+      "ar": "الضحى",
+      "tr": "Ad-Duhaa",
+      "en": "The Morning Hours",
+      "ru": "Утро"
+    },
+    "type": "meccan",
+    "verses": 11,
+    "words": 40,
+    "chars": 165,
+    "sajda": null
+  },
+  {
+    "id": 92,
+    "text": {
+      "ar": "الليل",
+      "tr": "Al-Layl",
+      "en": "The Night",
+      "ru": "Ночь"
+    },
+    "type": "meccan",
+    "verses": 21,
+    "words": 71,
+    "chars": 314,
+    "sajda": null
+  },
+  {
+    "id": 91,
+    "text": {
+      "ar": "الشمس",
+      "tr": "Ash-Shams",
+      "en": "The Sun",
+      "ru": "Солнце"
+    },
+    "type": "meccan",
+    "verses": 15,
+    "words": 54,
+    "chars": 253,
+    "sajda": null
+  },
+  {
+    "id": 90,
+    "text": {
+      "ar": "البلد",
+      "tr": "Al-Balad",
+      "en": "The City",
+      "ru": "Город"
+    },
+    "type": "meccan",
+    "verses": 20,
+    "words": 82,
+    "chars": 342,
+    "sajda": null
+  },
+  {
+    "id": 89,
+    "text": {
+      "ar": "الفجر",
+      "tr": "Al-Fajr",
+      "en": "The Dawn",
+      "ru": "Заря"
+    },
+    "type": "meccan",
+    "verses": 30,
+    "words": 139,
+    "chars": 584,
+    "sajda": null
+  },
+  {
+    "id": 88,
+    "text": {
+      "ar": "الغاشية",
+      "tr": "Al-Ghashiyah",
+      "en": "The Overwhelming",
+      "ru": "Покрывающее"
+    },
+    "type": "meccan",
+    "verses": 26,
+    "words": 92,
+    "chars": 382,
+    "sajda": null
+  },
+  {
+    "id": 87,
+    "text": {
+      "ar": "الأعلى",
+      "tr": "Al-A'la",
+      "en": "The Most High",
+      "ru": "Всевышний"
+    },
+    "type": "meccan",
+    "verses": 19,
+    "words": 72,
+    "chars": 296,
+    "sajda": null
+  },
+  {
+    "id": 86,
+    "text": {
+      "ar": "الطارق",
+      "tr": "At-Tariq",
+      "en": "The Nightcommer",
+      "ru": "Ночной путник"
+    },
+    "type": "meccan",
+    "verses": 17,
+    "words": 61,
+    "chars": 254,
+    "sajda": null
+  },
+  {
+    "id": 85,
+    "text": {
+      "ar": "البروج",
+      "tr": "Al-Buruj",
+      "en": "The Mansions of the Stars",
+      "ru": "Созвездия Зодиака"
+    },
+    "type": "meccan",
+    "verses": 22,
+    "words": 109,
+    "chars": 469,
+    "sajda": null
+  },
+  {
+    "id": 84,
+    "text": {
+      "ar": "الإنشقاق",
+      "tr": "Al-Inshiqaq",
+      "en": "The Sundering",
+      "ru": "Разверзнется"
+    },
+    "type": "meccan",
+    "verses": 25,
+    "words": 108,
+    "chars": 445,
+    "sajda": [
+      21
+    ]
+  },
+  {
+    "id": 83,
+    "text": {
+      "ar": "المطففين",
+      "tr": "Al-Mutaffifin",
+      "en": "The Defrauding",
+      "ru": "Обвешивающие"
+    },
+    "type": "meccan",
+    "verses": 36,
+    "words": 169,
+    "chars": 750,
+    "sajda": null
+  },
+  {
+    "id": 82,
+    "text": {
+      "ar": "الإنفطار",
+      "tr": "Al-Infitar",
+      "en": "The Cleaving",
+      "ru": "Раскалывание"
+    },
+    "type": "meccan",
+    "verses": 19,
+    "words": 81,
+    "chars": 333,
+    "sajda": null
+  },
+  {
+    "id": 81,
+    "text": {
+      "ar": "التكوير",
+      "tr": "At-Takwir",
+      "en": "The Overthrowing",
+      "ru": "Скручивание"
+    },
+    "type": "meccan",
+    "verses": 29,
+    "words": 104,
+    "chars": 435,
+    "sajda": null
+  },
+  {
+    "id": 80,
+    "text": {
+      "ar": "عبس",
+      "tr": "'Abasa",
+      "en": "He Frowned",
+      "ru": "Нахмурился"
+    },
+    "type": "meccan",
+    "verses": 42,
+    "words": 133,
+    "chars": 552,
+    "sajda": null
+  },
+  {
+    "id": 79,
+    "text": {
+      "ar": "النازعات",
+      "tr": "An-Nazi'at",
+      "en": "Those who drag forth",
+      "ru": "Исторгающие"
+    },
+    "type": "meccan",
+    "verses": 46,
+    "words": 179,
+    "chars": 785,
+    "sajda": null
+  },
+  {
+    "id": 78,
+    "text": {
+      "ar": "النبإ",
+      "tr": "An-Naba",
+      "en": "The Tidings",
+      "ru": "Весть"
+    },
+    "type": "meccan",
+    "verses": 40,
+    "words": 174,
+    "chars": 796,
+    "sajda": null
+  },
+  {
+    "id": 77,
+    "text": {
+      "ar": "المرسلات",
+      "tr": "Al-Mursalat",
+      "en": "The Emissaries",
+      "ru": "Посылаемые"
+    },
+    "type": "meccan",
+    "verses": 50,
+    "words": 181,
+    "chars": 841,
+    "sajda": null
+  },
+  {
+    "id": 76,
+    "text": {
+      "ar": "الانسان",
+      "tr": "Al-Insan",
+      "en": "The Man",
+      "ru": "Человек"
+    },
+    "type": "medinan",
+    "verses": 31,
+    "words": 243,
+    "chars": 1087,
+    "sajda": null
+  },
+  {
+    "id": 75,
+    "text": {
+      "ar": "القيامة",
+      "tr": "Al-Qiyamah",
+      "en": "The Resurrection",
+      "ru": "Воскресение"
+    },
+    "type": "meccan",
+    "verses": 40,
+    "words": 164,
+    "chars": 676,
+    "sajda": null
+  },
+  {
+    "id": 74,
+    "text": {
+      "ar": "المدثر",
+      "tr": "Al-Muddaththir",
+      "en": "The Cloaked One",
+      "ru": "Завернувшийся"
+    },
+    "type": "meccan",
+    "verses": 56,
+    "words": 256,
+    "chars": 1035,
+    "sajda": null
+  },
+  {
+    "id": 73,
+    "text": {
+      "ar": "المزمل",
+      "tr": "Al-Muzzammil",
+      "en": "The Enshrouded One",
+      "ru": "Закутавшийся"
+    },
+    "type": "meccan",
+    "verses": 20,
+    "words": 200,
+    "chars": 854,
+    "sajda": null
+  },
+  {
+    "id": 72,
+    "text": {
+      "ar": "الجن",
+      "tr": "Al-Jinn",
+      "en": "The Jinn",
+      "ru": "Джинны"
+    },
+    "type": "meccan",
+    "verses": 28,
+    "words": 286,
+    "chars": 1109,
+    "sajda": null
+  },
+  {
+    "id": 71,
+    "text": {
+      "ar": "نوح",
+      "tr": "Nuh",
+      "en": "Noah",
+      "ru": "Нух"
+    },
+    "type": "meccan",
+    "verses": 28,
+    "words": 227,
+    "chars": 965,
+    "sajda": null
+  },
+  {
+    "id": 70,
+    "text": {
+      "ar": "المعارج",
+      "tr": "Al-Ma'arij",
+      "en": "The Ascending Stairways",
+      "ru": "Ступени"
+    },
+    "type": "meccan",
+    "verses": 44,
+    "words": 217,
+    "chars": 971,
+    "sajda": null
+  },
+  {
+    "id": 69,
+    "text": {
+      "ar": "الحاقة",
+      "tr": "Al-Haqqah",
+      "en": "The Reality",
+      "ru": "Неминуемое"
+    },
+    "type": "meccan",
+    "verses": 52,
+    "words": 260,
+    "chars": 1133,
+    "sajda": null
+  },
+  {
+    "id": 68,
+    "text": {
+      "ar": "القلم",
+      "tr": "Al-Qalam",
+      "en": "The Pen",
+      "ru": "Письменная трость"
+    },
+    "type": "meccan",
+    "verses": 52,
+    "words": 301,
+    "chars": 1289,
+    "sajda": null
+  },
+  {
+    "id": 67,
+    "text": {
+      "ar": "الملك",
+      "tr": "Al-Mulk",
+      "en": "The Sovereignty",
+      "ru": "Власть"
+    },
+    "type": "meccan",
+    "verses": 30,
+    "words": 333,
+    "chars": 1347,
+    "sajda": null
+  },
+  {
+    "id": 66,
+    "text": {
+      "ar": "التحريم",
+      "tr": "At-Tahrim",
+      "en": "The Prohibition",
+      "ru": "Запрещение"
+    },
+    "type": "medinan",
+    "verses": 12,
+    "words": 254,
+    "chars": 1105,
+    "sajda": null
+  },
+  {
+    "id": 65,
+    "text": {
+      "ar": "الطلاق",
+      "tr": "At-Talaq",
+      "en": "The Divorce",
+      "ru": "Развод"
+    },
+    "type": "medinan",
+    "verses": 12,
+    "words": 289,
+    "chars": 1203,
+    "sajda": null
+  },
+  {
+    "id": 64,
+    "text": {
+      "ar": "التغابن",
+      "tr": "At-Taghabun",
+      "en": "The Mutual Disillusion",
+      "ru": "Взаимное обделение"
+    },
+    "type": "medinan",
+    "verses": 18,
+    "words": 242,
+    "chars": 1091,
+    "sajda": null
+  },
+  {
+    "id": 63,
+    "text": {
+      "ar": "المنافقون",
+      "tr": "Al-Munafiqun",
+      "en": "The Hypocrites",
+      "ru": "Лицемеры"
+    },
+    "type": "medinan",
+    "verses": 11,
+    "words": 181,
+    "chars": 801,
+    "sajda": null
+  },
+  {
+    "id": 62,
+    "text": {
+      "ar": "الجمعة",
+      "tr": "Al-Jumu'ah",
+      "en": "The Congregation, Friday",
+      "ru": "Собрание"
+    },
+    "type": "medinan",
+    "verses": 11,
+    "words": 177,
+    "chars": 768,
+    "sajda": null
+  },
+  {
+    "id": 61,
+    "text": {
+      "ar": "الصف",
+      "tr": "As-Saf",
+      "en": "The Ranks",
+      "ru": "Ряды"
+    },
+    "type": "medinan",
+    "verses": 14,
+    "words": 226,
+    "chars": 966,
+    "sajda": null
+  },
+  {
+    "id": 60,
+    "text": {
+      "ar": "الممتحنة",
+      "tr": "Al-Mumtahanah",
+      "en": "She that is to be examined",
+      "ru": "Испытуемая"
+    },
+    "type": "medinan",
+    "verses": 13,
+    "words": 352,
+    "chars": 1560,
+    "sajda": null
+  },
+  {
+    "id": 59,
+    "text": {
+      "ar": "الحشر",
+      "tr": "Al-Hashr",
+      "en": "The Exile",
+      "ru": "Сбор"
+    },
+    "type": "medinan",
+    "verses": 24,
+    "words": 447,
+    "chars": 1970,
+    "sajda": null
+  },
+  {
+    "id": 58,
+    "text": {
+      "ar": "المجادلة",
+      "tr": "Al-Mujadila",
+      "en": "The Pleading Woman",
+      "ru": "Препирающаяся"
+    },
+    "type": "medinan",
+    "verses": 22,
+    "words": 475,
+    "chars": 2046,
+    "sajda": null
+  },
+  {
+    "id": 57,
+    "text": {
+      "ar": "الحديد",
+      "tr": "Al-Hadid",
+      "en": "The Iron",
+      "ru": "Железо"
+    },
+    "type": "medinan",
+    "verses": 29,
+    "words": 575,
+    "chars": 2545,
+    "sajda": null
+  },
+  {
+    "id": 56,
+    "text": {
+      "ar": "الواقعة",
+      "tr": "Al-Waqi'ah",
+      "en": "The Inevitable",
+      "ru": "Событие"
+    },
+    "type": "meccan",
+    "verses": 96,
+    "words": 379,
+    "chars": 1756,
+    "sajda": null
+  },
+  {
+    "id": 55,
+    "text": {
+      "ar": "الرحمن",
+      "tr": "Ar-Rahman",
+      "en": "The Beneficent",
+      "ru": "Милостивый"
+    },
+    "type": "medinan",
+    "verses": 78,
+    "words": 352,
+    "chars": 1647,
+    "sajda": null
+  },
+  {
+    "id": 54,
+    "text": {
+      "ar": "القمر",
+      "tr": "Al-Qamar",
+      "en": "The Moon",
+      "ru": "Месяц"
+    },
+    "type": "meccan",
+    "verses": 55,
+    "words": 342,
+    "chars": 1469,
+    "sajda": null
+  },
+  {
+    "id": 53,
+    "text": {
+      "ar": "النجم",
+      "tr": "An-Najm",
+      "en": "The Star",
+      "ru": "Звезда"
+    },
+    "type": "meccan",
+    "verses": 62,
+    "words": 360,
+    "chars": 1433,
+    "sajda": [
+      62
+    ]
+  },
+  {
+    "id": 52,
+    "text": {
+      "ar": "الطور",
+      "tr": "At-Tur",
+      "en": "The Mount",
+      "ru": "Гора"
+    },
+    "type": "meccan",
+    "verses": 49,
+    "words": 312,
+    "chars": 1324,
+    "sajda": null
+  },
+  {
+    "id": 51,
+    "text": {
+      "ar": "الذاريات",
+      "tr": "Adh-Dhariyat",
+      "en": "The Winnowing Winds",
+      "ru": "Рассеивающие прах"
+    },
+    "type": "meccan",
+    "verses": 60,
+    "words": 360,
+    "chars": 1546,
+    "sajda": null
+  },
+  {
+    "id": 50,
+    "text": {
+      "ar": "ق",
+      "tr": "Qaf",
+      "en": "The Letter \"Qaf\"",
+      "ru": "Каф"
+    },
+    "type": "meccan",
+    "verses": 45,
+    "words": 373,
+    "chars": 1507,
+    "sajda": null
+  },
+  {
+    "id": 49,
+    "text": {
+      "ar": "الحجرات",
+      "tr": "Al-Hujurat",
+      "en": "The Rooms",
+      "ru": "Комнаты"
+    },
+    "type": "medinan",
+    "verses": 18,
+    "words": 353,
+    "chars": 1533,
+    "sajda": null
+  },
+  {
+    "id": 48,
+    "text": {
+      "ar": "الفتح",
+      "tr": "Al-Fath",
+      "en": "The Victory",
+      "ru": "Победа"
+    },
+    "type": "medinan",
+    "verses": 29,
+    "words": 560,
+    "chars": 2510,
+    "sajda": null
+  },
+  {
+    "id": 47,
+    "text": {
+      "ar": "محمد",
+      "tr": "Muhammad",
+      "en": "Muhammad",
+      "ru": "Мухаммад"
+    },
+    "type": "medinan",
+    "verses": 38,
+    "words": 542,
+    "chars": 2423,
+    "sajda": null
+  },
+  {
+    "id": 46,
+    "text": {
+      "ar": "الأحقاف",
+      "tr": "Al-Ahqaf",
+      "en": "The Wind-Curved Sandhills",
+      "ru": "Барханы"
+    },
+    "type": "meccan",
+    "verses": 35,
+    "words": 645,
+    "chars": 2667,
+    "sajda": null
+  },
+  {
+    "id": 45,
+    "text": {
+      "ar": "الجاثية",
+      "tr": "Al-Jathiyah",
+      "en": "The Crouching",
+      "ru": "Коленопреклоненные"
+    },
+    "type": "meccan",
+    "verses": 37,
+    "words": 488,
+    "chars": 2085,
+    "sajda": null
+  },
+  {
+    "id": 44,
+    "text": {
+      "ar": "الدخان",
+      "tr": "Ad-Dukhan",
+      "en": "The Smoke",
+      "ru": "Дым"
+    },
+    "type": "meccan",
+    "verses": 59,
+    "words": 346,
+    "chars": 1474,
+    "sajda": null
+  },
+  {
+    "id": 43,
+    "text": {
+      "ar": "الزخرف",
+      "tr": "Az-Zukhruf",
+      "en": "Ornaments of Gold",
+      "ru": "Украшения"
+    },
+    "type": "meccan",
+    "verses": 89,
+    "words": 836,
+    "chars": 3609,
+    "sajda": null
+  },
+  {
+    "id": 42,
+    "text": {
+      "ar": "الشورى",
+      "tr": "Ash-Shuraa",
+      "en": "The Consultation",
+      "ru": "Совет"
+    },
+    "type": "meccan",
+    "verses": 53,
+    "words": 860,
+    "chars": 3522,
+    "sajda": null
+  },
+  {
+    "id": 41,
+    "text": {
+      "ar": "فصلت",
+      "tr": "Fussilat",
+      "en": "Explained in Detail",
+      "ru": "Разъяснены"
+    },
+    "type": "meccan",
+    "verses": 54,
+    "words": 794,
+    "chars": 3365,
+    "sajda": [
+      38
+    ]
+  },
+  {
+    "id": 40,
+    "text": {
+      "ar": "غافر",
+      "tr": "Ghafir",
+      "en": "The Forgiver",
+      "ru": "Прощающий"
+    },
+    "type": "meccan",
+    "verses": 85,
+    "words": 1226,
+    "chars": 5108,
+    "sajda": null
+  },
+  {
+    "id": 39,
+    "text": {
+      "ar": "الزمر",
+      "tr": "Az-Zumar",
+      "en": "The Troops",
+      "ru": "Толпы"
+    },
+    "type": "meccan",
+    "verses": 75,
+    "words": 1177,
+    "chars": 4869,
+    "sajda": null
+  },
+  {
+    "id": 38,
+    "text": {
+      "ar": "ص",
+      "tr": "Sad",
+      "en": "The Letter \"Saad\"",
+      "ru": "Сод"
+    },
+    "type": "meccan",
+    "verses": 88,
+    "words": 735,
+    "chars": 3065,
+    "sajda": [
+      24
+    ]
+  },
+  {
+    "id": 37,
+    "text": {
+      "ar": "الصافات",
+      "tr": "As-Saffat",
+      "en": "Those who set the Ranks",
+      "ru": "Выстроившиеся в ряды"
+    },
+    "type": "meccan",
+    "verses": 182,
+    "words": 865,
+    "chars": 3899,
+    "sajda": null
+  },
+  {
+    "id": 36,
+    "text": {
+      "ar": "يس",
+      "tr": "Ya-Sin",
+      "en": "Ya Sin",
+      "ru": "Йа Син"
+    },
+    "type": "meccan",
+    "verses": 83,
+    "words": 730,
+    "chars": 3068,
+    "sajda": null
+  },
+  {
+    "id": 35,
+    "text": {
+      "ar": "فاطر",
+      "tr": "Fatir",
+      "en": "Originator",
+      "ru": "Творец"
+    },
+    "type": "meccan",
+    "verses": 45,
+    "words": 778,
+    "chars": 3238,
+    "sajda": null
+  },
+  {
+    "id": 34,
+    "text": {
+      "ar": "سبإ",
+      "tr": "Saba",
+      "en": "Sheba",
+      "ru": "Сава"
+    },
+    "type": "meccan",
+    "verses": 54,
+    "words": 884,
+    "chars": 3594,
+    "sajda": null
+  },
+  {
+    "id": 33,
+    "text": {
+      "ar": "الأحزاب",
+      "tr": "Al-Ahzab",
+      "en": "The Combined Forces",
+      "ru": "Союзники"
+    },
+    "type": "medinan",
+    "verses": 73,
+    "words": 1303,
+    "chars": 5788,
+    "sajda": null
+  },
+  {
+    "id": 32,
+    "text": {
+      "ar": "السجدة",
+      "tr": "As-Sajdah",
+      "en": "The Prostration",
+      "ru": "Земной поклон"
+    },
+    "type": "meccan",
+    "verses": 30,
+    "words": 372,
+    "chars": 1563,
+    "sajda": [
+      15
+    ]
+  },
+  {
+    "id": 31,
+    "text": {
+      "ar": "لقمان",
+      "tr": "Luqman",
+      "en": "Luqman",
+      "ru": "Лукман"
+    },
+    "type": "meccan",
+    "verses": 34,
+    "words": 550,
+    "chars": 2171,
+    "sajda": null
+  },
+  {
+    "id": 30,
+    "text": {
+      "ar": "الروم",
+      "tr": "Ar-Rum",
+      "en": "The Romans",
+      "ru": "Римляне"
+    },
+    "type": "meccan",
+    "verses": 60,
+    "words": 817,
+    "chars": 3472,
+    "sajda": null
+  },
+  {
+    "id": 29,
+    "text": {
+      "ar": "العنكبوت",
+      "tr": "Al-'Ankabut",
+      "en": "The Spider",
+      "ru": "Паук"
+    },
+    "type": "meccan",
+    "verses": 69,
+    "words": 978,
+    "chars": 4317,
+    "sajda": null
+  },
+  {
+    "id": 28,
+    "text": {
+      "ar": "القصص",
+      "tr": "Al-Qasas",
+      "en": "The Stories",
+      "ru": "Рассказ"
+    },
+    "type": "meccan",
+    "verses": 88,
+    "words": 1438,
+    "chars": 5930,
+    "sajda": null
+  },
+  {
+    "id": 27,
+    "text": {
+      "ar": "النمل",
+      "tr": "An-Naml",
+      "en": "The Ant",
+      "ru": "Муравьи"
+    },
+    "type": "meccan",
+    "verses": 93,
+    "words": 1159,
+    "chars": 4790,
+    "sajda": [
+      26
+    ]
+  },
+  {
+    "id": 26,
+    "text": {
+      "ar": "الشعراء",
+      "tr": "Ash-Shu'ara",
+      "en": "The Poets",
+      "ru": "Поэты"
+    },
+    "type": "meccan",
+    "verses": 227,
+    "words": 1320,
+    "chars": 5630,
+    "sajda": null
+  },
+  {
+    "id": 25,
+    "text": {
+      "ar": "الفرقان",
+      "tr": "Al-Furqan",
+      "en": "The Criterion",
+      "ru": "аль-Фуркан"
+    },
+    "type": "meccan",
+    "verses": 77,
+    "words": 896,
+    "chars": 3878,
+    "sajda": [
+      60
+    ]
+  },
+  {
+    "id": 24,
+    "text": {
+      "ar": "النور",
+      "tr": "An-Nur",
+      "en": "The Light",
+      "ru": "Свет"
+    },
+    "type": "medinan",
+    "verses": 64,
+    "words": 1319,
+    "chars": 5754,
+    "sajda": null
+  },
+  {
+    "id": 23,
+    "text": {
+      "ar": "المؤمنون",
+      "tr": "Al-Mu'minun",
+      "en": "The Believers",
+      "ru": "Верующие"
+    },
+    "type": "meccan",
+    "verses": 118,
+    "words": 1052,
+    "chars": 4483,
+    "sajda": null
+  },
+  {
+    "id": 22,
+    "text": {
+      "ar": "الحج",
+      "tr": "Al-Hajj",
+      "en": "The Pilgrimage",
+      "ru": "Паломничество"
+    },
+    "type": "medinan",
+    "verses": 78,
+    "words": 1279,
+    "chars": 5314,
+    "sajda": [
+      18,
+      77
+    ]
+  },
+  {
+    "id": 21,
+    "text": {
+      "ar": "الأنبياء",
+      "tr": "Al-Anbya",
+      "en": "The Prophets",
+      "ru": "Пророки"
+    },
+    "type": "meccan",
+    "verses": 112,
+    "words": 1174,
+    "chars": 5094,
+    "sajda": null
+  },
+  {
+    "id": 20,
+    "text": {
+      "ar": "طه",
+      "tr": "Taha",
+      "en": "Ta-Ha",
+      "ru": "Та Ха "
+    },
+    "type": "meccan",
+    "verses": 135,
+    "words": 1353,
+    "chars": 5399,
+    "sajda": null
+  },
+  {
+    "id": 19,
+    "text": {
+      "ar": "مريم",
+      "tr": "Maryam",
+      "en": "Mary",
+      "ru": "Марьям"
+    },
+    "type": "meccan",
+    "verses": 98,
+    "words": 971,
+    "chars": 3935,
+    "sajda": [
+      58
+    ]
+  },
+  {
+    "id": 18,
+    "text": {
+      "ar": "الكهف",
+      "tr": "Al-Kahf",
+      "en": "The Cave",
+      "ru": "Пещера"
+    },
+    "type": "meccan",
+    "verses": 110,
+    "words": 1583,
+    "chars": 6552,
+    "sajda": null
+  },
+  {
+    "id": 17,
+    "text": {
+      "ar": "الإسراء",
+      "tr": "Al-Isra",
+      "en": "The Night Journey",
+      "ru": "Ночной перенос"
+    },
+    "type": "meccan",
+    "verses": 111,
+    "words": 1558,
+    "chars": 6643,
+    "sajda": [
+      109
+    ]
+  },
+  {
+    "id": 16,
+    "text": {
+      "ar": "النحل",
+      "tr": "An-Nahl",
+      "en": "The Bee",
+      "ru": "Пчелы"
+    },
+    "type": "meccan",
+    "verses": 128,
+    "words": 1844,
+    "chars": 7832,
+    "sajda": [
+      50
+    ]
+  },
+  {
+    "id": 15,
+    "text": {
+      "ar": "الحجر",
+      "tr": "Al-Hijr",
+      "en": "The Rocky Tract",
+      "ru": "Хиджр "
+    },
+    "type": "meccan",
+    "verses": 99,
+    "words": 657,
+    "chars": 2882,
+    "sajda": null
+  },
+  {
+    "id": 14,
+    "text": {
+      "ar": "ابراهيم",
+      "tr": "Ibrahim",
+      "en": "Abraham",
+      "ru": "Ибрахим"
+    },
+    "type": "meccan",
+    "verses": 52,
+    "words": 830,
+    "chars": 3539,
+    "sajda": null
+  },
+  {
+    "id": 13,
+    "text": {
+      "ar": "الرعد",
+      "tr": "Ar-Ra'd",
+      "en": "The Thunder",
+      "ru": "Гром"
+    },
+    "type": "medinan",
+    "verses": 43,
+    "words": 853,
+    "chars": 3545,
+    "sajda": [
+      15
+    ]
+  },
+  {
+    "id": 12,
+    "text": {
+      "ar": "يوسف",
+      "tr": "Yusuf",
+      "en": "Joseph",
+      "ru": "Йусуф"
+    },
+    "type": "meccan",
+    "verses": 111,
+    "words": 1795,
+    "chars": 7307,
+    "sajda": null
+  },
+  {
+    "id": 11,
+    "text": {
+      "ar": "هود",
+      "tr": "Hud",
+      "en": "Hud",
+      "ru": "Худ"
+    },
+    "type": "meccan",
+    "verses": 123,
+    "words": 1946,
+    "chars": 7817,
+    "sajda": null
+  },
+  {
+    "id": 10,
+    "text": {
+      "ar": "يونس",
+      "tr": "Yunus",
+      "en": "Jonah",
+      "ru": "Йунус"
+    },
+    "type": "meccan",
+    "verses": 109,
+    "words": 1839,
+    "chars": 7589,
+    "sajda": null
+  },
+  {
+    "id": 9,
+    "text": {
+      "ar": "التوبة",
+      "tr": "At-Tawbah",
+      "en": "The Repentance",
+      "ru": "Покаяние"
+    },
+    "type": "medinan",
+    "verses": 129,
+    "words": 2505,
+    "chars": 11115,
+    "sajda": null
+  },
+  {
+    "id": 8,
+    "text": {
+      "ar": "الأنفال",
+      "tr": "Al-Anfal",
+      "en": "The Spoils of War",
+      "ru": "Трофеи"
+    },
+    "type": "medinan",
+    "verses": 75,
+    "words": 1242,
+    "chars": 5387,
+    "sajda": null
+  },
+  {
+    "id": 7,
+    "text": {
+      "ar": "الأعراف",
+      "tr": "Al-A'raf",
+      "en": "The Heights",
+      "ru": "Ограды"
+    },
+    "type": "meccan",
+    "verses": 206,
+    "words": 3341,
+    "chars": 14435,
+    "sajda": [
+      206
+    ]
+  },
+  {
+    "id": 6,
+    "text": {
+      "ar": "الأنعام",
+      "tr": "Al-An'am",
+      "en": "The Cattle",
+      "ru": "Скот"
+    },
+    "type": "meccan",
+    "verses": 165,
+    "words": 3056,
+    "chars": 12726,
+    "sajda": null
+  },
+  {
+    "id": 5,
+    "text": {
+      "ar": "المائدة",
+      "tr": "Al-Ma'idah",
+      "en": "The Table Spread",
+      "ru": "Трапеза"
+    },
+    "type": "medinan",
+    "verses": 120,
+    "words": 2837,
+    "chars": 12206,
+    "sajda": null
+  },
+  {
+    "id": 4,
+    "text": {
+      "ar": "النساء",
+      "tr": "An-Nisa",
+      "en": "The Women",
+      "ru": "Женщины"
+    },
+    "type": "medinan",
+    "verses": 176,
+    "words": 3763,
+    "chars": 16332,
+    "sajda": null
+  },
+  {
+    "id": 3,
+    "text": {
+      "ar": "آل عمران",
+      "tr": "Ali 'Imran",
+      "en": "Family of Imran",
+      "ru": "Семейство Имрана"
+    },
+    "type": "medinan",
+    "verses": 200,
+    "words": 3501,
+    "chars": 14985,
+    "sajda": null
+  },
+  {
+    "id": 2,
+    "text": {
+      "ar": "البقرة",
+      "tr": "Al-Baqarah",
+      "en": "The Cow",
+      "ru": "Корова"
+    },
+    "type": "medinan",
+    "verses": 286,
+    "words": 6140,
+    "chars": 26249,
+    "sajda": null
+  },
+  {
+    "id": 1,
+    "text": {
+      "ar": "الفاتحة",
+      "tr": "Al-Fatihah",
+      "en": "The Opener",
+      "ru": "Открывающая Коран"
+    },
+    "type": "meccan",
+    "verses": 7,
+    "words": 29,
+    "chars": 143,
     "sajda": null
   }
 ]
