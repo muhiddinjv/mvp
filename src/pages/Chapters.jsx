@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTheme, useBookmarks } from '../hooks';
 import { CardStorage, GlobalContext } from '../main';
 import { Link, useLocation } from 'react-router-dom';
@@ -26,15 +26,19 @@ function Chapters() {
   const bookmarks = localStorage.getItem('bookmarks') || '';
 
   const location = useLocation();
+  const hasShownToast = useRef(false);
 
   useEffect(() => {
-    if (location.state?.streakUpdated) {
+    if (location.state?.streakUpdated && !hasShownToast.current) {
+      hasShownToast.current = true;
       toast.success("Review completed!");
       const updatedUnlock = Number(localStorage.getItem("lowestUnlockedSurah")) || 114;
       setLowestUnlocked(updatedUnlock);
       window.history.replaceState({}, document.title);
+    } else if (!location.state?.streakUpdated) {
+      hasShownToast.current = false;
     }
-  }, [location.state]);  
+  }, [location.state?.streakUpdated]);  
 
   const sortChapters = (data, field, ascending) => {
     return [...data].sort((a, b) => (ascending ? a[field] - b[field] : b[field] - a[field]));
