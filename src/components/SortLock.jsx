@@ -63,10 +63,10 @@ export const SortLockIcon = ({ surahId }) => {
   if (isLocked) {
     return (
       <div 
-        className="w-full relative max-w-12 border-l border-gray-500 p-2 flex flex-col justify-center items-center opacity-50 cursor-not-allowed bg-gray-700"
+        className="w-full relative max-w-12 border-l border-gray-500 p-2 flex flex-col justify-center items-center opacity-50 cursor-not-allowed"
         title="Sort completed today. Unlocks at midnight."
       >
-        <FontAwesomeIcon icon={faLock} className="w-4 h-4 text-white-400" />
+        <FontAwesomeIcon icon={faUpDownLeftRight}/>
       </div>
     );
   }
@@ -77,7 +77,7 @@ export const SortLockIcon = ({ surahId }) => {
       className="w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer hover:bg-gray-600 transition-colors"
       title="Sort verses"
     >
-      <FontAwesomeIcon icon={faUpDownLeftRight} className="w-4 h-4" />
+      <FontAwesomeIcon icon={faUpDownLeftRight}/>
     </Link>
   );
 }; 

@@ -128,7 +128,7 @@ function Chapters() {
               surahId={chapter.id}
             />
             {isUnlocked ? (
-              <Link to={`/anki/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
+              <Link to={`/anki/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer hover:bg-gray-600 transition-colors'>
                 <FontAwesomeIcon icon={faBook}/>
                 {(counts.newCount + counts.learningCount + counts.reviewCount) > 0 && (
                   <span className="absolute top-0 right-0 bg-slate-300 text-gray-800 text-xs rounded-full px-1">
