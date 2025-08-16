@@ -3,11 +3,12 @@ import { useTheme, useBookmarks } from '../hooks';
 import { CardStorage, GlobalContext } from '../main';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp, faLightbulb, faBook, faCircleQuestion, faUpDownLeftRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faArrowUp, faLightbulb, faBook, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { State } from 'ts-fsrs';
 import moment from 'moment';
 import StreakBanner from '../components/StreakBanner';
 import toast, { Toaster } from 'react-hot-toast';
+import { SortLockIcon } from '../components/SortLock';
 
 function Chapters() {
   const { theme } = useTheme("dark");
@@ -19,6 +20,7 @@ function Chapters() {
   const [lowestUnlocked, setLowestUnlocked] = React.useState(() =>
     Number(localStorage.getItem("lowestUnlockedSurah")) || 114
   );
+
   const { setChapterId, chapters, setChapters, cardCounts, setCardCounts, words } = React.useContext(GlobalContext);
   const [,, getParsedBookmarks] = useBookmarks();
   const bookmarks = localStorage.getItem('bookmarks') || '';
@@ -83,6 +85,7 @@ function Chapters() {
       <div>
       <StreakBanner />
       <Toaster position="top-center" />
+
       {/* <ReviewCalendar /> */}
         <div className='flex text-center cursor-pointer border-x border border-gray-500 rounded'>
           <Link to='/howto' className='border-r border-gray-500 w-full max-w-12 py-2'>
@@ -121,9 +124,9 @@ function Chapters() {
                 {chapter.verses} verses | {chapter.words} words {chapter.sajda !== null && <span> ۩</span>}
               </div>
             </Link>
-            <Link to={`/dnd/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
-              <FontAwesomeIcon icon={faUpDownLeftRight} />
-            </Link>
+            <SortLockIcon 
+              surahId={chapter.id}
+            />
             {isUnlocked ? (
               <Link to={`/anki/${chapter.id}`} className='w-full relative max-w-12 border-l border-gray-500 p-2 flex justify-center items-center cursor-pointer'>
                 <FontAwesomeIcon icon={faBook}/>

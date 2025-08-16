@@ -6,6 +6,7 @@ import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-ki
 import { GlobalContext } from '../main';
 import { useAyahs, useFontSize, useTheme, useChunkNavigation } from '../hooks';
 import { increaseSessionStreak, markDailyStreakCompleted, shuffleArray } from '../utils/streaks';
+import { markSortCompleted } from '../components/SortLock';
 
 import { BtnsHeader, Loading, SortableItem } from '../components';
 
@@ -85,6 +86,7 @@ const SortAyas = () => {
         new Audio('/aud/sound/treasure.mp3').play();
         increaseSessionStreak();
         markDailyStreakCompleted();
+        markSortCompleted(suraid); // Mark this surah as completed for sorting
         setTimeout(() => navigate('/', { state: { streakUpdated: true } }), 2000);
       }
     }
@@ -110,7 +112,7 @@ const SortAyas = () => {
       />
 
       <h1 className="m-4 text-xl font-bold">
-        Sort the Verses for {ayahs[language] || 'None'}
+        {suraid} {ayahs[language] || 'None'}
       </h1>
 
       <div className="flex gap-4 items-center mb-4">
